@@ -1,0 +1,77 @@
+\usepackage{fontspec}
+\setmainfont[Numbers=OldStyle, Ligatures=Historic, WordSpace={1,1.6,0.9}]{Linux Libertine O}
+\def\xtsh{\hbox to 2em plus 2pt{\crfill}}
+\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
+\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
+\def\Tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
+\newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
+\newfontfamily{\garamond}{EB Garamond}\DeclareTextFontCommand{\egb}{\garamond}
+\newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
+%
+\def\tight#1{{\addfontfeature{LetterSpace=-2.0}#1}}
+\def\ls#1{{\addfontfeature{LetterSpace=12.0}#1}}
+\def\lss#1{{\addfontfeature{LetterSpace=16.0}#1}}
+\def\lsss#1{{\addfontfeature{LetterSpace=32.0}#1}}
+\def\stick#1{\hbox to \hsize{#1}}
+%
+\usepackage{lineno}
+% \newcommand{\leftquotes}{\def\makeLineNumber{%
+%   \ifnum\value{linenumber}=1 \else\hskip\leftmargin\llap{“\,}\hss\fi}}
+% \newenvironment{story}
+%   {\quotation\linenumbers\leftquotes}
+%   {\endquotation}
+\def\lqq{\leavevmode\rlap{“}\kern .6em}
+\newenvironment{story}[1]{\leavevmode\lqq #1{\parfillskip=0pt\par\vspace{-\parskip}}%
+\begingroup\leftskip=.6em
+\def\makeLineNumber{\rlap{“}}\linenumbers\noindent\ignorespaces}
+{\par\endgroup\vspace{-\parskip}}
+%
+\usepackage{relsize}
+\def\et{{\smaller\itshape\egb\&}}
+\def\etc{\et{\itshape c}.\@\ }
+\long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
+\def\ast{{\zap ❋}}
+\def\fnast{\lower-0.5ex\hbox{\ast}}
+\def\astfill{\ast\xleaders\hbox to 1em{\hss\ast}\hfill}
+\def\starfill{\ast\xleaders\hbox to 1.6em{\hss\ast}\hfill}
+\def\astvi{\hbox{\lower-2pt\hbox{\ast}\xleaders\hbox to
+0.6em{\hss\lower-2pt\hbox{\ast}}\hskip 3.3em}}
+\def\astv{\hbox{\ast\xleaders\hbox to 0.6em{\hss\ast}\hskip 2.8em}}
+\def\astiv{\hbox{\ast\xleaders\hbox to 0.6em{\hss\ast}\hskip 2.1em}}
+\newcount\a
+\def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-2pt\hbox{\ast}\repeat}
+\def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-1pt\hbox to .7em{\hss\ast\hss}\repeat}
+%
+\setcounter{secnumdepth}{-1}
+%
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{[\quad\thepage\quad]}
+\renewcommand{\headrulewidth}{0pt}
+%
+\fancypagestyle{dedication}{\fancyhf{}
+\fancyhead[C]{\lsss{DEDICATION}.}
+\renewcommand{\headrulewidth}{0pt}}
+%
+\fancypagestyle{folio}{\fancyhf{}
+\fancyhead[C]{[\quad\thepage\quad]}
+\renewcommand{\headrulewidth}{0pt}}
+%
+\renewcommand*\footnoterule{}
+\renewcommand*{\thefootnote}{\ast} % \fnsymbol{footnote}}
+\renewcommand*{\footnotesize}{\fontsize{8pt}{9pt}\selectfont}
+\newcommand{\starnote}{\setcounter{footnote}{0}\footnote}
+%
+\usepackage{lettrine}
+\usepackage[sc, tiny, center]{titlesec}
+%
+%\usepackage[a6paper, width=166pt, height=236pt]{geometry}
+%
+\usepackage[indent=12pt, skip=1\baselineskip plus 8pt minus 8pt]{parskip}
+%
+\global\catcode`\:=\active \gdef:{\thinspace\char`\: }
+\global\catcode`\;=\active \gdef;{\thinspace\char`\; }
+\global\catcode`\?=\active \gdef?{\thinspace\char`\? }
+\global\catcode`\!=\active \gdef!{\thinspace\char`\! }
+%
+\hyphenation{Yo-r-ick}

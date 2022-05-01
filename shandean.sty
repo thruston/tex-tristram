@@ -3,10 +3,12 @@
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
-\def\Tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
+\def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontfamily{\garamond}{EB Garamond}\DeclareTextFontCommand{\egb}{\garamond}
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
+%
+\def\smallit#1{{\fontsize{9.5}{14}\selectfont\textit{#1}}}
 %
 \def\tight#1{{\addfontfeature{LetterSpace=-2.0}#1}}
 \def\ls#1{{\addfontfeature{LetterSpace=12.0}#1}}
@@ -30,7 +32,12 @@
 \def\et{{\smaller\itshape\egb\&}}
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
-\long\def\catch#1 {\penalty-10000\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
+\long\def\patch#1 {\\\rightline{#1}\eject}
+%\long\def\catch#1 {\penalty-10000\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
+%\long\def\catch#1 {\vadjust{\vbox to -6pt{\hbox to \hsize{\hfill\vrule height 11.2pt
+%width 0pt #1}\vss}}\penalty-10000\par\eject\noindent}
+\long\def\catch#1 {\smash{\lower13pt\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
+
 \def\ast{{\zap ❋}}
 \def\fnast{\lower-0.5ex\hbox{\ast}}
 \def\astfill{\ast\xleaders\hbox to 1em{\hss\ast}\hfill}

@@ -10,7 +10,7 @@ some cases the hyphenation of the lines are all meaningful.
 This project therefore presents the text in nine separate PDF files,
 designed to be read in a PDF viewer that allows you to see two pages at
 once, like an open book.  Each page break faithfully follows the page breaks
-in the original text, and includes all the dashes, asterisks, blanks, and
+in the originals, and the text includes all the dashes, asterisks, blanks, and
 catch-words.
 
 The spelling and punctuation is all Sterne's (as far as human proof-reading
@@ -25,5 +25,5 @@ volumes.  The text is marked up with LaTeX and compiled into PDFs using the
 
 If you find this project entertaining or useful please consider supporting
 [Shandy Hall](https://www.laurencesternetrust.org.uk/join-in/donations/)
-which is run as a museum and study-center in Coxwold, North Yorkshire, but
+which is run as a museum and study-center in Coxwold, North Yorkshire, by
 the Laurence Sterne Trust.

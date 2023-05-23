@@ -7,6 +7,7 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
+\def\Usk{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip 1em plus .5em minus .5em\thinspace}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontfamily{\garamond}{EB Garamond}\DeclareTextFontCommand{\egb}{\garamond}
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
@@ -45,6 +46,8 @@
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-2pt\hbox{\ast}\repeat}
 \def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-1pt\hbox to .7em{\hss\ast\hss}\repeat}
 %
+\def\club{\small ♣︎}
+\def\sic{\marginpar{\club}}
 \setcounter{secnumdepth}{-1}
 %
 \usepackage{fancyhdr}

@@ -7,8 +7,9 @@
 \begin{document}
 \pagestyle{empty}
 % half title
+\hbox{}
 \vfill
-$$\vbox{\openup 16pt\halign{\hss #\hss\cr
+\vbox{\openup 16pt\halign to \textwidth{\hss #\hss\cr
 \hbox to 3em{T H E}\cr
 \hbox to 12em{\Huge L I F E}\cr
 \hbox to 3em{A N D}\cr
@@ -16,7 +17,7 @@ $$\vbox{\openup 16pt\halign{\hss #\hss\cr
 \textsc{o f}\cr
 \hbox{\Large \ls{TRISTRAM SHANDY},}\cr
 \textsc{\lss{Gentleman}.}\cr
-}}$$
+}}
 \vfill
 \newpage
 \null
@@ -44,7 +45,7 @@ Multitudinis imperitæ non formido judicia; meis\cr
 \vfill
 \centerline{\itshape\lsss{LONDON}:}
 \centerline{\smaller Printed for R.\@ and J.\@ \lss{\textsc{Dodsley}} in \textit{Pall-Mall}.}
-\centerline{M.DCC.LXI.}
+\centerline{M.\,DCC.\,LXI.}
 \newpage
 \null
 \newpage
@@ -55,19 +56,19 @@ Multitudinis imperitæ non formido judicia; meis\cr
 \setcounter{page}{1}
 \setlength{\baselineskip}{14pt}  % 21*14 = 294
 \newpage
-\centerline{\large\lss{SLAWKENBERGII}}
+\centerline{\large\lsss{SLAWKENBERGII}}
 \centerline{\large\lss{\textsc{Fabella}}.}
 
 \bgroup\itshape\def\emph#1{{\normalshape #1}}
-\lettrine{V}{\enspace espera} quâdam frigidulâ,
-posteriori in parte mensis \emph{Augusti}, peregrinus, mulo fusco
-colore incidens, manticâ a tergo, paucis indusijs, binis
+\initial[depth=1,loversize=0.4, lraise=-0.25,findent=8pt]{V}{\lsss{ESPERA}} quâdam frigidulâ,
+po\-steriori in parte mensis \emph{Augusti}, peregrinus, mulo fusco
+colore insidens, manticâ a tergo, paucis indusijs, binis
 calceis, braccisque sericis coccinejs repletâ, \emph{Argentoratum}
 ingressus est.
 
-Militi eum percontanti, quum portus intraret dixit, se apud
+Militi eum percontanti, quum portus intraret, dixit, se apud
 Nasorum promontorium fuisse, Francofurtum proficisci, et
-Argentoratum, transitu ad fines Sarmatiæ mensis intervallo,
+Argentoratum, transitu ad fines Sarmatiæ\break mensis intervallo,
 reversurum.\egroup
 
 \rightline{\itshape Miles}
@@ -84,7 +85,7 @@ Latinity in it.\par
 \centerline{\large\lss{SLAWKENBERGIUS}'s}
 \centerline{\large\lss{\textsc{Tale}}.}
 
-\lettrine{I}{\,t} was one cool refreshing evening,
+\dropcap[lines=3]{I}{t} was one cool refreshing evening,
 at the close of a very sultry day, in the latter end of the month
 of \textit{August}, when a stranger, mounted upon a dark mule, with a
 small cloak-bag behind him, containing a few shirts, a pair of
@@ -118,13 +119,13 @@ inveniet.\tsh Nullam
 \stick{unquam habui, respondit peregrinus respi-}}\catch{\textit{ciens},}
 
 The centinel looked up into the stran\-ger’s
-face\tsh he never saw such a Nose in his life!
+face\tsh he never saw such a nose in his life!
 
 
 \tsk I have made a very good venture of it, quoth the
 stranger\tsk so slipping his wrist out of the loop of a black
 ribban, to which a short scymetar was hung: He put his hand
-into his pocket, and with great courtesy touching the fore part of
+into his pocket, and with great courtesy touching the forepart of
 his cap with his left-hand, as he extended his
 right\tsk he put a florin into the centinel’s hand,
 and passed on.
@@ -141,7 +142,7 @@ nasum tueri possim}.
 
 \vskip4\baselineskip
 
-\textit{Non immerito, benigne peregrine, respondit miles}.
+\textit{Non immerito, benigne peregrine, re-\break spondit miles}.
 
 \textit{Nihili aestimo, ait ille tympanista, e per\-gamenâ factitius est}.
 
@@ -180,8 +181,8 @@ the centinel, like my own.
 titigimus!}
 
 \textit{Eodem temporis puncto, quo hæc res argumentata fuit
-inter militem et tympanistam, disceptabatur ibidem tubicine \et\ 
-uxore suâ, qui tunc accesserunt, et peregrino
+inter militem et tympani\-stam, disceptabatur ibidem tubicine \et\ 
+ux\-ore suâ, qui tunc accesserunt, et peregrino
 prætereunte, restiterunt.}
 
 \vskip\baselineskip
@@ -236,7 +237,7 @@ quam dormi-\break vero}.
 verbum controversiæ, non tantum inter militem et tympanistam,
 verum etiam inter tubicinem et uxorum ejus, audiret}.
 
-\textit{Nequaquam, ait ille, in muli collum}
+\textit{Nequaquam, ait ille, in muli collum}\break
 \stick{\itshape fræna demittens, \et\ manibus ambabus in}\catch{\textit{pectus}}
 
 \tsk ’Tis as soft as a flute, said she.
@@ -253,12 +254,12 @@ wife, for I will touch it with my finger before I sleep.
 
 The stranger’s mule moved on at so slow a rate, that he
 heard every word of the dispute, not only betwixt the centinel and
-the drummer, but betwixt the trumpeter and trumpeter’s
+the drummer; but betwixt the trumpeter and trumpeter’s
 wife.
 
 No! said he, dropping his reins upon
 \stick{his mule’s neck, and laying both his}\catch{hands}
-\textit{pectus positis, (mulo lentè progrediente)
+\textit{pectus positis, (mulo lentè progrediente)\break
 nequaquam, ait ille respiciens, non necesse est ut res isthæc
 dilucidata foret. Minime gentium! meus nasus nunquam tangetur, dum
 spiritus hos reget artus\tsk ad quid agendum? ait uxor
@@ -266,9 +267,10 @@ burgomagistri}.
 
 \vskip4\baselineskip
 
-\textit{Peregrinus illi non respondit. Votum faciebat tunc temporis
-sancto Nicolao; quo facto, sinum dextrum inserens, e quâ
-negligenter pependit acinaces, lento gradu processit per plateam
+\textit{Peregrinus illi non respondit. Votum\break
+faciebat tunc temporis sancto Nicolao, quo\break
+facto, sinum dextrum inserens, e quâ
+negli\-genter pependit acinaces, lento gradu processit per plateam
 Argentorati latam quæ ad diversorium templo ex adversum
 ducit}.
 
@@ -277,28 +279,25 @@ ducit}.
 
 \newpage
 \noindent
-hands upon his
-breast, the one over the other in a
-saint-like position (his mule going on easily all the time) No!
-said he, looking up,\tsk I am not such a debtor to the
-world\tsh slandered and disappointed as I have
-been\tsk as to give it that conviction\tsk no! said he,
-my nose shall never be touched whilst heaven gives me
-strength\tsk To do what? said a burgomaster’s
-wife.
-
+hands upon his breast, the one over the other in a
+saint-like position (his mule going on easily all the time)
+No!  said he, looking up,\tsk I am not such a debtor to the
+world\tsk slandered and disappointed as I have been\tsh as
+to give it that conviction\tsk no! said he, my nose shall
+never be touched whilst heaven gives me strength\tsk To do
+what? said a burgomaster’s wife.
 
 The stranger took no notice of the burgomaster’s wife\tsh he was making a vow to
 saint \textit{Nicolas}; which done, having uncrossed his arms with the same
 solemnity with which he crossed them, he took up the reins of his bridle with his
-left-hand, and putting his right hand into his bosom, with the scymetar hanging
+left-hand, and putting his right-hand into his bosom, with the scymetar hanging
 loosely to the wrist of it, he rode on, as\break
 \stick{slowly as one foot of the mule could fol-}\catch{low}
 
 \null\vskip3\baselineskip
 \textit{Peregrinus mulo descendens stabulo includi, \et\ manticam inferri jussit: quâ
 aper\-tâ et coccineis sericis femoralibus extractis cum argento laciniato
-{\small Περι\-ζο\-μαυτε}, his sese induit, statimque, acinaci in manu, ad forum deambulavit}.
+{\small Περι\-ζο\-ματε}, his sese induit, statimque, acinaci in manu, ad forum deambulavit}.
 
 \null\vskip3\baselineskip
 \textit{Quod ubi peregrinus esset ingressus, ux-\break
@@ -310,33 +309,36 @@ aper\-tâ et coccineis sericis femoralibus extractis cum argento laciniato
 low another, thro’ the principal streets of \textit{Strasburg}, till chance
 brought him to the great inn in the market-place over-against the church.
 
-The moment the stranger alighted, he ordered his mule to be led into the stable, and
-his cloak-bag to be brought in; then opening, and taking out of it his
-crimson-sattin breeches, with a silver-fringed\tsk (appendage to them, which I dare
-not translate)\tsk he put his breeches, with his fringed cod-piece on, and forth-with,
-with his short scymetar in his hand, walked out to the grand parade.
+The moment the stranger alighted, he ordered his mule to be
+led into the stable, and his cloak-bag to be brought in;
+then opening, and taking out of it, his crimson-sattin
+breeches, with a silver-fringed\tsk (appendage to them,
+which I dare not translate)\tsk he put his breeches, with
+his fringed cod-piece on, and forth\-with with his short
+scymetar in his hand, walked out to the grand parade.
 
-The stranger had just taken three turns upon the parade, when he perceived the
+\tight{The stranger had just taken three turns} upon the parade, when he perceived the
 trumpeter’s wife at the opposite side of it\tsk so turning short, in pain lest his
 nose \stick{should be attempted, he instantly went}\catch{back}
 %----------
-\textit{ricas manticæ imposuit mulumque educi jussit.}
+\textit{ricas manticæ imposuit mulumque educi\break jussit.}
 
 \vskip2\baselineskip
 
-\textit{Francofurtum proficiscor, ait ille, et Argentoratum quatuor
+\textit{Francofurtum proficiscor, ait ille, et\break Argentoratum quatuor
 abhinc hebdomadis revertar.}
 
-\textit{Bene curasti hoc jumentam (ait) muli faciem manu
+\textit{Bene curasti hoc jumentam (ait) muli\break faciem manu
 demulcens\tsk me, manticam\-que meam, plus sexcentis mille passibus
 portavit.}
 
 \vskip3\baselineskip
 \noindent
-\stick{\itshape \hfil Longa via est! respondet hospes, nisi plur-}
-\stick{\itshape imum esset negoti.\tsk Enimvero, ait peregri-}
-\stick{\itshape nus, a nasorum promontorio redij, et nas-}
-\stick{\itshape um speciosissimum, egregiosissimumque}\catch{\textit{quem}}
+\stick{\itshape \indent Longa via est! respondet hospes, nisi}
+\stick{\itshape plurimum esset negoti.\tsk Enimvero, ait}
+\stick{\itshape peregrinus, a nasorum promontorio redij,}
+\stick{\tighter{\itshape et nasum speciosissimum,
+egregiosissimumque}}\catch{\textit{quem}}
 %---------------
 back to his inn\tsh undressed himself,
 packed up his crimson-sattin breeches, 
@@ -347,8 +349,8 @@ I am going forwards, said the stranger, for
 \textit{Frankfort}\tsh and shall be back at
 \textit{Strasburg} this day month.
 
-I hope, continued the stranger, stroking down the face of
-his mule with his left hand as he was going to mount it,
+I hope, continued the stranger, stro\break king down the face of
+his mule with his left-hand as he was going to mount it,
 that you have been kind to this faithful slave of mine\tsk
 it has carried me and my cloak-bag, continued he, tapping
 the mule’s back, above six hundred leagues.
@@ -382,7 +384,7 @@ olet}\tsh
 \rightline{\textit{Carbunculus}}
 \newpage
 \noindent
-Noses; and have got me one of the goodliest and jolliest,
+Noses; and have got me one of the\break goodliest and jolliest,
 thank heaven, that ever fell to a single man’s lot.
 
 Whilst the stranger was giving this odd account of himself,
@@ -390,7 +392,8 @@ the master of the inn and his wife kept both their eyes
 fixed full upon the stranger’s nose\tsh\break By saint
 \textit{Radagunda}, said the inn-keeper’s wife to herself,
 there is more of it than in any dozen of the largest noses
-put together in all \textit{Strasburg!}\@ is it not, said she,
+put together in all \textit{Strasburg!}\@ is it not,
+said\break she,
 whispering her husband in his ear, is it not a noble nose?
 
 ’Tis an imposture, my dear, said the master of the
@@ -407,13 +410,13 @@ turpentine.\tsh\patch{’Tis}
 
 \vskip.5\baselineskip
 
-\smallit{Vivus est ait illa,\tsh \et\ si ipsa vivam tangam}.
+\smallit{Vivus est, ait illa,\tsh \et\ si ipsa vivam tangam}.
 
 \vskip\baselineskip
 
 \smallit{Votum feci sancto Nicolao, ait peregrinus,\break
-nasum meum intactum fore usque ad\tsk Quodnam tempus? illico respondit
-illa}.
+nasum meum intactum fore usque ad\tsk Quod-\break 
+nam tempus? illico respondit illa}.
 
 \vskip.5\baselineskip
 
@@ -432,23 +435,26 @@ There’s a pimple on it, said she.
 ’Tis a live nose, and if I am alive myself, said the
 inn-keeper’s, wife, I will touch it.
 
-I have made a vow to saint \textit{Nicolas} this day, said the
-stranger, that my nose shall not be touched till\tsk Here the
-stranger suspending his voice, looked up.\tsh\break
+I have made a vow to saint \textit{Nicolas}\break
+this day, said the stranger, that my nose\break
+shall not be touched till\tsk Here the stran-\break ger, 
+suspending his voice, looked up\tsh\break
 Till when?\@ said she hastily.
 
 It never shall be touched, said he,\break
 clasping his hands and bringing them close to his breast, till that hour.\tsh\break
 What hour? cried the inn keeper’s wife.\break
-\tsk Never!\tsk never! said
-the stranger, never till I am got\tsk For heaven sake,
-into what place? said she.\tsh The stranger rode away
+\tsh Never!\tsk never! said
+the stranger, never tell\sic\ I am got\tsk For heaven
+sake\break
+into what place? said she.\tsk The stranger rode away
 without saying a word.\patch{The}
 
 The stranger had not got half a league on his way towards
 \textit{Frankfort}, before all the city of \textit{Strasburg} was in an
 uproar about his nose. The \textit{Compline}-bells were just ringing
-to call the \textit{Strasburgers} to their devotions, and shut up the
+to call the \textit{Strasburgers} to\break
+their devotions, and shut up the
 duties of the day in prayer:\tsk no soul in all \textit{Strasburg}
 heard ’em\tsk the city was like a swarm of
 bees\tsh men, women, and children, (the
@@ -472,13 +478,14 @@ of\break
 Whilst all this confusion and disorder triumphed throughout the
 great city of \textit{Strasburg}, was the courteous stranger going on
 as gently upon his mule in his way to \textit{Frankfort}, as if he
-had no concern at all in the affair\tsh talking all the
+had had no concern at all in the affair\tsh talking all the
 way he rode in broken sentences, sometimes to his
 mule\tsk sometimes to himself\tsh sometimes to his Julia.
 
 O Julia, my lovely Julia!\tsk nay I cannot stop to let thee
 bite that thistle\tsk that ever 
-\stick{\tight{the suspected tongue of a rival should have}}\catch{robbed} robbed me of enjoyment when I was upon the point
+\stick{\tight{the suspected tongue of a rival should have}}\catch{robbed} 
+robbed me of enjoyment when I was\break upon the point
 of tasting it.\tsk
 
 \tsk Pugh!\tsk ’tis nothing but a thistle\tsk never mind
@@ -486,14 +493,14 @@ it\tsk thou shalt have a better supper at night.\tsk
 
 \tsh Banish’d from my country\tsk my friends\tsk from thee.\tsk
 
-Poor devil, thou’rt sadly tired with thy journey!\tsk
-come\tsk get on a little faster\tsk there’s nothing in my
+Poor devil, thou’rt sadly tired with\break
+thy journey!\tsk come\tsk get on a little faster\tsk there’s nothing in my
 cloak-bag but two shirts\tsk a crimson-sattin pair of
 breeches, and a fringed\tsk Dear Julia!
 
 \tsh But why to \textit{Frankfort?}\tsk is it that there is
 a hand unfelt, which secretly is conducting me through these
-meanders and unsuspected tracts?\tsk\patch{\tsk Stumbling!}
+meanders and unsuspected tracts!\tsk\patch{\tsk Stumbling!}
 
 \tsk Stumbling! by saint \textit{Nicolas!} every step\tsk why at this rate we shall be
 all night in getting in\tsh
@@ -524,17 +531,18 @@ reduction of its bulk, had that night been at the pains of slitting
 and dividing it into as many noses of different cuts and fashions,
 as there were\break heads in \textit{Strasburg} to hold them. The abbess of
 \textit{Quedlingberg}, who, with the four great dignitaries of her
-chapter, the prioress, the deaness, the sub-chantress, and senior
-canoness, had that week come to \textit{Strasburg} to consult the
-university\catch{upon} upon a case of conscience relating to their placket
-holes\tsk was ill all the night.
+chapter,\break the prioress, the deaness, the sub-chan\-tress, and senior
+canoness, had that week \tight{come to \textit{Strasburg} to consult the
+university}\catch{upon}
+\tight{upon a case of conscience relating to their}
+placket holes\tsk was ill all the night.
 
 \vskip -0.5\parskip
 
 The courteous stranger’s nose had got perched upon the top
-of the pineal gland of her brain, and made such
-rousing\break work in the
-fancies of the four great dignitaries of her chapter, they could not get a wink of
+of the pineal gland of her brain, and made such rousing\break 
+work in the fancies of the four great\break
+dignitaries of her chapter, they could not get a wink of
 sleep the whole night thro’ for it\tsh there was no
 keeping a limb still amongst them\tsh in short, they got
 up like so many ghosts.
@@ -602,18 +610,16 @@ search for it? Let it suffice to say, that the riot and disorder it occasioned i
 the \textit{Strasburgers} fantacies was so general\tsk such an overpowering mastership
 had it got of all the faculties of the \textit{Strasburgers}
 minds\tsk so\catch{many}
-many strange
-things, with equal confid-
-\stick{ence on all sides, and with equal
-eloquence}
+many strange things, with equal confid-\break
+\tight{ence on all sides, and with equal eloquence}
 in all places,
 were spoken and sworn to concerning it, that turned the
 whole\break stream of all
 discourse and wonder towards it\tsk every soul, good and bad\tsk rich and poor\tsk learned
 and unlearned\tsk doctor and student\tsk mistress and maid\tsk gentle and simple\tsk
 nun’s flesh and wo\-man’s flesh, in \textit{Strasburg} spent their time in hearing
-tidings about it\tsk every eye in \textit{Strasburg}
-languished to see it\tsk every
+tidings about it\tsk every\break
+eye in \textit{Strasburg} languished to see it\tsk every
 finger\tsk every thumb in \textit{Strasburg} burned to touch it.
 
 
@@ -629,30 +635,33 @@ together in two points\tsk namely, that he was gone to
 \textit{Strasburg} till that day month; and secondly,
 whether his nose was true or false, that the stran\-ger
 himself was one of the most perfect 
-\stick{paragons of beauty--the finest made man!}\break
+\stick{\tight{paragons of beauty--the finest made man!}}\break
 \stick{\tsk the most genteel!\tsk the most generous}\break
 \stick{of his purse\tsk the most courteous in his}
 carriage that had ever entered the gates of
 \textit{Strasburg}\tsk that as he rode, with his scymetar slung
-loosely to his wrist, thro’ the streets\tsk and walked with
-his crimson-sattin breeches across the parade\tsk ’twas with
+loosely to his wrist, thro’\break
+\stck{the streets\tsk and walked with his crimson-}
+sattin breeches across the parade\tsk ’twas with
 so sweet an air of careless modesty, and so manly withal\tsk
 as would have put the heart in jeopardy (had his nose not\catch{stood}
 stood in his way) of every virgin who had cast her eyes upon
 him.
 
-I call not upon that heart which is a stranger to the throbs and
-yearnings of curiosity, so excited to justify the abbess of
-\textit{Quedlingberg}, the prioress, the deaness, and subchantress
-for sending at noon-day for the trumpeter’s wife: she went
-through the streets of \textit{Strasburg} with her husband’s
-trumpet in her hand,\tsk the best apparatus the straitness
-of the time would allow her, for the illustration of her theory\tsk she staid no longer than
+I call not upon that heart which is a stranger to the throbs
+and yearnings of curiosity, so excited to justify the abbess
+of \textit{Quedlingberg}, the prioress, the deaness, and
+subchantress for sending at noon-day for the trumpeter’s
+wife: she went through the streets of \textit{Strasburg}
+with her husband’s trumpet in her hand;\tsk\break the best
+apparatus the straitness of the time would allow her, for
+the illustration of her theory\tsk she staid no longer than
 three days.
 
 The centinel and the bandy-legg’d\break
-drummer!\tsh nothing on this side of old \textit{Athens}
-could equal them! they read their lectures under the city gates to
+drummer!\tsk nothing on this side of old \textit{Athens}
+could equal them! they read\break 
+their lectures under the city gates to\break
 comers and goers, with all the pomp\catch{of} of a \textit{Chrysippus} and a
 \textit{Crantor} in their porticos.
 
@@ -692,14 +701,15 @@ keep clear of them for their bloods and souls\tsh the
 stranger’s nose had nothing to do either with wens or
 œdematous swellings.
 
-It was demonstrated however very satisfactorily, that such a ponderous mass of
+It was demonstrated however very sa\-tisfactorily, that such a ponderous mass of
 heterogenous matter could not be congested and conglomerated to the
 nose, whilst the infant was \textit{in Utero}, without destroying the
-statical balance of the fœtus, and throwing it plump upon its
+statical balance of the\break
+fœtus, and throwing it plump upon its
 head nine months before the time.\tsh
 
 \tsk The opponents granted the theory\tsk\break they
-denied the co\rotatebox[origin=c]{180}{n}sequences.
+denied the co\rotatebox[origin=c]{180}{n}\sic sequences.
 
 And if a suitable provision of veins, arteries, \etc said
 they, was not laid in,\catch{for} for the due nourishment of such a nose, in
@@ -707,7 +717,7 @@ the very first stamina and rudiments of its formation  before it
 came into the world (bating the case of Wens) it could not
 regularly grow and be sustained afterwards.
 
-This was all answered by a dissertation upon nutriment, and the
+\tight{This was all answered by a dissertation}\break upon nutriment, and the
 effect which nutriment had in extending the vessels, and in the
 increase and prolongation of the muscular parts to the greatest
 growth and expansion imaginable\tsk In the triumph of which
@@ -721,7 +731,7 @@ happen to them so long as a man had but one stomach and\catch{one}
 they, being the
 only organ destined for the reception of food, and turning
 it into chyle,\tsk and the lungs the only engine of
-\stick{sanguification\tsk it could possibly work off}
+\stck{sanguification\tsk it could possibly work off}
 no more, than
 what the appetite brought it: or admitting the possibility
 of a man’s overloading his stomach, nature had set bounds
@@ -757,8 +767,9 @@ as the faculty itself.\patch{They}
 They amicably laid it down, that there was a just and
 geometrical arrangement and proportion of the several parts of the
 human frame to its several destinations, offices, and functions,
-which could not be transgressed but within certain limits\tsk
-\stick{that nature, though she sported\tsk she}
+which could not be transgressed but within certain
+limits\break
+\stick{\tsk that nature, though she sported\tsk she}
 \stick{sported within a certain circle;\tsk and they}
 could not agree about the diameter of it.
 
@@ -780,14 +791,14 @@ nothing but the stagnation of the blood\tsh
 I deny the definition\tsh Death is the separation of
 the soul from the body, said his antagonist\tsk Then we
 don’t agree about our weapons, said the
-logician\tsk Then there is an end of the dispute, replied the
+logician\tsk Then there is an end of the dispute, re\-plied the
 antagonist.
 
 The civilians were still more concise: what they offered being
 more in the nature of a decree\tsk than a dispute.
 
 \tsk Such a monstrous nose, said they, 
-\stick{had it been a true nose, could not possibly}
+\stck{had it been a true nose, could not possibly}
 \stick{have been suffered in civil society\tsk and if}\catch{false}
 false\tsk to impose upon society with such false signs and
 tokens, was a still greater violation of its rights, and must have
@@ -795,7 +806,7 @@ had still less mercy shewn it.
 
 The only objection to this was, that\break
 if it proved any thing, it proved the\break
-stranger’s nose was neither true nor false.
+\stck{stranger’s nose was neither true nor false.}
 
 This left room for the controversy to go on. It was maintained by the advocates
 of the ecclesiastic court, that there was nothing to inhibit a decree, since
@@ -806,12 +817,17 @@ it was answered, it was impossible there should be such a place as the
 Promontory of Noses, and the learned be ignorant where it lay. The commissary
 of the bishop of \textit{Strasburg} undertook the\catch{advocates,}
 advocates, explained this matter in a\break
-\stick{treatise upon proverbial phrases, shewing}
+\stck{treatise upon proverbial phrases, shewing}
 them, that the Promontory of Noses was
-a mere allegorick expression, importing no more than that nature
+a mere allegoric expression, importing no more than that nature
 had given him a long nose: in proof of which, with great learning, he cited the
 underwritten au-\break
-thorities \footnote{Nonnulli ex nostratibus eadem loquendi \vrule height 12pt width 0pt
+thorities \fnast, which had decided the point\break
+\rightline{incon-}
+
+\vfill
+\begingroup\footnotesize
+\indent\fnast\enspace Nonnulli ex nostratibus eadem loquendi 
 formulâ utun. Quinimo et Logistæ \& Canonistæ\tsh Vid.\@
 Parce Bar e Jas in d.\@ L.\@ Provincial.Constitut.\break de
 conjec.\@ vid.\@ Vol.\@ Lib.\@ 4.\@ Titul.\@ 1.\@ N.\@ 7.\@
@@ -824,13 +840,14 @@ Tubal, Sentent.\@ \& Prov.\@ cap.\@ 9.\@ ff.\@ 11, 12.\@ obiter.\break
 V.\@ et Librum, cui Tit.\@ de Terris \& Phras.\@ Belg.\break
 ad finem cum, Comment.\@ N.\@ Bardy Belg.\@ Vid.\break
 Scrip.\@ Argentotarens.\@ de Antiq.\@ Ecc.\@ in Episc.\@ Ar\-chiv.\@
-fid.\@ coll.\@ per Von Jacobum Koinshoven Folio Argent.\@
+fid.\@ coll.\@ per Von Jacobum Koinshoven Fo\-lio Argent.\@
 1583, præcip.\@ ad finem.  Quibus add.\@ Rebuff in L.\@
 obvenire de Signif.\@ Nom.\@ ff.\@ fol.\@ \& de Jure, Gent.\@
 \& Civil.\@ de protib.\@ aliena feud.\@ per federa, test.\@
 Joha.\@ Luxius in prolegom.\@ quem velim videas, de Analy.\@
-Cap.\@ 1, 2, 3.\@ Vid.\@ Idea.},
-which had decided the point\catch{incon-}
+Cap.\@ 1, 2, 3. Vid.\@ Idea.\par\endgroup
+
+\newpage\noindent
 incontestably, had it not appeared that a dispute
 about some franchises of dean and chapter-lands had been determined by it
 nineteen years before.
@@ -842,45 +859,53 @@ that the two universities of \textit{Strasburg}\tsk the
 \textit{Jacobus Surmis}, counsellor of the senate,\tsk
 and\break
 the \textit{Popish}, founded by \textit{Leopold}, arch-duke
-of \textit{Austria}, were, during all this time, employing
-the whole depth of their know\-ledge (except just what the
-affair of the abbess of \textit{Quedlinberg}’s placket-holes
-required)\tsh in determining the point of \textit{Martin
-Luther}’s damnation.
+of \textit{Austria}, were, during all this time,\break 
+employing the whole depth of their\break 
+knowledge (except just what the affair\break
+of the abbess of \textit{Quedlinberg}’s placket-\break
+\stck{holes required)\tsk in determining the point}
+of \textit{Martin Luther}’s damnation.
 
 The \textit{Popish} doctors had undertaken to demonstrate
 \textit{a priori}; that from the ne-\catch{cessary} cessary influence of the
 planets on the twenty-second day of \textit{October}
 1483\tsh when the moon was in the twelfth house\break
-\tsk \textit{Jupiter}, \textit{Mars}, and \textit{Venus} in the third,
+\tsk \textit{Jupiter}, \textit{Mars}, and \textit{Venus} in the third,\break
 the \textit{Sun}, \textit{Saturn}, and \textit{Mercury}, all got together
 in the fourth\tsk that he must in course, and unavoidably
 be a damn’d\break
 \stick{man\tsk and that his doctrines, by a direct}
 corollary, must be damn’d doctrines too.
 
-\noindent
-\stick{\hfill By inspection into his horoscope, where}
+\tight{By inspection into his horoscope, where}
 five planets were in coition all at once
-with scorpio \footnote{\ Haec mira, satisque horrenda. \vrule height 12pt width 0pt
-Planetarum coitio sub Scarpio Asterismo in nonâ cœli
-statione, quam Arabes religioni deputabant efficit
-\textit{Martinum Lutherum} sacrilegum hereticum, christianæ
-religionis hostem acerrimum atque prophanum, ex horoscopi
-directione ad Martis coitum, religiosissimus obiit, ejus
-Anima seclestissima ad infernos navigavit\tsk ab Alecto,
-Tisiphone et Megara flagellis igneis cruciata pereniter.
+with scorpio \fnast\ (in reading this my father\break
+\rightline{would}
+\vfill
 
-\tsk Lucas Gaurieus in Tractatu astrologico de\break
-præteritis multorum hominum accidentibus per genituras examinatis.} (in reading this my
-father\catch{would}
+\begingroup\footnotesize
+\indent\fnast\enspace
+Haec mira, satisque horrenda. Planetarum\break
+coitio sub Scarpio Asterismo in nonâ cœli statione,\break
+quam Arabes religioni deputabant efficit \textit{Martinum\break
+Lutherum} sacrilegum hereticum, christianæ reli-\break
+gionis hostem acerrimum atque prophanum, ex\break
+horoscopi directione ad Martis coitum, religiosis-\break
+simus obiit, ejus Anima seclestissima ad infernos\break
+navigavit\tsk ab Alecto, Tisiphone et Megara fla-\break 
+gellis igneis cruciata pereniter.\\
+\hbox{}\quad\tsk Lucas Gauricus in Tractatu astrologico de\break
+præteritis multorum hominum accidentibus per\break
+genituras examinatis.\par\endgroup
+
+\newpage\noindent
 \stick{would always shake his head) in the}
 \stick{ninth house, which the \textit{Arabians} allotted}
 to religion\tsk
 it appeared that \textit{Martin Lu\-ther} did not care one stiver about the matter
 \tsk and that from the horoscope directed to the conjunction of \textit{Mars}\tsk they
 made it plain likewise he must die\break
-\lower.3ex\hbox{c}ursing and
+\lower.3ex\hbox{c}\sic ursing and
 blaspheming\tsk with the blast of
 which his soul (being steep’d in guilt) sailed before the wind, in the lake of
 \break
@@ -888,11 +913,13 @@ hell fire.
 
 The little objection of the \textit{Lutheran}\break
 doctors to this, was, that it must certainly be the
-soul of another man, born \textit{Oct}.\@ 22,\break
-\null\quad 83, which was forced to sail down before the wind in that manner\tsk inasmuch as it
+soul of another man, born \textit{Oct}.\break
+22, \quad\sic 83, which was forced to sail down \tight{before
+the wind in that manner\tsk inasmuch} as it
 appeared from the register of \textit{Islaben} in the county of
-\textit{Mansfelt}, that \textit{Luther} was not born in the year 1483,
-but in 84; and not on the 22d day of \textit{October},\catch{but} but on the
+\textit{Mansfelt}, that \textit{Luther}\break
+was not born in the year 1483, but in\break
+84; and not on the 22d day of \textit{October},\catch{but} but on the
 10th of \textit{November}, the eve of \textit{Martinmas}-day, from
 whence he had the name of \textit{Martin}.
 
@@ -914,7 +941,7 @@ had \textit{Luther} here been called by any other name but
 eternity\tsk Not that I look upon \textit{Martin}, he would
 add, as a good\catch{name}
 name\tsk far from it\tsk ’tis something better than a
-neutral, and but a little\tsk yet little as it is you see it
+neutral, and but a little\tsk yet little as it is, you see it
 was of some service to him.
 
 My father knew the weakness of this
@@ -926,8 +953,8 @@ certainly for this reason, that though there are many stories in
 \tight{\textit{Hafen Slawkenbergius}}’s Decads full as entertaining as
 this I am translating, yet there is not one amongst them which my
 father read over with half the delight\tsk it flattered
-two of his strangest hypotheses together\tsk his
-\textsc{Names} and his \textsc{Noses}\tsk I
+two of \tight{his strangest hypotheses together\tsk his
+\textsc{Names}} and his \textsc{Noses}\tsk I
 will be bold to say, he might have read all the books in the
 \textit{Alexandrian} Library, had not fate taken\catch{other} other care of them,
 and not have met with a book or passage in one, which hit two such
@@ -935,14 +962,17 @@ nails as these upon the head at one stroke.]
 
 The two universities of \textit{Strasburg} were hard tugging at
 this affair of \textit{Luther}’s navigation. The Protestant
-doctors had demonstrated, that he had not sailed right before the
+doctors had\break 
+\stck{demonstrated, that he had not sailed right}
+before the
 wind, as the Popish doctors had pretended; and as every one knew
 there was no sailing full in the teeth of it,\tsk they were going
 to settle, in case he had sailed, how many points he was off;
 whether \textit{Martin} had doubled the cape, or had fallen upon a
 lee-shore; and no doubt, as it was an enquiry of much edi\-fication,
-at least to those who understood \stick{this sort of
-\textsc{navigation}, they had gone on} with it in spite of the
+at least to those who understood\break
+\stck{this sort of \textsc{navigation}, they had gone on} 
+with it in spite of the
 size of the stranger’s nose, had not the size of the
 stranger’s\catch{nose} nose drawn off the attention of the world from
 what they were about\tsk it was their business to
@@ -950,17 +980,18 @@ follow.\tsh
 
 \vskip -2pt
 
-The abbess of \textit{Quedlinberg} and her four \stick{dignitaries was
-no stop; for the enormity} of the stranger’s nose running full
-as much in their fancies as their case of
-conscience\break\tsk The affair of their placket-holes kept
+The abbess of \textit{Quedlinberg} and her four 
+\stick{dignitaries was no stop; for the enormity} 
+\stick{\tight{of the stranger’s nose running full as much}}
+in their fancies as their case of conscience\break
+\tsk The affair of their placket-holes kept
 cold\tsk In a word, the printers were ordered to distribute their
 types\tsk all controversies dropp’d.
 
 \vskip -2pt
 
 ’Twas a square cap with a silver tassel upon the crown of
-it\tsk to a nut shell\tsk to have guessed on which side of the
+it\tsk to a nut shell\tsk\break to have guessed on which side of the
 nose the two universities would split.
 
 \vskip -2pt
@@ -981,7 +1012,7 @@ nose the two universities would split.
 
 ’Tis impossible, said the other.
 
-God’s power is infinite, cried the Nosarians, he can do
+God’s power is infinite, cried the No\-sarians, he can do
 any thing.
 
 He can do nothing, replied the Anti-nosarians, which implies
@@ -989,9 +1020,9 @@ contradictions.
 
 He can make matter think, said the Nosarians.
 
-\noindent
-\stick{\hfil \tight{As certainly as you can make a velvet cap}}
-\stick{\tight{out of a sow’s ear, replied the Antinosarians.}}
+
+\tighter{As certainly as you can make a velvet cap}\break
+\stick{\tighter{out of a sow’s ear, replied the Antinosarians.}}
 
 He cannot make two and two five, replied the Popish
 doctors.\tsh ’Tis false, said their opponents.\tsk
@@ -1006,20 +1037,20 @@ if he thinks fit, as big as the steeple of \textit{Strasburg}.
 
 Now the steeple of \textit{Strasburg} being the biggest and the
 tallest church-steeple to be seen in the whole world, the
-Antino\-sarians denied that a nose of 575 geometrical feet in length
+Antino\-sarians denied that a nose of 575 geome\-trical feet in length
 could be worn, at least by a middle-siz’d
 man\tsk The Popish doctors swore it could\tsk The
 \textit{Lutheran} doctors said No;\tsk it could not.
 
 This at once started a new dispute, which they pursued a great
-way, upon the extent and limitation of the moral and natural
+way upon the extent and limitation of the moral and natural
 attributes of God\tsk That controversy led them naturally into
 \textit{Thomas}\catch{\textit{Aquinas},} \textit{Aquinas}, and \textit{Thomas
 Aquinas} to the\break devil.
 
-The stranger’s nose was no more heard \stick{of in the
-dispute\tsk it just served as a frigate}
-to launch them into the gulph of school-divinity\tsk and then they all
+\tight{The stranger’s nose was no more heard}
+\stck{of in the dispute\tsk it just served as a frigate}
+to launch them into the gulph of school-divinity,\tsk and then they all
 sailed before the wind.
 
 Heat is in proportion to the want of true knowledge.
@@ -1027,9 +1058,9 @@ Heat is in proportion to the want of true knowledge.
 The controversy about the attributes, \etc instead of
 cooling, on the contrary had inflamed the \textit{Strasburgers}
 imaginations to a most inordinate degree\tsk The less they
-understood of the matter the greater was their wonder about
+understood of the matter, the greater was their wonder about
 it\tsk they were left in all the distresses of desire
-unsatisfied\tsh saw their doctors, the
+unsatisfied\tsk saw their doctors, the
 \textit{Parchmentarians}, the \textit{Brassarians}, the
 \textit{Turpentarians}, on one side\tsk the Popish
 doctors\catch{on}
@@ -1055,7 +1086,7 @@ by the hand of fate to play upon your hearts?\tsk I dip not
 my pen into my ink to excuse the surrender of yourselves\tsk
 ’tis to write your\catch{panegyrick.} panegyrick. Shew me a city so macerated
 with expectation\tsh who neither eat, or drank, or slept, or
-prayed, or hearkened to the calls either of religion or
+prayed, or heark-\sic\break ned to the calls either of religion or
 nature, for seven and twenty days together, who could have
 held out one day longer.
 
@@ -1065,13 +1096,13 @@ return to \textit{Strasburg.}
 Seven thousand coaches (\textit{Slawkenber\-gius} must certainly have made some
 mistake in his numeral characters) 7000\break
 coaches\tsk 15000 single horse chairs\tsh\break
-20000 waggons, crowded as full as they could all hold with senators, counsellors, 
+20000 waggons, crouded as full as they could all hold with senators, counsellors, 
 syndicks\tsk beguines, widows, wives, virgins, canons,
 concubines, all in their\break
 \stick{coaches\tsk The abbess of \textit{Quedlinberg}, with}
 \tight{the prioress, the deaness and sub-chantress}\catch{leading}
 leading the procession in one coach, and the dean of \textit{Strasburg}, with the
-four great \stick{dignitaries of his chapter, on her left-hand}\break
+four great \stck{dignitaries of his chapter, on her left-hand}\break
 \stick{\tsk the rest following higglety-pigglety}
 as they could; some on horseback\tsh 
 some on foot\tsk some led\tsk some driven\tsk
@@ -1089,7 +1120,7 @@ tale, with parts rightly disposed, not only rejoiceth
 a \textsc{Drama}, but rejoiceth moreover in all the essential
 and integrant parts of it\tsh\break
 it has its \textit{Protasis}, \textit{Epitasis}, \textit{Catastasis},\break
-\lower.2ex\hbox{i}ts \textit{Catastrophe} or
+\lower.2ex\hbox{i}\sic ts \textit{Catastrophe} or
 \textit{Peripeitia} growing one out of the other in it, in the order
 \textit{Aristotle} first planted them\tsh without which a
 tale\catch{had} had better never be told at all, says\break
@@ -1134,11 +1165,13 @@ is the part of it I am going to relate.
 We left the stranger behind the curtain asleep\tsk he
 enters now upon the stage.
 
-\tsk What dost thou prick up thy ears at?\tsk ’tis nothing
-but a man upon a horse\tsk was the last word the stranger
-uttered to his mule. It was not proper then to tell the
-reader, that the mule took his master’s word for it; and
-without any more \textit{ifs} or \textit{ands}, let the
+\tsk What dost thou prick up thy ears \tight{at?\tsk ’tis nothing
+but a man upon a horse}\break
+\tsk was the last word the stranger uttered
+to his mule. It was not proper then to\break
+tell the reader, that the mule took his\break
+master’s word for it; and without any\break
+more \textit{ifs} or \textit{ands}, let the
 traveller and his horse pass by.
 
 The traveller was hastening with all diligence to get to
@@ -1174,9 +1207,10 @@ the\break host.
 \tsk The stranger, continued he, should have slept in
 it, for ’tis my best bed, but upon the score of his
 nose\tsk He has got a defluxion, said the
-traveller\tsk Not that I know, cried the
-host\tsk But ’tis a camp-bed, and \textit{Jacinta},
-said he, looking towards the maid, imagined there was not room in
+traveller\tsk Not that 
+I know, cried the host\tsk But ’tis a camp-\break 
+bed, and \textit{Jacinta}, said he, looking to-\break 
+wards the maid, imagined there was not room in
 it to turn his nose in\tsk Why so? cried the traveller,
 starting back.\tsk It is so long a nose, replied the
 host.\tsk The traveller fixed his eyes upon
@@ -1184,12 +1218,13 @@ host.\tsk The traveller fixed his eyes upon
 right\catch{knee}
 knee\tsk had just got his hand laid upon\break his
 breast\tsk Trifle not with my anxiety,
-\stick{said he rising up again.\tsk ’Tis no trifle,}
+\stick{said he, rising up again.\tsk ’Tis no trifle,}
 \stick{said \textit{Jacinta}, ’tis the most glorious
 nose!}\break
 \tsk The traveller fell
-upon his knee again\tsk laid his hand upon his breast\tsk then,
-said he, looking up to heaven! thou hast conducted me to the end of
+upon his knee again\tsk\break
+\tight{laid his hand upon his breast\tsk then, said he,} 
+looking up to heaven! thou hast conducted me to the end of
 my pilgrimage\break\tsh ’Tis \textit{Diego!}
 
 The traveller was the brother of the Julia, so often
@@ -1197,8 +1232,8 @@ invoked that night by the stranger as he rode from \textit{Strasburg}
 upon his mule; and was come, on her part,\break 
 in quest of him. He had accompanied\break
 his sister from \textit{Valadolid} across the
-\textit{Pyrenean} mountains thro’ \textit{France}, and had many an
-entangled skein to wind off in pursuit of him thro’ the many
+\textit{Pyrenean} mountains thro’ \textit{France}, and had\break
+many an entangled skein to wind off in pursuit of him thro’ the many
 meanders and abrupt turnings of a lover’s thorny tracks.\patch{\tsk Julia}
 
 \tsk Julia had sunk under it\tsk and had
@@ -1213,7 +1248,8 @@ the letter into his hands, Julia took to her bed.
 name)\tsh tho’ the camp-bed was as soft as any one
 in \textit{Alsace}, yet he could not shut his eyes in
 it.\tsk As soon as it was day he rose, and hearing
-\textit{Diego} was risen too, he enter’d his chamber, and discharged his
+\textit{Diego} was risen too,\break
+he enter’d his chamber, and discharged his
 sister’s commission.
 
 The letter was as follows:\patch{Seig.}
@@ -1267,7 +1303,7 @@ The letter was as follows:\patch{Seig.}
 \indent\lqq If the gentleness of your carriage\break
 \lqq has not belied your heart, you will fly\break
 \lqq to me, almost as fast as you fled from\break
-\lqq me\tsk haste as you will\tsh you will arrive\break
+\lqq me\tsk haste as you will, you will arrive\break
 \lqq but to see me expire.\tsk ’Tis a bitter\break
 \lqq draught, \textit{Diego}, but oh!\@ ’tis embitter’d\break
 \lqq still more by dying \textit{un}\tsh.”
@@ -1278,8 +1314,9 @@ She could proceed no farther.
 \textit{unconvinced}, but her strength would not enable her to finish her
 letter.
 
-The heart of the courteous \textit{Diego} overflowed as he read
-the letter\tsk he ordered his mule forthwith and
+The heart of the courteous \textit{Diego}\break
+overflowed as he read the letter\tsk he or-\break
+dered his mule forthwith and
 \textit{Fernandez}’s\catch{horse} horse
 to be saddled; and as no vent in
 prose is equal to that of poetry in such
@@ -1292,7 +1329,7 @@ mind against the wall as follows.
 \bigskip
 \centerline{\lsss{ODE}.}
 \vskip-0.5\parskip
-\bgroup\itshape\small\noindent
+\bgroup\itshape\noindent
 \null\quad Harsh and untuneful are the notes of love,\\
 \null\qquad Unless my Julia strikes the key,\\
 \null\quad Her hand alone can touch the part,\\
@@ -1338,7 +1375,7 @@ strongest\tsk the \textit{Strasburgers} felt the full force
 of it; and that for three days and nights they were tossed to and
 fro in the \textit{Frankfort} road, with the tempestuous fury of this
 passion, before they could submit to return home.\tsk When
-alas! an event was prepared for them, of all other, the most
+alas! an event was prepared for them, of all others the most
 grievous that could befal a free people.
 
 As this revolution of the \textit{Strasburgers} affairs is often
@@ -1384,7 +1421,7 @@ Alas!\@ alas!\@ cries \textit{Slawkenbergius}, ’twas not the
 \textit{French},\tsk ’twas \textsc{curiosity}
 pushed them open\tsk The \textit{French} indeed, who are
 ever upon the catch, when they saw the \textit{Strasburgers}, men,
-women and children,\catch{all} all marched out to follow the stranger’s
+women, and children,\catch{all} all marched out to follow the stranger’s
 nose\tsh each man followed his own, and marched in.
 
 Trade and manufactures have decayed and gradually grown down
@@ -1393,15 +1430,15 @@ assigned; for it is owing to this only, that Noses have ever so run
 in their heads, that the \textit{Strasburgers} could not follow their
 business.
 
-Alas! alas! cries \textit{Slawkenbergius}, making an
+Alas! alas! cries \textit{Slawkenbergius}, ma\-king an
 exclamation\tsk it is not the first\tsh and I fear will not be the last
 fortress
 \stick{that has been either won\tsh or lost by}\break
 \textsc{Noses}.
 
 \bigskip
-\centerline{The \lsss{END} of}
-\centerline{\textit{Slawkenbergius}’s \textsc{Tale}.}
+\centerline{The\enspace \lsss{END}\enspace of}
+\centerline{\textit{Slawkenbergius}’s \lss{\textsc{Tale}}.}
 
 \bigskip
 
@@ -1409,14 +1446,14 @@ fortress
 \newpage
 \section{\lsss{CHAP}.\enspace I.}
 
-\lettrine{W}{\,\ls{ith}} all this learning upon Noses
-running perpetually in my fa-\break ther’s facy\tsk with so
-many family prejudices\tsk and ten decades of such tales
+\dropcap{W}{ith} all this learning upon Noses
+running perpetually in my fa-\break ther’s facy\sic\tsk with so
+many family prejudices\tsk and ten decads of such tales
 running on for ever along with them\tsk how was it possible
 with such exquisite\tsk was it a true nose?\tsk That a man
 with such exquisite feelings as my father had, could bear
 the shock at all below stairs\tsk or indeed above stairs, in
-any other posture, but the very posture I have described?
+any other posture, but the very posture I have described.
 
 \tsk Throw yourself down upon the bed, a dozen times\tsk
 taking care only to place a looking-glass first in a chair
@@ -1451,14 +1488,14 @@ Heavens! thou art a strange creature, \textit{Slawkenbergius!}
 what a whimsical view of the involutions of the heart of woman hast
 thou opened! how this can ever be translated, and yet if this
 specimen of \textit{Slawkenbergius}’s tales, and the
-exquisitiveness of his moral, should please the
+exquisitiveness of his moral should please the
 world\tsk translated shall a couple of volumes
 be.\tsk Else, how this can ever be translated into good
 \textit{English}, I have no sort of conception.\tsk There seems in
 some passages to want a sixth sense to do it\catch{rightly.}
 rightly.\tsh What can he mean by the\break 
 lambent pupilability of slow, low, dry\break
-chat, five notes below the natural tone\break
+chat, five notes below the natural tone,\break
 \tsh which you know, madam, is little more than a
 whisper? The moment I pronounced the words, I could perceive an
 attempt towards a vibration in the strings, about the region of the
@@ -1476,14 +1513,14 @@ of each other\tsk but to look into the\break
 pupils\tsk is not that dangerous?\tsh But it\break
 can’t be avoided\tsk for to look up to the\catch{cieling,} cieling, in
 that case the two chins unavoidably meet\tsk and to look
-down into each other’s lap, the foreheads come to immediate
+down into each others lap, the foreheads come to immediate
 contact, which at once puts an end to the conference\tsk I
 mean to the sentimental part of it.\tsh What is left,
 madam, is not worth stooping for.
 
 \section{\lsss{CHAP}.\enspace II.}
 
-\lettrine{M}{y} father lay stretched across the
+\dropcap{M}{y} father lay stretched across the
 bed as still as if the hand of death had pushed him down, for a
 full hour and a half, before he began to play upon the floor
 with the toe of that foot which hung over the bed-side; my uncle
@@ -1514,8 +1551,8 @@ He broke silence as follows.
 
 \section{\lsss{CHAP}.\enspace III.}
 
-\lettrine{D}{\ls{id}} ever man, brother \textit{Toby}, cried\break
-my father, raising himself upon\break
+\dropcap{D}{id} ever man, brother \textit{Toby}, cried\break
+my father, raising himself up upon\break
 his elbow, and turning himself round to the opposite side of
 the bed, where my uncle \textit{Toby} was sitting in his old
 fringed chair, with his chin resting upon his\break
@@ -1523,7 +1560,7 @@ crutch\tsk did ever a poor unfortunate man, brother
 \textit{Toby}, cried my father, receive so many lashes?\tsh
 The most I ever saw given, quoth my uncle \textit{Toby}
 (ringing\catch{the} the bell at the bed’s head for \textit{Trim})
-was to a grenadier, I think in \textit{Mackay}’s regiment.
+was to a grenadier, I think in \textit{Makay}’s regiment.
 
 \tsh Had my uncle \textit{Toby} shot a bullet thro’ my
 father’s heart, he could not have fallen down with his nose
@@ -1534,7 +1571,7 @@ Bless me! said my uncle \textit{Toby}.
 \bigskip
 \section{\lsss{CHAP}.\enspace IV.}
 
-\lettrine{W}{\,\ls{as}} it \textit{Makay}’s regiment, quoth\break
+\dropcap{W}{as} it \textit{Makay}’s regiment, quoth\break
 my uncle \textit{Toby}, where the poor\break
 grenadier was so unmercifully whipp’d at \textit{Bruges}
 about the ducats.\tsk O Christ! he was innocent! cried
@@ -1550,16 +1587,16 @@ like a\break coward.\tsh Tears are no proof of cowardice,
 \textit{Trim.}\tsk I drop them oft-times myself, cried my
 uncle \textit{Toby}.\tsh I know your honour does, replied
 \textit{Trim}, and so am not ashamed of it myself.\tsk But
-to think, may it please your honour, continued
+to think,\break may it please your honour, continued
 \textit{Trim}, a tear stealing into the corner of his eye as
 he spoke\tsk to think of two virtuous lads with hearts as
 warm in their bodies, and as honest as God could make
 them\tsk the children of honest people, going forth with
 gallant spirits to seek their fortunes in the world\tsk and
 fall into\catch{such} such evils!\tsk poor \textit{Tom!} to be tortured
-upon a rack for nothing\tsk but marrying a Jew’s widow who
-sold sausages\tsk honest \textit{Dick Johnson}’s soul to be
-scourged out of his body, for the ducats another man put
+upon a rack for nothing\tsk but marrying\break
+\tight{a \textit{Jew}’s widow who sold sausages\tsk honest}
+\textit{Dick Johnson}’s soul to be scourged out of his body, for the ducats another man put
 into his knapsack!\tsk O!\tsk these are misfortunes, cried
 \textit{Trim}, pulling out his handkerchief\tsk these
 are misfortunes, may it please your honour, worth lying down
@@ -1569,11 +1606,11 @@ and crying over.
 \tsk My father could not help blushing.
 
 \tsk ’Twould be a pity, \textit{Trim}, quoth my
-\stick{uncle \textit{Toby}, thou shouldst ever feel sorrow}
+\stck{uncle \textit{Toby}, thou shouldst ever feel sorrow}
 \stick{of thy own\tsh thou feelest it so tenderly}
 for others.\tsh Alack-o-day, replied the 
 corporal, brightening up his face\tsk your
-honour knows I have neither wife or child\break
+\stck{honour knows I have neither wife or child}\break
 \tsh I can have no sorrows in this world.\break
 \tsk My father could not help smiling.\tsk\catch{As}
 As few as any man, \textit{Trim}, replied my uncle
@@ -1602,13 +1639,13 @@ have left him moreover a pension, continued my uncle
 
 \section{\lsss{CHAP}.\enspace V.}
 
-\lettrine{I}{\,s} this a fit time, said my father to\break
+\dropcap{I}{s} this a fit time, said my father to\break
 himself, to talk of \ls{\textsc{pensions}} and\break
 \ls{\textsc{grenadiers}?}
 
 \section{\lsss{CHAP}.\enspace VI.}
 
-\lettrine{W}{\,\ls{hen}} my uncle \textit{Toby} first men-\break
+\dropcap{W}{hen} my uncle \textit{Toby} first men-\break
 tioned the grenadier, my father,\break
 I said, fell down with his nose flat to the quilt, and as
 suddenly as if my uncle\catch{\textit{Toby}}
@@ -1618,8 +1655,8 @@ his nose into the same precise attitude in which he lay
 first described; so that when corporal \textit{Trim} left
 the room, and my father found himself disposed to rise off
 the bed,\tsk he had all the little preparatory movements to
-run over again, before he could do it.\tsk  Attitudes are
-nothing, madam\tsk ’tis the transition from one attitude to
+run over again, before he could do it.\break\tsk  Attitudes are
+nothing, madam,\tsk ’tis the transition from one attitude to
 another\tsk like the preparation and resolution of the
 discord into harmony, which is all in all.
 
@@ -1629,16 +1666,16 @@ little farther within the valance\tsk gave a hem\tsk raised
 himself up upon his elbow\tsk and was just beginning to address
 himself to my uncle \textit{Toby}\tsk when recol-\catch{lecting}
 lecting the unsuccessfulness of his first effort in that
-attitude\tsk he got upon his legs, and in making the third
+attitude,\tsk he got upon his legs, and in making the third
 turn across the room, he stopped short before my uncle
-\textit{Toby}; and laying the three first fingers of his
-right-hand in the palm of his left, and stooping a little,
+\textit{Toby}; and laying the three first\break
+fingers of his right-hand in the palm of his left, and stooping a little,
 he addressed himself to my uncle \textit{Toby} as follows.
 
 \bigskip
 \section{\lsss{CHAP}.\enspace VII.}
 
-\lettrine{W}{\,\ls{hen}} I reflect, brother \textit{Toby},\break
+\dropcap{W}{hen} I reflect, brother \textit{Toby},\break
 upon \textsc{man}; and take a view of\break
 that dark side of him which represents his life as open to
 so many causes of trouble\tsk when I consider, brother
@@ -1648,14 +1685,14 @@ inheritance\tsk I was born to nothing, quoth my uncle
 \textit{Toby}, inter-\catch{rupting}
 rupting my father\tsk but my commission.
 Zooks! said my father, did not my uncle leave you a hundred
-and twenty pounds a year?\tsh What could I have done without
-it? replied my uncle \textit{Toby} \tsh That’s another
-concern, said my father testily\tsk But I say \textit{Toby},
+and twenty pounds a year?\tsk What could I have done without
+it? replied my uncle \textit{Toby} \tsk That’s another
+concern, said my father testily\tsk\break But I say \textit{Toby},
 when one runs over the catalogue of all the cross reckonings
 and sorrowful \textit{items} with which the heart of man is
-overcharged, ’tis wonderful by what hidden resources the
-mind is enabled to stand out, and bear itself up, as it
-does, against the impositions laid upon our nature.\tsh ’Tis
+overcharged, ’tis wonderful by \tight{what hidden resources the
+mind is enabled} to stand it out, and bear itself up, as it
+does against the impositions laid upon our nature.\tsh ’Tis
 by the assistance of Almighty God, cried my uncle
 \textit{Toby}, looking up, and pressing the palms of his
 hands close together\tsk ’tis not from our own strength,
@@ -1699,11 +1736,11 @@ own behind it.
 \null\smallskip
 \section{\lsss{CHAP}.\enspace VIII.}
 
-\lettrine{T}{\,\ls{hough}} man is of all others\break
+\dropcap{T}{hough} man is of all others\break
 the most curious vehicle, said my\break
 father, yet at the same time ’tis of so 
-\stick{slight a frame, and so totteringly put toge-}
-\stick{ther, that the sudden jerks and hard jost-}\break 
+\stick{slight a frame, and so totteringly put to-}
+\stck{gether, that the sudden jerks and hard jost-}\break 
 lings it unavoidably meets with in this rugged journey,
 would overset and tear \stick{it to pieces a dozen times a day\tsk
 was it} not, brother \textit{Toby}, that there is a secret
@@ -1719,15 +1756,17 @@ evil, which, like a secret spring in a well-ordered machine,
 though it can’t prevent the shock\tsh at least it imposes
 upon our sense of it.
 
-Now, my dear brother, said my father, replacing his
-fore-finger, as he was coming closer to the point,\tsk had my
-child arrived safe into the world, unmartyr’d in that
-precious part of him\tsk
+Now, my dear brother, said my fa-\break 
+ther, replacing his fore-finger, as he was\break
+coming closer to the point,\tsk had my\break
+child arrived safe into the world, un-\break
+martyr’d in that precious part of him\tsk
 \stick{fanciful and extravagant as I may appear} 
 to the world in my opinion of christian names, and of
-that magic bias which good or bad names irresistibly impress
-upon our characters and conducts\tsk heaven is witness! that
-in the warmest transports of my wishes for the prosperity of
+that magic bias which\break good or bad names irresistibly impress
+upon our characters and conducts\tsk hea-\break
+\stck{ven is witness! that in the warmest trans-}
+ports of my wishes for the prosperity of
 my child, I never once wished to crown his head with more
 glory and honour,\catch{than} than what \ls{\textsc{George}} or
 \ls{\textsc{Edward}} would have spread around it.
@@ -1735,36 +1774,38 @@ glory and honour,\catch{than} than what \ls{\textsc{George}} or
 But alas!\@ continued my father, as the greatest evil has befallen him\tsh I must
 counteract and undo it with the greatest good.
 
-He shall be christened \textit{Trismegistus}, brother.
+He shall be christened \textit{Trismegistus},\break brother.
 
 I wish it may answer\tsh replied my uncle \textit{Toby}, rising up.
 
 \smallskip
 \section{\lsss{CHAP}.\enspace IX.}
 
-\lettrine{W}{\,\ls{hat}} a chapter of chances, said my father, turning himself about upon the
-first landing, as he and my uncle \textit{Toby} were going
-down stairs\tsh what a long
-chapter of chances do the\catch{events}
+\dropcap{W}{hat} a chapter of chances, said my father, turning himself about upon the
+first landing, as he and my\break 
+uncle \textit{Toby} were going down stairs\tsh\break
+what a long chapter of chances do the\catch{events}
 events of this world lay open to us!\break
 Take pen and ink in hand, brother \textit{Toby}, and
 calculate it fairly\tsk I know no more of calculation than
-this balluster, said my uncle \textit{Toby} (striking short
+this balluster, said my uncle \textit{Toby}, (striking short
 of it with his crutch, and hitting my father a desperate
 blow souse upon his shin-bone)\tsk\break
-’Twas a hundred to one\tsk cried my uncle \textit{Toby}\tsh I thought, quoth my
+’Twas a hundred to one\tsk cried my uncle\break
+\textit{Toby}\tsk\tsk I thought, quoth my
 father, (\,rubbing his shin\,) you had known\break nothing of
 calculations, brother \textit{Toby}.\break \tsk ’Twas a meer chance,
-said my uncle \textit{Toby}.\tsk Then it adds one to the
+said my uncle \textit{Toby}\tsk Then it adds one to the
 chapter\break\tsk replied my father.
 
-The double success of my father’s re\-partees tickled off the pain of his shin at once
-\tsk it was well it so fell out\tsk (chance!\@ again)\tsk or the world to this day had never
+The double success of my father’s re\-partees tickled off
+the pain of his shin at once\tsk it was well it so fell out\tsk (chance!\@
+again)\tsk or the world to this day had never
 known the subject of my father’s calculation\tsk to guess
 it\tsk there was no\catch{chance} chance\tsk
 What a lucky chapter of chances has this turned out! for it
 has saved me the trouble of writing one express, and in
-truth I have anew already upon my hands without it\tsh Have
+truth I have anew\sic\ already upon my hands without it\tsh Have
 not I pro-\break 
 mised the world a chapter of knots?\break
 two chapters upon the right and the\break
@@ -1799,15 +1840,16 @@ forehead slightly with his finger\tsh
 \null\smallskip
 \section{\lsss{CHAP}.\enspace X.}
 
-\lettrine{I}{\,s} it not a shame to make two chapters of what passed in going down one
+\dropcap{I}{s} it not a shame to make two chapters of what passed in going down one
 pair of stairs? for we are got no farther yet than to the first landing, and there
 are fifteen more steps down to the bottom; and for aught I know, as my father and my
 uncle \textit{Toby} are in a talking humour, there may be as
 many chapters as steps;\tsk
-let that be as it will, Sir, I can no more help it than my destiny:\tsk A sudden
-impulse comes across me\tsh drop the curtain,
+let that be as it will, Sir, I can no more help it than my
+destiny:\tsk\break
+A sudden impulse comes across me\tsh drop the curtain,
 \textit{Shandy}\tsk I drop it\tsh 
-\stick{Strike a line here across the paper, \tight{\textit{Tristram}}}\break
+\stick{\tight{Strike a line here across the paper, \textit{Tristram}}}\break
 \tsk I strike it\tsk and hey for a new chapter?
 
 The duce of any other rule have I to govern myself by in
@@ -1822,19 +1864,19 @@ him?
 
 Now this, you must know, being my chapter upon chapters,
 which I promised to write before I went to sleep, I thought
-it meet to ease my conscience entirely before I lay’d down,
+it meet to ease my conscience entirely\break before I lay’d down,
 by telling the world all I knew about the matter at once: Is
-not this ten times better than to set out dogmatically with
-a sententious parade of wisdom, and telling the world a
+not this ten times better than to set out \tight{dogmatically with
+a sententious parade of} wisdom, and telling the world a
 story of a roasted horse\tsk that chapters relieve the
 mind\tsk that they assist\tsk or impose upon the
 imagination\tsk and that in a work of\break
 \tight{this dramatic cast they are as necessary as}\catch{the}
 the shifting of scenes\tsh with
 fifty other cold conceits, enough to extinguish the fire
-which roasted him?\tsk O! but to understand this, which is a
+which roasted him.\tsk O! but to understand this, which is a
 puff at the fire of \textit{Diana}’s temple\tsk you must
-read \textit{Longinus}\tsk read away\tsk if you are not a
+read \textit{Lon\-ginus}\tsk read away\tsk if you are not a
 jot the wiser by reading him the first time over\break\tsk never
 fear\tsk read him again\tsk \textit{Avicenna} and
 \textit{Licetus}, read \textit{Aristotle}’s metaphysicks
@@ -1867,13 +1909,13 @@ of the human soul.\hfill\break\rightline{So}
 \noindent
 Bardi \& à d’autres
 Médecins du lieu.  On trouva qu’il ne lui manquoit rien
-d’essentiel à la vie; \& son pere pour faire voir un essai
+d’essentiel a la vie; \& son pere pour faire voir un essai
 de son expérience, entreprit d’achever l’ouvrage de la
-Nature, \& de travailler à la formation de l’Enfant avec le
-même artifice que celui dont on se sert pour faire écclorre
+Nature, \& de travailler a la formation de l’Enfant avec le
+même artifice que celui dont on se sert pour faire éclorre
 les Poulets en Egypte. Il instruisit une Nourisse de tout ce
 qu’elle avoit à faire, \& ayant fait mettre son fils dans un
-pour proprement accommodè, il reussit à l’elever \& a lui
+pour proprement accommodè, il reussit à l’elever et a lui
 faire prendre ses accroissemens necessaires, par
 l’uniformité d’une chaleur étrangére mesurée éxactement sur
 les dégrés d’un Thermométre, ou d’un autre instrument
@@ -1899,7 +1941,7 @@ d’années.\\
 \indent
 Mais quand on se represente que l’Enfant a vecu près de quatre-vingts
 ans, \& qu’il a composé quatre-vingts Ouvrages differents tous fruits
-d’une longue lecture\tsk il faut convenir que tout ce qui est
+d’une longue lecture,\tsk il faut convenir que tout ce qui est
 incroyable n’est pas toujours faux, \& que la \textit{Vraisemblance
 n’est pas toujours du côté la Verité}.\\
 \indent
@@ -1913,9 +1955,9 @@ l’Academie Françoise.)\par\egroup
 \null\smallskip
 \section{\lsss{CHAP}.\enspace XI.}
 
-\lettrine{W}{\,e} shall bring all things to rights, said my father, setting his foot upon
+\dropcap{W}{e} shall bring all things to rights, said my father, setting his foot upon
 the first step from the landing\tsh This \textit{Trismegistus}, continued my father,
-drawing his leg back and turning to my uncle \textit{Toby}\tsk was the greatest
+drawing his leg back, and turning to my uncle \textit{Toby}\tsk was the greatest
 (\textit{Toby}) of all earthly beings\tsk he was the greatest king\tsk the greatest
 lawgiver\tsk the greatest philosopher\tsk and the greatest
 priest\tsh and engineer\tsk
@@ -1930,12 +1972,12 @@ said my uncle \textit{Toby}.\tsk
 \newpage
 \section{\lsss{CHAP}.\enspace XII.}
 
-\lettrine{\hbox to 36pt{\hskip -3pt\Tsk A}}{\ls{nd}} how does your mistress?\break
+\dropcap[findent=0pt]{\Usk{20pt}A}{nd} how does your mistress?\break
 cried my father, taking the\break
 same step over again from the landing, and calling to
 \textit{Susannah}, whom he saw passing by the foot of the
-stairs with a huge pin-cushion in her hand\tsk how does your
-mistress? As well, said \textit{Susannah}, tripping by, but
+stairs with a \tight{huge pin-cushion in her hand\tsk how does}
+your mistress? As well, said \textit{Susannah}, tripping by, but
 without looking up, as can be expected\tsk What a fool am
 I,\break said my father! drawing his leg back again\tsk let things
 be as they will, brother \textit{Toby}, ’tis ever the
@@ -1944,7 +1986,8 @@ answer.\break And where is doctor \textit{Slop}?  added my
 father, raising his voice aloud, and looking over the
 ballusters\tsk \textit{Susannah} was out of hearing.\patch{Of}
 
-Of all the riddles of a married life, said my father, crossing the landing in order
+Of all the riddles of a married life, said my father,
+crossing the landing, in order
 to set his back against the wall, whilst he propounded it to my uncle \textit{Toby}
 \tsk of all the puzzling riddles, said he, in a marriage state,\tsk of which you may
 trust me, brother \textit{Toby}, there are more asses loads than all \textit{Job}’s
@@ -1957,27 +2000,28 @@ than all their other inches put together.
 I think rather, replied my uncle \textit{Toby}, that ’tis we who sink an inch lower.\tsh
 If I meet but a woman with child\tsk I do\catch{it.}
 \stick{it.\tsk ’Tis a heavy tax upon that half of}
-our fellow-creatures, brother \textit{Shandy}, said my uncle \textit{Toby}\tsk ’Tis a
+our fellow-creatures, brother \textit{Shandy},\break
+said my uncle \textit{Toby}\tsk ’Tis a
 piteous burden upon ’em, continued he, shaking his head\tsk Yes, yes, ’tis a painful
-thing\tsk said my father, shaking his head too\tsh but certainly since shaking of heads
+thing\tsk\break
+said my father, shaking his head too\tsk\break
+but certainly since shaking of heads
 came into fashion, never did two heads shake together, in concert, from two such
 different springs.
 
-\indent$\displaystyle\left.\vcenter{\halign{#\rlap{\phantom{y}}\hss\cr
+\indent$\displaystyle\vcenter{\halign{#\rlap{\phantom{y}}\hss\cr
 God bless\cr
-Duce take\cr}}\right\}
-\vcenter{\halign{#\hss\cr
+Duce take\cr}}\,\Big\}
+\vcenter{\halign{#\cr
 ’em all\tsk said my uncle\cr
-\textit{Toby} and my father, each\cr}}$
+\;\textit{Toby} and my father, each\cr}}$
 \\[4pt] to himself.
 
 \smallskip
-\section{\lsss{CHAP}.\enspace XIII.}
+\section{\lsss{CHAP}.\enspace XIII.} 
 
-\lettrine{H}{\,\ls{olla!}}\tsk you,
-chairman!\tsk here’s\break
-sixpence\tsk do step
-into that book\-seller’s shop, and call me a
+\dropcap{H}{olla!}\tsk you chairman!\tsk here’s\break
+sixpence\tsk do step into that book\-seller’s shop, and call me a
 \textit{day-tall}\break
 critick. I am very willing to give any\catch{one} one of ’em a crown to help me
 with his tackling, to get my father and my uncle \textit{Toby} off
@@ -1992,22 +2036,21 @@ nine hours before the time that doctor \textit{Slop} was led into the
 back parlour in that dirty pickle by \textit{Obadiah}.
 
 Was every day of my life to be as\break
-busy a day as this\tsk and to take up,\tsk truce.
+busy a day as this,\tsk and to take up,\tsk truce.
 
-\noindent
-\stick{\hfill I will not finish that sentence till I have}
+\tight{I will not finish that sentence till I have}
 made an observation upon the strange\catch{state} state of affairs between the reader and myself,
 just as things stand at present\tsk an observation never
 applicable before to any one biographical writer since the creation
-of the world, but to myself\tsk and I believe, will never hold
-good to any other, until its final destruction\tsk and therefore,
+of the world, but to myself\tsk and I believe will never hold
+good to any other, until its final destruction\tsk\break and therefore,
 for the very novelty of it alone, it must be worth your worships
 attending to.
 
 I am this month one whole year older than I was this time twelve-month; and having
 got, as you perceive, almost into the middle of my fourth volume\tsk and no farther
 than to my first day’s life\tsk\break ’tis demonstrative that I have three hundred and
-sixty-four days more life to write just now, than when I first set out;\break
+sixty-four days more life to\break write just now, than when I first set out;\break
 so that instead of advancing, as a common writer, in my work with
 what I\catch{have}
 \stick{have been doing at it\tsk on the contrary,} I am just thrown so many volumes
@@ -2034,9 +2077,9 @@ shall have one day the start of my pen\tsk and one day is enough
 for two volumes\tsk and two volumes will be enough for one
 year.\tsk
 
-Heaven prosper the manufacturers of paper under this propitious
-reign, which is now open’d to us\tsk as I trust its
-providence will prosper every thing else in it that is taken in
+Heaven prosper the manufactures of paper under this propitious
+reign, which is now open’d to us,\tsk as I trust its
+pro\-vidence will prosper every thing else in it that is taken in
 hand.\tsk\patch{As}
 
 As for the propagation of Geese\tsk I give myself no
@@ -2052,13 +2095,13 @@ it\tsh Here’s a crown for your trouble.
 \smallskip
 \section{\lsss{CHAP}.\enspace XIV.}
 
-\lettrine{\hbox to 36pt{\hskip -3pt\Tsk T}}{\,\ls{hen}}
+\dropcap{\Usk{24pt}T}{hen}
 reach me my breeches\break off
 the chair, said my father to \textit{Susannah}\tsh There is not a
 moment’s time to dress you, Sir, cried
 \textit{Susannah}\tsk the child is as black in the face as
-my\tsh\catch{As} As your what? said my father, for like all orators,
-he was a dear searcher into comparisons.\tsk Bless, me, Sir, said
+my\tsh\catch{As} As your, what? said my father, for like all orators,
+he was a dear searcher into comparisons.\tsk Bless me, Sir, said
 \textit{Susannah}, the child’s in a fit.\tsk And
 where’s Mr.\@ \textit{Yorick?}\tsk Never where he should be,
 said \textit{Susannah}, but his curate’s in the dressing-room,
@@ -2070,8 +2113,8 @@ after\break him.
 Were one sure, said my father to himself, scratching his
 eye-brow, that the child was expiring, one might as well compliment
 my brother \textit{Toby} as not\tsk\break and ’twould be a pity, in
-such a case, to throw away so great a name as
-\textit{Trismegistus} upon him\tsk But he may
+such a case, to\break\stick{\tight{throw away so great a name as
+\textit{Trismegistus}}} upon him\tsk But he may
 recover.\patch{No,}
 
 No, no,\tsk said my father to \textit{Susannah},
@@ -2080,9 +2123,9 @@ I’ll get up\tsk There is no time, cried\break
 \textit{Trismegistus}, said my father\tsk But
 stay\break
 \tsk thou art a leaky vessel, \textit{Susannah}, added my
-father; canst thou carry \textit{Trismegistus} in thy head, the
+father; canst thou carry \textit{Trisme\-gistus} in thy head, the
 length of the gallery without scattering?\tsk Can I? cried
-\textit{Susannah}, shutting the door in a huff.\tsk If she
+\textit{Susannah}, shutting the door in a huff.\tsk\break If she
 can, I’ll be shot, said my father, bouncing out of bed in the
 dark, and groping for his breeches.
 
@@ -2099,26 +2142,26 @@ but \textit{Tristram.} Then ’tis
 
 \tsk There is no \textit{gistus} to it, noodle!\tsk\break
 ’tis my own name, replied the curate,
-dipping his hand, as he spoke, into the\break
+dipping his hand, as he spoke into the\break
 bason\tsk \textit{Tristram!} said he, \etc \etc \etc
 \etc so \textit{Tristram} was I called, and \textit{Tristram}
 shall I be to the day of my death.
 
-My father followed \textit{Susannah}, with his night-gown across
+My father followed \textit{Susannah} with his night-gown across
 his arm, with nothing more than his breeches on, fastened through
 haste with but a single button, and that button through haste
 thrust only half into the button-hole.
 
 \tsh She has not forgot the name, cried my father, half
 opening the door?\tsk No,\catch{no,}
-no, said the curate, with a tone of intelligence.\tsk And
+no, said the curate, with a tone of intelligence\tsk And
 the child is better, cried \stick{\textit{Susannah}\tsk And
 how does your mistress?} As well, said \textit{Susannah}, as
-can be expected\tsk Pish!\@ said my father, the button of his
+can be expect\-ed\tsk \tight{Pish!\@ said my father, the button of} his
 breeches slipping out of the button-hole\tsk So that whether
 the interjection was levelled at \textit{Susannah}, or the
-button-hole,\tsk whether pish was an interjection of contempt
-or an interjection of modesty, is a doubt, and must be a
+button-hole,\tsk whether pish was an interjection \tight{of contempt
+or an interjection of modesty,} is a doubt, and must be a
 doubt till I shall have time to write the three following
 favourite chapters, that is, my chapter of
 \textit{chamber-maids}\tsk my chapter of \textit{pishes},
@@ -2133,7 +2176,7 @@ gallery to bed, something slower than he came.
 \medskip
 \section{\lsss{CHAP}.\enspace XV.}
 
-\lettrine{I}{\ \ls{wish}} I could write a chapter upon\break
+\initial{I}{Wish} I could write a chapter upon\break
 sleep.
 
 A fitter occasion could never have presented itself, than what
@@ -2149,8 +2192,9 @@ button-holes, both quicker and with\break
 more fame, than a single
 chapter upon this.
 
-Button-holes!\tsh there is something lively in the very idea of ’em\tsk and trust me,
-when I get amongst ’em\tsk You\break
+Button-holes!\tsh there is something\break
+lively in the very idea of ’em\tsk and trust\break
+me, when I get amongst ’em\tsk You\break
 gentry with great beards\tsh look as\break
 grave as you will\tsh I’ll make merry\break
 work with my button-holes\tsk I shall have
@@ -2163,21 +2207,21 @@ next, I cannot for my soul\catch{set}
 set a grave face upon a bad matter, and tell the world\tsk
 ’tis the refuge of the unfortunate\tsk the enfranchisement
 of the prisoner\tsk the downy lap of the hopeless, the
-weary, and the broken-hearted; nor could I set out with a
+weary and the broken-hearted; nor could I set out with a
 lye in my mouth, by affirming, that of all the soft and
 delicious functions of our nature, by which the great Author
 of it, in his bounty, has been pleased to recompence the
 sufferings wherewith his justice and his good pleasure has
-wearied us\tsh that this is the chiefest (I know pleasures
+wearied us,\tsh that this is the chiefest (I know pleasures
 worth ten of it) or what a happiness it is to man, when the
 anxieties and passions of the day are over, and he lies down
 upon his back, that his soul shall be so seated within him,
-that whichever way she turns her eyes, the heavens shall
+that which ever way she turns her eyes, the heavens shall
 look calm and sweet above her\tsk no desire\tsk or fear\tsk
 or doubt that troubles the air,\catch{nor}
 \stick{nor any difficulty pass’d,
-present, or to} come, that the imagination may not pass over
-without offence, in that sweet secession.
+present, or to} come, that the imagination may not\break
+pass over without offence, in that sweet\break secession.
 
 \tsk\lqq God’s blessing, said \textit{Sancho Panca},\break
 \lqq be upon the man who first invented\break
@@ -2191,15 +2235,18 @@ of the heads of the learned together upon the subject.
 it\tsk ’tis admirable in its way.\tsk (I quote by
 memory.)\patch{The}
 
-The world enjoys other pleasures, says he, as they do that of
-sleep, without tasting or feeling it as it slips and passes
-by\tsk We should study and ruminate upon it, in order to render
-proper thanks to him who grants it to us\tsk for this end I
-cause myself to be disturbed in my sleep, that I may the better and
-more sensibly relish it.\tsk And yet I see few, says he
-again, who live with less sleep when need requires; my body is
-capable of a firm, but not of a violent and sudden
-agitation\tsk I evade of late all violent
+The world enjoys other pleasures, says
+he, as they do that of sleep, without\break
+tasting or feeling it as it slips and passes\break
+by\tsk We should study and ruminate up-\break 
+on it, in order to render proper thanks\break
+to him who grants it to us\tsk for this end
+I cause myself to be disturbed in my sleep, that I may the better and
+more sensibly relish it\tsk And yet I see few, says he
+again, who live with less sleep\break
+\tight{when need requires; my body is capable}\break
+of a firm, but not of a violent and sudden
+\tight{agitation\tsk I evade of late all violent}\break
 exercises\tsk I am never weary with
 walking\tsk but from my youth, I never liked to ride upon
 pavements. I love to lie hard and alone, and even without my
@@ -2212,7 +2259,7 @@ world\tsk but remember, \lqq La\break
 \bigskip
 \section{\lsss{CHAP}.\enspace XVI.}
 
-\lettrine{I}{\,f} my wife will but venture
+\dropcap{I}{f} my wife will but venture
 him\tsk brother \textit{Toby}, \textit{Trismegistus} shall
 be\break dress’d
 and brought down to us, whilst you and I are getting our breakfasts
@@ -2221,24 +2268,25 @@ together.\tsk
 \tsk Go, tell \textit{Susannah}, \textit{Obadiah}, to step
 here.
 
-She is run up stairs, answered \textit{Obadiah}, this very
-instant, sobbing and crying, and wringing her hands as if her heart
+\tight{She is run up stairs, answered \textit{Obadiah},}\break
+this very instant, sobbing and crying,\break
+and wringing her hands as if her heart\break
 would break.\tsh\patch{We}
 
-We shall have a rare month of it, said my father, turning his
+We shall have a rare month of it,\break said my father, turning his
 head from \textit{Obadiah}, and looking wistfully in my uncle
 \textit{Toby}’s face for some time\tsk we shall have a
 devilish month of it, brother \textit{Toby}, said my father, setting
-his arms a-kimbo, and shaking his head; fire, water, women,
+his arms a-kimbo, and shaking his head; fire, water, wo\-men,
 wind\tsk brother \textit{Toby!}\tsk ’Tis some misfortune,
 quoth my uncle \textit{Toby}\tsk That it is, cried my
 father,\tsk to have so many jarring elements breaking loose, and
 riding triumph in every corner of a gentleman’s house\tsk Little boots it to the peace
 of a family, brother \textit{Toby}, that you and I possess ourselves,
-and sit here silent and unmoved,\tsh whilst such a storm is
+and sit here silent and unmoved,\tsk whilst such a storm is
 whistling over our heads.\tsh
 
-And what’s the matter, \textit{Susannah?}\break
+\tsk And what’s the matter, \textit{Susannah?}\break
 They have called the child \textit{Tristram}\tsh\break
 and my mistress is just got out of an\catch{hysterick}
 hysterick fit about
@@ -2261,7 +2309,7 @@ my father left the room.\patch{\ls{CHAP}.}
 \null\smallskip
 \section{\lsss{CHAP}.\enspace XVII.}
 
-\lettrine{W}{\,\ls{hen}} the misfortune of my\break
+\dropcap{W}{hen} the misfortune of my\break
 \textsc{nose} fell so heavily upon my\break
 father’s head;\tsk the reader remembers that he walked
 instantly up stairs, and cast himself down upon his bed; and
@@ -2272,7 +2320,7 @@ my \textsc{Name};\tsh\break no.
 
 The different weight, dear Sir\tsh nay even the
 different package of two vexations of the same
-weight\tsh makes a very wide difference in our manner of
+weight,\tsh makes a very wide difference in our manner of
 bearing and getting through with them.\tsk It is\catch{not} not half
 an hour ago, when (in the great hurry and precipitation of a poor
 devil’s writing for daily bread) I threw a fair sheet, which
@@ -2290,9 +2338,9 @@ else she thrusts us into this or that place, or posture of body, we
 know not why\tsk But mark, madam, we live amongst riddles
 and mysteries\tsk the most obvious\catch{things,} things, which come in
 our way, have dark sides, which the quickest sight cannot penetrate
-into; and even the clearest and most exalted understandings amongst
+into; and even the clearest \stck{and most exalted understandings amongst}
 us find ourselves puzzled and at a loss in almost every cranny of
-nature’s works: so that this, like a thousand other things,
+nature’s works; so that this, like a thousand other things,
 falls out for us in a way, which tho’ we cannot reason upon
 it,\tsk yet we find the good of it, may it please your reverences
 and your worships\tsh and that’s enough for us.
@@ -2304,9 +2352,9 @@ He walked composedly out with it to the fish-pond.
 Had my father leaned his head upon his hand, and reasoned an
 hour which\catch{way} way to have gone\tsk reason, with all her
 force, could not have directed him to any think like it: there is
-something, Sir, in fish-ponds\tsk but what it is, I leave
-to system builders and fish pond diggers betwixt ’em to find
-out\tsk but there is something, under the first disorderly
+something, Sir, in fish-ponds\tsk but what it is, I leave\break
+\tight{to system builders and fish pond diggers} betwixt ’em to find
+out\tsk but there is something, under the first disorderly\break
 transport of the humours, so unaccountably becalming in an orderly
 and a sober walk towards one of them, that I have often wondered
 that neither \textit{Pythagoras}, nor \textit{Plato}, nor \textit{Solon},
@@ -2316,7 +2364,7 @@ lawgivers, ever gave order about them.
 \medskip
 \section{\lsss{CHAP}.\enspace XVIII.}
 
-\lettrine{Y}{\,\ls{our}} honour, said \textit{Trim}, shutting\break
+\dropcap{Y}{our} honour, said \textit{Trim}, shutting\break
 the parlour door before he began\break
 to speak, has heard, I imagine, of this\catch{unlucky}
 unlucky accident\tsh O yes,
@@ -2325,34 +2373,36 @@ great\break
 concern\tsk I am heartily concerned too, but I hope your honour,
 replied \textit{Trim},\break
 will do me the justice to believe, that it was
-not in the least owing to me.\tsh To
+not in the least owing to me\tsh To
 \stick{thee\tsk \textit{Trim!}\tsk cried my uncle \textit{Toby}, look-}
 \stick{ing kindly in his face\tsh ’twas \textit{Susannah}’s}
 \stick{and the curate’s folly betwixt them.\tsh}
 What business could they have together, an’ please your honour, in
-the garden?\tsh In the gallery thou meanest, replied my
+the garden?\tsk\break In the gallery thou meanest, replied my
 uncle \textit{Toby}.
 
-Trim found he was upon a wrong scent, and stopped short with a
-low bow\break\tsh Two misfortunes, quoth the corporal to
+Trim found he was upon a wrong\break
+scent, and stopped short with a low bow\break
+\tsh Two misfortunes, quoth the corporal to
 himself, are twice as many at least as are needful to be talked
 over at one time,\break\tsh the mischief the cow has done in
-breaking into the fortifications, may be\catch{told} told his honour
-hereafter.\tsk \textit{Trim}’s casuistry and address,
+breaking into the fortifications, may be\catch{told} 
+told his honour hereafter\tsk \textit{Trim}’s casuistry and address,
 under the cover of his low bow, prevented all suspicion in my uncle
 \textit{Toby}, so he went on with what he had to say to \textit{Trim}
 as follows.
 
 \tsh For my own part, \textit{Trim}, though I can see
 little or no difference betwixt my nephew’s being called \textit{Tristram} or
-\textit{Trismegistus}\tsk yet as the thing sits so near my
+\textit{Trisme\-gistus}\tsk yet as the thing sits so near my
 brother’s heart, \textit{Trim},\tsh I would freely have
-given a hundred pounds rather than it should have
-happened\tsh A hundred pounds, an’ please your
-honour,  replied \textit{Trim},\tsk I would not give a cherry-stone
-to boot\tsh Nor would I, \textit{Trim}, upon my own
-account, quoth my uncle \textit{Toby}\tsh but my brother,
-whom there is no arguing with in this case\tsk maintains that a
+given a hundred pounds rather\break than it should have
+happened\tsk A hun\-dred pounds, an’ please your
+honour,  re\-plied \textit{Trim},\tsk I would not give a cherry-stone
+to boot\tsk Nor would I, \textit{Trim}, upon my own
+account, quoth my uncle \textit{Toby}\tsk
+\tight{but my brother, whom there is no arguing}
+with in this case\tsk maintains that a
 great deal more depends, \textit{Trim}, upon christian names, than
 what ignorant people ima-\catch{gine;} gine;\tsh for he says there never
 was a great or heroic action performed since the world began by one
@@ -2367,8 +2417,8 @@ Butler}\tsh\break And for my own part, said my uncle\break
 \textit{Trim},\tsk yet had my name been \textit{Alexander}, I could have done no more at
 \textit{Namur} than my duty\tsk Bless your ho-\break nour! cried
 \textit{Trim}, advancing three steps as he spoke, does a man think of
-his christian name when he goes upon the attack?\tsk Or
-when he stands in the trench, \textit{Trim?} cried my uncle
+his christian name when he goes upon the \stck{attack?\tsk Or
+when he stands in the trench,} \textit{Trim?} cried my uncle
 \textit{Toby}, looking\break firm\tsk Or when he enters a breach?
 said \textit{Trim}, pushing in between two chairs\tsk\catch{Or}
 \tsk Or forces the lines? cried my uncle, rising up, and pushing his crutch
@@ -2381,7 +2431,7 @@ setting his foot upon his stool.\tsh
 
 \section{\lsss{CHAP}.\enspace XIX.}
 
-\lettrine{M}{y} father was returned from his\break walk
+\dropcap{M}{y} father was returned from his\break walk
 to the fish-pond\tsk and open\-ed the parlour-door in the
 very height of the attack, just as my uncle \textit{Toby} was
 \stick{marching up the glacis\tsk \textit{Trim} recovered} his
@@ -2392,7 +2442,7 @@ father\tsk how hadst\catch{thou}
 thou then and thy poor
 \textsc{Hobby-Horse} too have been insulted!
 
-My father hung up his hat with the \stick{same air he took it down; and
+My father hung up his hat with the \stck{same air he took it down; and
 after giving} a slight look at the disorder of the room, he took
 hold of one of the chairs which had formed the corporal’s
 breach, and placing it over-against my uncle \textit{Toby}, he sat
@@ -2401,10 +2451,10 @@ door shut, he broke out in a lamentation as follows.
 
 \section{\textsc{My Father's \lss{Lamentation}}.}
 
-\lettrine{I}{\,t} is in vain longer, said my father,
-ad-\break\hbox{\tight{dressing himself as much to
-\textit{Ernulphus}’s}}
-curse, which was laid upon the corner of the chimney-piece\tsk as
+\dropcap{I}{t} is in vain longer, said my father,
+ad-\break\tighter{dressing himself as much to
+\textit{Ernulphus}’s}
+curse, which was laid upon the corner of the chimney-piece,\tsk as
 to my uncle \textit{Toby} who sat under it\tsk it is in vain
 longer,\catch{said}
 said my father, in the most querulous monotony imaginable,
@@ -2414,7 +2464,7 @@ my own sins,\break brother \textit{Toby}, or the sins and follies
 of the \textit{Shandy}-family, heaven has thought fit to
 draw forth the heaviest of its artillery against me; and
 that the prosperity of my child is the point upon which the
-whole force of it is directed to play.\tsh\break
+whole force of it is directed to play\tsh\break
 \stick{Such a thing would batter the whole} universe about our ears,
 brother \textit{Shandy}, said my uncle \textit{Toby},\tsk if
 it was so\tsk Unhappy \textit{Tristram!} child of wrath!
@@ -2427,23 +2477,27 @@ or ever thou camest\catch{into}
 \stick{into it!\tsk What evils since!\tsk produced}
 into being, in the decline of thy father’s days\tsk when the
 powers of his imagination and of his body were waxing
-feeble\tsk when radical heat and radical moisture, the
-elements which should have temper’d thine, were drying up;
+feeble\tsk when radical heat and radical moisture, 
+\stck{the elements which should have temper’d} thine, were drying up;
 and nothing left to found thy stamina in, but
 negations\tsk\break\enlargethispage\baselineskip
-\tsk ’tis pitiful\tsk brother \textit{Toby}, at the best, and
-called out for all the little helps\break that care and attention
-on both sides\break could give it. But how were we defeated! You
-know the event, brother \textit{Toby}\tsk ’tis too
-melancholy a one to be repeated now\tsk when the few animal
-spirits I was worth in the world, and with which memory,
-fancy, and quick parts should have been convey’d\tsk were
-all dispersed, confused, confounded, scattered, and sent to
-the devil.\tsk\patch{Here}
+\tsk ’tis pitiful\tsk brother \textit{Toby}, at the best,\break
+and called out for all the little helps\break 
+that care and attention on both sides\break 
+could give it. But how were we de-\break
+feated! You know the event, brother\break
+\textit{Toby}\tsk ’tis too melancholy a one to be\break
+repeated now,\tsk when the few animal\break
+spirits I was worth in the world, and\break
+with which memory, fancy, and quick\break
+parts should have been convey’d\tsk were\break
+\stck{all dispersed, confused, confounded, scat-}
+tered, and sent to the devil.\tsk\patch{Here}
 
 Here then was the time to have put a stop to this
-persecution against him;\tsh and tried an experiment at
-least\tsk whether calmness and serenity of mind in your
+persecution against him;\tsh 
+\stck{and tried an experiment at least\tsk whether}
+calmness and serenity of mind in your
 sister, with a due attention, brother \textit{Toby}, to her
 evacuations and repletions\tsk and the rest of her
 non-naturals, might not,\break 
@@ -2464,11 +2518,12 @@ fight with me, and what perpetual storms\catch{about}
 about the midwife\tsk There she gave vent, said my uncle
 \textit{Toby}\tsk Vent!\@ cried my father, looking up\tsk
 
-But what was all this, my dear \textit{Toby}, to the
-injuries done us by my child’s coming head foremost into the
-world, when all I wished in this general wreck of his
-frame, was to have saved this little casket unbroke,
-unrifled.\tsk
+But what was all this, my dear \textit{Toby},\break
+to the injuries done us by my child’s\break
+coming head foremost into the world,\break
+when all I wished in this general wreck\break
+of his frame, was to have saved this\break
+little casket unbroke, unrifled\tsk
 
 With all my precautions, how was\break my system turned
 topside turvy in the womb with my child! his head exposed to
@@ -2497,13 +2552,13 @@ We will send for Mr.\@ \textit{Yorick}, said my uncle \textit{Toby}.
 
 \section{\lsss{CHAP}.\enspace XX.}
 
-\lettrine{W}{\,\ls{hat}} a rate have I gone on at,\break
+\dropcap{W}{hat} a rate have I gone on at,\break
 curvetting and striking it away,\break
 two up and two down for four volumes together, without
 looking once behind, or even on one side of me, to see whom
 I trod upon!\tsk I’ll tread upon no one,\tsk\stick{quoth I to
 myself when I mounted\tsk I’ll} take a good rattling gallop;
-but I’ll not hurt the poorest jack-ass upon the road.\tsk So
+but I’ll not hurt the poorest jack-ass upon the road\tsk So
 off I set\tsk up one lane\tsk down another, through this
 turn-pike \tsk over that, as if the arch-jockey of jockeys
 had got behind me.
@@ -2523,13 +2578,13 @@ schoolmen, churchmen, \tight{statesmen, soldiers, casuists,
 connoisseurs,} prelates, popes, and engineers\tsk Don’t
 \stick{fear, said I\tsk I’ll not hurt the poorest}
 \stick{jack-ass upon the king’s high-way\tsk But}
-\tight{your horse throws dirt; see you’ve splash’d} \stick{a
+\tighter{your horse throws dirt; see you’ve splash’d} \stick{a
 bishop\tsk I hope in God, ’twas only} \textit{Ernulphus},
 said I\tsk But you have squirted full in the faces of
 Mess.\@ \textit{Le Moyne}, \textit{De Romigny}, and
 \textit{De Marcilly}, doctors of the \textit{Sorbonne}\tsk
 That was last year, re-\catch{plied}
-plied I.\tsk But you have trod this moment upon a king.\tsh
+plied I\tsk But you have trod this moment upon a king.\tsh
 Kings have bad times on’t, said I, to be trod upon by such
 people as me.
 
@@ -2537,14 +2592,14 @@ people as me.
 
 I deny it, quoth I, and so have got off, and here am I standing
 with my bridle in one hand, and with my cap in the other, to tell
-my story.\tsh And what in it?\break
+my story\tsh And what is it?\break
 You shall hear in the next chapter.
 
 \vskip\baselineskip
 
 \section{\lsss{CHAP}.\enspace XXI.}
 
-\lettrine{A}{s} \textit{Francis} the first of
+\dropcap[findent=0pt]{A}{s} \textit{Francis} the first of
 \textit{France} was\break one winterly night warming
 him-\break self over the embers of a wood fire, and talking
 with his first minister of sundry\catch{things}
@@ -2562,11 +2617,10 @@ there are more ways, Mons.\@ \textit{le}}\break
 states, besides that\break
 of giving money\tsh I’ll pay
 \textit{Switzerland} the honour of standing godfather\break
-for my next child.\tsk Your majesty, said the minister, in
+for my next child\tsk Your majesty, said the minister, in
 so doing, would have all the grammarians in \textit{Europe}
 upon your back;\tsk \textit{Switzerland}, as a republick,
-be-\break ing a female, can in no construction be go
-dfather.\tsk She
+be-\break ing a female, can in no construction be godfather\tsk She
 may be godmother, re-\break plied \textit{Francis}, hastily\tsk so
 announce my\break\enlargethispage{\baselineskip}%
 \stick{\hfill intentions}
@@ -2578,22 +2632,22 @@ intentions by a courier to morrow morning.
 
 I am astonished, said \textit{Francis} the First, (that day
 fortnight) speaking to his minister as he entered the closet, that
-we have had no answer from \textit{Switzerland.}\tsh Sire, I
+we have had no answer from \textit{Switzerland}\tsh Sire, I
 wait upon you this moment, said Mons.\@ \textit{le Premier}, to lay
 before you my dispatches upon that business.\tsk They take it
 kindly? said the king\tsk They do, Sire, replied the minister,
 and have the highest sense of the honour your majesty has done
 them\tsh but the republick, as godmother, claims her
-right, in this case, of naming the child.
+right in this case, of naming the child.
 
-In all reason, quoth the king\tsk she will christen him
+In all reason, quoth the king\tsk she will\break christen him
 \textit{Francis}, or \textit{Henry}, or \textit{Lewis}, or some name that
 she knows will be agreeable to us. Your majesty is de-\catch{ceived,}
 ceived, replied the minister\tsk I have this hour received a
 dispatch from our resident, with the determination of the
 re\-publick on that point also\tsh And what name has the
 republick fixed upon for the Dauphin?\tsh \textit{Shadrach},
-\textit{Mesech}, \textit{Abed-nego}, replied the
+\textit{Mesech}, and\break \textit{Abed-nego}, replied the
 minister\tsk By saint\break
 \textit{Peter}’s girdle, I will have nothing to do with the
 \textit{Swiss}, cried \textit{Francis} the First, pulling up
@@ -2606,7 +2660,7 @@ We’ll pay them in money\tsh said the king.
 
 Sire, there are not sixty thousand\break
 crowns in the treasury, answered the\break
-minister.\tsh I’ll pawn the best jewel\catch{in}
+minister\tsh I’ll pawn the best jewel\catch{in}
 in my crown, quoth \textit{Francis} the First.
 
 Your honour stands pawn’d already\break
@@ -2619,36 +2673,37 @@ by\tsh we’ll go to war with ’em.
 
 \section{\lsss{CHAP}.\enspace XXII.}
 
-\lettrine{A}{\ls{lbeit}}, gentle reader, I have
-lusted earnestly, and endeavoured
-carefully (according to the measure of such a slender skill
+\dropcap[findent=2pt]{A}{lbeit}, gentle reader, I have\break
+lusted earnestly, and endeavoured\break
+carefully (according to the measure of such slender skill
 as God has vouchsafed me, and as convenient leisure from
 other occasions of needful profit and healthful pastime have
 permitted) that these little books, which I here put into thy
 hands,\catch{might}
-might stand instead of many bigger books\break
-\tsk yet have I
-carried myself towards thee in such fanciful guise of
-careless disport, that right sore am I ashamed now to
-intreat thy lenity seriously\tsk in beseeching thee to
-believe it of me, that in the story of my father and his
-christen-\break names\tsk I have no thoughts of treading 
+\stck{might stand instead of many bigger books}\break
+\tsk yet have I carried myself towards thee\break
+in such fanciful guise of careless disport,\break
+that right sore am I ashamed now to en-\break
+\lower1.618pt\hbox{t}\sic reat thy lenity seriously\tsk in beseeching thee to
+believe it of me, that in the\break
+story of my father and his christen-\break 
+names,\tsk I had no thoughts of treading 
 \tight{upon \textit{Francis} the First\tsk nor in the affair of}
 \stick{\tight{the nose\tsk upon \textit{Francis} the
 Ninth\tsk nor in}}
-the character of my uncle \textit{Toby}\tsk of characterizing
+the character of my uncle \textit{Toby}\tsk of cha\-racterizing
 the militiating spirits of my \stick{country\tsk the wound upon his
 groin, is} a wound to every comparison of that 
 \stick{kind,\tsk nor by \textit{Trim},\tsk that I meant the}
 duke of \textit{Ormond}\tsk or that my book is wrote against
-predestination, or free-will, or taxes\tsk If ’tis wrote
+predestination, or free will, or taxes\tsk If ’tis wrote
 against any thing,\break
 \tsh ’tis wrote, an’ please your worships,
 against the spleen; in order, by a more\catch{frequent}
 frequent and a more convulsive elevation and depression of
 the diaphragm, and the succussations of the intercostal and
 abdominal muscles in laughter, to drive the \textit{gall}
-and other \textit{bitter juices} from the gall-bladder,
+and other \textit{bitter juices} from the gall bladder,
 liver, and sweet-bread of his majesty’s subjects, with all
 the inimicitious passions which belong to them,\break
 down into their duodenums.
@@ -2657,23 +2712,23 @@ down into their duodenums.
 
 \section{\lsss{CHAP}.\enspace XXIII.}
 
-\lettrine{\hskip-3pt\hbox to 36pt{\Tsk B}}{\,\lss{ut}} can the thing be
+\dropcap{\Usk{16pt}B}{ut} can the thing be
 undone,\break
 \textit{Yorick?} said my father\tsk for in\break
 my opinion, continued
 he, it cannot. I\break
 \stick{am a vile canonist, replied \textit{Yorick}\tsk but} 
-of all evils, holding suspence to be the
+of all evils, holding suspense to be the
 most tormenting, we shall at least know the worst of this matter. I
 hate these great dinners\tsk said my father\tsk The size\catch{of}
 of the dinner is not the point, answered \textit{Yorick}\tsh
 we want, Mr.\@ \textit{Shandy}, to dive into the bottom of
 this doubt, whether the name can be changed or not\tsk and
-as the beards of so many commissaries, officials, advocates,
-proctors, registers, and of the most eminent of our
-school-divines, and others, are all to meet in the middle of
-one table, and \textit{Didius} has so pressingly invited
-you,\tsk who in your distress would miss such an occasion?
+as the beards of so many commissaries,\break officials, advocates,
+proctors, registers,\break and of the most able of our
+school-\break divines, and others, are all to meet in the\break
+middle of one table, and \textit{Didius} has so\break
+pressingly invited you,\tsk who in your distress would miss such an occasion?
 All that is requisite, continued \textit{Yorick}, is to
 apprize \textit{Didius}, and let him manage a conversation
 after dinner so as to introduce the subject\tsk Then my
@@ -2690,15 +2745,18 @@ hung to the fire all night, \textit{Trim.}
 \setcounter{page}{156}
 \section{\lsss{CHAP}.\enspace XXV.}
 
-\lettrine{\hskip-3pt\hbox to 42pt{\Tsk N}}{\,o} doubt, Sir,\tsk there is
+\dropcap{\Usk{16pt}N}{o} doubt, Sir\tsk there is
 a whole\break
-chapter wanting here\tsk and a\break chasm of ten pages made in
-the book by it\tsk but the book-binder is neither a fool, or a
-knave, or a puppy\tsk nor is the book a jot more imperfect (at
-least upon that score)\tsh but, on the contrary, the book
-is more perfect and complete by wanting the chapter, than having
-it, as I shall demonstrate to your reverences in this
-manner\tsk I question first, by the bye, whether the same
+chapter wanting here\tsk and a\break 
+chasm of ten pages made in the book
+by it\tsk but the book-binder is neither a\break 
+fool, or a knave, or a puppy\tsk nor is the\break
+book a jot more imperfect, (at least upon\break 
+that score)\tsk but, on the contrary, the\break
+book is more perfect and complete by\break
+wanting the chapter, than having it, as\break
+I shall demonstrate to your reverences in this
+manner\tsk I question first by the bye, whether the same
 experiment might not be made as successfully upon sundry other
 chapters\tsh but there is no end, an’ please your
 reverences, in trying experiments upon chapters\tsh we
@@ -2710,8 +2768,8 @@ that the chapter which I have torn out, and which otherwise
 you would all have been reading\break just now, instead of
 this,\tsk was the description of my father’s, my uncle
 \textit{Toby}’s, \textit{Trim}’s, and \textit{Obadiah}’s
-setting out and journeying to the visitation at
-\lower-4pt\hbox{\astiv}.
+setting out and\break journeying to the visitation at
+\raise3pt\hbox{\astiv}.
 
 We’ll go in the coach, said my father\break
 \tsk Prithee, have the arms been altered,
@@ -2743,7 +2801,7 @@ making a vow at the same time, that it was the last time he
 would ever set his foot in it again, till the
 \textit{bend-sinister} was taken out\tsk but like the affair
 of the hinge, it was one of the many things which the
-\textit{Destinies} had set down in their books ever to be
+\textit{Destinies} had set down in their books\tsk ever to be
 grumbled at (and in wiser families than ours)\tsk but never
 to\break be mended.
 
@@ -2771,13 +2829,16 @@ make the best of your way before,\tsk and leave me to take
 care of my brother \textit{Toby}, and to follow at our\break
 own rates.\patch{Now}
 
-Now the chapter I was obliged to tear out, was the description
-of this cavalcade, in which corporal \textit{Trim} and
-\textit{Obadiah}, upon two coach-horses a-breast, led the way as slow
-as a patrole\tsh whilst my uncle \textit{Toby}, in his laced
-regimentals and tye-wig, kept his rank with my father, in deep
-roads and dissertations alternately upon the advantage of learning
-and arms, as each could get the start.
+Now the chapter I was obliged to tear\break
+out, was the descriptionof this cavalcade,\break
+in which corporal \textit{Trim} and \textit{Obadiah},\break
+upon two coach-horses a-breast, led the\break
+way as slow as a patrole\tsk whilst my\break
+uncle \textit{Toby}, in his laced regimentals and\break
+tye-wig, kept his rank with my father,\break
+\stck{in deep roads and dissertations alternately}\break
+upon the advantage of learning and arms,\break
+as each could get the start.
 
 
 \tsk But the painting of this journey, upon reviewing it,
@@ -2817,7 +2878,7 @@ with it into the other world; now had I, (as
 had I found the declivity easy, or the ascent accessible\tsk
 certes I had been outwitted\break
 \tsk Your notes, \textit{Homenas}, I should have said, are
-good notes;\tsh but it was so perpendicular a precipice\tsk
+good notes,\tsk but it was so per\-pendicular a precipice\tsk
 so wholly cut off from the rest of the work, that by
 the\break
 first note I humm’d, I found myself\break flying into the other
@@ -2835,7 +2896,7 @@ one\tsk And so much for tearing out of chapters.
 
 \section{\lsss{CHAP}.\enspace XXVI.}
 
-\lettrine{\hskip-3pt\hbox to 32pt{\Tsk S}}{\,\,\ls{ee}} 
+\dropcap[findent=1pt,nindent=0pt]{\Usk{16pt}S}{ee} 
 if he is not cutting it all into slips, and giving them
 about him to light their pipes!\tsh ’Tis abominable,
 answered \textit{Didius;} it should not go unnoticed, said
@@ -2846,7 +2907,8 @@ Methinks, said \textit{Didius}, half rising\break
 from his chair, in order to remove a\catch{bottle}
 bottle and a tall decanter, which stood in a direct line
 betwixt him and \textit{Yorick}\break
-\tsk you might have spared this sarcastic stroke, and have hit upon a more proper
+\stck{\tsk you might have spared this sarcastick}
+stroke, and have hit upon a more proper
 place, Mr.\@ \textit{Yorick}\tsk or at least upon a more
 proper occasion to have shewn your contempt of what we have
 been about:\break If the Sermon is of no better worth than to
@@ -2887,8 +2949,9 @@ projectiles\tsh when a\break single word, and no more, uttered
 from the opposite side of the table drew every one’s ears
 towards it\tsk a word of all others in the dictionary the
 last in that place to be expected\tsk a word I am ashamed to
-write\tsk yet must be written\tsk must be read;\tsk
-illegal\tsk uncanonical\tsk guess ten thousand guesses,
+write\tsk yet must be written
+\stick{\tsk must be read;\tsk
+illegal\tsk uncanonical\tsk} guess ten thousand guesses,
 multiplied into themselves\tsk rack\tsk torture your
 invention for ever, you’re where you was\tsk\break In short,
 I’ll tell it in the next chapter.\patch{\ls{CHAP}.}
@@ -2896,7 +2959,7 @@ I’ll tell it in the next chapter.\patch{\ls{CHAP}.}
 \null\smallskip
 \section{\lsss{CHAP}.\enspace XXVII.}
 
-\lettrine{Z}{\,\ls{ounds!}}\tsh\tsh\break
+\dropcap{Z}{ounds!}\tsh\tsh\break
 \tsh\tsh\tsh\tsh\tsk\break
 \tsh\tsh\tsk Z\tsh ds!  cried \textit{Phu-\break tatorius},
 partly to himself\tsk and yet high enough to be heard\tsk
@@ -2911,7 +2974,7 @@ expression and mixture of the two tones as plainly as a
 with it\tsk the \textit{concord} was good in itself\tsk but then
 ’twas quite out of the\catch{key,}
 \stick{key, and no way applicable to the subject}
-\stick{started;\tsk so that with all their knowledge,}
+\stck{started;\tsk so that with all their knowledge,}
 they could not tell what in the world to make of it.
 
 Others who knew nothing of musical\break 
@@ -2924,7 +2987,8 @@ that the desperate monosyllable Z\tsh ds was the exordium
 to an oration, which, as they judged from the sample, presaged but
 a rough kind of handling of him;\break 
 so that my uncle \textit{Toby}’s good nature felt\break
-a pang for what \textit{Yorick} was about to\break undergo. But seeing \textit{Phutatorius} stop short,
+a pang for what \textit{Yorick} was about to\break undergo. But seeing
+\textit{Phutatorius} stop\break short,
 without any attempt or desire to go on\tsk a third party began to
 suppose,\catch{that}
 that it was no more than an involuntary respiration,
@@ -2932,7 +2996,7 @@ casually forming itself into the shape of a twelve-penny
 oath\tsk without the sin or substance of one.
 
 Others, and especially one or two who sat next him, looked
-upon it on the contrary as a real and substantial oath,
+upon it on the contrary, as a real and substantial oath
 pro\-pensly formed against \textit{Yorick}, to whom he was
 known to bear no good liking\tsk\break which said oath, as my
 father philosophized upon it, actually lay fretting and
@@ -2946,7 +3010,7 @@ surprize which so strange a theory of preaching had excited.\patch{How}
 How finely we argue upon mistaken facts!
 
 There was not a soul busied in all these various reasonings upon
-the monosyllable which \textit{Phutatorius} uttered\tsk who did not
+the monosyllable which \textit{Phutatorius} uttered,\tsk who did not
 take this for granted, proceeding upon it as from an axiom, namely,
 that \textit{Phutatorius}’s mind was intent upon the subject of debate which was arising between
 \textit{Didius} and \textit{Yorick}; and indeed as he looked first
@@ -2962,7 +3026,7 @@ notwithstanding he looked with all the attention in the world, and
 had gradually skrewed up every nerve and muscle in his face, to the
 utmost pitch the instrument would bear, in order, as it was
 thought, to give a sharp reply to \textit{Yorick}, who sat
-over-against him\tsk Yet, I say, was \textit{Yorick} never
+over-against him\tsk Yet I say, was \textit{Yorick} never
 once in any one domicile of \textit{Phutatorius}’s
 brain\tsk but the true cause of his exclamation lay at
 least a yard below.
@@ -2971,14 +3035,14 @@ This I will endeavour to explain to you with all imaginable
 decency.
 
 You must be informed then, that\break \textit{Gastripheres}, who had
-taken a turn into the kitchen a little before dinner, to see how
-things went on\tsk observing a wicker-\catch{basket}
+taken a turn into the kitchen a little before dinner, to see 
+\stck{how things went on\tsk observing a wicker-}\catch{basket}
 basket of fine chesnuts
 standing upon the dresser, had ordered that a hundred or two of
-them might be roasted and sent in, as soon as dinner was
+them might be roasted and sent\break in, as soon as dinner was
 over\tsk \textit{Gastri\-pheres} inforcing his orders about
-them, that \textit{Didius}, but \textit{Phutatorius} especially, were
-particularly fond of ’em.
+them, that \textit{Didius}, but \textit{Phutatorius} especially,\break
+were particularly fond of ’em.
 
 About two minutes before the time that my uncle \textit{Toby}
 interrupted \textit{Yorick}’s
@@ -2991,32 +3055,34 @@ napkin.
 Now whether it was physically impossible, with half a dozen
 hands all thrust into the napkin at a time\tsk but that some one
 chesnut, of more life and rotundity\catch{than} than the rest, must be put in
-motion\tsk it so fell out, however, that one was\break
+motion\tsk\break
+it so fell out, however, that one was\break
 actually sent rolling off the table; and\break
 as \textit{Phutatorius} sat straddling
-under\tsk it fell perpendicularly into that particular
-aperture of \textit{Phutatorius}’s breeches, for which, to the
-shame and indelicacy of\break our language be it spoke, there is no
-chaste word throughout all \textit{Johnson}’s
-dictionary\tsk let it suffice to say\tsk it was
-that particular aperture which, in all good societies, the laws of
-decorum do strictly require, like the temple of \textit{Janus} (in
+under\tsk it\break fell perpendicularly into that particular
+aperture of \textit{Phutatorius}’s breeches, for\break
+which, to the shame and indelicacy of\break
+our language be it spoke, there is no
+chaste word throughout all \textit{Johnson}’s\break
+dictionary\tsk let it suffice to say\tsk it was\break
+\stck{that particular aperture which, in all good}
+societies, the laws of decorum do strictly require, like the temple of \textit{Janus} (in
 peace at least) to be universally shut up.
 
 The neglect of this punctilio in \textit{Phutatorius} (which
-by the bye should be a warning to all mankind) had opened a door to
+by the bye should be a\break warning to all mankind) had opened a door to
 this accident.\tsh\patch{\tsk Accident,}
 
 \tsk Accident, I call it, in compliance to a received mode of
-speaking,\tsh but in no opposition to the opinion either of
+speaking,\tsk but in no opposition to the opinion either of
 \textit{Acrites} or \textit{Mythogeras} in this matter; I know they
 were both prepossessed and fully persuaded of it\tsk and are so
 to this hour, That there was nothing of accident in the whole
 event\tsh but that the chesnut’s taking that particular course, and
 in a manner of its own accord\tsk and then falling with all its
 heat directly into that one particular place, and no
-other\tsh was a real judgment upon \textit{Phutatorius}, for
-that filthy and obscene treatise \textit{de Concubinis retinendis},
+other\tsh was a real judgment upon \textit{Phutatorius},\break
+for that filthy and obscene treatise \textit{de Concubinis retinendis},
 which \textit{Phutatorius} had published about twenty years
 ago\tsh and was that identical week going to give the
 world a second edition of.
@@ -3034,14 +3100,15 @@ one else at that time.
 The genial warmth which the chesnut\break imparted, was not
 undelectable for the first twenty or five and twenty
 seconds,\tsk and did no more than gently solicit
-\textit{Phutatorius}’s attention towards the
+\textit{Phu\-tatorius}’s attention towards the
 part:\tsk\break
 But the heat gradually increasing, and in a few
 seconds more getting beyond the point of all sober pleasure, and
 then advancing with all speed into the regions of pain,\tsk the soul of
 \textit{Phutatorius}, toge-\catch{ther} ther with all his ideas, his thoughts, his
-attention, his imagination, judgment, resolution, deliberation,
-ratiocination, memory, fancy, with ten battalions of animal
+attention, his imagination, judgment,\break
+resolution, deliberation, ratiocination,\break
+memory, fancy, with ten battalions of animal
 spirits, all tumultuously crouded down, through different defiles
 and circuits, to the place of danger, leaving all his upper
 regions, as you may imagine, as empty as my purse.
@@ -3065,10 +3132,10 @@ well as a burn; and if so, that possibly a \textit{Newt} or an
 fastening his teeth\tsh the horrid idea of which, with a
 fresh glow of pain arising that instant from the chesnut, seized
 \textit{Phutatorius} with a sudden panick, and in the first
-terrifying disorder of the passion, it threw him, as it has done
+terrifying disorder of the passion it threw him, as it has done
 the best generals upon earth, quite off his guard:\tsk the
 effect of which was this, that he leapt incontinently up, uttering
-as he rose that interjection of surprise so\catch{much} much descanted upon,
+as he rose that interjection of surprise so\catch{much} much discanted upon,
 with the apo\-sio\-pestick break after it, marked thus,\break
 Z\tsh ds\tsk which, though not strictly canonical, was still as little as any man
 could have said upon the occasion;\tsh\break and which,
@@ -3078,7 +3145,7 @@ more help than he could the cause of it.
 Though this has taken up some time\break in the narrative, it took up
 little more time in the transaction, than just to allow time for
 \textit{Phutatorius} to draw forth the chesnut, and throw it down
-with violence upon the floor\tsk and for
+with\break violence upon the floor\tsk and for
 \textit{Yorick},\break to rise
 from his chair, and pick the chesnut up.
 
@@ -3094,24 +3161,26 @@ it.
 \textit{Yorick}, I said, picked up the chesnut which
 \textit{Phutatorius}’s wrath had flung\break down\tsk the action
 was trifling\tsk I am ashamed to account for it\tsk he did
-it, for no reason, but that he thought the chesnut not a jot
-worse for the adventure\tsk and that he held a good chesnut
+it,\break
+for no reason, but that he thought the chesnut not a jot
+worse for the adventure\tsk \tight{and that he held a good chesnut}
 worth stooping for.\tsk But this incident, trifling as it
 was, wrought differently in \textit{Phutatorius}’s head: He
-considered this act of \textit{Yorick}’s in getting off his
-chair and picking up the chesnut, as a plain acknowledgment
+considered this act of \textit{Yorick}’s, in getting off his
+chair, and picking up the chesnut, as a plain acknowledgment
 in him, that the ches-\catch{nut} nut was originally his,\tsk and in
 course, that it must have been the owner of the chesnut, and
-no one else, who could have played him such a prank with it:
+no one else, who could have played him such a prank with it:\break
 What greatly confirmed him in this opinion, was this, that
-the table being parallelogramical and very narrow, it
-afforded a fair opportunity for \textit{Yorick}, who sat
-directly over-against \textit{Phutatorius}, of slipping the
-chesnut in\tsh and consequently that he did it. The look of
+the table being pa\-rallelogramical and very narrow, it
+afforded a fair opportunity for \textit{Yorick},\break
+who sat directly over-against \textit{Phutatorius},\break
+of slipping the chesnut in\tsk and consequently that he did it. The look of
 something more than suspicion, which \textit{Phutatorius}
 cast full upon \textit{Yorick} as these thoughts arose, too
-evidently spoke his opinion\tsh and as \textit{Phutatorius}
-was naturally supposed to know more of the matter than any
+evidently spoke his 
+\stck{opinion\tsk and as \textit{Phutatorius} was naturally}
+supposed to know more of the matter than any
 person besides, his opinion at once became the general
 one;\tsh and for a reason very different from any which have
 been yet given\tsh\enlargethispage\baselineskip in a little time it was put out of all
@@ -3124,14 +3193,14 @@ the scenes to see what is the cause and first spring
 of\break
 them\tsk The search was not long in this\break instance.
 
-It was well known that \textit{Yorick} had never a good opinion of
-the treatise which\break
+It was well known that \textit{Yorick} had\break
+\stck{never a good opinion of the treatise which}\break
 \textit{Phutatorius} had wrote \textit{de Concubinis
 retinendis}, as a thing which he feared had done hurt in the
 world\tsk and ’twas easily found out, that there was a
 mystical meaning in \textit{Yorick}’s prank\tsk and that his
 chucking the chesnut hot into \textit{Phutatorius}’s
-\hbox{\astw3–\astw5}, 
+\hbox{\astw3\tsk\astw5}, 
 was a sarcastical fling at his book\tsk the doctrines
 of which,\break they said, had enflamed many an honest man in the
 same place.\patch{This}
@@ -3144,14 +3213,15 @@ form\tsk} and in short was thought by many to be a master-stroke
 of arch-wit.
 
 This, as the reader has seen from one end to the other, was as
-groundless as the dreams of philosophy: \textit{Yorick}, no doubt, as
+groundless as\break the dreams of philosophy: \textit{Yorick}, no\break doubt, as
 \textit{Shakespear} said of his ancestor\break\tsk\lqq\textit{was
-a man of jest},\,” but it was temp\-er’d with something
-which withheld him from that, and many other ungracious\break pranks, of
+a man of jest},\,” but it was tem\-per’d with something
+which withheld him\break
+from that, and many other ungracious\break pranks, of
 which he as undeservedly\break
 bore the blame;\tsk but it was his
 misfortune all his life long to bear the imputation of saying and
-doing a thousand things, of which (unless my esteem blinds me) his
+doing a thousand \stck{things, of which (unless my esteem blinds} me) his
 nature was incapable. All I\catch{blame}
 blame him for\tsk or rather, all I blame and alternately like him for, was that
 singularity of his temper, which would never suffer him to take pains to set a story
@@ -3180,7 +3250,7 @@ two things in your mind.
 \bigskip
 \section{\lsss{CHAP}.\enspace XXVIII.}
 
-\lettrine{\hskip-3pt\hbox to 42pt{\Tsk C}}{\,\ls{an}} you tell me, quoth
+\dropcap[findent=2pt,nindent=1pt]{\Usk{16pt}C}{an} you tell me, quoth
 \textit{Phuta\-torius}, speaking to \textit{Gastripheres} who sat next to him,\tsk for
 one would not apply to a surgeon in so foolish an affair,\tsk can you tell me,
 \textit{Gastripheres},\catch{what} what is best to take out the fire?\tsk Ask \textit{Eugenius},
@@ -3189,7 +3259,7 @@ pretending ignorance of the adventure, upon the nature of the part\tsk If it is 
 tender part, and a part which can conveniently be wrapt up\tsk It is both the one
 and the other, replied \textit{Phutatorius}, laying his hand as he spoke, with an
 emphatical nod of his head upon the part in question, and lifting up his right leg
-at the same time to ease and ventilate it.\tsh If that is the case, said
+at the same time to ease and ventilate it\tsh If that is the case, said
 \textit{Eugenius}, I would advise you, \textit{Phutatorius}, not to tamper with it
 by any means; but if you will send to the next printer, and trust your cure to such
 a simple thing as a soft sheet of paper just come off the press\tsk you need do
@@ -3202,16 +3272,17 @@ and is of any outward application I would venture to recommend
 the most anodyne and safe.
 
 Was it my case, said \textit{Gastripheres}, as the main thing is the oil and
-lamp-black, I should spread them thick upon a rag, and clap it on directly.\tsh That
-would make a very devil of it, replied \textit{Yorick.}\tsh And besides, added
-\textit{Eugenius}, it would not answer the intention, which is the extreme neatness
-and elegance of the prescription, which the Faculty hold to be half in half\tsk for
-consider, if the type is a very small one (which it should be) the sanative
-particles, which come into\catch{contact} contact in this form, have the advantage of being spread
-so infinitely thin and with such a mathematical equality (fresh paragraphs and
+lamp-black, I should spread them thick upon a rag, and clap it on directly. That
+would make a very devil of it, replied \textit{Yorick}\tsh And besides, added
+\textit{Eugenius}, it would not answer the intention, which is the extreame neatness
+and elegance of the prescription, which the faculty hold to be half in half\tsk for
+consider, if the type is a very small one, (which it should be) the sanative
+particles, which come into\catch{contact} contact in this form, have the advantage 
+\stck{of being spread so infinitely thin and with}
+such a mathematical equality (fresh pa\-ragraphs and
 large capitals excepted) as no art or management of the spatula can come up to.
 It falls out very luckily, replied \textit{Phutatorius}, that the second edition of
-my treatise \textit{de Concubinis retinendis} is at this instant in the press\tsk
+\tight{my treatise \textit{de Concubinis retinendis},} is at this instant in the press\tsk
 You may take any leaf of it, said \textit{Eugenius}\tsk No matter which\tsk provided,
 quoth \textit{Yorick}, there is no bawdry in it\tsh
 
@@ -3230,13 +3301,14 @@ For heaven’s sake keep out of that chapter, quoth
 \bigskip
 \section{\lsss{CHAP}.\enspace XXIX.}
 
-\lettrine{\hskip-3pt\hbox to 42pt{\Tsk N}}{\,\ls{ow}}, quoth \textit{Didius},
+\dropcap[nindent=0pt]{\Usk{15pt}N}{ow}, quoth \textit{Didius},
 rising up, and laying his right-hand with 
 \stick{his fingers spread upon his breast\tsk had}
 such a blunder about a christian-name
-happened before the reformation\tsk (It happened the day
-before yesterday, quoth my uncle \textit{Toby} to himself) and
-when baptism was administer’d in
+happened before the reformation\tsk (It 
+\stck{happened the day before yesterday, quoth}
+my uncle \textit{Toby} to himself) and when\break
+baptism was administer’d in
 \textit{Latin}\tsh\break
 \stick{(’Twas all in \textit{English}, said my
 uncle)}\break
@@ -3244,11 +3316,11 @@ uncle)}\break
 upon the authority of sundry decreed cases, to have pronounced the
 baptism null, with a power of giving\catch{the}
 \stick{the child a new name\tsk Had a priest, for}
-instance, which was no uncommon thing, through
-ignorance of the \textit{Latin} tongue, baptized a child of
-Tom-o’stiles, \textit{in\break nomino patriæ \et\ filia \et\
-spiritum sanctos}\break\tsk the baptism was held
-null.\tsk I beg your pardon, replied
+\stck{instance, which was no uncommon thing,}
+through ignorance of the \textit{Latin} tongue, baptized a child of
+Tom-o’Stiles, \textit{in\break nomino patriæ \et\ filia \et\
+spiritum sanctos},\break\tsk the baptism was held
+null\tsk I beg your pardon, replied
 \textit{Kysarcius},\tsk in that case, as the mistake was only
 the \textit{terminations}, the baptism was valid\tsh and to
 have rendered it null, the blunder of the priest should have fallen
@@ -3260,47 +3332,50 @@ listen’d with infinite attention.
 
 \textit{Gastripheres}, for example, continued \textit{Kysarcius},
 baptizes a child of \textit{John\break Stradling}’s \textit{in Gomine}
-gatris, \etc \etc\catch{instead} instead of \textit{in Nomine} patris,
-\etc\tsk Is this a baptism? No,\tsk say the ablest
-canonists; in as much as the radix of each word is hereby torn up,
-and the sense and meaning of them removed and changed quite to
-another object; for \textit{Gomine} does not signify a name, nor
-\textit{gatris} a father\tsk What do they signify? said my uncle
-\textit{Toby}\tsk Nothing at all\tsh quoth
-\textit{Yorick}\tsh Ergo, such a baptism is null, said
-\textit{Kysarcius}\tsh
-In course, answered \textit{Yorick}, in a tone two parts jest and
-one\break
-part earnest.\tsh
+gatris, \etc \et{\itshape c}.\catch{instead} instead of \textit{in Nomine} patris,
+\etc\tsk Is this\break
+a baptism? No,\tsk say the ablest cano\-nists; in as much as the radix of each word is hereby torn up,
+and the sense\break
+and meaning of them removed and\break
+changed quite to another object; for\break
+\textit{Gomine} does not signify a name, nor\break
+\textit{gatris} a father\tsk What do they signify?\break
+said my uncle \textit{Toby}\tsk Nothing at all\tsk\break
+quoth \textit{Yorick}\tsk Ergo, such a baptism is\break
+null, said \textit{Kysarcius}\tsk In course, answered\break
+\textit{Yorick}, in a tone two parts jest and one\break
+part earnest\tsk
 
 But in the case cited, continued \textit{Kysarcius}, where
 \textit{patrim} is put for \textit{patris}, \textit{filia}
 for \textit{filij}, and so on\tsk as it is a fault only in
 the declension, and the roots of the words continue
-untouch’d, the inflexions of their branches either this way
-or that, does not in any sort hinder the\catch{baptism,} baptism,
+untouch’d, the inflexions of their branches, either this way
+or\break that, does not in any sort hinder the\catch{baptism,} baptism,
 inasmuch as the same sense\break continues in the words as
 before.\tsk But then, said \textit{Didius}, the intention of
 the priest’s pronouncing them grammatically, must have been
 proved to have gone along with it\tsk Right, answered
 \textit{Kysarcius}; and of this, brother \textit{Didius}, we
-have an instance in a decree of the decretals of Pope
+have an instance in a decree of the de\-cretals of Pope
 \textit{Leo} the IIId.\tsk But my brother’s child, cried my
-uncle \textit{Toby}, has nothing to do with the Pope\tsk
-’tis the plain child of a Protestant gentleman, christen’d
-\textit{Tristram} against the wills and wishes both of his
-father and mother, and all who are a-kin to it.\tsk
+uncle \textit{Toby},\break
+has nothing to do with the Pope\tsk ’tis\break
+the plain child of a Protestant gentle-\break
+man, christen’d \textit{Tristram} against the wills\break
+and wishes both of his father and mother,\break
+and all who are a-kin to it.\tsk
 
 If the wills and wishes, said \textit{Kysarcius}, interrupting my
-uncle \textit{Toby}, of those only who stand related to Mr.
+uncle \textit{Toby}, of those only who stand related to Mr.\@
 \textit{Shandy}’s child, were to have weight in this matter,
 Mrs.\@ \textit{Shandy}, of all people, has the\catch{least} least to do in
 it.\tsk My uncle \textit{Toby} lay’d down his pipe, and my father drew his chair still closer to
 the table, to hear the conclusion of so strange an
 introduction.
 
-It has not only been a question, captain \textit{Shandy}, amongst the
-\lower-3pt\hbox{\ast} best lawyers and civilians in this land,
+It has not only been a question,\break captain \textit{Shandy}, amongst the
+\lower-3pt\hbox{\ast} best law\-yers and civilians in this land,
 continued \textit{Kys\-arcius}, \lqq\textit{Whether the
 mother be of kin}\break
 \lqq \textit{to her child},\,”\tsk but, after much
@@ -3321,7 +3396,7 @@ was, he was alarmed for \textit{Lillabullero}\tsk\break
 
 \newpage\noindent
 of so curious an argument\tsk he begg’d my
-uncle \textit{Toby}, for heaven’s sake, not to disappoint him in it.\tsk My uncle
+uncle \textit{Toby}, for heaven’s sake, not to disappoint him in it\tsk My uncle
 \textit{Toby} gave a nod\tsk resumed his pipe, and
 content-\break ing himself with whistling
 \textit{Lillabullero}\break
@@ -3342,7 +3417,7 @@ you may find it in \textit{Swinburn} on Testaments, said
 The case, Mr.\@ \textit{Shandy}, was this.
 
 In the reign of \textit{Edward} the Sixth,\break
-\textit{Charles} duke of \textit{Suffolk} having issue a son
+\textit{Charles} Duke of \textit{Suffolk} having issue a son
 by one venter, and a daughter by\break
 another venter, made his last will,\break
 wherein he devised goods to his son,\break
@@ -3358,9 +3433,9 @@ The administration being thus (surreptitiously) granted to the
 mother, the sister by the father’s side commenced a suit
 before the Ecclesiastical Judge, al\-ledging, 1st, That she herself
 was next of kin; and 2dly, That the mother was not of kin at all to
-the party deceased;\break and therefore prayed the court, that the
+the party deceased;\break and therefore pray’d the court, that the
 administration granted to the mother\break might be revoked, and be
-committed unto her, as next of kin to the deceased, by force of the
+committed\break unto her, as next of kin to the deceased, by force of the
 said statute.
 
 Hereupon, as it was a great cause, and much depending upon its issue\tsk and many
@@ -3369,13 +3444,11 @@ be then made\tsh the most learned, as well in the laws of this realm, as in the
 civil law, were consulted together, whether the mother was
 of kin to\catch{her} her son, or no.
 \tsk Whereunto not only the temporal lawyers\tsk but the church lawyers\tsk the
-juris-consulti\tsk the jurisprudentes\tsk the civilians\tsk the advocates\tsk the
+juris consulti\tsk the juris-prudentes\tsk the civilians\tsk the advocates\tsk the
 commissaries\tsk the judges of the consistory and prerogative courts of
 \textit{Canterbury} and \textit{York}, with the master of the faculties, were all
-unanimously of opinion, That the mother was not of
-\footnote{\ Mater non numeratur\vrule width 0pt height 14pt
-inter consanguineos, Bald.\@ in ult.\@ C.\@ de Verb.
-signific.}\break kin to her child.\tsh
+unanimously of opinion, That the mother was not of \fnast\break
+kin to her child.\tsh
 
 And what said the Duchess of \textit{Suffolk} to it? said my uncle
 \textit{Toby}.
@@ -3384,31 +3457,38 @@ The unexpectedness of my uncle\break
 \textit{Toby}’s question, confounded \textit{Kysarcius}\break
 more than the ablest advocate\tsh He\break
 stopp’d a full minute, looking in my\break
-uncle \textit{Toby}’s face without replying\tsh\catch{and} and in
-that single minute \textit{Triptolemus} put by him, and took the lead
-as follows.
+uncle \textit{Toby}’s face without replying\tsh\break
+\rightline{and} 
+
+\begingroup\footnotesize\indent\fnast\ 
+Mater non numeratur \vrule width0pt depth 4pt
+inter consanguineos,\break Bald.\@ in ult.\@ C.\@ de Verb.
+signific.\par\endgroup
+
+\newpage\noindent
+and in that single minute \textit{Triptolemus} put by him, and took the lead as
+follows.
 
 ’Tis a ground and principle in the law, said \textit{Triptolemus}, that things do
 not ascend, but descend in it; and I make no doubt ’tis for this cause, that however
-true it is, that the child may be of the blood and seed of its parents\tsh that the
-parents, nevertheless, are not of the blood and seed of it; inasmuch as the parents
-are not begot by the child, but the child by the parents\tsk For so they write,
-\textit{Liberi sunt de sanguine patris \et\ matris, sed
-pater et mater non sunt de
-sanguine liberorum.}
+true it is, that the child may be of the blood and seed of its parents\tsk that the
+parents, nevertheless, are not of the\break blood and seed of it; inasmuch as the parents
+are not begot by the child, but\break the child by the parents\tsk For so they write,
+\textit{Liberi sunt de sanguine patris \et\break matris, sed
+pater et mater non sunt de sanguine liberorum.}
 
-\tsh But this, \textit{Triptolemus}, cried \textit{Didius}, proves too much\tsk for from this
+\tsk But this, \textit{Triptolemus}, cried \textit{Didius}, proves too much\tsk for from this
 authority cited it would follow, not only\break
 what indeed is granted on all sides,\catch{that}
 that the mother is not of kin to her\break
-child\tsk but the father likewise.\tsh It is\break held, said
-\textit{Triptolemus}, the better opinion; because the
-father, the mother,\break
+child\tsk but the father likewise\tsh It is\break 
+held, said \textit{Triptolemus}, the better opi-\break
+nion; because the father, the mother,\break
 and the child, though they be three\break
-persons, yet are they but (\textit{una caro}\ \footnote{Vide Brook Abridg. tit. Administr. N.47.})\break
+persons, yet are they but (\textit{una caro} \fnast)\break
 one flesh; and consequently no degree\break
-of kindred\tsk or any method of acquiring one \textit{in
-nature.}\tsk There you push the argument again too far,
+of kindred\tsk or any method of acquiring 
+one \textit{in nature.}\tsk There you push the argument again too far,
 cried \textit{Didius}\tsh\break
 for there is no prohibition \textit{in nature},\break
 though there is in the levitical law,\tsk\break
@@ -3419,7 +3499,11 @@ of\tsh But who\break
 ever thought, cried \textit{Kysarcius}, of laying with his
 grandmother?\tsk The young\break
 gentleman, replied \textit{Yorick}, whom \textit{Selden}\break
-speaks of\tsk who not only thought of it,\catch{but}
+speaks of\tsk who not only thought of it,\break
+\rightline{but}\etp\break
+\stick{\footnotesize\enspace\fnast\ Vide Brook Abridg. tit. Administr. N.\@ 47.\hfill}
+
+\newpage\noindent
 but justified his intention to his father\break
 by the argument drawn from the law\break
 of retaliation\tsh \lqq You lay’d, Sir,\break
@@ -3434,34 +3518,36 @@ The company broke up.\tsh
 \bigskip
 \section{\lsss{CHAP}.\enspace XXX.}
 
-\lettrine{\hskip-3pt\hbox to 42pt{\Tsk A}}{\,\ls{nd}} pray, said my uncle
+\dropcap[findent=0pt]{\Usk{16pt}A}{nd} pray, said my uncle
 \textit{Toby},\break
 leaning upon \textit{Yorick}, as he\break and my father were
 helping him leisurely down the stairs\tsk don’t be
 terrified, ma\-dam, this stair-case conversation is not so
 long as the last\tsk And pray, \textit{Yorick}, said my
-uncle \textit{Toby}, which way is this\catch{said} said affair of
-\textit{Tristram} at length settled by these learned men?
-Very satisfactorily, replied \textit{Yorick}; no mortal,
+uncle \textit{Toby}, which way is this\catch{said} said\sic\ affair of
+\textit{Tristram} at length settled
+\stck{by these learned men?  Very satisfactorily,}
+replied \textit{Yorick}; no mortal,
 Sir, has any concern with it\tsh for Mrs.\@ \textit{Shandy}
-the mother is nothing at all akin to him\tsh and as the
-mother’s is the surest side\tsh Mr.\@ \textit{Shandy}, in
-course is still less than nothing\tsh In short, he is not as
-much akin to him, Sir, as I am\tsh
+the mother is nothing at all akin to him\tsk and as the
+mother’s is the surest side\tsk\break
+Mr.\@ \textit{Shandy}, in course is still less than 
+nothing\tsk In short, he is not as much 
+akin to him, Sir, as I am\tsh
 
 \tsk That may well be, said my father, shaking his head.
 
 \tsk Let the learned say what they will, there must
 certainly, quoth my uncle\break \textit{Toby}, have been some sort of
-consanguinity betwixt the duchess of \textit{Suffolk} and her
-son\tsk
+consan\-guinity betwixt the duchess of \textit{Suffolk}\break
+and her son\tsk
 
 The vulgar are of the same opinion, quoth \textit{Yorick}, to this
 hour.\patch{\ls{CHAP}.}
 
 \section{\lsss{CHAP}.\enspace XXXI.}
 
-\lettrine{T}{\,\ls{hough}} my father was hugely tickled
+\dropcap{T}{hough} my father was hugely\break tickled
 with the subtleties of these\break learned
 discourses\tsh ’twas still but like the anointing of
 a broken bone\tsh The\break
@@ -3470,31 +3556,35 @@ his afflictions returned upon him but so much the heavier, as is
 ever the case when the staff we lean on slips from under
 us\tsk He became pensive\tsk walked frequently forth to the
 fish-pond\tsk let down one loop of his
-hat\tsh sigh’d often\tsh forbore to
+hat\tsh sigh’d often\break\tsh forbore to
 snap\tsk and, as the hasty sparks of temper, which occasion
 snapping, so much assist perspiration and digestion, as
 \textit{Hippocrates} tells us\tsk he had certainly fallen ill with
 the extinction of them, had not his thoughts been criti-\catch{cally} cally drawn
 off, and his health rescued by a fresh train of disquietudes left
-him, with a legacy of a thousand pounds, by my aunt
+him, with a legacy of a thousand pounds by my aunt
 \textit{Dinah}\tsk
 
 My father had scarce read the letter, when taking the thing by
-the right end, he instantly began to plague and puzzle his head how
-to lay it out mostly to the honour of his family.\tsk A
-hundred and fifty odd projects took possession of his brains by
-turns\tsk he would do this, and that, and to’ther\tsk He
-would go to \textit{Rome}\tsh he would go to
-law\tsh he would buy stock\tsh he would buy
-\textit{John Hobson}’s farm\tsk he would new fore-front his
-house, and add a new wing to make it even\tsk There was a
-fine water-mill on this side, and he would build a wind-mill on the
+the right end, 
+\stick{he instantly began to plague and puzzle}
+\stick{his head how to lay it out mostly to}
+\stick{the honour of his family.\tsk A hundred}
+\stick{and fifty odd projects took possession}
+\stick{of his brains by turns\tsk he would do}
+\stick{this, and that, and to’ther\tsk He would}\sic\break
+\stick{go to \textit{Rome}\tsk he would go to law\tsk he}
+\stick{would buy stock\tsk he would buy \textit{John}}
+\stick{\textit{Hobson}’s farm\tsk he would new fore-front}
+\stick{his house, and add a new wing to make}
+\stick{it even\tsk There was a fine water-mill on}
+this side, and he would build a wind-mill on the
 other side of the river in full view to answer it\tsk But above
 all\catch{things} things in the world, he would inclose the great \textit{Ox-moor}, 
 and send out my brother \textit{Bobby} immediately upon his
 travels.
 
-But as the sum was finite, and consequently could not do
+But as the sum was \textit{finite}, and consequently could not do
 every thing\tsk and in truth very few of these to any
 purpose,\tsk of all the projects which offered themselves
 upon this occasion, the two last seemed to make the deepest
@@ -3506,25 +3596,28 @@ deciding in favour either of the one or the other.
 This was not altogether so easy to be done; for though
 ’tis certain my father had long before set his heart upon
 this necessary part of my brother’s education,\catch{and} and like a
-prudent man had actually determined to carry it into execution,
+prudent man had actually\break
+determined to carry it into execution,\break
 with the first money that returned from the second creation of
 actions in the \textit{Missisippi}-scheme, in which he was an
 adventurer\tsh yet the \textit{Ox-moor}, which was a fine,
 large, whinny, undrained, unim-\break
 \tight{proved common, belonging to the \textit{Shandy}-}\break
 estate, had almost as old a claim upon him: he had
-long and affectionately set his heart upon turning it likewise to
-some account.
+long and affectionately set 
+\stck{his heart upon turning it likewise to some}
+account.
 
 \tight{But having never hitherto been pressed} with such a conjuncture
-of things, as made it necessary to settle either the priority or justice of their claims\tsh like a
+of things, as made it necessary to settle either the\break priority or justice of their
+claims,\tsk like a
 wise man he had refrained entering into any nice or critical
-examination about them: so that upon the dismission of every other
+examination about them: So that upon the dismission of every other
 project at this crisis,\tsh\catch{the} the two old projects, the
 O\textsc{x-moor} and my \textsc{Brother}, divided him
 again; and so equal a match were they for each other, as to become
 the occasion of no small contest in the old gentleman’s
-mind\tsk which of the two should be set o’going first.
+mind,\tsk which of the two should be set o’going first.
 
 \tsk People may laugh as they will\tsh but the case
 was this.
@@ -3567,28 +3660,28 @@ fatality, common to men, as well as the ground they tread
 on,\tsk it had all along most shamefully been
 overlook’d; and to speak the truth of it, had suffered so
 much by it, that it would have made any man’s heart have bled
-( \textit{Obadiah} said ) who understood the value of the land, to have
+\sic\textit{( Obadiah} said ) who understood the value of the land, to have
 rode over\catch{it,} it, and only seen the condition it was in.
 
 However, as neither the purchasing this tract of
 ground\tsk nor indeed the placing of it where it lay, were either
 of them, properly speaking, of my father’s
-doing\tsh he had never thought himself any way concerned
-in the affair\tsh till the fifteen years before, when the
+doing\tsk he had never thought himself any way concerned
+in the affair\tsk till the fifteen years before, when the
 breaking out of that cursed law-suit mentioned above (and which had
-arose about its boundaries)\tsh which being altogether my
+arose about its boundaries)\tsk which being altogether my
 father’s own act and deed, it naturally awakened every other
-argument in its favour, and upon summing them all up
+argument in its favour; and upon summing them all up
 together, he saw, not merely in interest, but in honour, he was
-bound to do something for it\tsh and that now or never was
+bound to do something for it\tsk and that now or never was
 the time.\patch{I think}
 
 I think there must certainly have been a mixture of ill-luck in
 it, that the reasons on both sides should happen to be so equally
 balanced by each other; for though my father weigh’d them in
-all humours and conditions\tsk spent many an anxious hour
-in the most profound and abstracted meditation upon what was best
-to be done\tsh reading books of farming one
+all\break humours and conditions\tsk spent many an anxious hour
+in the most profound and abstracted meditation upon what was\break
+best to be done\tsh reading books of farming one
 day\tsk books of travels another\tsk laying aside
 all passion whatever\break\tsk viewing the arguments on both sides in
 all their lights and circumstances\tsk\break communing every day with
@@ -3602,18 +3695,19 @@ by some considera-\catch{tion}
 tion of equal weight, as to keep the scales even.
 
 For to be sure, with proper helps,\break
-in the hands of some people, tho’\break
+and in the hands of some people, tho’\break
 the \textit{Ox-moor} would undoubtedly have\break
-made a different appearance in the world from what it did, or ever could
+made a different appearance in the world from what it did, or ever would
 do in the condition it lay\tsk yet every tittle of this
-was true, with regard to my brother \textit{Bobby}\tsh let
+was true, with regard to my brother \textit{Bobby}\tsk let
 \textit{Obadiah} say what he\break
 would.\tsh
 
-In point of interest\tsh the contest, I own, at first
-sight, did not appear so undecisive betwixt them; for whenever my
+In point of interest\tsk the contest, I own, at first
+sight, did not appear so\break
+undecisive betwixt them; for whenever my
 father took pen and ink in hand,\break and set about calculating the
-simple expence of paring and burning, and fencing in the
+simple expence of paring and burning, and fence\-ing in the
 \textit{Ox-moor}, \&c.\@ \&c.\tsk with the\break
 certain profit it would bring him in\catch{return} return\tsk the latter turned out so
 prodigiously in his way of working the account, that you would have
@@ -3621,7 +3715,7 @@ sworn the \textit{Ox-moor} would have carried all before it. For it
 was plain he should reap a hundred lasts of rape, at twenty pounds a last, the very first
 year\tsk besides an excellent crop of wheat the year
 following\tsk and the year after that, to speak within
-bounds, a hundred\tsh but in all likelihood, a hundred and
+bounds, a hundred\tsh but, in all likelihood, a hundred and
 fifty\tsk if not two hundred quarters of pease and
 beans\tsk besides potatoes without end\tsk But
 then, to think he was all this while breeding up my brother, like a
@@ -3634,20 +3728,21 @@ do.\patch{No}
 No body, but he who has felt it, can conceive what a plaguing
 thing it is to have a man’s mind torn asunder by two projects
 of equal strength, both obsti-\break nately pulling in a contrary direction
-at the same time: For to say nothing of the havock, which by a
-certain consequence is unavoidably made by it all over the finer
-system of the nerves, which you know convey the animal spirits and more subtle
-juices from the heart to the head, and so on\tsh it is not
-to be told in what a degree such a wayward kind of friction works
+at the same time: For to say nothing of\break
+the havock, which by a certain conse\-quence is unavoidably made by it all\break
+over the finer system of the nerves,\break
+which you know convey the animal\break
+spirits and more subtle juices from the heart to the head, and so on\tsk It is\break
+not to be told in what a degree such a wayward kind of friction works
 upon the more gross and solid parts, wasting the fat and impairing
 the strength of a man every time as it goes backwards and
 forwards.
 
 My father had certainly sunk under this evil, as certainly as he
 had done\catch{under} under that of my \ls{\textsc{christian
-name}}\tsh\break had he not been rescued out of it, as he
-was out of that, by a fresh evil\tsh\break the misfortune of my
-brother \textit{Bobby}’s death.
+name}}\tsh\break had he not been rescued out of it as\break
+he was out of that, by a fresh evil\tsh\break the misfortune of my
+brother \textit{Bobby}’s\break death.
 
 What is the life of man! Is it not to shift from side to
 side?\tsk from sorrow to sorrow?\tsh to button up
@@ -3656,11 +3751,12 @@ one cause of vexation!\tsk and unbutton another!
 \bigskip
 \section{\lsss{CHAP}.\enspace XXXII.}
 
-\lettrine{F}{\,\ls{rom}} this moment I am to be\break
+\dropcap{F}{rom} this moment I am to be\break
 considered as heir-apparent to the \textit{Shandy}
-family\tsh and it is from this point properly, that the
-story of my \textsc{Life}\break and my \textsc{Opinions} sets
-out; with all my hurry and precipitation, I have but\catch{been}
+family\tsk and it is from this point
+\stick{properly, that the story of my \textsc{Life}}
+\stick{and my \textsc{Opinions} sets out; with all} 
+my hurry and precipitation, I have but\catch{been}
 been clearing the ground to raise the\break
 building\tsh and such a building do I\break
 foresee it will turn out, as never was planned, and as never was executed since
@@ -3679,25 +3775,33 @@ first chapter of my next volume, if I live,\break
 shall be my chapter upon \lss{\textsc{whiskers}},\catch{in}
 in order to keep up some sort of connection in my works.
 
-The thing I lament is, that things have crowded in so thick upon
-me, that I have not been able to get into that part of my work,
-towards which, I have all the way, looked forwards, with so much
-earnest desire; and that is the campaigns, but especially the
-amours of my uncle \textit{Toby}, the events of which are of so
-singular a nature, and so Cervantick a cast, that if I can so
-manage it, as to convey but the same impressions to every other
-brain, which the occurrences themselves excite in my own\tsh I
-will answer for it the book shall make its way in the world, much
-better than its master has done before it\tsh Oh
-\textit{Tristram!} \textit{Tristram!} can this but be once brought
-about\tsh the credit,\catch{which}
-which will attend thee as an author, shall counterbalance the many
-evils will have befallen thee as a man\tsh thou wilt feast
-upon the one\tsh when thou hast lost all sense and
-remembrance of the\break other!\tsh
+The thing I lament is, that things\break
+have crowded in so thick upon me,\break
+that I have not been able to get into\break
+that part of my work, towards which,\break
+I have all the way, looked forwards,\break
+with so much earnest desire; and that is\break
+the campaigns, but especially the amours\break
+of my uncle \textit{Toby}, the events of which\break
+are of so singular a nature, and so Cer-\break
+vantick a cast, that if I can so manage\break
+it, as to convey but the same impressions\break
+to every other brain, which the occur-\break
+rences themselves excite in my own\tsh\break
+I will answer for it the book shall make\break
+its way in the world, much better\break
+than its master has done before it\tsh\break
+Oh \textit{Tristram!} \textit{Tristram!} can this but\break
+be once brought about\tsh the credit,\catch{which}
+which will attend thee as an author,\break
+\tight{shall counterbalance the many evils which}\break
+have befallen thee as a man\tsk thou wilt\break
+feast upon the one\tsh when thou hast\break
+lost all sense and remembrance of the\break 
+other!\tsh
 
 No wonder I itch so much as I do,\break to get at these
-amours\tsh They are the\break choicest morsel of my whole story! and
+amours\tsk They are the\break choicest morsel of my whole story! and
 \stick{when I do get at ’em\tsk assure yourselves,}
 \stick{good folks,\tsk (nor do I value whose}
 \stick{squeamish stomach takes offence at it)}\break
@@ -3716,9 +3820,9 @@ one chapter before.
 
 
 And now that you have just got to\break
-the end of these four volumes\tsh the\break
+the end of these four volumes\tsk\tsk the\break
 thing I have to \textit{ask} is, how you feel\break
-your heads? my own akes dismally\tsh\break
+your heads? my own akes dismally\tsk\break
 as for your healths, I know, they are\break
 much better\tsh True \textit{Shandeism}, think\break
 what you will against it, opens the\break
@@ -3727,7 +3831,7 @@ partake of its nature, it forces the blood and other vital
 fluids of the body to run freely thro’ its channels,\catch{and} and makes
 the wheel of life run long and chearfully round.
 
-Was I left, like \textit{Sancho Pança}, to\break
+Was I left like \textit{Sancho Pança}, to\break
 chuse my kingdom, it should not be\break
 maritime\tsk or a kingdom of blacks to make a penny of\tsh no, it should\break
 be a kingdom of hearty laughing subjects: And as the bilious and more
@@ -3739,7 +3843,7 @@ habit of virtue can fully govern those passions, and subject them to
 reason\tsh I should add to my prayer\tsk that God would give
 my subjects grace to be as \ls{\textsc{wise}} as they were
 \ls{\textsc{merry}}; and then\break should I be the happiest monarch,
-and they the happiest people under heaven.\tsk\patch{And}
+and they the happiest people under heaven\tsk\patch{And}
 
 And so, with this moral for the pre-\break
 sent, may it please your worships and\break

@@ -7,7 +7,8 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
-\def\Usk{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip 1em plus .5em minus .5em\thinspace}
+\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip
+1em plus .5em minus .5em}\thinspace}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontfamily{\garamond}{EB Garamond}\DeclareTextFontCommand{\egb}{\garamond}
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
@@ -17,11 +18,14 @@
 %
 \def\etp{\enlargethispage\baselineskip}
 %
+\def\tighter#1{{\addfontfeature{LetterSpace=-4.0}#1}}
 \def\tight#1{{\addfontfeature{LetterSpace=-2.0}#1}}
 \def\ls#1{{\addfontfeature{LetterSpace=12.0}#1}}
 \def\lss#1{{\addfontfeature{LetterSpace=16.0}#1}}
 \def\lsss#1{{\addfontfeature{LetterSpace=32.0}#1}}
 \def\stick#1{\hbox to \hsize{#1}}
+\def\stck#1{\hbox to \hsize{\tight{#1}}}
+\def\stk#1{\hbox to \hsize{\tighter{#1}}}
 %
 \usepackage{relsize}
 \def\et{{\smaller\itshape\egb\&}}
@@ -83,3 +87,4 @@
 \global\catcode`\!=\active \gdef!{\thinspace\char`\! }
 %
 \hyphenation{Yo-r-ick}
+\overfullrule=2pt

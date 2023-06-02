@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage[a6paper, width=166pt, height=294pt]{geometry}
+\usepackage[paperheight=395pt, paperwidth=240pt, width=166pt, height=294pt, headsep=2pt]{geometry}
+\usepackage[noinfo, frame, a5, center, lualatex]{crop}
 \usepackage{graphicx}
 \usepackage{shandean}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
@@ -1443,7 +1444,7 @@ fortress
 \bigskip
 
 \rightline{\ls{CHAP}.}
-\newpage
+\newpage\null
 \section{\lsss{CHAP}.\enspace I.}
 
 \dropcap{W}{ith} all this learning upon Noses
@@ -1969,7 +1970,7 @@ said my uncle \textit{Toby}.\tsk
 
 \rightline{\ls{CHAP}.}
 
-\newpage
+\newpage\null\kern-0.5\baselineskip
 \section{\lsss{CHAP}.\enspace XII.}
 
 \dropcap[findent=0pt]{\Usk{20pt}A}{nd} how does your mistress?\break
@@ -1982,7 +1983,7 @@ without looking up, as can be expected\tsk What a fool am
 I,\break said my father! drawing his leg back again\tsk let things
 be as they will, brother \textit{Toby}, ’tis ever the
 precise answer\tsk And\break how is the child, pray?\tsk No
-answer.\break And where is doctor \textit{Slop}?  added my
+answer.\break And where is doctor \textit{Slop}?  added my\break
 father, raising his voice aloud, and looking over the
 ballusters\tsk \textit{Susannah} was out of hearing.\patch{Of}
 
@@ -2550,6 +2551,7 @@ We will send for Mr.\@ \textit{Yorick}, said my uncle \textit{Toby}.
 
 \tsh You may send for whom you will, replied my father.\patch{\ls{CHAP}.}
 
+\null
 \section{\lsss{CHAP}.\enspace XX.}
 
 \dropcap{W}{hat} a rate have I gone on at,\break
@@ -3071,7 +3073,11 @@ peace at least) to be universally shut up.
 
 The neglect of this punctilio in \textit{Phutatorius} (which
 by the bye should be a\break warning to all mankind) had opened a door to
-this accident.\tsh\patch{\tsk Accident,}
+this accident.\tsh
+
+\medskip
+\rightline{\tsk Accident,}
+\newpage
 
 \tsk Accident, I call it, in compliance to a received mode of
 speaking,\tsk but in no opposition to the opinion either of
@@ -3545,6 +3551,7 @@ and her son\tsk
 The vulgar are of the same opinion, quoth \textit{Yorick}, to this
 hour.\patch{\ls{CHAP}.}
 
+\null
 \section{\lsss{CHAP}.\enspace XXXI.}
 
 \dropcap{T}{hough} my father was hugely\break tickled
@@ -3855,5 +3862,5 @@ beards, and lay open a story to the\break
 world you little dream of.
 
 \vskip 72pt
-\centerline{\itshape\lsss{FINIS}.}
+\centerline{\itshape\lsss{F I N I S}.}
 \end{document}

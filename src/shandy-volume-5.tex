@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage[a6paper, width=166pt, height=294pt]{geometry}
+\usepackage[paperheight=395pt, paperwidth=240pt, width=166pt, height=294pt, headsep=2pt]{geometry}
+\usepackage[noinfo, frame, a5, center, lualatex]{crop}
 \usepackage{graphicx}
 \usepackage{shandean}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
@@ -177,9 +178,8 @@ and whiskers are whiskers still; (let the world say what it will to
 the contrary) so surely would I have steered clear of this
 dangerous chapter.\patch{\textit{The}}
 
-\centerline{\textit{The Fragment}.}
-
 \noindent
+\centerline{\textit{The Fragment}.}
 \stick{\astfill}
 \stick{\astfill}
 \stick{\ast\ \ast\tsh You are half asleep, my good}
@@ -1144,6 +1144,7 @@ either a pumkin for his head\tsk or a pip-\break pin for his heart,\tsk
 and whenever he is\break
 dissected ’twill be found so.\patch{\ls{CHAP}.}
 
+\null\kern-\baselineskip
 \section{\lsss{CHAP}.\enspace  X.}
 
 \dropcap{W}{hether} \textit{Susannah}, by taking
@@ -1418,6 +1419,7 @@ By heaven! I have one less,\tsk said my father, getting up and
 walking out of the room.\patch{\ls{CHAP}.}
 
 \setlength{\baselineskip}{12.78pt}  % 21*14 = 294   294/24 = 12.25 294/23 \simeq 12.7826 
+\null\kern-\baselineskip
 \section{\lsss{CHAP}.\enspace  XIV.}
 
 \quad\tsh They are \textit{Socrates}’s children, said my uncle
@@ -1492,7 +1494,7 @@ time.
 
 \dropcap{T}{he} first thing which entered my\break
 father’s head, after affairs were a\break
-little settled in the family, and \textit{Susanna} had got possession of my mother’s
+little settled in the family, and \textit{Susannah} had got possession of my mother’s
 green sattin night-gown,\tsk was to sit down coolly, after the
 example of \textit{Xenophon}, and write a
 \textsc{Tristra}-\textit{pædia}, or system of education
@@ -1622,8 +1624,12 @@ live and get forwards at such a rate, that if an event \stick{had not
 happened,\tsh which, when we} get to it, if it can be told with decency,
 shall not be concealed a moment from the reader\tsh I verily believe, I
 had put by my father, and left him drawing a sun-dial, for no better
-purpose than to be buried under ground.\patch{\ls{CHAP}.}
+purpose than to be buried under ground.
 
+\vfill
+\rightline{\ls{CHAP}.}
+\newpage
+\null\kern-\baselineskip
 \section{\lsss{CHAP}.\enspace  XVII.}
 
 \dropcap{\hbox to 42pt{\Tsk ’T}}{was}
@@ -1851,7 +1857,7 @@ grate\-ful bow towards his master,\tsh and so
 the chapter ends.  \vfill
 \rightline{\lss{CHAP}.} \newpage
 
-
+\null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace  XXIII.}
 
 \quad\tsh Then, \textit{Yorick}, replied my uncle\break
@@ -1871,7 +1877,11 @@ church-spout, as I once thought to have
 done.\tsk You have cut\break
 off spouts enow, replied \textit{Yorick}.\tsh
 
+\vskip -\baselineskip
+
 \section{\lsss{CHAP}.\enspace  XXIV.}
+
+\vskip -.5\baselineskip
 
 \dropcap[findent=1pt]{A}{s} many pictures as have been given
 of my father, how like him soever in different airs and
@@ -1902,6 +1912,7 @@ about nothing.\tsk She looks at her out-\break
 side,\tsk I, at her in\tsk . How is it possible\break
 we should agree about her value?\patch{\ls{CHAP}.}
 
+\null\kern-1.5\baselineskip\etp
 \section{\lsss{CHAP}.\enspace  XXV.}
 
 \dropcap{’T}{is} a point settled,\tsk and I mention\break
@@ -2035,6 +2046,7 @@ it\tsh if~\textsc{Solon} and
 or fume one moment\break
 about the matter?\patch{\ls{CHAP}.}
 
+\null\kern-1.5\baselineskip\etp
 \section{\lsss{CHAP}.\enspace  XXVIII.}
 
 \dropcap{D}{ear} \textit{Yorick}, said my father smiling (for
@@ -2333,8 +2345,12 @@ ought to pay}\break
 \lqq\textit{her respect},\,” as you may read, \textit{Yorick},\break
 at large in the first book of the Institutes of \textit{Justinian}, at
 the eleventh title and the tenth section.\tsk I can read it as well,
-replied \textit{Yorick}, in the Catechism.\patch{\ls{CHAP}.}
+replied \textit{Yorick}, in the Catechism.
 
+\vfill
+\rightline{\ls{CHAP}.}
+\newpage
+\null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace  XXXII.}
 
 \dropcap[findent=4pt]{\itshape T}{\itshape rim} can repeat
@@ -2513,6 +2529,7 @@ opinion,\tsh\break you shall see;\tsk but when\tsk I
 know not:\tsh we must first see what his lordship’s
 opinion was.\patch{\ls{CHAP}.}
 
+\null
 \section{\lsss{CHAP}.\enspace  XXXV.}
 \setlength{\baselineskip}{14pt}  % 21*14 = 294 
 
@@ -2561,8 +2578,11 @@ is published.\tsh
 
 Sufficeth it at present, to say, my father levelled the
 hypothesis with the\break ground, and in doing that, the learned know, he
-built up and established his own.\tsh\patch{\ls{CHAP}.}
+built up and established his own.\tsh
 
+\vfill
+\rightline{\ls{CHAP}.}
+\newpage
 \null\smallskip
 \section{\lsss{CHAP}.\enspace  XXXVI.}
 
@@ -2589,8 +2609,11 @@ dryness\tsh or an unnatural moisture, which causes dropsies.\tsh So that if a ch
 as he grows up, can but be taught to avoid running into fire or water, as either of
 ’em threaten his destruction,\tsh ’twill\break
 be all that is needful to be done upon\break
-that head.\tsh\patch{\ls{CHAP}.}
+that head.\tsh
 
+\vfill
+\rightline{\ls{CHAP}.}
+\newpage
 \null\smallskip
 \section{\lsss{CHAP}.\enspace  XXXVII.}
 
@@ -2653,9 +2676,10 @@ resumed the case
 at \textit{Limerick}, more intelligibly than he had begun
 it,\tsk and so settled the point for my father at once.
 
+\vfill
 \rightline{\ls{CHAP}.}
-\eject
-\noindent\null\par
+\newpage
+\null\smallskip
 
 \section{\lsss{CHAP}.\enspace  XXXVIII.}
 
@@ -2830,9 +2854,9 @@ said my uncle.\break
 \dropcap{D}{octor} \textit{Slop} being called out
 to\break look at a cataplasm he had order-\break ed, it gave my father an
 opportunity of going on with another chapter in the\break
-\textit{Tristra-pædia}.\tsh Come! chear up, my\catch{lads;} lads;
-I’ll shew you land\tsh for when we have tugged
-through that chapter,\break
+\textit{Tristra-pædia}.\tsh Come! chear up, my\catch{lads;} 
+lads; I’ll shew you land\tsh for when\break
+we have tugged through that chapter,\break
 the book shall not be opened again this\break
 twelvemonth.\tsk Huzza!\tsk
 

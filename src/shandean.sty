@@ -35,7 +35,7 @@
 %\long\def\catch#1 {\penalty-10000\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
 %\long\def\catch#1 {\vadjust{\vbox to -6pt{\hbox to \hsize{\hfill\vrule height 11.2pt
 %width 0pt #1}\vss}}\penalty-10000\par\eject\noindent}
-\long\def\catch#1 {\smash{\lower13pt\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
+\long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
 
 \def\ast{{\zap ❋}}
 \def\fnast{\lower-0.5ex\hbox{\ast}}

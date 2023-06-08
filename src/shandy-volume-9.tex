@@ -1,11 +1,8 @@
 \documentclass{article}
-%\usepackage[a6paper, width=166pt, height=266pt]{geometry} 
 \usepackage[paperheight=376pt, paperwidth=240pt, width=166pt, height=266pt, headsep=2pt]{geometry}
 \usepackage[noinfo, frame, a5, center, lualatex]{crop}  
 \usepackage{graphicx}
 \usepackage{shandean}
-\def\catch#1 {\setbox0=\hbox{\lower12pt\llap{#1}}\ht0=0pt
-\dp0=0pt\box0\break\eject\noindent}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
 \author{Laurence Sterne}
 \date{Vol 9}
@@ -25,9 +22,7 @@ $$\vbox{\openup 20pt\halign{\hss #\hss\cr
 \newpage
 \null
 \newpage % full title
-\enlargethispage{72pt}
 \centerline{\vbox{\openup 12pt\halign{#\cr
-\noalign{\vskip -20pt}
 \hss\large{\addfontfeature{LetterSpace=20.0}\textsc{the}}\hss\cr
 \hss\huge{\addfontfeature{LetterSpace=120.0}LIFE}\hss\cr
 \hss\large{\addfontfeature{LetterSpace=20.0}\textsc{and}}\hss\cr
@@ -49,13 +44,15 @@ $$\vbox{\openup 20pt\halign{\hss #\hss\cr
 \noalign{\vskip -10pt}
 \hss in the Strand.\quad MDCCLXVII.\hss\cr
 }}}
+
 \newpage
 \null
+
 \newpage
 \pagestyle{dedication}
 \thispagestyle{empty}
 \setlength{\baselineskip}{14pt}
-\hrule height 1pt width \textwidth
+\hrule height 1pt
 \vskip 2pt
 \hrule
 $$\vbox{\openup 10pt\halign{\hss #\hss\cr
@@ -66,8 +63,8 @@ A\cr
 }}$$
 
 \bgroup\fontsize{11}{15}\selectfont
-\lettrine[findent=4pt, lraise=0.05]{H}{\lsss{\large aving}}, \textit{a priori},
-intended\break
+
+\dropcap[findent=4pt]{H}{aving}, \textit{a priori}, intended\break
 to dedicate \textit{The Amours of my}
 \textit{uncle Toby} to Mr.\@ \astw3 \tsh I see
 more reasons, \textit{a posteriori}, for doing
@@ -166,7 +163,7 @@ time,
 
 \section{\lsss{CHAP}.\enspace I.}
 
-\lettrine[findent=7pt, lraise=0.05]{I}{\lss{\large call}} all the powers of time and
+\initial{I}{\ls{CALL}} all the powers of time and
 chance, which severally check us in our careers in this world, to
 bear me witness, that I could never yet get fairly to my uncle
 Toby’s amours, till this very moment, that my
@@ -252,7 +249,7 @@ amours.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace II.}
 
-\lettrine[findent=3pt, lraise=0.05]{T}{\lss{\large hough}} the Corporal had been as good
+\dropcap{T}{hough} the Corporal had been as good
 as his word in putting my uncle Toby’s great
 ramallie-wig into pipes, yet the time was too short to produce any
 great effects from it: it had lain many years squeezed up in the
@@ -282,7 +279,7 @@ on, they became serious objects,\catch{and}
 up by the hand of Science to set him off to
 advantage.
 
-\enlargethispage\baselineskip
+\etp
 
 Nothing in this world could have co-operated more powerfully
 towards this, than my uncle Toby’s blue and
@@ -329,7 +326,7 @@ himself.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace III.}
 
-\lettrine[findent=2pt, lraise=0.05]{M}{\large y} uncle Toby turn’d his
+\dropcap[findent=2pt]{M}{y} uncle Toby turn’d his
 head more than once behind him, to see how he was supported by the
 Corporal; and the corporal as oft as he did it, gave a slight
 flourish with his stick\tsk but not vapouringly; and with the
@@ -354,7 +351,7 @@ alout) as bad as talking bawdy.\tsh
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace IV.}
 
-\lettrine[findent=2pt, lraise=0.05]{S}{\lss{\large he}} cannot, quoth my uncle
+\dropcap[findent=2pt]{S}{he} cannot, quoth my uncle
 Toby,\break halting, when they had march’d up to within
 twenty paces of Mrs.\@ Wadman’s door\tsk she cannot,
 Corporal, take it amiss.\tsh
@@ -414,7 +411,7 @@ most un-ecclesiastically did the Corporal do it.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace V.}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\large s} Tom’s place, an’ please your
+\dropcap[findent=0pt]{A}{s} Tom’s place, an’ please your\break
 honour, was easy\tsk and the wea-\break 
 ther warm\tsk it put him upon thinking se-\break
 riously of
@@ -458,8 +455,8 @@ widow.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace VI.}
 
-\lettrine[findent=3pt, lraise=0.05]{W}{\lss{\large hen}} Tom, an’ please
-your honour, got to the shop, there was\break
+\dropcap{W}{hen} Tom, an’ please
+your ho\-nour, got to the shop, there was\break
 \stick{nobody in it, but a poor negro girl, with}
 \stick{a bunch of white feathers slightly tied to}
 \stick{the end of a long cane, flapping away}
@@ -533,7 +530,7 @@ as near the note as he could; and in that attitude, continued his story.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace VII.}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\large s} Tom, an’ please your honour,\break had no business at that time with the
+\dropcap[findent=0pt]{A}{s} Tom, an’ please your honour,\break had no business at that time with the
 Moorish girl, he passed on into the room beyond, to talk to the Jew’s widow
 about love\tsh and this pound of sausages; and being, as I have told your
 honour,\break
@@ -605,7 +602,7 @@ it; and there was an end of the matter.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace VIII.}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\lss{\large ll}} womankind, continued Trim,
+\dropcap[findent=0pt]{A}{ll} womankind, continued Trim,
 (commenting upon his story) from the highest to the lowest, an’ please your honour,
 love jokes; the difficulty is to know how they chuse to have them cut; 
 \stick{and there is no knowing that, but by} 
@@ -659,14 +656,14 @@ separation which we are shortly to make.\tsh
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace IX.}
 
-\lettrine[findent=3pt, lraise=0.05]{N}{\lss{\large ow}}, for what the world thinks of
+\dropcap{N}{ow}, for what the world thinks of
 that ejaculation\tsh I would not give a groat.
 
 \vfill\rightline{\ls{CHAP}.}\eject
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace X.}
 
-\lettrine[findent=2pt, lraise=0.05]{M}{\large y} mother had gone with her left arm twisted in my father’s right, till
+\dropcap[findent=2pt]{M}{y} mother had gone with her left arm twisted in my father’s right, till
 they had got to the fatal angle of the old garden wall, where Doctor Slop was
 overthrown by Obadiah on the coach-horse: as this was directly opposite to the front
 of Mrs.\@ Wadman’s house, when my father came to it, he gave a look across; and
@@ -719,8 +716,8 @@ all other men.
 \null\kern-1.8\baselineskip
 \section{\lsss{CHAP}.\enspace XI.}
 
-\lettrine[lraise=0.07,findent=2pt, nindent=0pt]{\Tsk {\normalsize\lower -11pt \hbox{\lqq }\ }N}{\,\lss{\large ow}}\nobreak
-\hbox{\kern 5pt what can their two}\break
+\dropcap[findent=2pt, nindent=0pt]{\Tsk {\normalsize\raise 11pt\hbox{\lqq }}N}{ow}\nobreak
+\enspace what can their two\break
 \hbox{noddles be about?” cried}\break my father - - \&c.\@ - - - -
 
 I dare say, said my mother, they are making
@@ -811,7 +808,7 @@ look.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XII.}
 
-\lettrine[findent=3pt, lraise=0.05]{U}{\lss{\large pon}} looking back from the end\break of the last chapter, and surveying
+\dropcap{U}{pon} looking back from the end\break of the last chapter, and surveying
 the texture of what has been wrote, it is necessary, that upon this page and the
 five following, a good quantity of hete\-rogeneous matter be inserted, to keep up that
 just balance betwixt wisdom and folly, without which a book would not
@@ -865,7 +862,7 @@ you are exactly where you started.
 there is nothing which I
 have found to answer so well as this\tsh
 
-\enlargethispage{2\baselineskip}
+\etpp
 \tsh Certainly, if there is any depend\-ence upon Logic, and that I am not
 \stick{blinded by self-love, there must be}
 \stick{something of true genius about me,}
@@ -880,7 +877,7 @@ public;\break willing that all mankind should write as well as myself.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XIII.}
 
-\lettrine[findent=3pt, lraise=0.05]{N}{\lss{\large ow}} in ordinary cases, that is, when
+\dropcap{N}{ow} in ordinary cases, that is, when
 I am only stupid, and the thoughts rise heavily and pass gummous
 through my pen\tsh
 
@@ -937,7 +934,7 @@ year put together.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XIV.}
 
-\lettrine[findent=0pt, lraise=0.05, nindent=8pt]{A}{\large s} I never had any intention of
+\dropcap[findent=0pt, nindent=8pt]{A}{s} I never had any intention of
 beginning the Digression, I am\break making all this preparation for,
 till I come to the 15th chapter\tsh I have this\break chapter to
 put to whatever use I think proper\tsh I have twenty this
@@ -992,7 +989,7 @@ distress\tsh
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XV.}
 
-\lettrine[findent=3pt, lraise=0.05]{T}{\lss{\large he}} fifteenth chapter is come at
+\dropcap{T}{he} fifteenth chapter is come at
 last; and brings nothing with it 
 \stick{but a sad signature of \lqq How our plea-}
 \stick{\lqq sures slip from under us in this world ; ”\hfill}
@@ -1009,7 +1006,7 @@ uncle Toby.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XVI.}
 
-\lettrine[findent=3pt, lraise=0.05]{W}{\lss{\large hen}} my uncle Toby and the\break
+\dropcap{W}{hen} my uncle Toby and the\break
 Corporal had marched down to the bottom of the avenue, they
 {recollect}\-ed their business lay the other way; so they faced about
 and marched up streight to Mrs.\@ Wadman’s door.
@@ -1038,7 +1035,7 @@ Lilla-\break bullero.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XVII.}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\large s} Mrs.\@ Bridget’s finger
+\dropcap[findent=0pt]{A}{s} Mrs.\@ Bridget’s finger
 and thumb were upon the latch, the Corporal did not knock as often
 as perchance your honour’s taylor\tsh I might have
 taken my example something nearer home; for I owe mine, some five
@@ -1153,7 +1150,7 @@ Now give me all the help you can.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXI.}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\large s} there are fifty different ends\break
+\dropcap[findent=0pt]{A}{s} there are fifty different ends\break
 (counting all ends in\tsh as well civil as religious) for
 which a woman takes a husband, she first sets about and
 \break carefully
@@ -1207,7 +1204,7 @@ never wring that secret from my breast.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXII.}
 
-\lettrine[findent=3pt, lraise=0.05]{W}{\large e} live in a world beset on all
+\dropcap{W}{e} live in a world beset on all
 sides with mysteries and riddles\tsk and so ’tis no
 matter\tsh else it seems strange, that Nature, who makes
 every thing so well to answer its destination, and seldom or never
@@ -1261,7 +1258,7 @@ but \textit{empty bottles}, \textit{tripes}, \textit{trunk-hose}, and
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXIII.}
 
-\lettrine[findent=1pt, lraise=0.05]{M}{\lss{\large rs}}.\@ Bridget had pawn’d
+\dropcap[findent=1pt]{M}{rs}.\@ Bridget had pawn’d
 all the\break little stock of honour a poor chambermaid was worth in the
 world, that she would get to the bottom of the affair in ten days;
 and it was built upon one of the most concessible \textit{postulatum}
@@ -1294,7 +1291,7 @@ Let us drop the metaphor.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXIV.}
 
-\lettrine[findent=.5pt, lraise=0.01, loversize=0.05]{\Tsk\kern-2pt A}{\lss{\large nd}} the story too\tsk if you\break
+\dropcap[findent=.5pt, loversize=0.05]{\Tsk\kern-2pt A}{nd} the story too\tsk if you\break
 please: for though I have all
 along been hastening towards this part of it, with so much earnest desire,
 \stick{as well knowing it to be the choicest}
@@ -1317,7 +1314,7 @@ to the \textit{invoked}, to inspire or to inject me according as he sees good.
 \section{{\addfontfeature{LetterSpace=20}THE\quad INVOCATION}.}
 
 
-\lettrine[findent=1pt, lraise=0.05]{G}{\lss{\large entle}}
+\dropcap[findent=1pt]{G}{entle}
 Spirit of sweetest hu\-mour, who erst did sit upon the easy pen of my
 beloved \lss{\textsc{Cervantes}};\break 
 Thou who glided’st daily through his lattice, and
@@ -1478,7 +1475,7 @@ my chaise.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXV.}
 
-\lettrine[findent=3pt, lraise=0.05]{W}{\lss{\large hen}} we have got to the end of this
+\dropcap{W}{hen} we have got to the end of this
 chapter (but not before) we must all turn back to the two blank
 chapters, on the account of which my honour has lain bleeding this
 half hour\break\tsh I stop it, by pulling off one of my yellow
@@ -1514,7 +1511,7 @@ the world, \lqq \textit{to let people tell their stories}\break
 \null\kern-1.5\baselineskip
 \section{\gothic{The Eighteenth Chapter.}}
 
-\lettrine[findent=0pt, lraise=0.05]{A}{\large s} Mrs.\@ Bridget open’d the
+\dropcap[findent=0pt]{A}{s} Mrs.\@ Bridget open’d the
 door\break before the Corporal had well given the rap, the interval
 betwixt that and\break my uncle Toby’s introduction into the
 parlour, was so short, that Mrs.\@ Wadman had but just time to
@@ -1586,7 +1583,7 @@ Thus far my uncle Toby went on warily, and kept within
 his depth, leaving Mrs.\@ Wadman to sail upon the gulph as she
 pleased.
 
-\enlargethispage\baselineskip
+\etp
 \tsk As for children\tsk said Mrs.\@ Wadman\tsk though a principal end perhaps of\break 
 \stck{the institution, and the natural wish, I sup-}
 \stick{pose, of every parent\tsk yet do not we all}
@@ -1603,7 +1600,7 @@ the pleasure which it has pleased God\tsh
 \null\kern-1.5\baselineskip
 \section{\gothic{Chapter the Nineteenth.}}
 
-\lettrine[findent=3pt, lraise=0.05]{N}{\lss{\large ow}} there are such an infinitude of
+\dropcap{N}{ow} there are such an infinitude of
 notes, tunes, cants, chants, airs, looks, and accents with which
 the word \textit{fiddlestick} may be pronounced in all
 such causes as this, every one of ’em impressing a sense and
@@ -1639,7 +1636,7 @@ fire still in the subject\tsh\break allons.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXVI.}
 
-\lettrine[findent=3pt, lraise=0.05]{I}{\large t} is natural for a perfect stranger
+\dropcap{I}{t} is natural for a perfect stranger
 who is going from London to Edin\-burgh, to enquire
 before he sets out, how many miles to York; which is\break
 \stick{about the half way\tsh nor does any} 
@@ -1764,7 +1761,7 @@ take it with him.
 \null\vfill
 \section{\lsss{CHAP}.\enspace XXVII.}
 
-\lettrine[findent=3pt, lraise=0.05, nindent=0.5pt]{M}{\large y} uncle Toby’s Map is
+\dropcap[nindent=0.5pt]{M}{y} uncle Toby’s Map is
 carried\break down into the kitchen.
 
 \vfill
@@ -1772,7 +1769,7 @@ carried\break down into the kitchen.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXVIII.}
 
-\lettrine[findent=1pt, lraise=0.04]{\Tsk\kern-1.6pt A}{\ls{\large nd}} here is the
+\dropcap[findent=1pt]{\Tsk\kern-1.6pt A}{nd} here is the
 \textit{Maes}\tsk and this is the \textit{Sambre}; said the Corporal,
 pointing with his right hand extended a little towards the map, and
 his left upon Mrs.\@ Bridget’s shoulder\tsk\break\tsk but not
@@ -1833,7 +1830,7 @@ had begun the attack\break with her manual exercise; for the Cor-\break
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXIX.}
 
-\lettrine[findent=3pt, lraise=0.05]{I}{\large t} was like the momentary contest in
+\dropcap{I}{t} was like the momentary contest in
 the moist eye-lids of an April\break
 \stick{morning, \lqq Whether Bridget should} 
 \stick{\lqq laugh or cry.\,”\hfill}
@@ -1877,7 +1874,7 @@ heart and told him all.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXX.}
 
-\lettrine[findent=2pt, lraise=0.05]{M}{\large y} uncle Toby and the Corporal
+\dropcap[findent=2pt]{M}{y} uncle Toby and the Corporal
 had gone on separately with their\break operations the greatest part of
 the campaign, and as effectually cut off from all communication of
 what either the one or the other had been doing, as if they had
@@ -1910,7 +1907,7 @@ also (that is to say)\catch{with} with good company\tsh I would do it
 \null
 \section{\lsss{CHAP}.\enspace XXXI.}
 
-\lettrine{N}{\;\lss{ow}} my uncle Toby had one
+\dropcap{N}{ow} my uncle Toby had one
 evening laid down his pipe upon\break 
 the table, and was counting over to
 himself upon his finger ends, (beginning at his thumb) all 
@@ -2003,7 +2000,7 @@ said he.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXXII.}
 
-\lettrine[findent=3pt, lraise=0.05]{T}{\lss{\large here}} will be just time, whilst\break my
+\dropcap{T}{here} will be just time, whilst\break my
 uncle Toby and Trim are walking to my father’s,
 to inform you,\break
 \stick{that Mrs.\@ Wadman had, some moons} before this,
@@ -2056,7 +2053,7 @@ father broke out in this manner.
 \null\kern-1.5\baselineskip
 \section{\lsss{CHAP}.\enspace XXXIII.}
 
-\lettrine[findent=2pt, lraise=0.05]{\Tsk\kern-3pt T}{\lss{\large hat}} 
+\dropcap[findent=2pt]{\Tsk\kern-3pt T}{hat} 
 provision should be
 made for continuing the race
 of so great, so exalted and godlike a

@@ -2,32 +2,30 @@
 \usepackage[paperheight=376pt, paperwidth=240pt, width=166pt, height=280pt, headsep=2pt]{geometry}
 \usepackage[noinfo, frame, a5, center, lualatex]{crop}  
 \usepackage{shandean}
-\title{The Life and Opinions of Tristram Shandy, Gentleman}
-\author{Laurence Sterne}
-\date{Vol 8}
+%
+%
 \begin{document}
 \pagestyle{empty}
-\enlargethispage{72pt}
-\centerline{\vbox{\openup 12pt\halign{#\cr
-\noalign{\vskip -20pt}
-\hss\large{\addfontfeature{LetterSpace=20.0}\textsc{the}}\hss\cr
-\hss\Large{\addfontfeature{LetterSpace=120.0}LIFE}\hss\cr
-\hss\large{\addfontfeature{LetterSpace=20.0}\textsc{and}}\hss\cr
-\hss\Large{\addfontfeature{LetterSpace=60.0}OPINIONS}\hss\cr
-\hss\large{\addfontfeature{LetterSpace=20.0}\textsc{of}}\hss\cr
-\hss\Large{\addfontfeature{LetterSpace=32.0}TRISTRAM SHANDY},\hss\cr
-\hss\large{\addfontfeature{LetterSpace=26.0}\textsc{Gentleman}}\hss\cr
-{\footnotesize\textit{Non enim excursus hic ejus, sed opus ipsum est}.}\hss\cr
-\noalign{\vskip -12pt}
-\hss{\footnotesize\textsc{Plin}.\@ Lib.\@ quintus Epistola sexta.}\cr
-\hss{\large\addfontfeature{LetterSpace=30.0}VOL}.\quad VIII.\hss\cr
-\noalign{\vskip 6pt}
-\hss{\addfontfeature{LetterSpace=64.0}LONDON}:\hss\cr
-\noalign{\vskip -10pt}
-\hss \small Printed for T.\@ \textsc{Becket} and P.\@ A.\@ \textsc{Dehont},\hss\rlap{\club}\cr
-\noalign{\vskip -12pt}
-\hss \small in the Strand. M\,DCC\,LXV.\hss\cr
+% full title
+\centerline{\vbox{\openup 12pt\halign{\hss #\hss\cr
+\hbox to 3em{T H E}\cr
+\lower 2pt\hbox to 9em{\Large L I F E}\cr
+\hbox to 3em{A N D}\cr
+\lower 3pt\hbox to 15em{\Large O P I N I O N S}\cr
+\textsc{o f}\cr
+\hbox{\Large \lsss{TRISTRAM SHANDY},}\cr
+\lower-2pt\hbox{\textsc{\lss{Gentleman}.}}\cr
 }}}
+\vfill
+\noindent
+\hbox to \textwidth{\footnotesize \textit{Non enim excursus hic ejus, sed opus ipsum est.}\hfill}
+\hbox to \textwidth{\footnotesize \hfill \textsc{Plin.} Lib.\@ quintus Epistola sexta.}
+\vfill
+\centerline{\lsss{VOL}.\quad VIII.}
+\vfill
+\centerline{\lsss{LONDON}:}
+\centerline{\small Printed for T.\@ \textsc{Becket} and P.\@ A.\@  \textsc{Dehont},\rlap{\quad\club}}
+\centerline{\small in the Strand.\quad M DCC LXV.}
 
 \newpage\null
 \cleardoublepage
@@ -168,13 +166,16 @@ mounted, than go \hbox{o’\thinspace foot}\break
 \stick{they have got better of their colds,}
 \stick{coughs, claps, tooth-aches, fevers, stran-}
 \stck{guries, sciaticas, swellings, and sore-eyes.}\catch{\tsh What}
-\stick{\tsh What a devil of an apothecary!} to take so much blood\tsk
-give such a vile purge\tsk puke\tsk poultice\tsk plaister\tsk
-night-draught\tsk glister\tsk blister?\tsh And why so many
-grains of calomel? santa Maria! and such a dose of opium!
-periclitating, pardi! the whole family of ye, from head to tail\tsh 
-By my great aunt Dinah’s old black velvet mask! I think
-there is no occasion for it.
+\stick{\tsh What a devil of an apothecary!} 
+\stick{to take so much blood\tsk give such a vile}
+\stick{purge\tsk puke\tsk poultice\tsk plaister\tsk night-}
+\stick{draught\tsk glister\tsk blister?\tsh And why}
+\stick{so many grains of calomel? santa Ma-}
+\stick{ria! and such a dose of opium! peri-}
+\stick{clitating, pardi! the whole family of}
+\stick{ye, from head to tail\tsh  By my great}
+\stick{aunt Dinah’s old black velvet mask!}
+\stick{I think there was no occasion for it.\enspace}
 
 Now this being a little bald about the chin, by frequently
 putting off and on,\break \textit{before} she was got with child by the
@@ -212,7 +213,7 @@ ourselves?
 Of all mortal, and immortal men too, if you please, who ever soliloquized upon\catch{this} this
 mystic subject, my uncle Toby was the worst fitted, to have push’d his researches,
 thro’ such a contention of feelings; and he had infallibly let them all run on, as
-we do worse matters, so see what they would turn out\tsh had not Bridget’s
+we do worse matters, so\sic\ see what they would turn out\tsh had not Bridget’s
 pre-notification of them to\break
 Susannah, and Susannah’s repeated manifesto’s thereupon
 to all the world, made it necessary for my uncle Toby to look into the affair.
@@ -291,7 +292,7 @@ stirring within her in his
 favour\tsk Something!\tsk something.
 
 \noindent
-\stick{\hfill \tsk Something perhaps more than friend-}
+\stck{\hfill \tsk Something perhaps more than friend-}
 ship\tsk less than
 love\tsk some\-thing\tsk no matter what\tsk no matter
 where\tsk I would not give a single hair off my mule’s tail, and
@@ -359,12 +360,13 @@ gallon?\tsh
 
 \section{\lsss{CHAP}.\enspace VII.}
 
-\quad\tsk But for heaven’s sake, let us not talk of quarts or
-gallons\tsk let us take\break 
+\quad\tsk But for heaven’s sake, let us not 
+talk of quarts or gallons\tsk let us take\break 
 the story straight before us; it is so nice\break
-and intricate a one, it will scarce bear the
-transposition of a single tittle; and, somehow or other, you have
-got me thrust almost into the middle of it\tsk
+and intricate a one, it will scarce bear\break
+the transposition of a single tittle; and\break
+some how or other, you have got me\break
+thrust almost into the middle of it\tsk
 
 \tsh I beg we may take more care.
 
@@ -389,14 +391,16 @@ till corporal Trim (who to the cha-\break
 racter of an excellent valet, groom, cook,\break
 sempster, surgeon and engineer, super-\break
 added that of an excellent upholsterer\break
-too), with the help of a carpenter and a\break
+too) with the help of a carpenter and a\break
 couple of taylors, constructed one in my\break
 uncle Toby’s house.
 
-A daughter of Eve, for such was widow Wadman, and
+A daughter of Eve, for such was wi\-dow Wadman, and
 ’tis all the character I intend to give of her\tsk 
 
-\tsk\lqq\textit{That she was a perfect woman};”\\[6pt]
+\tsk\lqq\textit{That she was a perfect woman};”
+
+\noindent
 \stick{had better be fifty leagues off\tsk or in her}
 warm bed\tsk or playing with a case-knife\break\tsk or any thing
 you please\tsk than make a man the object of her attention,
@@ -408,7 +412,7 @@ where a woman has a power, physically speaking, of viewing a man in
 more lights than one\tsk but here, for her soul, she can see him
 in no light without mixing something of her own goods and chattels
 along with him\tsh till by reiterated acts of such
-combination, he gets foisted into her inventory\tsh
+combinations, he gets foisted into her inventory\tsh
 
 \tsk And then good night.
 
@@ -428,7 +432,7 @@ but ’tis matter copulative and introductory to what follows.
 the strength of their gussets\tsh but pray\break
 do not night-shifts differ from day-shifts\break
 as much in this particular, as in any\break
-thing else in the world; that they so far\break
+thing else in the world; That they so far\break
 exceed the others in length, that when\break
 you are laid down in them, they fall al-\break
 most as much below the feet, as the day-\break
@@ -452,7 +456,7 @@ bed-chamber\tsk That as soon as Mrs.\@
 \stick{Wadman was put to bed, and had got her}
 \stick{legs stretched down to the bottom of it, of}
 which she always gave Bridget notice\tsk Bridget with all
-suitable decorum, having first open’d the bed cloaths at the
+suitable decorum, having first open’d the bed-cloaths at the
 feet, took hold of the half ell of cloath we are speaking of,
 and having gently, and\catch{with} with both her hands, drawn it
 downwards to its furthest extension, and then contracted it
@@ -802,7 +806,7 @@ sympathy\break\null\tsh ’twas nothing but smoak.
 Whereas, in following my uncle Toby’s forefinger
 with hers, close thro’ all the little turns and indentings of
 his works\tsh pressing sometimes against the side of
-it\tsh then treading upon it's nail \tsh then
+it\tsh then treading upon it's\sic\ nail \tsh then
 tripping it up\tsh then touching it here \tsh then
 there, and so on\tsh it set something at least in
 mo-\break tion.
@@ -822,7 +826,7 @@ By bringing up her forefinger parallel\break (as before) to my uncle Toby’s\ts
 \stick{unavoidably brought the thumb into}
 \stick{action\tsk and the forefinger and thumb}
 being once engaged, as naturally brought in the whole hand. Thine, dear uncle
-Toby!\@ was never now in it’s right place\break\tsh Mrs.\@ Wadman had it ever to
+Toby!\@ was never now in it’s\sic\ right place\break\tsh Mrs.\@ Wadman had it ever to
 take up, or, with the gentlest pushings, protrusions, and equivocal compressions,\catch{that}
 that a hand to be removed is capable of receiving\tsh to get it press’d a hair
 breadth of one side out of her way.
@@ -868,7 +872,7 @@ the opposite corner of the map, which are unquestionably the very
 holes, through which it has been pricked up in the
 sentry-box\tsh
 
-By all that is priestly! I value this precious relick, with it’s
+By all that is priestly! I value this precious relick, with it’s\sic\ 
 \textit{stigmata} and\catch{\textit{pricks},}
 \textit{pricks}, more than all the relicks of the
 Romish church\tsh always excepting, when I am
@@ -2368,7 +2372,7 @@ father, turning himself to the company, that widow Wadman
 has been deeply in love with my brother Toby for many years,
 and has used every art and circumvention of woman to outwit him
 into the same passion, yet now that she has caught
-him\tsh her fever will be pass’d it’s\break
+him\tsh her fever will be pass’d it’s\sic\break
 height\tsh
 
 \tsh She has gain’d her point.
@@ -2592,8 +2596,8 @@ had no time but to put the letter of in-\catch{structions}
 wishing his attack prosperous.
 
 I could like, said my mother, to look 
-\stick{through the key-hole out of \textit{curiosity}\tsh}
-\stick{Call it by it’s right name, my dear,}
+through the key-hole out of \textit{curiosity}\tsh\break
+Call it by it’s\sic\ right name, my dear,\break
 quoth my father\tsk 
 
 \textit{And look through the key-hole} as long

@@ -4,12 +4,10 @@
 \usepackage{graphicx}
 \usepackage{shandean}
 \usepackage{luamplib}
-\title{The Life and Opinions of Tristram Shandy, Gentleman}
-\author{Laurence Sterne}
 \begin{document}
 \pagestyle{empty}
 % full title
-\centerline{\vbox{\openup 10pt\halign{\hss #\hss\cr
+\centerline{\vbox{\openup 12pt\halign{\hss #\hss\cr
 \hbox to 3em{T H E}\cr
 \lower 2pt\hbox to 9em{\Large L I F E}\cr
 \hbox to 3em{A N D}\cr
@@ -29,8 +27,7 @@
 \centerline{\small Printed for T.\@ \textsc{Becket} and P.\@ A.\@  \textsc{Dehont},\rlap{\quad\club}}
 \centerline{\small in the Strand.\quad M DCC LXV.}
 
-\newpage
-\null
+\newpage\null
 \vfill
 \bgroup\small
 \hrule
@@ -260,14 +257,14 @@ chapter for your pains.
 \dropcap{C}{alais}, \textit{Calatium, Calusium,\break
 Calesium.}
 
-This town, if we may trust it's archives, the authority of which
+This town, if we may trust it's\sic\ ar\-chives, the authority of which
 I see no reason to call in question in this place\tsk was
 \textit{once} no more than a small village belonging to one of the
 first Counts de Guines; and as it boasts at present of no
 less than fourteen thousand inhabitants, exclusive of four hundred
 and twenty distinct families in the \textit{basse ville}, or
 suburbs\tsh it must have grown up by little and little, I
-suppose, to it's present size.\patch{Though}
+suppose, to it's\sic\ present size.\patch{Though}
 
 Though there are four convents, there is but one parochial church in the whole town;
 I had not an opportunity of taking its exact dimensions, but it is pretty easy to
@@ -566,7 +563,6 @@ I wish I was at Abbeville, quoth I,
 were it only to see how they card and spin\tsh so off we
 set.
 
-\def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \noindent
 \stick{\lower-3pt\hbox{\ast}\ \textit{de Montreuil a Nampont} \crfill \hbox to 50pt{\textit{poste et demi}\hfill}}\break
 \stick{\textit{de Nampont} a Bernay          \crfill \hbox to 50pt{poste\hfill}}
@@ -929,16 +925,15 @@ can get our heads fairly thrust in amongst them.\patch{This}
 This is no part of the French computation: ’tis
 simply this.
 
-\def\bnq{\break\null\quad}
 That by the last survey taken in the year one thousand seven
 hundred and sixteen, since which time there have been considerable
 augmentations, Paris doth contain nine hundred streets;
 (viz.)\\[2pt]
-In the quarter called the \textit{City}\tsk there are\break\null\quad fifty three streets.\\
-In St.\@ \textit{James} of the Shambles, fifty five\break\null\quad streets.\\
+In the quarter called the \textit{City}\tsk there are\bnq fifty three streets.\\
+In St.\@ \textit{James} of the Shambles, fifty five\bnq streets.\\
 In St.\@ \textit{Oportune}, thirty four streets.\\
-In the quarter of the \textit{Louvre}, twenty five\break\null\quad streets.\\
-In the \textit{Palace Royal}, or St.\@ \textit{Honorius},\break\null\quad forty nine streets.\\
+In the quarter of the \textit{Louvre}, twenty five\bnq streets.\\
+In the \textit{Palace Royal}, or St.\@ \textit{Honorius},\bnq forty nine streets.\\
 In \textit{Mont.\@ Martyr}, forty one streets.\\
 In St.\@ \textit{Eustace}, twenty nine streets.\\
 \rightline{In}
@@ -1313,7 +1308,7 @@ her: They are sinful in the first degree, answered
 Margarita,\break\tsk they are mortal\tsk and if we are
 ravish’d and die unabsolved of them, we shall
 both\tsh but you may pronounce them\catch{to} to me, quoth the
-abbess of Andouillets\break
+abbess of Andouillets\sic\break
 \tsh They cannot, my dear
 mother, said the novice, be pronounced at all; they will make all
 the blood in one’s body fly up into one’s
@@ -1354,7 +1349,7 @@ Now I see no sin in saying, \textit{bou}, \textit{bou}, \textit{bou}, \textit{bo
 \textit{bou}, a hundred times together; nor is there any turpitude in pronouncing
 the syllable \textit{ger}, \textit{ger}, \textit{ger}, \textit{ger}, \textit{ger}
 were it from our matins to our vespers: Therefore, my dear daughter, continued the
-abbess of Andouillets\tsk I will say \textit{bou}, and thou shalt say \textit{ger};
+abbess of Andouillets\sic\tsk I will say \textit{bou}, and thou shalt say \textit{ger};
 and then alternately, as there is no more sin in \textit{fou}
 than in \textit{bou}\tsk
 Thou shalt say \textit{fou}\tsk and I will come in (like fa,
@@ -1387,13 +1382,13 @@ $
 by a mutual lash of their tails; but it\break
 went no further.\tsh ’Twill answer by an’\break
 by, said the novice.\\[6pt]
-$
-\left.\!\vcenter{\halign{\small #\hss\cr
+\centerline{$\vcenter{\halign{\small #\hss\cr
 \textit{Abbess},\cr 
-\textit{Margarita},\cr}}\right\}$\,$
-\vcenter{\halign{\hbox to 119pt{\small #}\cr
+\textit{Margarita},\cr}}\Big\}$
+\hss
+$\vcenter{\halign{\hbox to 119pt{\small #}\cr
 Bou- bou- bou- bou- bou- bou-\cr
-\tsk ger, ger, ger, ger, ger, ger.\cr}}$
+\tsk ger, ger, ger, ger, ger, ger.\cr}}$}
 
 Quicker still, cried Margarita.
 $$\hbox{\small Fou, fou, fou, fou, fou, fou, fou, fou, fou.}$$
@@ -1401,7 +1396,7 @@ $$\hbox{\small Fou, fou, fou, fou, fou, fou, fou, fou, fou.}$$
 $$\hbox{\small Bou, bou, bou, bou, bou, bou, bou, bou, bou.}$$
 \quad Quicker still\tsk God preserve me! said the abbess\tsk They do not
 understand us, cried Margarita\tsh But the Devil does, said the abbess
-of Andouillets.
+of Andouillets\sic.
 
 \vfill\rightline{\ls{CHAP}.}\eject
 
@@ -1634,8 +1629,8 @@ that, I have brought myself into such a situation, as\catch{no}
 \stick{chaise broke into a thousand pieces\tsk and}
 \stick{I am moreover this moment in a hand-}
 \stick{some pavillion built by Pringello \fnast, up-}
-\stick{on the banks of the Garonne, which }
-\stick{Mons.\@ Sligniac has lent me, and where I }
+\stick{on the banks of the Garonne, which}
+\stick{Mons.\@ Sligniac has lent me, and where I}
 now sit rhapsodizing all these affairs.
 
 \tsh Let me collect myself, and pursue my journey.
@@ -1683,7 +1678,7 @@ enough at the first, insensibly grew less and less in its size; the freshness
 of the painting was no more\tsk the gilding lost its lustre\tsk and the
 whole affair appeared so poor in my eyes\tsk so sorry!\tsk so
 con-\break temptible!
-and, in a word, so much worse than the abbess of Andoüillet’s
+and, in a word, so much worse than the abbess of Andoüillet’s\sic\ 
 itself\tsk that I was just opening my mouth to give it to the
 devil\tsk when a pert vamping chaise-undertaker, stepping nimbly across the
 street, demanded if Monsieur would have his chaise refitted\tsk No,
@@ -1767,7 +1762,7 @@ have many an hour of my life look’d up with great devotion at the one\tsk and 
 with as much patience as any christian ever could do, at the other\tsh
 
 I’ll go see the surprising movements of this great clock, said I, the very first
-thing I do: and then I will pay a visit to the great library of the Jesuits, and
+thing I do: and then I will pay a visit to the great library of the Jesuists\sic, and
 procure, if possible, a sight of the thirty volumes of the general history of China,
 wrote (not in the Tartarian) but in the Chinese language, and in the Chinese
 character too.\patch{Now}
@@ -1980,7 +1975,7 @@ up pensive in my face\tsk \lqq Don’t thrash\break
 \lqq me with it\tsk but if you will, you may”\break
 \tsh If I do, said I, I’ll be d\tsk d.
 
-The word was but one half of it pronounced, like the abbess of Andoüillet’s\tsk (so
+The word was but one half of it pronounced, like the abbess of Andoüillet’s\sic\tsk (so
 there was no sin in it)\tsk when a person coming in, let fall a thundering bastinado
 upon the poor devil’s crupper, which put an end to the
 ceremony.\\[6pt]
@@ -2037,7 +2032,7 @@ am I\tsk and you are you\tsh
 \stick{\indent\tsh But it is an indubitable verity,}
 continued I, addressing myself to the commissary, changing only
 the form of 
-\stick{my asseveration\tsh that I owe the king }
+\stick{my asseveration\tsh that I owe the king}
 \stick{of France nothing but my good will;}
 \stick{for he is a very honest man, and I wish}
 \stick{him all health and pastime in the}
@@ -2046,7 +2041,7 @@ world\tsh
 \textit{Pardonnez moi}\tsk replied the commissary, you are
 indebted to him six livres\catch{four}
 four sous, for the next post from hence to St.\@ Fons, in your
-rout to Avignion\tsk which being a post royal, you pay double
+rout to Avignion\sic\tsk which being a post royal, you pay double
 for the horses and postillion\tsk otherwise ’twould have
 amounted to no more than three livres two sous\tsh
 
@@ -2166,7 +2161,7 @@ Paris\tsk he must go on travelling in one, all the
 days of his life\tsk or pay for it.\tsk\break
 Excuse me, said the commissary, the spirit of the ordinance is
 this\tsk That if you set out with an intention of running post
-from Paris to Avignon, \etc you shall not change that intention
+from Paris to Avignion\sic, \etc you shall not change that intention
 or mode of travelling, without first satisfying the fermiers for
 two posts further than the place you repent at\tsk and ’tis
 founded, conti\-nued he, upon this, that the \textsc{revenues}\catch{are} are
@@ -2179,7 +2174,7 @@ but to make the best peace with you we can\tsh\\[4pt]
 \stick{\hss\textsc{and so the peace was made};\hss}
 
 \tsh And if it is a bad one\tsk as Tris\-tram
-Shandy laid the corner-stone of it\tsk nobody but Tristram
+Shandy laid the corner stone of it\tsk nobody but Tristram
 Shandy ought to be hanged.
 
 \section{\lsss{CHAP}.\enspace XXXVII.}
@@ -2230,7 +2225,7 @@ my remarks in the pocket of the chaise\break
 \tsk and that in selling my
 chaise, I had sold my remarks along with it, to the chaise-vamper.
 \hskip 78pt  I leave this \stick{void space that the reader
-may swear in-}\break to it any oath that he is most accustomed
+may swear in-}\break to it, any oath that he is most accustomed
 to\tsh For my own part, if ever I swore a \textit{whole}
 oath into a vacancy in my life, I think it was into
 that\tsh \astW3 \astW4 \astW2, said I\tsk and so my
@@ -2248,7 +2243,7 @@ cre-\catch{ditable}
 \stick{along with them\tsk I could have borne it}
 \stick{\tsh but to a chaise-vamper!\tsk shew me}
 \stick{to him this moment, François,\tsk said I\tsk}
-\stick{The valet de place put on his hat, and led }
+\stick{the valet de place put on his hat, and led}
 \stick{the way\tsk and I pull’d off mine, as I}
 \stick{pass’d the commissary, and followed}
 him.
@@ -2262,7 +2257,7 @@ chaise-vamper’s house, both the house and the shop were shut
 up; it was the eighth of September, the nativity of the
 blessed Virgin Mary, mother of God\tsh
 
-\tsh Tantarra-ra-tan-tivi\tsh the whole world was gone out a
+\tsh Tantarra - ra - tan - tivi\tsh the whole world was gone out a
 May-poling\break\tsk frisking here\tsk capering there\tsk
 no\break
 body cared a button for me or my remarks; so I sat me down upon
@@ -2274,7 +2269,7 @@ off her hair, before she went to the May-poles\tsh
 The French women, by the bye, love May-poles, \textit{a
 la folie}\tsk that is, as much as\catch{their}
 \stick{their matins\tsh give ’em but a May-}
-\stick{pole, whether in May, June, July, or }
+\stick{pole, whether in May, June, July, or}
 \stick{September\tsk they never count the times}
 \stick{\tsh down it goes\tsh ’tis meat, drink,}
 \stick{washing, and lodging to ’em\tsh and had}
@@ -2305,9 +2300,9 @@ woman’s noddle\tsk She had better have gone with it
 unfrizled, to the day of eternity.
 
 \textit{Tenez}\tsk said she\tsk so without any idea
-\stick{of the nature of my suffering, she took }
+\stick{of the nature of my suffering, she took}
 \stick{them from her curls, and put them}
-\stick{gravely one by one into my hat\tsh one }
+\stick{gravely one by one into my hat\tsh one}
 \stick{was twisted this way\tsh another twisted}
 \stick{that\tsh ay! by my faith; and when}
 they are published, quoth I,\tsh
@@ -2334,8 +2329,8 @@ joints, and had not gone for some years\tsh It will give
 me the more time, thought I, to peruse the Chinese history;
 and besides I shall be able to give the world a better account of
 the\catch{clock}
-clock in it’s decay, than I could have done in its flourishing
-condition\tsh
+clock in it’s\sic\ decay, than I could have\break
+done in its flourishing condition\tsh
 
 \tsh And so away I posted to the college of the
 Jesuits.
@@ -2396,7 +2391,7 @@ carried me down merrily betwixt them.\etp\patch{But}
 But I have described this voyage down the Rhône,
 before I made it\tsh
 
-\tsh So now I am at Avignon, and as there is
+\tsh So now I am at Avignion\sic, and as there is
 nothing to see but the old house, in which the duke of
 Ormond resided, and nothing to stop me but a short remark
 upon the place, in three minutes you will see me crossing the
@@ -2418,17 +2413,17 @@ arming himself at all points against them.
 Before I go further, let me get rid of my remark upon
 Avignon, which is this: That I think it wrong, merely because a man’s
 hat has been blown off his head by chance the first night he comes
-to Avig\-nion,\tsh that he should therefore say,\break
-\lqq Avignion is more subject to high winds than any town
+to Avig\-nion\sic,\tsh that he should therefore say,\break
+\lqq Avignion\sic\ is more subject to high winds than any town
 in all France:” for which reason I laid no stress upon
 the accident till I had enquired of the master of the inn about it,
 who telling me seriously it was so\tsh and hearing
-moreover, the windyness of Avignion spoke of in the country
+moreover, the windyness of Avignion\sic\ spoke of in the country
 about as a proverb\tsh I set it down, merely to ask the
 learned what can\catch{be} be the cause\tsh the consequence I
 saw\tsk for they are all Dukes, Marquisses, and Counts,
 there\tsh the duce a Baron, in all
-Avignion\tsh so that there is scarce any talking to
+Avignion\sic\tsh so that there is scarce any talking to
 them, on a windy day.
 
 Prithee friend, said I, take hold of my
@@ -2662,4 +2657,5 @@ I begun thus\tsh
 \vskip 140pt
 
 \centerline{\textsc{End} of the \textsc{Seventh Volume}.}
+
 \end{document}

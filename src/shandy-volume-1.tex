@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[paperheight=395pt, paperwidth=240pt, width=166pt, height=308pt, headsep=2pt]{geometry}
-\usepackage[noinfo, frame, a5, center, lualatex]{crop}
+\usepackage[noinfo, frame, a6, center, lualatex]{crop}
 \usepackage{graphicx}
 \usepackage{shandean}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
@@ -38,14 +38,16 @@
 \newpage
 \pagestyle{dedication}
 \thispagestyle{empty}
-\centerline{\small To the Right Honourable}
-\vfill
-\stick{\huge\  Mr. P I T T.\ }
+\centerline{To the Right Honourable}
 
-\vfill
+\vskip 42pt
+
+\stick{\Huge Mr.\@ P I T T.}
+
+\vskip 36pt
 
 \bgroup
-\fontsize{11}{15}\selectfont
+\fontsize{11}{17}\selectfont
 
 \indent S I R,
 
@@ -95,11 +97,11 @@ ever read or heard of.
 \setcounter{page}{1}
 \pagestyle{folio}
 \thispagestyle{empty}
-\centerline{\vbox{\openup 6pt\halign{\hss # \hss\cr
-\addfontfeature{LetterSpace=12.0}\textsc{the}\cr
-\addfontfeature{LetterSpace=16.0}LIFE and OPINIONS\cr
-\addfontfeature{LetterSpace=12.0}\textsc{of}\cr
-{\addfontfeature{LetterSpace=24.0}TRISTRAM SHANDY}, Gent.\cr}}}
+\centerline{\vbox{\openup 12pt\halign{\hss\large # \hss\cr
+\lsss{\textsc{the}}\cr
+\lsss{LIFE}\enspace and\enspace \lsss{OPINIONS}\cr
+\lsss{\textsc{of}}\cr
+\lss{TRISTRAM SHANDY}, Gent.\cr}}}
 
 \vskip 12pt
 \hrule

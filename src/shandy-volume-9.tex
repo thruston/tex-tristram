@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage[paperheight=376pt, paperwidth=240pt, width=166pt, height=266pt, headsep=2pt]{geometry}
-\usepackage[noinfo, frame, a5, center, lualatex]{crop}  
+\usepackage[noinfo, frame, a6, center, lualatex]{crop}  
 \usepackage{graphicx}
+\usepackage{luamplib}
 \usepackage{shandean}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
 \author{Laurence Sterne}
@@ -261,21 +262,26 @@ wished. The Corporal with cheary eye and both arms extended, had
 fallen back perpendicular from it a score times, to inspire it, if
 possible, with a better air\tsh had \textsc{spleen}
 given a look at it,\catch{’twould}
-’twould have cost her ladyship a
-smile\break\tsh it curl’d every where but where the
-Corporal would have it; and where a buckle or two, in his opinion,
-would have done it honour, he could as soon have raised the
-dead.\etp
+\stick{’twould have cost her ladyship a smile}
+\stick{\tsh it curl’d every where but where the}
+\stick{Corporal would have it; and where a}
+\stick{buckle or two, in his opinion, would}
+\stick{have done it honour, he could as soon}
+have raised the dead.\etp
 
-Such it was\tsh or rather such would it have
-seem’d upon any other brow; but the sweet look of goodness
-which sat upon my uncle Toby’s, assimilated every
-thing around it so sovereignly to itself, and Nature had moreover
-wrote\break\textsc{Gentleman} with so fair a hand in every line of
-his countenance, that even his\break tarnish’d gold laced hat and
-huge cock\-ade of flimsy taffeta became him; and though not worth a
-button in themselves, yet the moment my uncle Toby put them
-on, they became serious objects,\catch{and}
+Such it was\tsh or rather such would 
+\stick{it have seem’d upon any other brow; but}
+\stick{the sweet look of goodness which sat}
+\stick{upon my uncle Toby’s, assimilated every}
+\stick{thing around it so sovereignly to it-}
+\stick{self, and Nature had moreover wrote}
+\stick{\textsc{Gentleman} with so fair a hand in every}
+\stick{line of his countenance, that even his}
+\stick{tarnish’d gold laced hat and huge cock-}
+\stick{ade of flimsy taffeta became him; and}
+\stick{though not worth a button in themselves,}
+\stick{yet the moment my uncle Toby put}
+them on, they became serious objects,\catch{and}
 \stck{and altogether seem’d to have been picked} 
 up by the hand of Science to set him off to
 advantage.
@@ -389,9 +395,37 @@ Whilst a man is free\tsk cried the Corporal, giving a flourish with his
 stick\break thus\tsh
 
 \vfill
-\centerline{\includegraphics[width=0.9\textwidth]{flourish.png}}
+\centerline{
+\begin{mplibcode}
+beginfig(1);
+path flo; flo = (77, 33) .. (50, 25) {left} .. (31, 31) .. (23, 48) 
+  .. (50, 64) {right} .. (100, 58) {right} .. (128, 82) {up}
+  .. (100, 116) .. (64, 146) {up} .. (102, 151)
+  .. (133, 140) {right} .. (146, 150) {up} .. (130, 170) .. (102, 200) {up}
+  .. (117, 214) .. (150, 198) .. (164, 194) .. (178, 210) {up}
+  .. (150, 234) {dir 150} .. (124, 258) {up}
+  .. (150, 276) .. (175, 269) .. (220, 265) .. (252, 285) {up}
+  .. (210, 331) {left} .. (165, 304) {down} .. (184, 292) .. (220, 310)
+  .. (235, 327) .. (260, 334) {right} .. (280, 340) .. (306, 358) {right}
+  .. (340, 350) .. (355, 353) .. (370, 363) .. (379, 383) {dir 80} % far end
+  .. (382, 382) {dir 260} .. (370, 360) .. (343, 348) {left}
+  .. (306, 355) {left} .. (285, 340) .. (265, 332) {left}
+  .. (242, 329) .. (230, 317) .. (183, 287) {left}
+  .. (160, 305) {up} .. (210, 334) {right} .. (256, 285) {down}
+  .. (210, 257) {left} .. (144, 270) {left}
+  .. (128, 256) {down} .. (150, 238) {dir -30} .. (181, 210) {down}
+  .. (160, 189) {left} .. (118, 208) {left} .. (106, 198) {down}
+  .. (125, 178) .. (150, 150) {down} .. (130, 134) {left} .. (80, 153) {left}
+  .. (67, 144) {down} .. (100, 119) {dir -26} .. (133, 84) {down}
+  .. (104, 51) {left} .. (49, 60) {left} .. (26, 45) {down}
+  .. (50, 28) {right} .. (75, 35) {dir 30} .. {dir 210} cycle ;
+fill flo;
+numeric wd, ht; (wd, ht) = urcorner currentpicture;
+    currentpicture := currentpicture scaled (\mpdim\textwidth / wd);
+endfig;
+\end{mplibcode}}
 \vfill
-
+\rightline{\rlap{\quad\club}}
 \eject
 \noindent
 A thousand of my father’s most subtle syllogisms could not have said more
@@ -444,7 +478,7 @@ He was an honest, light-hearted lad, an’ please your honour, as ever blood war
 
 The Corporal blush’d down to his fingers ends\tsk a tear of sentimental
 bashfulness\tsk another of gratitude to my uncle Toby\tsk and a tear of sorrow for
-his brother’s misfortunes, started into his eye, and ran sweetly down his cheek
+his brother’s misfortunes, started into his eye and ran sweetly down his cheek
 together; my uncle Toby’s kindled as one\catch{lamp} lamp does at another; and
 taking hold of the breast of Trim’s coat (which had been that of Le Fevre’s) as if
 to\break ease his lame leg, but in reality to gratify a finer feeling\tsh he stood

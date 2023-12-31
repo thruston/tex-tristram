@@ -5,8 +5,8 @@
              ItalicFeatures={Scale=0.96}]{Linux Libertine O}
 \def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
-\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
-\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3.14pt depth -2.6pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
+\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3pt depth -2.46pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
+\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3pt depth -2.46pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
 \def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip
 1em plus .5em minus .5em}\thinspace}
@@ -25,6 +25,7 @@
 %
 \def\tighter#1{{\addfontfeature{LetterSpace=-4.0}#1}}
 \def\tight#1{{\addfontfeature{LetterSpace=-2.0}#1}}
+\def\textscl#1{{\addfontfeature{LetterSpace=6.0}\textsc{#1}}}
 \def\ls#1{{\addfontfeature{LetterSpace=12.0}#1}}
 \def\lss#1{{\addfontfeature{LetterSpace=16.0}#1}}
 \def\lsss#1{{\addfontfeature{LetterSpace=32.0}#1}}
@@ -36,12 +37,8 @@
 \def\et{{\smaller\itshape\egb\&}}
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
-\long\def\patch#1 {\\\rightline{#1}\eject}
-%\long\def\catch#1 {\penalty-10000\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
-%\long\def\catch#1 {\vadjust{\vbox to -6pt{\hbox to \hsize{\hfill\vrule height 11.2pt
-%width 0pt #1}\vss}}\penalty-10000\par\eject\noindent}
+\long\def\patch#1 {\par\vfill\rightline{#1}\eject}
 \long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
-% \def\catch#1 {\setbox0=\hbox{\lower12pt\llap{#1}}\ht0=0pt\dp0=0pt\box0\break\eject\noindent}
 
 \def\ast{{\zap ❋}}
 \def\fnast{\lower-0.5ex\hbox{\ast}}
@@ -83,6 +80,8 @@
 %
 \usepackage{lettrine}
 \newcommand\dropcap[3][]{\lettrine[findent=3pt, lraise=0.05, #1]{#2}{\lss{\large #3}}}
+\newcommand\dropcaptight[3][]{\lettrine[findent=2pt, lraise=0.05,
+#1]{#2}{{\addfontfeature{LetterSpace=3.0}\large #3}}}
 \newcommand\initial[3][]{\lettrine[findent=5pt, lraise=0.07, loversize=0.05, #1]{#2}{}#3}
 \usepackage[sc, tiny, center]{titlesec}
 %

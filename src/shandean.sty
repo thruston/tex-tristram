@@ -3,14 +3,18 @@
              Ligatures=Historic, 
              WordSpace={1,1.6,0.9},
              ItalicFeatures={Scale=0.96}]{Linux Libertine O}
+%
+\usepackage{selnolig}
+\nolig{Th}{T|h} % suppress "Th" ligature globally
+%
 \def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
-\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3pt depth -2.46pt\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
-\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height 3pt depth -2.46pt\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
-\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip
-1em plus .5em minus .5em}\thinspace}
+\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip 1em plus .5em minus .5em}\thinspace}
+\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
+\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
+%\newfontfamily{\ygothic}{ygoth}\DeclareTextFontCommand{\gothic}{\ygothic}
 \newfontfamily{\garamond}{EB Garamond}\DeclareTextFontCommand{\egb}{\garamond}
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
 %

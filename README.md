@@ -7,10 +7,10 @@ Part of the joy of the original work is that each of the nine volumes is a
 work of art in itself, and that the pagination, the decorations, and even in
 some cases the hyphenation of the lines are all meaningful.  
 
-This project therefore presents the text in nine separate PDF files,
-designed to be read in a PDF viewer that allows you to see two pages at
-once, like an open book.  Each page break faithfully follows the page breaks
-in the originals, and the text includes all the dashes, asterisks, blanks, and
+This project therefore presents the text in nine separate PDF files, designed
+to be read in a PDF viewer that allows you to see two pages at once, like an
+open book.  Each page break faithfully follows the line and page breaks in the
+originals, and the text includes all the dashes, asterisks, blanks, and
 catch-words.
 
 The spelling and punctuation is all Sterne's (as far as human proof-reading
@@ -39,24 +39,25 @@ complete.  If you look at a different edition, you may spot more of them; or
 you may think I have wrongly called out some of those that I have marked.  The
 originals I used are the scanned copies linked above.
 
-I have not attempted to mark every variation of spelling -- only those where
-the mis-spelled word is obviously wrong -- one source to check these is
-Johnson's Dictionary (available online) which came out in 1755.  I've also
-ignored the more or less random variation between -ic and -ick suffixes, and
-the "grocer's apostrophes" that abound -- with the exception of "it's" which
-occurs exclusively (but not consistently) in Vol. VII and Vol. VIII
+I have not attempted to mark variations of spelling -- only those where the
+mis-spelled word is obviously misprinted.  I've also ignored the more or less
+random variation between -ic and -ick suffixes, and the "grocer's apostrophes"
+that abound -- with the exception of "it's" which occurs exclusively (but not
+consistently) in Vol. VII and Vol. VIII
 
 ### Vol. I - 1760 Dodsley
 
 - p.16, last line  "ate very" --> "at every"
 - p.20, lines 7,8  "left it, seems," --> "left, it seems,"
-- p.27, at the bottom -- catch-word "form," has unwanted comma ","
-- p.65, 2nd from bottom   "enew" --> "enow" ?
-- p.151, lines 1,2  "irresistable" --> "irresistible" ? 
+- p.27, at the bottom -- catch-word "form," has unwanted comma
+- p.35, line 16  "uudoubtedly" --> "undoubtedly", compositor confused u and n
+- p.56, at the bottom -- catch-word "folly:" but next page text has "folly;"
+- p.166, line 9  "ofter" --> "after", compositor confused o and a
 
 ### Vol. II - 1760 Dodsley
 
-- Nothing obviously wrong in this volume.
+- p.64, line 15  opening parenthesis in italic, but closing in roman type
+- p.75, line 2  "aliks" -->  "alike", compositor confused s and e
 
 ### Vol. III - 1761 Dodsley
 
@@ -87,7 +88,7 @@ occurs exclusively (but not consistently) in Vol. VII and Vol. VIII
 - p.56, line 18        first letter of line has slipped down
 - p.67, line 4 of Ode  "move-/-ment" has an extra hyphen
 - p.73, line 3         "facy" --> "fancy"
-- p.94, line 4         "anew" --> "enow" ? compare to Vol. I.
+- p.94, line 4         "anew" --> "enow" ? or "enew" as in Vol. I. ?
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
 - p.113, line 13       "favorite" --> "favourite" (as elsewhere)
 - p.118, line 21       closing paren is italic font

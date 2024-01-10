@@ -61,10 +61,13 @@ consistently) in Vol. VII and Vol. VIII
 
 ### Vol. III - 1761 Dodsley
 
-- p.9, first letter of catch-word has slipped
+- p.5, 2nd last line   "quoth" should not be in italics
 - p.19, third para.    "-- Brother Toby, quoth my uncle," --> "my father"
-- p.28, line 5         "swiming" --> "swimming"
-- p.86, line 3         "Agalastes" --> "Agelastes" which means "Unsmiling"
+- p.46, line 1         closing paren should have been a comma
+- p.70, catch word     Catch is set to the right of the margin
+- p.72, line 15        unwanted ; after , 
+- p.81, line 15        unwanted space in "regions"
+- p.94, line 10        "your" --> "you"
 - p.110, lines 7,8     "elegant" --> "eloquent" ?
 - p.117, line 10       "fitst" --> "first"
 - p.123, line 11       "would laid down" --> "would have laid down"

@@ -59,12 +59,16 @@
 \def\alt#1#2{\hbox{\vbox to 3.6ex{\vss\openup-6pt\halign{##\cr\hss\scriptsize #2\hss\cr#1\cr}}}}
 \def\c#1{\hbox to 0pt{\hss #1\hss}}
 %
-\def\club{\small ♣︎}
-\def\sick{\rlap{\qquad\club}}
-\def\sic{\marginpar{\club}}
-%
+\usepackage{graphicx}
 \usepackage{xspace}
+\usepackage{marginnote}
+\def\club{\small ♣︎}
+\def\sick{\rlap{\quad\club}}
+\def\sic{\marginnote{\club}\xspace}
+%
 \newcommand{\drslop}{Dr.~\textit{Slop}\xspace}
+\newcommand{\fist}{☞\xspace}
+\renewcommand{\fist}{\lower1.414pt\hbox{\includegraphics{manicule.pdf}}\xspace}
 %
 \setcounter{secnumdepth}{-1}
 %

@@ -45,7 +45,7 @@ random variation between -ic and -ick suffixes, and the "grocer's apostrophes"
 that abound -- with the exception of "it's" which occurs exclusively (but not
 consistently) in Vol. VII and Vol. VIII
 
-### Vol. I - 1760 Dodsley
+### Vol. I - 1760 Dodsley (first London edition)
 
 - p.16, last line  "ate very" --> "at every"
 - p.20, lines 7,8  "left it, seems," --> "left, it seems,"
@@ -54,7 +54,7 @@ consistently) in Vol. VII and Vol. VIII
 - p.56, at the bottom -- catch-word "folly:" but next page text has "folly;"
 - p.166, line 9  "ofter" --> "after", compositor confused o and a
 
-### Vol. II - 1760 Dodsley
+### Vol. II - 1760 Dodsley (first London edition)
 
 - p.64, line 15  opening parenthesis in italic, but closing in roman type
 - p.75, line 2  "aliks" -->  "alike", compositor confused s and e
@@ -62,23 +62,21 @@ consistently) in Vol. VII and Vol. VIII
 ### Vol. III - 1761 Dodsley
 
 - p.5, 2nd last line   "quoth" should not be in italics
-- p.19, third para.    "-- Brother Toby, quoth my uncle," --> "my father"
+- p.19, third para.    "my uncle" --> "my father"
 - p.46, line 1         closing paren should have been a comma
 - p.70, catch word     Catch is set to the right of the margin
 - p.72, line 15        unwanted ; after , 
 - p.81, line 15        unwanted space in "regions"
 - p.94, line 10        "your" --> "you"
+- p.99. line 14, 15    final "a" repeated on next line
+- p.99. line 16, 17    final "the" repeated on next line
 - p.110, lines 7,8     "elegant" --> "eloquent" ?
-- p.117, line 10       "fitst" --> "first"
+- p.117, line 10       "fitst" --> "first" 
 - p.123, line 11       "would laid down" --> "would have laid down"
 - p.138, second para.  "brothet" --> "brother"
 - p.138, catch word    Catch has "CHAP," instead of "CHAP."
 - p.144, line 15       "or" --> "nor" (maybe?)
-- p.160, line 10       "chattles" --> "chattels" (as elsewhere)
-- p.168, lines 11,12   "unraval" --> "unravel" (as elsewhere)
 - p.171, line 3        closing quote is single ’ instead of double ”
-- p.171, line 5        "analitical" --> "analytical" (maybe?)
-- p.190, line 9        "swiming" --> "swimming"
 - p.191, line 5        closing paren is in italic font
 
 ### Vol. IV - 1761 Dodsley

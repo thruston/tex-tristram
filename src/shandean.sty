@@ -14,7 +14,7 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
-\newfontface{\egb}{EB Garamond 12 Italic}[Scale=0.9]
+\newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
 %
 \def\smallit#1{{\fontsize{9.5}{14}\selectfont\textit{#1}}}
@@ -37,7 +37,7 @@
 \def\stk#1{\hbox to \hsize{\tighter{#1}}}
 %
 \usepackage{relsize}
-\def\et{{\raise1pt\hbox{\egb\&}}}
+\def\et{{\raise0pt\hbox{\egb\&}}}
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
 \long\def\patch#1 {\par\vfill\rightline{#1}\eject}

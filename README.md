@@ -81,8 +81,13 @@ consistently) in Vol. VII and Vol. VIII
 
 ### Vol. IV - 1761 Dodsley
 
+- p.8, line 4          "titigimus" -> "tetigimus" 
+- p.20, line 11        "perveneo" -> "pervenio" 
 - p.21, line 17        "never tell I am got" --> "never till I am got"
-- p.36, line 16        The first "n" in "consequences" is inverted
+- p.30, line 7         opening paren in roman, but closing in italic type
+- p.35, line 7         opening paren in roman, but closing in italic type
+- p.36, line 16        "cousequences" -> "consequeneces" comp confused u and n
+- p.45, line 2 of fn   "Scarpio" -> "Scorpio"
 - p.45, line 7 of fn   "seclestissima" --> "scelestissima"
 - p.46, line 8         first letter of line has slipped down
 - p.46, line 15        two digits missing before "83" -- apparently 14?

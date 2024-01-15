@@ -37,6 +37,7 @@
 \def\stk#1{\hbox to \hsize{\tighter{#1}}}
 %
 \usepackage{relsize}
+%
 \def\et{{\raise0pt\hbox{\egb\&}}}
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
@@ -56,6 +57,7 @@
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-2pt\hbox{\ast}\repeat}
 \def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-1pt\hbox to .7em{\hss\ast\hss}\repeat}
 %
+% alt is for the interlineal alternatives in the Curses of Ernulphus
 \def\alt#1#2{\hbox{\vbox to 3.6ex{\vss\openup-6pt\halign{##\cr\hss\scriptsize #2\hss\cr#1\cr}}}}
 \def\c#1{\hbox to 0pt{\hss #1\hss}}
 %

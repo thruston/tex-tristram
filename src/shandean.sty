@@ -10,7 +10,7 @@
 \def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.6pt\hskip 1em plus .5em minus .5em\thinspace}
-\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip 1em plus .5em minus .5em}\thinspace}
+\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip .5em plus .5em minus .2em}\thinspace}
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
@@ -68,6 +68,7 @@
 \def\sick{\rlap{\quad\club}}
 \def\sic{\marginnote{\club}\xspace}
 %
+\newcommand{\toby}{\textit{Toby}\xspace}
 \newcommand{\drslop}{Dr.~\textit{Slop}\xspace}
 \newcommand{\fist}{☞\xspace}
 \renewcommand{\fist}{\lower1.414pt\hbox{\includegraphics{manicule.pdf}}\xspace}
@@ -85,6 +86,11 @@
 %
 \fancypagestyle{folio}{\fancyhf{}
 \fancyhead[C]{[\enspace\thepage\enspace]}
+\renewcommand{\headrulewidth}{0pt}}
+%
+% for the missing pages in Vol 4.
+\fancypagestyle{plusnine}{\fancyhf{}
+\fancyhead[C]{[\quad \the\numexpr \thepage + 9\relax \quad]}
 \renewcommand{\headrulewidth}{0pt}}
 %
 \renewcommand*\footnoterule{}

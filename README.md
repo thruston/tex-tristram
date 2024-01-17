@@ -86,7 +86,7 @@ consistently) in Vol. VII and Vol. VIII
 - p.21, line 17        "never tell I am got" --> "never till I am got"
 - p.30, line 7         opening paren in roman, but closing in italic type
 - p.35, line 7         opening paren in roman, but closing in italic type
-- p.36, line 16        "cousequences" -> "consequeneces" comp confused u and n
+- p.36, line 16        "cousequences" -> "consequeneces", compositor confused u and n
 - p.45, line 2 of fn   "Scarpio" -> "Scorpio"
 - p.45, line 7 of fn   "seclestissima" --> "scelestissima"
 - p.46, line 8         first letter of line has slipped down
@@ -96,10 +96,11 @@ consistently) in Vol. VII and Vol. VIII
 - p.73, line 3         "facy" --> "fancy"
 - p.94, line 4         "anew" --> "enow" ? or "enew" as in Vol. I. ?
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
-- p.113, line 13       "favorite" --> "favourite" (as elsewhere)
 - p.118, line 21       closing paren is italic font
+- p.139, line 1        Footnote asterisk (apparently) missing from text
 - p.143, line 5        first letter of line has slipped down
-- p.201, line 1        "said" --> "sad" (maybe??, also the catch word)
+- p.175, line 10       "its accord" -> "its own accord"
+- p.201, line 1        "said" --> "sad" (maybe?, also the catch word)
 - p.203, line 11       "to'ther" --> "t'other"
 - p.208, line 19       opening paren is in italic font
 

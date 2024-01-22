@@ -13,13 +13,18 @@ open book.  Each page break faithfully follows the line and page breaks in the
 originals, and the text includes all the dashes, asterisks, blanks, and
 catch-words.
 
-The spelling and punctuation is all Sterne's (as far as human proof-reading
-can be sure), but the medial long-s characters are replaced with modern
-ones.  The font used is Linux Libertine, with historical swash ligatures
-for ct and st.
+The spelling and punctuation is all Sterne's (as far as human proof-reading can
+be sure), but the medial long-s characters are replaced with modern ones.  The
+font used is Linux Libertine, with historical swash ligatures for ct and st.
+The same font is used for the occasional Greek quotations so the characters are
+slightly more contemporary than Sterne's printers used; I have not attempted to
+correct any of the (appallingly bad) grammar nor the slightly random accents
+and breathing marks, nor the occasional terminal sigma in the middle of a
+word, etc, but I have rendered the archaic letter forms used for "γ", "τ",
+"π","ου" etc into modern equivalents. 
 
 The text is derived from the Project Gutenberg source for Sterne's work,
-carefully corrected by hand using scanned copies of the real first edition
+extensively corrected by hand using scanned copies of the real first edition
 volumes that are available through Google Books, and listed (as of June 2023)
 at [Laurence Sterne in Cyberspace](https://www1.gifu-u.ac.jp/~masaru/Sterne_on_the_Net.html).
 
@@ -112,7 +117,10 @@ consistently) in Vol. VII and Vol. VIII
 - p.70, catch-word  Unwanted space in "le scence."
 - p.73, line 10     opening paren in roman, but closing in italic type
 - p.79, line 10     opening paren in italic, but closing in roman type
+- p.106, line 10    no matching closing paren
+- p.109, line 15    opening paren in roman, but closing in italic type
 - p.109, line 21    "πρώτισα" --> "πρώτιστα"
+- p.112, line 16       opening paren in roman, but closing in italic type
 - p.117, line 15    "it's" --> "its"
 - p.127, line 1,2   "Jerico" --> "Jericho"
 - p.146, line 7     "Yo do?" --> "You do?"

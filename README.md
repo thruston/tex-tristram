@@ -108,7 +108,10 @@ consistently) in Vol. VII and Vol. VIII
 
 - p.33, line 2      Missing closing paren after "suspicions."
 - p.33, line 5      Missing "it" after "may"
+- p.70, line 16     "Tristra-pœdia" --> "Tristra-pædia", compositor confused oe and ae ligatures 
 - p.70, catch-word  Unwanted space in "le scence."
+- p.73, line 10     opening paren in roman, but closing in italic type
+- p.79, line 10     opening paren in italic, but closing in roman type
 - p.109, line 21    "πρώτισα" --> "πρώτιστα"
 - p.117, line 15    "it's" --> "its"
 - p.127, line 1,2   "Jerico" --> "Jericho"

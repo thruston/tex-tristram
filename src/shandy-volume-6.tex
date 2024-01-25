@@ -1,9 +1,10 @@
-\documentclass{article}
+\documentclass[twoside]{article}
 \usepackage[paperheight=395pt, paperwidth=240pt, width=166pt, height=294pt, headsep=2pt]{geometry}
 \usepackage[noinfo, frame, a6, center, lualatex]{crop}
 \usepackage{graphicx}
 \usepackage{shandean}
 \usepackage{luamplib}
+\mplibtextextlabel{enable}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
 \author{Laurence Sterne}
 \begin{document}
@@ -33,7 +34,7 @@ $$\vbox{\openup 10pt\halign{\hss #\hss\cr
 \vfill
 \vbox{\openup -2pt\halign to 180pt{\footnotesize #\cr
 \textit{Dixero si quid fortè jocosius, hoc mihi juris}\hfill\cr
-\textit{Cum venia dabis}.\tsh \hfill \textsc{Hor.}\cr
+\textit{Cum venia dabis}. \hfill \textsc{Hor.}\cr
 \noalign{\vskip 4pt}
 \hbox to 3em{\tsh}\textit{Si quis calumnietur levius esse quam decet}\cr
 \quad\textit{theologum, aut mordacius quam deceat Chris-}\cr
@@ -53,12 +54,12 @@ $$\vbox{\openup 10pt\halign{\hss #\hss\cr
 \thispagestyle{empty}
 \setcounter{page}{1}
 \hbox{}\vskip -36pt
-\moveright 88pt\vbox to 0pt{\hsize
-40pt\rlap{\includegraphics[width=60pt]{sterne.png}}\vss}
+% \moveright 88pt\vbox to 0pt{\hsize
+% 40pt\rlap{\includegraphics[width=60pt]{sterne.png}}\vss}
 
 \[\vbox{\openup 12pt\halign{\hss # \hss\cr
 \addfontfeature{LetterSpace=16.0}\textsc{the}\cr
-\lsss{LIFE}\enspace and\enspace \lsss{OPINIONS}\cr
+\large\lsss{LIFE}\quad and\quad \lsss{OPINIONS}\cr
 \addfontfeature{LetterSpace=16.0}\textsc{of}\cr
 {\addfontfeature{LetterSpace=24.0}TRISTRAM SHANDY}, Gent.\cr}}\]
 
@@ -81,109 +82,141 @@ through.\tsh
 
 \tsh What a wilderness has it been!\break and what a
 mercy that we have not both\catch{of} of us been
-lost, or devoured by wild beasts in it!
+lost, or devoured by wild beasts in it.
 
-Did you think the world itself, Sir, had contained such a number
-of Jack Asses?\tsh How they view’d and
-review’d us as we passed over the rivulet at the bottom of
-that little valley!\tsh\break and when we climbed over that
-hill, and were just getting out of sight\tsk good God! what a
-braying did they all set up together!
+Did you think the world itself, Sir,\break
+\stick{had contained such a number of Jack} 
+\stick{Asses?\tsh How they view’d and re-}
+\stick{view’d us as we passed over the rivulet}
+\stick{at the bottom of that little valley!\tsh}
+\stick{and when we climbed over that hill, and}
+\stick{were just getting out of sight\tsk good} 
+\stick{God! what a braying did they all set up} 
+together!
 
-\tsh Prithee, shepherd! who keeps all those
-Jack Asses? \quad\ast\quad\ast\quad\ast
+\tsh Prithee, shepherd! who keeps\break
+all those Jack Asses? \raise2pt\hbox{\enspace\ast\enspace\ast\enspace\ast}
 
-\tsh Heaven be their comforter\tsh\break What! are
-they never curried?\tsh Are they never taken in in
-winter?\tsh Bray\break bray\tsk bray. Bray on,\tsk the world
-is deeply your debtor;\tsh louder still\tsk\catch{that’s} that’s
-nothing:\tsk in good sooth, you\break
-are ill-used:\tsh Was I a Jack Asse, I\break
-solemnly declare, I would bray in\break
-G-sol-re-ut from morning, even unto\break night.
+\tsh Heaven be their comforter\tsh\break 
+\stick{What! are they never curried?\tsh Are}
+\stick{they never taken in in winter?\tsh Bray}
+\stick{bray\tsk bray. Bray on,\tsk the world is} 
+\stick{deeply your debtor;\tsh louder still\tsk}\catch{that’s} 
+\stick{that’s nothing:\tsk in good sooth, you}
+\stick{are ill-used:\tsh Was I a Jack Asse, I}
+\stick{solemnly declare, I would bray in}
+\stick{G-sol-re-ut from morning, even unto}
+night.
 
 \section{\lsss{CHAP}.\enspace II.}
 
-\dropcap{W}{hen} my father had danced his white bear backwards and forwards through
-half a dozen pages, he closed the book for good an’ all,\tsk and in a kind of
-triumph redelivered it into \textit{Trim}’s hand, with a nod to lay it upon the
-’scrutoire where he found it.\tsh \textit{Tristram}, said he, shall be made to
-conjugate every word in the dictionary, backwards and forwards the same way;\tsh
-every word, \textit{Yorick}, by this means, you see, is converted into a thesis or
-an hypothesis;\tsk every thesis and hypothesis have an off-\catch{spring} spring of
-propositions;\tsk and each pro\-position has its own consequences and conclusions;
-every one of which leads the mind on again, into fresh tracks of enquiries and
-doubtings.\tsh The force of this engine, added my father, is incredible in opening a
-child’s head.\tsh ’Tis enough, brother \textit{Shandy}, cried my uncle
-\textit{Toby}, to burst it into a thousand\break splinters.\tsh
+\dropcap[nindent=0pt]{W}{hen} my father had danced his
+\tighter{white bear backwards and forwards}\break
+\stick{through half a dozen pages, he closed}
+\stick{the book for good an’ all,\tsk and in a} 
+\stick{kind of triumph redelivered it into \trim's}
+\stick{hand, with a nod to lay it upon the ’scru-}
+\stick{toire where he found it.\tsh \textit{Tristram},} 
+\stick{said he, shall be made to conjugate every}
+\stick{word in the dictionary, backwards and} 
+\stick{forwards the same way;\tsh every word,} 
+\stick{\textit{Yorick}, by this means, you see, is con-}
+\stick{verted into a thesis or an hypothesis;\tsk} 
+\stick{every thesis and hypothesis have an off-}\catch{spring}
+\stick{spring of propositions;\tsk and each pro-}
+\stick{position has its own consequences and}
+\stick{conclusions; every one of which leads} 
+\stick{the mind on again, into fresh tracks of} 
+\stick{enquiries and doubtings.\tsh The force}
+\stick{of this engine, added my father, is in-}
+\stick{credible, in opening a child’s head.\tsh} 
+\stick{’Tis enough, brother \textit{Shandy}, cried my} 
+\stick{uncle \toby, to burst it into a thousand}
+splinters.\tsh
 
-I presume, said \textit{Yorick}, smiling,\tsk it must be owing to
-this,\tsk (for let logi\-cians say what they will,
-it is not to be\break accounted
-for sufficiently from the bare use of the ten predicaments)\tsh That
-the famous \textit{Vincent Quirino}, amongst the many other astonishing feats of
-his childhood, of which the Cardinal \textit{Bembo} has given the world so exact
-a story,\tsk should be able to paste up in the publick schools\catch{at}
-at \textit{Rome}, so early as in the eighth year of his age, no less than four
-thousand, five hundred, and sixty different theses, upon the most abstruse points of
-the most abstruse theology;\tsk and to defend and maintain them in such sort, as to
-cramp and dumbfound his opponents.\tsh\break What is that, cried my father, to what
-is told us of \textit{Alphonsus Tostatus},
-who,\break almost in his nurse’s arms, learned
-all the sciences and liberal arts without being taught any one of them?\tsh What
-shall we say of the great \textit{Piereskius?}\tsk\break That’s the very man, cried
-my uncle \textit{Toby}, I once told you of, brother \textit{Shandy}, who walked a
-matter of five hundred miles, reckoning from \textit{Paris} to \textit{Schevling},
-and from \textit{Schevling} back again, merely to see \textit{Stevinus}’s flying
-chariot.\tsh He\break was a very great man! added my uncle \textit{Toby}; (meaning
-\textit{Stevinus})\tsk He was so;\catch{bro-}
-brother \textit{Toby}, said my father, (meaning
-\textit{Piereskius})\tsk\etp
-and had multiplied his ideas so fast, and increased his
-know-\break lege to such a prodigious stock, that, if we may give credit to an anecdote
-concerning him, which we cannot with-\break\tight{hold here, without shaking the
-authority}
-\stick{of all anecdotes whatever\tsk at seven years}
+I presume, said \textit{Yorick}, smiling,\tsk it\break
+\stick{must be owing to this,\tsk (for let logi-}
+\stick{cians say what they will, it is not to be}
+\stick{accounted for sufficiently from the bare}
+\stick{use of the ten predicaments)\tsh That}
+\stick{the famous \textit{Vincent Quirino}, amongst the}
+\stick{many other astonishing feats of his child-}
+\stick{hood, of which the Cardinal \textit{Bembo} has}
+\stick{given the world so exact a story,\tsk should}
+\stick{be able to paste up in the publick schools}\catch{at}
+\stick{at \textit{Rome}, so early as in the eighth year of}
+\stick{his age, no less than four thousand, five}
+\stick{hundred, and sixty different theses, upon} 
+\stick{the most abstruse points of the most ab-}
+\stick{struse theology;\tsk and to defend and} 
+\stick{maintain them in such sort, as to cramp} 
+\stick{and dumbfound his opponents.\tsh}
+\stick{What is that, cried my father, to what}
+\stick{is told us of \textit{Alphonsus Tostatus}, who,} 
+\stick{almost in his nurse’s arms, learned all} 
+\stick{the sciences and liberal arts without be-}
+\stick{ing taught any one of them?\tsh What}
+\stick{shall we say of the great \textit{Piereskius?}\tsk}
+\stick{That’s the very man, cried my uncle}
+\stick{\toby, I once told you of, brother \textit{Shandy},} 
+\stick{who walked a matter of five hundred} 
+\stick{miles, reckoning from \textit{Paris} to \textit{Schevling},}
+\stick{and from \textit{Schevling} back again, merely}
+\stick{to see \textit{Stevinus}’s flying chariot.\tsh He}
+\stick{was a very great man! added my uncle}
+\stick{\toby; (meaning \textit{Stevinus})\tsk He was so;}\catch{bro-}
+\stick{brother \toby, said my father, (meaning}
+\stick{\textit{Piereskius})\tsk\etp and had multiplied his} 
+\stick{ideas so fast, and increased his know-}
+\stick{lege to such a prodigious stock, that,} 
+\stick{if we may give credit to an anecdote}
+\stick{concerning him, which we cannot with-}
+\stck{hold here, without shaking the authority}
+\stck{of all anecdotes whatever\tsk at seven years}
 \stick{of age, his father committed entirely to}
 \stick{his care the education of his younger bro-}
-\stick{\tight{ther, a boy of five years old,\tsk with the sole}}
-\stick{\tight{management of all his concerns.\tsk Was the}}
-\stick{\tight{father as wise as the son? quoth my uncle}}
-\stick{\tight{\textit{Toby:}\tsk I should think not, said \textit{Yorick:}\tsk}}
-\stick{\tight{But what are these, continued my father\tsk}}
-(breaking out in a kind of enthusiasm)\break
-\tsk what are
-these, to those prodigies of childhood in \textit{Grotius, Scioppius, Heinsius,
-Politian, Pascal, Joseph Scaliger, Ferdinand de Cordouè}, and others\tsk some of
-which left off their \textit{substantial forms} at\catch{nine}
-nine years old, or sooner, and went on reasoning without them;\tsk others went
-through their classics at seven;\tsk wrote \stick{tragedies at eight;\tsh \textit{Ferdinand
-de Cor-}}\break
+\stck{ther, a boy of five years old,\tsk with the sole}
+\stck{management of all his concerns.\tsk Was the}
+\stck{father as wise as the son? quoth my uncle}
+\stck{\textit{Toby:}\tsk I should think not, said \textit{Yorick:}\tsk}
+\stck{But what are these, continued my father\tsk}
+\stick{(breaking out in a kind of enthusiasm)}
+\stick{\tsk what are these, to those prodigies of}
+\stick{childhood in \textit{Grotius}, \textit{Scioppius}, \textit{Heinsius},}
+\stick{\textit{Politian}, \textit{Pascal}, \textit{Joseph Scaliger}, \textit{Fer}-}
+\stick{\textit{dinand de Cordouè}, and others\tsk some of}
+\stick{which left off their \textit{substantial forms} at}\catch{nine}
+\stick{nine years old, or sooner, and went on}
+\stick{reasoning without them;\tsk others went}
+\stick{through their classics at seven;\tsk wrote} 
+\stick{tragedies at eight;\tsh \textit{Ferdinand de Cor-}}\break
 \stick{\textit{douè} was so wise at nine,\tsk ’twas thought}
 \stick{the Devil was in him;\tsk and at \textit{Venice}}
 \stick{gave such proofs of his knowledge and}
 \stick{goodness, that the monks imagined he}
 \stick{was \textit{Antichrist}, or nothing.\tsh Others}
 \stick{were masters of fourteen languages at}
-\stick{ten,\tsk finished the course of their rhe-}
-toric, poetry, logic, and ethics at eleven,\break
-\tsk put forth their commentaries upon\break
-\textit{Servius} and \textit{Martianus Capella} at twelve,\break
-\tsk and at thirteen received their degrees in
-philosophy, laws, and divinity:\tsh\break
-But you forget the great \textit{Lipsius}, quoth
-\textit{Yorick}, who composed a work \lower -2pt\hbox{\ast} the day\break
-\rightline{he}
+\stick{ten,\tsk finished the course of their rheto-}
+\stick{ric, poetry, logic, and ethics at eleven,}
+\stick{\tsk put forth their commentaries upon}
+\stick{\textit{Servius} and \textit{Martianus Capella} at twelve,}
+\stick{\tsk and at thirteen received their degrees}
+\stick{in philosophy, laws, and divinity:\tsh}
+\stick{But you forget the great \textit{Lipsius}, quoth}
+\stick{\textit{Yorick}, who composed a work \fnast\ the day}
+\stick{\hfill he}
 
 \vfill
 \bgroup\footnotesize
-\indent\fnast\ Nous aurions quelque interêt, says
-\textit{Baillet}, de montrer qu’il n’ a rien de ridicule s’il étoit vérita-
-\break\null\hfill ble,\parfillskip0pt\par\egroup
+\noindent
+\enspace\fnast\ Nous aurions quelque interêt, says \textit{Baillet}, de\break
+montrer qu’il n’ a rien de ridicule s’il étoit vérita-\break
+\null\hfill ble,\parfillskip0pt\par\egroup
 
 \eject\noindent
-he was born:\tsh They should have wiped it up, said my uncle
-\textit{Toby}, and\break said no more about it.
+\stick{he was born;\tsh They should have}
+\stick{wiped it up, said my uncle \toby, and}
+said no more about it.
 
 \section{\lsss{CHAP}.\enspace III.}
 
@@ -198,44 +231,51 @@ quarrel had ensued betwixt them.
 \vfill
 \bgroup\footnotesize
 \noindent
-ble, au
-moins dans le sens énigmatique que \textit{Nicius Erythræus} a tâché de lui donner.
-Cet auteur dit que pour comprendre comme \textit{Lipse}, il a pû composer un ouvrage
-le premier jour de sa vie, il faut s’imaginer, que ce premier jour n’est pas celui
-de sa naissance charnelle, mais celui au quel il a commencé d’user de la raison; il
-veut que ç’ait été à l’âge de \textit{neuf} ans; et il nous veut persuader que ce
-fut en cet âge, que \textit{Lipse} fit un poem.\tsh Le tour est ingénieux, \&c.
-\&c.\par\egroup
+ble, au moins dans le sens énigmatique que \textit{Nicius\break
+Erythræus} a tâché de lui donner. Cet auteur dit\break
+que pour comprendre comme \textit{Lipse}, a pû com-\break
+poser un ouvrage le premier jour de sa vie, il faut\break
+s’imaginer, que ce premier jour n’est pas celui de\break
+sa naissance charnelle, mais celui au quel il a com-\break
+mencé d’user de la raison; il veut que ç’ait été a\break
+l’age de \textit{neuf} ans; et il nous veut persuader que ce\break
+fut en cet âge, que \textit{Lipse} fit un poem.\tsh Le tour\break
+est ingenieux, \&c. \&c.\par\egroup
 \rightline{\tsh Oh!}
 \eject
 
-\tsh Oh! oh!\tsh said \textit{Slop},
-casting a glance of undue freedom in \textit{Susannah}’s face,
-as she declined the office;\tsk then,\break I think I know you,
-madam\tsh You\break
-know me, Sir! cried \textit{Susannah} fastidi\-ously, and with a
-toss of her head, le\-velled evidently, not
-at his profession, but at the doctor himself,\tsk you know\break
-me! cried \textit{Susannah} again.\tsk Doctor \textit{Slop}
-clapped his finger and his thumb\break
-instantly upon his nostrils;\tsh \textit{Susan\-nah}’s spleen was ready to
-burst at it;\tsh ’Tis false, said
-\textit{Susannah}.\tsk Come, come, Mrs.\@ Modesty, said \textit{Slop},
-not a little\break\stick{elated with the success of his last
-thrust,}\break\tsh If you won’t hold the candle, and
-look\tsk you may hold it and shut your eyes:\tsk That’s
-one of your popish shifts, cried \textit{Susannah:}\tsk ’Tis
-better, said \textit{Slop}, with a nod, than no shift at all, young\catch{woman;}
-woman;\tsh I defy you, Sir, cried \textit{Su\-sannah}, pulling
-her shift sleeve below her elbow.
+\tsh Oh! oh!\tsh said \textit{Slop}, casting\break
+\stick{a glance of undue freedom in \textit{Susannah}’s}
+\stick{face, as she declined the office;\tsh then,}
+\stick{I think I know you, madam\tsh You}
+\stick{know me, Sir! cried \textit{Susannah} fastidi-}
+\stick{ously, and with a toss of her head, le-}
+\stick{velled evidently, not at his profession,}
+\stick{but at the doctor himself,\tsk you know}
+\stick{me! cried \textit{Susannah} again.\tsk Doctor} 
+\stick{\textit{Slop} clapped his finger and his thumb}
+\stick{instantly upon his nostrils;\tsh \textit{Susan}-}
+\stick{\textit{nah}’s spleen was ready to burst at it;\tsh}
+\stick{’Tis false, said \textit{Susannah}.\tsk Come, come,}
+\stick{Mrs.\@ Modesty, said \textit{Slop}, not a little}
+\stick{elated with the success of his last thrust,}
+\stick{\tsh If you won’t hold the candle, and}
+\stick{look\tsk you may hold it and shut your}
+\stick{eyes:\tsk That’s one of your popish shifts,} 
+\stick{cried \textit{Susannah:}\tsk ’Tis better, said \textit{Slop},}
+\stick{with a nod, than no shift at all, young}\catch{woman;}
+\stick{woman;\tsh I defy you, Sir, cried \textit{Su}-}
+\stick{\textit{sannah}, pulling her shift sleeve below} 
+her elbow.
 
-It was almost impossible for two persons to assist each other in
-a surgical case with a more splenetic cordiality.
+It was almost impossible for two per-\break
+\stick{sons to assist each other in a surgical}
+case with a more splenetic cordiality.
 
 
 \textit{Slop} snatched up the cataplasm,\tsh\break
-\textit{Susannah} snatched up the candle;\tsh\break
-A little this way, said \textit{Slop}; \textit{Susannah}
+\stick{\textit{Susannah} snatched up the candle;\tsh}
+\stick{A little this way, said \textit{Slop}; \textit{Susannah}}
 \stick{looking one way, and rowing another,}
 \stick{instantly set fire to \textit{Slop}’s wig, which}
 \stick{being somewhat bushy and unctuous}
@@ -246,679 +286,846 @@ A little this way, said \textit{Slop}; \textit{Susannah}
 \stick{\textit{Slop}, getting upright, with the cataplasm}
 \stick{in his hand;\tsh I never was the de-}
 \stick{struction of any body’s nose, said \textit{Susan-}}
-\textit{nah},\tsk which is more than you can say:\catch{\tsh Is}
-\tsh Is it?  cried \textit{Slop}, throwing the cataplasm in her
-face;\tsh Yes, it is, cried \textit{Susannah}, returning the
-compliment with what was left in the pan.\tsh
+\stick{\textit{nah},\tsk which is more than you can say:}\catch{\tsh Is}
+\stick{\tsh Is it?  cried \textit{Slop}, throwing the ca-}
+\stick{taplasm in her face;\tsh Yes, it is, cried} 
+\stick{\textit{Susannah}, returning the compliment} 
+with what was left in the pan.\tsh
 
-\vskip -6pt
 
 \section{\lsss{CHAP}.\enspace IV.}
 
-\dropcap[findent=0pt]{D}{octor} \textit{Slop} and
-\textit{Susannah} filed cross-bills against each other in the
-parlour; which done, as the cataplasm had failed, they retired into
-the kitchen to prepare a fomentation for me;\tsk and whilst that was doing, my father determined the
-point as you will read.
+\kern -6pt
+
+\dropcap[findent=0pt]{D}{octor} \textit{Slop} and \textit{Susannah} filed\break
+cross-bills against each other in the\break
+\stick{parlour; which done, as the cataplasm}
+\stick{had failed, they retired into the kitchen} 
+\stick{to prepare a fomentation for me;\tsk and} 
+\stick{whilst that was doing, my father deter-}
+mined the point as you will read.
 
 \etp
 
 \section{\lsss{CHAP}.\enspace V.}
 
-\vskip -6pt
+\kern -6pt
 
 \dropcap{Y}{ou} \tight{see ’tis high time, said my father,}\break
-addressing himself equally to my uncle \textit{Toby} and
-\textit{Yorick}, to take this young creature out of these
-women’s hands, and put him into those of a private governor.
-\textit{Marcus Antoninus} provided four-\catch{teen} teen governors all at once to
-superintend his son \textit{Commodus}’s education,\tsk and in
-six weeks he cashiered five of them;\tsk \break I know very well,
-continued my father, that \textit{Commodus}’s mother was in
-love with a gladiator at the time of her conception, which accounts
-for a great many of \textit{Commodus}’s cruelties when he
-became emperor;\tsk but still I am of opinion, that those five
-whom \textit{Antoninus} dismissed, did \textit{Commodus}’s
-temper, in that short time, more hurt than the other nine were able
-to rectify all their lives long.
+\tighter{addressing himself equally to my un-}\break
+\stick{cle \toby and \textit{Yorick}, to take this young} 
+\stick{creature out of these women’s hands,}
+\stick{and put him into those of a private go-}
+\stick{vernor. \textit{Marcus Antoninus} provided four-}\catch{teen} 
+\stick{teen governors all at once to superintend} 
+\stick{his son \textit{Commodus}’s education,\tsk and in}
+\stick{six weeks he cashiered five of them;\tsk} 
+\stick{I know very well, continued my father,} 
+\stick{that \textit{Commodus}’s mother was in love with} 
+\stick{a gladiator at the time of her concep-}
+\stick{tion, which accounts for a great many} 
+\stick{of \textit{Commodus}’s cruelties when he became} 
+\stick{emperor;\tsk but still I am of opinion,}
+\stick{that those five whom \textit{Antoninus} dismiss-}
+\stick{ed, did \textit{Commodus}’s temper in that short}
+\stick{time, more hurt than the other nine} 
+were able to rectify all their lives long.
 
-Now as I consider the person who is to be about my son, as the
-mirror in which he is to view himself from morning to night,
-by which he is to adjust his looks, his carriage, and perhaps the
-inmost sentiments of his heart;\tsk I would have one,
-\textit{Yorick}, if possible, polished at\catch{all} all points, fit for my
-child to look into.\break\tsh This is very good sense, quoth my
-uncle \textit{Toby} to himself.
+Now as I consider the person who is\break
+\stick{to be about my son, as the mirror in}
+\stick{which he is to view himself from morn-}
+\stick{ing to night, and by which he is to adjust} 
+\stick{his looks, his carriage, and perhaps the}
+\stick{inmost sentiments of his heart;\tsk I would}
+\stick{have one, \textit{Yorick}, if possible, polished at}\catch{all} 
+\stick{all points, fit for my child to look into.}
+\stick{\tsh This is very good sense, quoth my}
+uncle \toby to himself.
 
 \tsh There is, continued my father,\break
-a certain mien and motion of the body\break
-and all its parts, both in acting and\break
-speaking, which argues a man \textit{well\break
-within}; and I am not at all surprized\break
-that \textit{Gregory} of \textit{Nazianzum}, upon ob\-serving
-the hasty and untoward gestures of \textit{Julian}, should foretel he
-would one day become an apostate;\tsh or that St.\break
-\textit{Ambrose} should turn his \textit{Amanuensis} out of doors,
-because of an indecent motion of his head, which went backwards and
-forwards like a flail;\tsh or that \textit{Democritus}
-should conceive \textit{Protagoras} to be a scholar, from seeing him
-bind up a faggot, and thrusting, as he did it,\break
-the small twigs inwards.\tsh There are a\catch{thou-} thousand unnoticed openings,
-continued my father, which let a penetrating eye at once into
-a man’s soul; and I maintain it, added he, that a man of
-sense does not lay down his hat in coming into a room,\tsk or
-take it up in going out of it, but something escapes, which
-discovers him.
+\stick{a certain mien and motion of the body}
+\stick{and all its parts, both in acting and}
+\stick{speaking, which argues a man \textit{well}}
+\stick{\textit{within}; and I am not at all surprized}
+\stick{that \textit{Gregory} of \textit{Nazianzum}, upon ob-}
+\stick{serving the hasty and untoward gestures}
+\stick{of \textit{Julian}, should foretel he would one}
+\stick{day become an apostate;\tsh or that St.}
+\stick{\textit{Ambrose} should turn his \textit{Amanuensis} out}
+\stick{of doors, because of an indecent mo-}
+\stick{tion of his head, which went backwards}
+\stick{and forwards like a flail;\tsh or that} 
+\stick{\textit{Democritus} should conceive \textit{Protagoras}} 
+\stick{to be a scholar, from seeing him bind up} 
+\stick{a faggot, and thrusting, as he did it,}
+\stick{the small twigs inwards.\tsh There are a}\catch{thou-}
+\stick{thousand unnoticed openings, continued} 
+\stick{my father, which let a penetrating eye} 
+\stick{at once into a man’s soul; and I main-}
+\stick{tain it, added he, that a man of sense} 
+\stick{does not lay down his hat in coming} 
+\stick{into a room,\tsk or take it up in going out} 
+\stick{of it, but something escapes, which dis-}
+covers him.
 
-It is for these reasons, continued my father, that the governor
-I make choice of shall neither \fnast\ lisp, or squint, or
-wink,\break or talk loud, or look fierce, or foolish;\break\tsh
-or bite his lips, or grind his teeth, or speak through his nose,
-or pick it,\break or blow it with his fingers.\tsh
+It is for these reasons, continued my\break
+\stick{father, that the governor I make choice}
+\stick{of shall neither \fnast\ lisp, or squint, or wink,}
+\stick{or talk loud, or look fierce, or foolish;}
+\stick{\tsh or bite his lips, or grind his teeth,}
+\stick{or speak through his nose, or pick it,}
+or blow it with his fingers.\tsh
 
-He shall neither walk fast,\tsk or slow, or fold his
-arms,\tsk for that is laziness; \tsk\break or hang them
-down,\tsk for that is folly;\break
+He shall neither walk fast,\tsk or slow,\break
+\stick{or fold his arms,\tsk for that is laziness; \tsk}
+\stick{or hang them down,\tsk for that is folly;}
 \centerline{\footnotesize \fnast\ Vid. \textit{Pellegrina}.}
 \rightline{or}
 \eject
 \noindent
-or hide them in his pocket, for that is nonsense.\tsh
+or hide them in his pocket, for that is\break
+nonsense.\tsh
 
-He shall neither strike, or pinch, or tickle\tsk or bite, or
-cut his nails, or hawk, or spit, or snift, or drum with his feet or
-fingers in company;\tsh nor (according to \textit{Erasmus})
-shall he speak to any one in making water,\tsk nor shall he point to
-carrion or excrement.\tsh Now this is all nonsense again,
-quoth my uncle \textit{Toby} to himself.\tsh
+He shall neither strike, or pinch, or\break
+\stick{tickle,\tsk or bite, or cut his nails, or}
+\stick{hawk, or spit, or snift, or drum with his} 
+\stick{feet or fingers in company;\tsh nor (ac-}
+\stick{cording to \textit{Erasmus)}\sic shall he speak to} 
+\stick{any one in making water,\tsk nor shall he} 
+\stick{point to carrion or excrement.\tsh Now} 
+\stick{this is all nonsense again, quoth my} 
+uncle \toby to himself.\tsh
 
-I will have him, continued my father, cheerful, faceté,
-jovial; at the same time, prudent, attentive to business, vigilant,
-acute, argute, inventive, quick in resolving doubts and speculative
-questions;\tsh he shall be wise, and judicious, and
-learned:\tsh And why not humble, and moderate, and
-gentle tempered, and\catch{good?} good? said \textit{Yorick}:\tsh And why
-not, cried my uncle \textit{Toby}, free, and generous, and bountiful,
-and brave?\tsh He shall, my dear \textit{Toby}, replied my
-father, getting up and shaking him by his hand.\tsk\break
-Then, brother
-\textit{Shandy}, answered my uncle \textit{Toby}, raising himself off
-the chair, and laying down his pipe to take hold of my
-father’s other hand,\tsk I humbly beg I may recommend poor
-\textit{Le Fever}’s son to you;\tsh a tear of joy of
-the first water sparkled in my uncle \textit{Toby}’s eye,\tsk
-and\break
-another, the fellow to it, in the corporal’s, as the
-proposition was made;\tsh you will see why when you read \textit{Le
-Fe\-ver}’s story:\tsh fool that I was! nor can I
-recollect, (nor perhaps you) without turning back to the place, what
-it was that hindered me from letting the corporal tell it in his
-own words;\tsk but\catch{the} the occasion is lost,\tsk I must tell it now
+I will have him, continued my father,\break
+\stick{cheerful, faceté, jovial; at the same}
+\stick{time, prudent, attentive to business, vi-}
+\stick{gilant, acute, argute, inventive, quick}
+\stick{in resolving doubts and speculative ques-}
+\stick{tions;\tsh he shall be wise and judicious,} 
+\stick{and learned:\tsh And why not humble,} 
+\stick{and moderate, and gentle tempered, and}\catch{good?} 
+\stick{good? said \textit{Yorick:}\tsh And why not,} 
+\stick{cried my uncle \toby, free, and generous,}
+\stick{and bountiful, and brave?\tsh He shall,} 
+\stick{my dear \toby, replied my father, get-}
+\stick{ting up and shaking him by his hand.\tsk}
+\stick{Then, brother \textit{Shandy}, answered my un-}
+\stick{cle \toby, raising himself off the chair, and}
+\stick{laying down his pipe to take hold of my}
+\stick{father’s other hand,\tsk I humbly beg I} 
+\stick{may recommend poor \textit{Le Fever}’s son to} 
+\stick{you;\tsh a tear of joy of the first water}
+\stick{sparkled in my uncle \toby's eye,\tsk and}
+\stick{another, the fellow to it, in the corpo-}
+\stick{ral’s, as the proposition was made;\tsh} 
+\stick{you will see why when you read \textit{Le Fe}-}
+\stick{\textit{ver}’s story:\tsh fool that I was! nor}
+\stick{can I recollect, (nor perhaps you) with-}
+\stick{out turning back to the place, what it} 
+\stick{was that hindered me from letting the} 
+\stick{corporal tell it in his own words;\tsk but}\catch{the} 
+\stick{the occasion is lost,\tsk I must tell it now}
 in my own.
 
 \section{\lsss{CHAP}.\enspace VI.}
 
 \medskip
-\centerline{\textit{The Story of} \textsc{Le Fever}.}
+\centerline{\textit{The Story of} \textscl{Le Fever}.}
 
-\dropcap{I}{t} was some time in the summer of
-that year in which \textit{Dendermond} was taken by the
-allies,\tsk which was about seven years before my father came
-into the country,\tsk and about as many, after\break the time, that my
-uncle \textit{Toby} and \textit{Trim} had privately decamped from my
-father’s house in town, in order to lay some of the finest
-sieges to some of the finest\break fortified cities in
-\textit{Europe}\tsh when my uncle \textit{Toby} was one
-evening getting his supper, with \textit{Trim} sitting behind him at
-a small sideboard,\tsk I say, sitting\tsk for\catch{in}
-in consideration of the corporal’s lame knee
-(which sometimes gave him exqui\-site pain)\tsk when my uncle
-\textit{Toby} dined or supped alone, he would never suffer the
-corporal to stand; and the poor fellow’s veneration for his
-master was such, that, with a proper artillery, my uncle
-\textit{Toby} could have taken \textit{Dendermond} itself, with less
-trouble than he was able to gain this point over him; for many a
-time when my uncle \textit{Toby} supposed the corporal’s leg
-was at rest, he would look back, and detect him standing behind him
-with the most dutiful respect: this bred more little squabbles
-betwixt them, than all other causes for five and twenty years
-together\tsk But this is neither here nor there\tsk why do I
-mention it?\tsh\break Ask my pen,\tsk it governs me,\tsk I
-govern not it.\patch{He}
+\dropcap{I}{t} was some time in the summer of\break
+that year in which \textit{Dendermond} was\break
+\stick{taken by the allies,\tsk which was about}
+\stick{seven years before my father came into} 
+\stick{the country,\tsk and about as many, after}
+\stick{the time, that my uncle \toby and \trim} 
+\stick{had privately decamped from my father’s}
+\stick{house in town, in order to lay some of}
+\stick{the finest sieges to some of the finest}
+\stick{fortified cities in \textit{Europe}\tsh when my}
+\stick{uncle \toby was one evening getting his}
+\stick{supper, with \trim sitting behind him at}
+\stick{a small sideboard,\tsk I say, sitting\tsk for}\catch{in} 
+\stick{in consideration of the corporal’s lame}
+\stick{knee (which sometimes gave him exqui-} 
+\stick{site pain)\tsk when my uncle \toby dined or}
+\stick{supped alone, he would never suffer the}
+\stick{corporal to stand; and the poor fellow’s}
+\stick{veneration for his master was such, that,}
+\stick{with a proper artillery, my uncle \toby}
+\stick{could have taken \textit{Dendermond} itself,} 
+\stick{with less trouble than he was able to}
+\stick{gain this point over him; for many a}
+\stick{time when my uncle \toby supposed the}
+\stick{corporal’s leg was at rest, he would look}
+\stick{back, and detect him standing behind} 
+\stick{him with the most dutiful respect: this} 
+\stick{bred more little squabbles betwixt them,}
+\stick{than all other causes for five and twenty}
+\stick{years together\tsk But this is neither here}
+\stick{nor there\tsk why do I mention it?\tsh}
+\stick{Ask my pen,\tsk it governs me,\tsk I govern}
+not it.\patch{He}
 
 He was one evening sitting thus at\break
-his supper, when the landlord of a little\break
-inn in the village came into the parlour,\break
-with an empty phial in his hand, to beg\break
-a glass or two of sack; ’Tis for a poor\break
-gentleman,\tsk I think, of the army, said\break
-the landlord, who has been taken ill at\break
-my house four days ago, and has never\break
-held up his head since, or had a desire\break
-to taste any thing, till just now, that\break
-he has a fancy for a glass of sack and a\break
-thin toast,\tsh \textit{I~think}, says he, taking\break
-his hand from his forehead, \textit{it would\break
-comfort me.}\tsh
+\stick{his supper, when the landlord of a little}
+\stick{inn in the village came into the parlour}
+\stick{with an empty phial in his hand, to beg}
+\stick{a glass or two of sack; ’Tis for a poor}
+\stick{gentleman,\tsk I think, of the army, said}
+\stick{the landlord, who has been taken ill at}
+\stick{my house four days ago, and has never}
+\stick{held up his head since, or had a desire}
+\stick{to taste any thing, till just now, that}
+\stick{he has a fancy for a glass of sack and a}
+\stick{thin toast,\tsh \textit{I~think}, says he, taking}
+\stick{his hand from his forehead, \textit{it would}}
+\textit{comfort me.}\tsh
 
 \tsh If I could neither\sic\ beg, borrow,\break
-or buy such a thing,\tsk added the land-\break
-lord,\tsk I~would almost steal it for the\break
-poor gentleman, he is so ill.\tsh I hope\break
-in God he will still mend, continued he,\break
+\stick{or buy such a thing,\tsk added the land-}
+\stick{lord,\tsk I~would almost steal it for the}
+\stick{poor gentleman, he is so ill.\tsh I hope}
+\stick{in God he will still mend, continued he,}
 \tsk we are all of us concerned for him.\patch{Thou}
 
-Thou art a good natured soul, I will answer for thee, cried my
-uncle \textit{Toby}; and thou shalt drink the poor gentleman’s
-health in a glass of sack thyself,\break\tsk and take a couple of
-bottles with my service, and tell him he is heartily welcome to
-them, and to a dozen more if they will do him good.
+Thou art a good natured soul, I will\break
+\stick{answer for thee, cried my uncle \toby;} 
+\stick{and thou shalt drink the poor gentle-}
+\stick{man’s health in a glass of sack thyself,}
+\stick{\tsk and take a couple of bottles with my}
+\stick{service, and tell him he is heartily wel-}
+\stick{come to them, and to a dozen more if}
+they will do him good.
 
-Though I am persuaded, said my uncle \textit{Toby}, as the
-landlord shut the door, he is a very compassionate
-fellow\tsk \textit{Trim},\break
-\stick{\tsk yet I cannot help entertaining a high}
-opinion
-of his guest too; there must be something more than common in him,
-that in so short a time should win so much upon the affections of
-his host;\break
-\tsh And of his whole family, added the corporal,
-for they are all concerned for him.\tsh Step after him,
-said my\catch{uncle\enspace} uncle \textit{Toby},\tsk do \textit{Trim},\tsk and ask if
-he knows his name.
+Though I am persuaded, said my un-\break
+\stick{cle \toby, as the landlord shut the door,}
+\stick{he is a very compassionate fellow\tsk \trim,}
+\stick{\tsk yet I cannot help entertaining a high} 
+\stick{opinion of his guest too; there must be}
+\stick{something more than common in him,}
+\stick{that in so short a time should win so} 
+\stick{much upon the affections of his host;}
+\stick{\tsh And of his whole family, added} 
+\stick{the corporal, for they are all concerned}
+\stick{for him.\tsh Step after him, said my}\catch{uncle\enspace} 
+\stick{uncle \toby,\tsk do \trim,\tsk and ask if he} 
+knows his name.
 
 \tsh I have quite forgot it, truly,\break
-said the landlord, coming back into the\break
-parlour with the corporal,\tsk but I can\break
-ask his son again:\tsh Has he a son with\break
-him then? said my uncle \textit{Toby}.\tsk A boy,\break
-replied the landlord, of about eleven or\break
-twelve years of age;\tsk but the poor crea-\break
-ture has tasted almost as little as his fa-\break
-ther; he does nothing but mourn and\break
-lament for him night and day:\tsh He\break
-has not stirred from the bedside these\break
+\stick{said the landlord, coming back into the}
+\stick{parlour with the corporal,\tsk but I can}
+\stick{ask his son again:\tsh Has he a son with}
+\stick{him then? said my uncle \toby.\tsk A boy,}
+\stick{replied the landlord, of about eleven or}
+\stick{twelve years of age;\tsk but the poor crea-}
+\stick{ture has tasted almost as little as his fa-}
+\stick{ther; he does nothing but mourn and}
+\stick{lament for him night and day:\tsh He}
+\stick{has not stirred from the bedside these}
 two days.
 
-My uncle \textit{Toby} laid down his knife and fork, and thrust
-his plate from before him, as the landlord gave him the account;
-and \textit{Trim}, without being ordered, took away without
-saying one\catch{word,} word, and in a few minutes after brought him his
-pipe and tobacco.
+My uncle \toby laid down his knife\break
+\stick{and fork, and thrust his plate from be-}
+\stick{fore him, as the landlord gave him the} 
+\stick{account; and \trim, without being or-}
+\stick{dered, took away without saying one}\catch{word,}
+\stick{word, and in a few minutes after brought}
+him his pipe and tobacco.
 
-\tsh Stay in the room a little, said my uncle
-\textit{Toby}.\tsh
+\tsh Stay in the room a little, said\break
+my uncle \toby.\tsh
 
-\textit{Trim!}\tsh said my uncle \textit{Toby}, after
-he lighted his pipe, and smoak’d about a dozen
-whiffs.\tsh \textit{Trim} came in front of his master, and
-made his bow;\tsk my uncle \textit{Toby} smoak’d on, and said
-no more.\tsh Corporal! said my uncle \textit{Toby}\break\tsh the
-corporal made his bow.\tsh\break My uncle \textit{Toby} proceeded
-no farther, but finished his pipe.
+\textit{Trim!}\tsh said my uncle \toby, after\break
+\stick{he lighted his pipe, and smoak’d about}
+\stick{a dozen whiffs.\tsh \trim came in front}
+\stick{of his master, and made his bow;\tsk my}
+\stick{uncle \toby smoak’d on, and said no}
+\stick{more.\tsh Corporal! said my uncle \toby}
+\stick{\tsh the corporal made his bow.\tsh}
+\stick{My uncle \toby proceeded no farther, but} 
+finished his pipe.
 
-\textit{Trim!} said my uncle \textit{Toby}, I have a project
-in my head, as it is a bad night,\break
-of wrapping myself up warm in my
-ro\-quelaure, and paying a visit to this poor
-gentleman.\tsh Your honour’s roque-\catch{laure,} laure, replied the
-corporal, has not once been had on, since the night before your
-honour received your wound, when we mounted guard in the trenches
-before the gate of St.~\textit{Nicholas};\tsk and besides, it is so
-cold and rainy a night, that what with the roquelaure, and what with the
-weather, ’twill be enough to give your honour your death, and
-bring on your honour’s torment in your groin. I fear so;
-replied my uncle \textit{Toby}; but I am not at rest in my mind,
-\textit{Trim}, since the account the landlord has given
-me.\tsh I wish I had not known so much of this
-affair,\tsk added my uncle \textit{Toby},\tsk or that I had known
-more of it:\tsh How shall we manage it? Leave it,
-an’t please your honour, to me, quoth the
-corporal;\tsh I’ll take my hat and stick and go to
-the house and reconnoitre, and act accordingly; and I will bring
-your\catch{honour}
-honour a full account in an hour.\tsh\break
-Thou shalt go, \textit{Trim}, said my uncle \textit{Toby}, and
-here’s a shilling for thee to drink with his servant.\tsh I
-shall get it all out of him, said the corporal, shutting the
-door.
+\textit{Trim!} said my uncle \toby, I have a\break
+\stick{project in my head, as it is a bad night,}
+\stick{of wrapping myself up warm in my ro-}
+\stick{quelaure, and paying a visit to this poor}
+\stick{gentleman.\tsh Your honour’s roque-}\catch{laure,} 
+\stick{laure, replied the corporal, has not} 
+\stick{once been had on, since the night before}
+\stick{your honour received your wound, when}
+\stick{we mounted guard in the trenches be-}
+\stick{fore the gate of St.\@ \textit{Nicholas};\tsk and}
+\stick{besides it is so cold and rainy a night,}
+\stick{that what with the roquelaure, and what}
+\stick{with the weather, ’twill be enough to} 
+\stick{give your honour your death, and bring} 
+\stick{on your honour’s torment in your groin.} 
+\stick{I fear so; replied my uncle \toby, but I}
+\stick{am not at rest in my mind, \trim, since} 
+\stick{the account the landlord has given me.}
+\stick{\tsh I wish I had not known so much of} 
+\stick{this affair,\tsk added my uncle \toby,\tsk or}
+\stick{that I had known more of it:\tsh How} 
+\stick{shall we manage it?  Leave it, an’t}
+\stick{please your honour, to me, quoth the}
+\stick{corporal;\tsh I’ll take my hat and stick}
+\stick{and go to the house and reconnoitre, and}
+\stick{act accordingly; and I will bring your}\catch{honour} 
+\stick{honour a full account in an hour.\tsh}
+\stick{Thou shalt go, \trim, said my uncle} 
+\stick{\toby, and here’s a shilling for thee to} 
+\stick{drink with his servant.\tsh I shall get it} 
+\stick{all out of him, said the corporal, shut-}
+ting the door.
 
-My uncle \textit{Toby} filled his second pipe; and had it not
-been, that he now and then wandered from the point, with
-considering whether it was not full as well to have the curtain of the tennaile a straight
-line, as a crooked one,\tsk he might be said to have thought of
-nothing else but poor \textit{Le Fever} and his boy the whole time he
-smoaked it.
+My uncle \toby filled his second pipe;\break
+\stick{and had it not been, that he now and} 
+\stick{then wandered from the point, with}
+\stick{considering whether it was not full as} 
+\stick{well to have the curtain of the tennaile} 
+\stick{a straight line, as a crooked one,\tsk he}
+\stick{might be said to have thought of no-}
+\stick{thing else but poor \textit{Le Fever} and his boy}
+the whole time he smoaked it.\patch{\ls{CHAP}.}
 
-\vfill\rightline{\ls{CHAP}.}\eject\null
+\null
 \section{\lsss{CHAP}.\enspace VII.}
 
 \medskip
-\centerline{\textit{The Story of} \textsc{Le Fever} \textit{continued}.}
+\centerline{\textit{The Story of} \textscl{Le Fever} \textit{continued}.}
 
-\dropcap{I}{t} was not till my uncle \textit{Toby} had knocked the
-ashes out of his third pipe, that corporal \textit{Trim}
-returned from the inn, and gave him the following\break account.
+\dropcap{I}{t} was not till my uncle \toby had\break
+knocked the ashes out of his third\break
+\stick{pipe, that corporal \trim returned from} 
+\stick{the inn, and gave him the following}
+account.
 
-I despaired at first, said the corporal, of being able to bring
-back your honour any kind of intelligence concerning the poor
-sick lieutenant\tsk Is he in the army then? said my uncle
-\textit{Toby}\tsh He is: said the corporal\tsh And in what
-re\-giment? said my uncle \textit{Toby}\tsh I’ll tell your honour,
-replied the corporal, every thing straight forwards, as I learnt
-it.\tsk\break Then, \textit{Trim}, I’ll fill another pipe, said my
-uncle \textit{Toby}, and not interrupt thee\catch{till}
-till thou hast done; so sit down at thy ease, \textit{Trim}, in
-the window seat, and begin thy story again. The corporal made
-his old bow, which generally spoke as plain as a bow could speak
-it\tsk \textit{Your\break honour is good}:\tsk And having done that,
-he sat down, as he was ordered,\tsk\break and begun the story to my
-uncle \textit{Toby} over again in pretty near the same\break words.
+I despaired at first, said the corporal,\break
+\stick{of being able to bring back your honour}
+\stick{any kind of intelligence concerning the}
+\stick{poor sick lieutenant\tsk Is he in the army}
+\stick{then?  said my uncle \textit{Toby}\tsh He is:}
+\stick{said the corporal\tsh And in what re-}
+\stick{giment?  said my uncle \textit{Toby}\tsh I’ll tell}
+\stick{your honour, replied the corporal, every}
+\stick{thing straight forwards, as I learnt it.\tsk}
+\stick{Then, \trim, I’ll fill another pipe, said}
+\stick{my uncle \toby, and not interrupt thee}\catch{till} 
+\stick{till thou hast done; so sit down at thy}
+\stick{ease, \trim, in the window seat, and be-}
+\stick{gin thy story again.  The corporal made}
+\stick{his old bow, which generally spoke as} 
+\stick{plain as a bow could speak it\tsk \textit{Your}}
+\stick{\textit{honour is good:}\tsk And having done}
+\stick{that, he sat down, as he was ordered,\tsk}
+\stick{and begun the story to my uncle \toby} 
+\stick{over again in pretty near the same}
+words.
 
-I despaired at first, said the corporal, of being able to bring
-back any intelligence to your honour, about the lieutenant and his
-son; for when I asked where his servant was, from whom I made
-myself sure of knowing every thing which was proper to be
-asked,\tsk\break That’s a right distinction, \textit{Trim}, said my
-uncle \textit{Toby}\tsk I was answered, an’ please your
-honour, that he had no servant\catch{with} 
-with him;\tsh that he had come to the\break
-inn with hired horses, which, upon\break
-finding himself unable to proceed (to\break
-join, I suppose, the regiment), he had\break
-dismissed the morning after he came.\tsk\break
-If I get better, my dear, said he, as he\break
-gave his purse to his son to pay the man,\break
-\tsk we can hire horses from hence.\tsh\break
-But alas! the poor gentleman will never\break
-get from hence, said the landlady to me,\break
-\tsk for I heard the death-watch all night\break
-long;\tsh and when he dies, the youth,\break
-his son, will certainly die with him;\break
+I despaired at first, said the corporal,\break
+\stick{of being able to bring back any intelli-}
+\stick{gence to your honour, about the lieute-}
+\stick{nant and his son; for when I asked}
+\stick{where his servant was, from whom I} 
+\stick{made myself sure of knowing every}
+\stick{thing which was proper to be asked,\tsk}
+\stick{That’s a right distinction, \trim, said my} 
+\stick{uncle \textit{Toby}\tsk I was answered, an’ please} 
+\stick{your honour, that he had no servant}\catch{with} 
+\stick{with him;\tsh that he had come to the}
+\stick{inn with hired horses, which, upon}
+\stick{finding himself unable to proceed, (to}
+\stick{join, I suppose, the regiment) he had}
+\stick{dismissed the morning after he came.\tsk}
+\stick{If I get better, my dear, said he, as he}
+\stick{gave his purse to his son to pay the man,}
+\stick{\tsk we can hire horses from hence.\tsh}
+\stick{But alas! the poor gentleman will never}
+\stick{get from hence, said the landlady to me,}
+\stick{\tsk for I heard the death-watch all night}
+\stick{long;\tsh and when he dies, the youth,}
+\stick{his son, will certainly die with him;}
 for he is broken-hearted already.
 
-I was hearing this account, continued the corporal, when the
-youth came into the kitchen, to order the thin toast the landlord
-spoke of;\tsh but I will do it for my father myself, said
-the youth.\break\tsh Pray let my save you the trouble,\catch{young}
-young gentleman, said I, taking up a\break
-fork for the purpose, and offering him\break
-my chair to sit down upon by the fire,\break
-whilst I did it.\tsh I believe, Sir, said he,\break
-very modestly, I can please him best\break
-myself.\tsh I am sure, said I, his honour\break
-will not like the toast the worse for being\break
-toasted by an old soldier.\tsh The youth\break
-took hold of my hand, and instantly\break
-burst into tears.\tsh Poor youth! said\break
-my uncle \textit{Toby},\tsk he has been bred up\break
-from an infant in the army, and the\break
-name of a soldier, \textit{Trim}, sounded in his\break
-ears like the name of a friend;\tsk I wish\break
+I was hearing this account, continued\break
+\stick{the corporal, when the youth came into}
+\stick{the kitchen, to order the thin toast the}
+\stick{landlord spoke of;\tsh but I will do it}
+\stick{for my father myself, said the youth.}
+\stick{\tsh Pray let my save you the trouble,}\catch{young}
+\stick{young gentleman, said I, taking up a}
+\stick{fork for the purpose, and offering him}
+\stick{my chair to sit down upon by the fire,}
+\stick{whilst I did it.\tsh I believe, Sir, said he,}
+\stick{very modestly, I can please him best}
+\stick{myself.\tsh I am sure, said I, his honour}
+\stick{will not like the toast the worse for being}
+\stick{toasted by an old soldier.\tsh The youth}
+\stick{took hold of my hand, and instantly}
+\stick{burst into tears.\tsk Poor youth! said}
+\stick{my uncle \toby,\tsk he has been bred up}
+\stick{from an infant in the army, and the}
+\stick{name of a soldier, \trim, sounded in his}
+\stick{ears like the name of a friend;\tsk I wish}
 I had him here.
 
-\tsh I never, in the longest march, said the corporal,
-had so great a mind to my dinner, as I had to cry with him for
-company:\tsk What could be the matter with me, an’ please
-your honour?\catch{Nothing} Nothing in the world, \textit{Trim}, said my uncle
-\textit{Toby}, blowing his nose,\tsk but that thou art a
-good-natured fellow.
+\tsh I never, in the longest march,\break
+\stick{said the corporal, had so great a mind to}
+\stick{my dinner, as I had to cry with him} 
+\stick{for company:\tsk What could be the mat-}
+\stick{ter with me, an’ please your honour?}\catch{Nothing} 
+\stick{Nothing in the world, \trim, said my}
+\stick{uncle \toby, blowing his nose,\tsk but that} 
+thou art a good natured fellow.
 
-When I gave him the toast, continued the corporal, I thought it
-was proper to tell him I was Captain \textit{Shandy}’s servant,
-and that your honour (though a stranger) was extremely concerned
-for his father;\tsk and that if there was any thing in your house
-or cellar\tsh (And thou might’st have added my purse
-too, said my uncle \textit{Toby})\tsh he was heartily
-welcome to it:\tsh He made a very low bow, (which was meant
-to your honour) but no answer\tsk for his heart was
-full\tsk\break so he went up stairs with the toast;\tsk I warrant
-you, my dear, said I, as I open-\break ed the kitchen-door, your father
-will be well again.\tsh Mr.\@ \textit{Yorick}’s
-curate was\catch{smoak-} 
-smoaking a pipe by the kitchen fire,\tsk\break
-but said not a word good or bad to comfort the youth.\tsh I thought it
-wrong;\break added the corporal\tsh I think so
-too,\break said my
-uncle \textit{Toby.}
+When I gave him the toast, continued\break
+\stick{the corporal, I thought it was proper to}
+\stick{tell him I was Captain \textit{Shandy}’s servant,}
+\stick{and that your honour (though a stran-} 
+\stick{ger) was extremely concerned for his}
+\stick{father;\tsk and that if there was any thing}
+\stick{in your house or cellar\tsh (And thou}
+\stick{might’st have added my purse too, said}
+\stick{my uncle \toby)\tsh he was heartily wel-}
+\stick{come to it:\tsh He made a very low} 
+\stick{bow, (which was meant to your honour)} 
+\stick{but no answer,\tsk for his heart was full\tsk} 
+\stick{so he went up stairs with the toast;\tsk I}
+\stick{warrant you, my dear, said I, as I open-}
+\stick{ed the kitchen door, your father will be}
+\stick{well again.\tsh Mr.\@ \textit{Yorick}’s curate was}\catch{smoak-} 
+\stick{smoaking a pipe by the kitchen fire,\tsk} 
+\stick{but said not a word good or bad to com-}
+\stick{fort the youth.\tsh I thought it wrong;} 
+\stick{added the corporal\tsh I think so too,} 
+said my uncle \textit{Toby.}
 
-When the lieutenant had taken his glass of sack and toast, he
-felt himself a little revived, and sent down into the kitchen, to
-let me know, that in about\break
-ten minutes he should be glad if I\break
-would step up stairs.\tsh I believe, said the landlord, he is
-going to say his prayers,\tsh for there was a book laid
-upon the chair by his bedside, and as I shut the door, I saw his
-son take up a\break cushion.\tsh
+When the lieutenant had taken his\break
+\stick{glass of sack and toast, he felt himself}
+\stick{a little revived, and sent down into the}
+\stick{kitchen, to let me know, that in about}
+\stick{ten minutes he should be glad if I}
+\stick{would step up stairs.\tsh I believe, said}
+\stick{the landlord, he is going to say his}
+\stick{prayers,\tsh for there was a book laid} 
+\stick{upon the chair by his bedside, and as I} 
+\stick{shut the door, I saw his son take up a}
+cushion.\tsh
 
-I thought, said the curate, that you gentlemen of
-the army, Mr.\@ \textit{Trim}, never said your prayers at all.\tsh I heard
-the\catch{poor} poor gentleman say his prayers last night, said the landlady,
-very devoutly, and with my own ears, or I could not have believed
-it.\tsh Are you sure of it? 
+I thought, said the curate, that you\break
+\stick{gentlemen of the army, Mr.\@ \trim, never}
+\stick{said your prayers at all.\tsh I heard the}\catch{poor}
+\stick{poor gentleman say his prayers last}
+\stick{night, said the landlady, very devoutly,}
+\stick{and with my own ears, or I could not} 
+\stick{have believed it.\tsh Are you sure of it?} 
 \stick{replied the curate.\tsh A soldier, an’}
-please your reverence,
-said I, prays as often (of his own accord) as a
-parson;\break\tsh and when he is fighting for his king, and for
-his own life, and for his honour too, he has the most reason to
-pray to God of any one in the whole world\tsh ’Twas
-well said of thee, \textit{Trim}, said my uncle
-\textit{Toby.}\tsh But when a soldier, said I, an’
-please your reverence, has been standing for twelve hours together
-in the trenches, up to his knees in cold water,\tsk or engaged,
-said I, for months together in long and dangerous
-marches;\tsk harassed, perhaps, in his\break rear
-to-day;\tsk harassing others to-mor-\break row;\tsk detached
-here;\tsk countermanded\catch{there;} there;\tsk resting this night out upon
-his arms;\tsk beat up in his shirt the next;\tsk benumbed in
-his joints;\tsk perhaps with-
+\stick{please your reverence, said I, prays as} 
+\stick{often (of his own accord) as a parson;}
+\stick{\tsh and when he is fighting for his} 
+\stick{king, and for his own life, and for his}
+\stick{honour too, he has the most reason to}
+\stick{pray to God, of any one in the whole}
+\stick{world\tsh ’Twas well said of thee, \trim,}
+\stick{said my uncle \textit{Toby.}\tsh But when a sol-}
+\stick{dier, said I, an’ please your reverence,}
+\stick{has been standing for twelve hours toge-}
+\stick{ther in the trenches, up to his knees in}
+\stick{cold water,\tsk or engaged, said I, for}
+\stick{months together in long and dangerous}
+\stick{marches;\tsk harassed, perhaps, in his}
+\stick{rear to-day;\tsk harassing others to-mor-}
+\stick{row;\tsk detached here;\tsk countermanded}\catch{there;}
+\stick{there;\tsk resting this night out upon his}
+\stick{arms;\tsk beat up in his shirt the next;\tsk} 
+\stick{benumbed in his joints;\tsk perhaps with-}
 \stick{out straw in his tent to kneel on;\tsk must}
 \stick{say his prayers \textit{how} and \textit{when} he can.\tsk}
-I believe, said I,\tsk for I was piqued,\break
-quoth the corporal, for the reputation of the army,\tsk I believe,
-an’ please your reverence, said I, that when a soldier gets
-time to pray,\tsk he prays as heartily as a parson,\tsk though
-not with all his fuss and hypocrisy.\tsh Thou shouldst 
-\stick{not have said that, \textit{Trim}, said my uncle} 
-\stick{\textit{Toby},\tsk for God only knows who is a hy-}
-pocrite, and who is not:\tsh At
-the great and general review of us all, corporal, at the day of
-judgment (and not till then)\tsk it will be seen who has done
-their duties in this world,\tsk and who has not; and we shall be
-advanced, \textit{Trim}, accordingly.\tsh I hope we shall,\catch{said}
-said \textit{Trim.}\tsh It is in the Scripture, said my
-uncle \textit{Toby}; and I will shew it thee to-morrow:\tsh In the
-mean time we may depend upon it, \textit{Trim}, for our comfort, said
-my uncle \textit{Toby}, that God Almighty is so good and just a
-governor of the world, that if we have but done our duties in
-it,\tsh it will never be enquired into, whether we have done them
-in a red coat or a black one:\tsh\break I hope not, said the
-corporal\tsh But go on, \textit{Trim}, said my uncle
-\textit{Toby}, with\break thy story.
+\stick{I believe, said I,\tsk for I was piqued,}
+\stick{quoth the corporal, for the reputation} 
+\stick{of the army,\tsk I believe, an’ please your}
+\stick{reverence, said I, that when a soldier} 
+\stick{gets time to pray,\tsk he prays as heartily} 
+\stick{as a parson,\tsk though not with all his} 
+\stick{fuss and hypocrisy.\tsh Thou shouldst} 
+\stick{not have said that, \trim, said my uncle} 
+\stick{\toby,\tsk for God only knows who is a hy-}
+\stick{pocrite, and who is not:\tsh At the} 
+\stick{great and general review of us all, cor-}
+\stick{poral, at the day of judgment, (and} 
+\stick{not till then)\tsk it will be seen who has} 
+\stick{done their duties in this world,\tsk and} 
+\stick{who has not; and we shall be advanced,} 
+\stick{\trim, accordingly.\tsh I hope we shall,}\catch{said}
+\stick{said \textit{Trim.}\tsh It is in the Scripture, said}
+\stick{my uncle \toby; and I will shew it thee}
+\stick{to-morrow:\tsk In the mean time we}
+\stick{may depend upon it, \trim, for our} 
+\stick{comfort, said my uncle \toby, that God}
+\stick{Almighty is so good and just a gover-}
+\stick{nor of the world, that if we have but} 
+\stick{done our duties in it,\tsk it will never be}
+\stick{enquired into, whether we have done} 
+\stick{them in a red coat or a black one:\tsk}
+\stick{I hope not; said the corporal\tsk But}
+\stick{go on, \trim, said my uncle \toby, with}
+thy story.
 
-When I went up, continued the corporal, into the
-lieutenant’s room, which I did not do till the expiration of
-the ten minutes,\tsk he was lying in his bed with his
-head raised upon his hand, with his elbow upon the pillow, and a
-clean white cambrick handkerchief be-\catch{side} side it:\tsh The youth
-was just stooping down to take up the cushion, upon which I
-supposed he had been kneeling,\tsk the book was laid upon the
-bed,\tsk and, as he rose, in taking up the cushion with one hand,
-he reached out his other to take it away at the same
-time.\tsh Let it remain there, my dear, said the
+When I went up, continued the cor-\break
+\stick{poral, into the lieutenant’s room, which} 
+\stick{I did not do till the expiration of the} 
+\stick{ten minutes,\tsk he was lying in his bed} 
+\stick{with his head raised upon his hand,} 
+\stick{with his elbow upon the pillow, and a}
+\stick{clean white cambrick handkerchief be-}\catch{side}
+\stick{side it:\tsh The youth was just stooping}
+\stick{down to take up the cushion, upon} 
+\stick{which I supposed he had been kneeling,}
+\stick{\tsk the book was laid upon the bed,\tsk}
+\stick{and as he rose, in taking up the cushion}
+\stick{with one hand, he reached out his other}
+\stick{to take it away at the same time.\tsh}
+\stick{Let it remain there, my dear, said the} 
 lieutenant.
 
 He did not offer to speak to me, till\break
-I had walked up close to his bed-side:\tsk\break
-If you are captain \textit{Shandy}’s
-servant, said he, you must present my thanks to your master, with
-my little boy’s thanks along with them, for his courtesy to
-me;\tsk if he was of \textit{Levens}’s\tsk said the
-lieutenant.\tsk I told him your honour was\tsk Then, said he, I
-served three campaigns with him in \textit{Flanders}, and remember
-him,\tsk but ’tis most likely, as\catch{I had} I had not the honour of
-any acquaintance with him, that he knows nothing of me.\tsh You will tell him, however, that
-the person his good nature has laid
-under obligations to him, is one \textit{Le\break
-Fever}, a lieutenant in \textit{Angus}’s\tsh but\break
-he knows me not,\tsk said he, a second\break
-time, musing;\tsh possibly he may my
-story\tsk added he\tsk pray tell the captain, I was the ensign
-at \textit{Breda}, whose wife was most unfortunately killed with a
-musket-shot, as she lay in my arms in my tent.\tsh I
-remember the story, an’t please your honour, said I, very
-well.\break\tsh Do you so? said he, wiping his eyes with his
-handkerchief\tsk then well may I.\tsk In saying this, he drew a
-little ring out of his bosom, which seemed tied with a black
-ribband about his neck, and kiss’d it
-twice\tsh Here, \textit{Billy}, said he,\tsk the boy flew
-across the room to\catch{the} the bed-side,\tsk and falling down upon his
-knee, took the ring in his hand, and kissed it too,\tsk then
-kissed his father, and sat down upon the bed and wept.
+\stick{I had walked up close to his bed-side:\tsk}
+\stick{If you are captain \textit{Shandy}’s servant, said} 
+\stick{he, you must present my thanks to your}
+\stick{master, with my little boy’s thanks} 
+\stick{along with them, for his courtesy to}
+\stick{me;\tsk if he was of \textit{Levens}’s\tsk said the}
+\stick{lieutenant.\tsk I told him your honour}
+\stick{was\tsk Then, said he, I served three cam-}
+\stick{paigns with him in \textit{Flanders}, and re-}
+\stick{member him,\tsk but ’tis most likely, as}\catch{I had}
+\stick{I had not the honour of any acquaint-}
+\stick{ance with him, that he knows nothing} 
+\stick{of me.\tsh You will tell him, however,}
+\stick{that the person his good nature has laid}
+\stick{under obligations to him, is one \textit{Le}}
+\stick{\textit{Fever}, a lieutenant in \textit{Angus}’s\tsk but}
+\stick{he knows me not,\tsk said he, a second}
+\stick{time, musing;\tsk possibly he may}
+\stick{my story\tsk added he\tsk pray tell the cap-}
+\stick{tain, I was the ensign at \textit{Breda}, whose} 
+\stick{wife was most unfortunately killed with}
+\stick{a musket shot, as she lay in my arms in} 
+\stick{my tent.\tsh I remember the story, an’t} 
+\stick{please your honour, said I, very well.}
+\stick{\tsh Do you so? said he, wiping his} 
+\stick{eyes with his handkerchief,\tsk then well}
+\stick{may I.\tsk In saying this, he drew a little}
+\stick{ring out of his bosom, which seemed}
+\stick{tied with a black ribband about his neck,} 
+\stick{and kiss’d it twice\tsh Here, \textit{Billy}, said}
+\stick{he,\tsk the boy flew across the room to}\catch{the}
+\stick{the bed-side,\tsk and falling down upon}
+\stick{his knee, took the ring in his hand, and}
+\stick{kissed it too,\tsk then kissed his father,}
+and sat down upon the bed and wept.
 
-I wish, said my uncle \textit{Toby}, with a deep sigh,\tsk I
-wish, \textit{Trim}, I was asleep.
+I wish, said my uncle \toby, with a\break
+deep sigh,\tsk I wish, \trim, I was asleep.
 
-Your honour, replied the corporal, is too much
-concerned;\tsk shall I pour your honour out a glass of sack to
-your pipe?\tsh Do, \textit{Trim}, said my uncle
+Your honour, replied the corporal,\break
+\stick{is too much concerned;\tsk shall I pour}
+\stick{your honour out a glass of sack to your} 
+\stick{pipe?\tsh Do, \trim, said my uncle}
 \textit{Toby.}
 
-I remember, said my uncle \textit{Toby}, sighing again, the story
-of the ensign and his wife, with a circumstance his modesty
-omitted;\tsk and particularly well that he, as well as she, upon
-some account or other, (I forget what) was universally pitied by the
-whole regiment;\catch{\tsk but} \tsk but finish the story thou art
-upon:\break\tsk ’Tis finished already, said the
-corporal,\tsk for I could stay no longer,\tsk so wished his
-honour a good night; young \textit{Le Fever} rose from off the bed,
-and saw me to the bottom of the stairs; and as we went down
-together, told me, they had come from \textit{Ireland}, and were on
-their route to join the regiment in
-\textit{Flanders.}\tsh But alas! said the
-corporal,\tsk\break
-the lieutenant’s last day’s march is over.
-\break\tsk Then what is to become of his poor boy? cried my uncle
-\textit{Toby.}
+I remember, said my uncle \toby,\break
+\stick{sighing again, the story of the ensign} 
+\stick{and his wife, with a circumstance his}
+\stick{modesty omitted;\tsk and particularly well}
+\stick{that he, as well as she, upon some ac-}
+\stick{count or other, (I forget what) was uni-}
+\stick{versally pitied by the whole regiment;}\catch{\tsk but} 
+\stick{\tsk but finish the story thou art upon:}
+\stick{\tsk ’Tis finished already, said the corpo-}
+\stick{ral,\tsk for I could stay no longer,\tsk so}
+\stick{wished his honour a good night; young}
+\stick{\textit{Le Fever} rose from off the bed, and saw} 
+\stick{me to the bottom of the stairs; and as}
+\stick{we went down together, told me, they} 
+\stick{had come from \textit{Ireland}, and were on}
+\stick{their route to join the regiment in \textit{Flan}-}
+\stick{\textit{ders}.\tsh But alas! said the corporal,\tsk}
+\stick{the lieutenant’s last day’s march is over.}  
+\stick{\tsk Then what is to become of his poor}
+boy? cried my uncle \textit{Toby.}
 
 \section{\lsss{CHAP}.\enspace VIII.}
-\centerline{\textit{The Story of} \textsc{Le Fever} \textit{continued}.}
 
-\dropcap{I}{t} was to my uncle
-\textit{Toby}’s eternal ho\-nour,\tsh though I tell it
-only for the sake of those, who, when coop’d in betwixt a
-natural and a positive law,\catch{know} know not for their souls, which way in
-the world to turn themselves\tsk That\break\stick{\tighter{notwithstanding my
-uncle \textit{Toby} was warm-}}\break ly engaged at that time in carrying on
-the siege of \textit{Derdermond}\sic, parallel with the allies, who
-pressed theirs on so vigo\-rously, that they scarce allowed him\break
-time to get his dinner\tsh that never-\break
-theless he gave up \textit{Dendermond}, though\break
-he had already made a lodgment upon\break
-the counterscarp;\tsh and bent his whole\break
-\stck{thoughts towards the private distresses at}\break
-the inn; and, except that he ordered\break
-the garden gate to be bolted up, by\break
-which he might be said to have turned\break
-the siege of \textit{Dendermond} into a blockade,\break
-\tsk he left \textit{Dendermond} to itself,\tsk to be\break
-relieved or not by the \textit{French} king, as\break
-the \textit{French} king thought good; and\break
-only considered how he himself should\break
+\medskip
+\centerline{\textit{The Story of} \textscl{Le Fever} \textit{continued}.}
+
+\dropcap{I}{t} was to my uncle \toby's eternal ho-\break
+nour,\tsh though I tell it only for\break
+\stick{the sake of those, who, when coop’d} 
+\stick{in betwixt a natural and a positive law,}\catch{know} 
+\stick{know not for their souls, which way in}
+\stick{the world to turn themselves\tsk That}
+\stk{notwithstanding my uncle \toby was warm-}
+\stick{ly engaged at that time in carrying on}
+\stick{the siege of \textit{Derdermond}\sic, parallel with} 
+\stick{the allies, who pressed theirs on so vigo-}
+\stick{rously, that they scarce allowed him}
+\stick{time to get his dinner\tsh that never-}
+\stick{theless he gave up \textit{Dendermond}, though}
+\stick{he had already made a lodgment upon}
+\stick{the counterscarp;\tsh and bent his whole}
+\stick{thoughts towards the private distresses at}
+\stick{the inn; and, except that he ordered}
+\stick{the garden gate to be bolted up, by}
+\stick{which he might be said to have turned}
+\stick{the siege of \textit{Dendermond} into a blockade,}
+\stick{\tsk he left \textit{Dendermond} to itself,\tsk to be}
+\stick{relieved or not by the \textit{French} king, as}
+\stick{the \textit{French} king thought good; and}
+\stick{only considered how he himself should}
 relieve the poor lieutenant and his son.\etp\patch{\tsh That}
 
-\tsh That kind \textsc{Being}, who is a friend to
-the friendless, shall recompence thee for this.
+\null\smallskip
 
-Thou hast left this matter short, said my uncle \textit{Toby} to
-the corporal, as he was putting him to bed,\tsh and I will
-tell thee in what, \textit{Trim.}\tsh In the first place,
-when thou madest an offer of my services to \textit{Le
-Fever},\tsh as sickness and travelling are both
-expensive, and thou knowest he was but a poor lieutenant, with a
-son to subsist as well as himself, out of his pay,\tsk that thou
-didst not make an offer to him of my purse; because, had he stood
-in need, thou knowest, \textit{Trim}, he had been as welcome to it as
-myself.\tsh Your honour knows, said the corporal, I had no
-orders;\tsh True, quoth my uncle \textit{Toby},\tsk thou
-didst very\catch{right,} right, \textit{Trim}, as a soldier,\tsk but certainly
+\tsh That kind \textsc{Being}, who is a\break
+\stick{friend to the friendless, shall recompence}
+thee for this.
+
+Thou hast left this matter short, said\break
+\stick{my uncle \toby to the corporal, as he was}
+\stick{putting him to bed,\tsh and I will tell} 
+\stick{thee in what, \textit{Trim.}\tsh In the first} 
+\stick{place, when thou madest an offer of my}
+\stick{services to \textit{Le Fever},\tsk as sickness and} 
+\stick{travelling are both expensive, and thou} 
+\stick{knowest he was but a poor lieutenant,} 
+\stick{with a son to subsist as well as himself,} 
+\stick{out of his pay,\tsk that thou didst not}
+\stick{make an offer to him of my purse; be-}
+\stick{cause, had he stood in need, thou know-}
+\stick{est, \trim, he had been as welcome to it} 
+\stick{as myself.\tsh Your honour knows, said}
+\stick{the corporal, I had no orders;\tsh True,}
+\stick{quoth my uncle \toby,\tsk thou didst very}\catch{right,} 
+\stick{right, \trim, as a soldier,\tsk but certainly}
 very wrong as a man.
 
-In the second place, for which, indeed, thou hast the same
-excuse, continued my uncle \textit{Toby},\tsh when thou
-offeredst him whatever was in my house,\tsk thou shouldst
-have offered him my house too:\break\tsh A sick brother officer
-should have the best quarters, \textit{Trim}, and if we had him with
-us,\tsk we could tend and look to him:\tsh Thou art an
-excellent nurse thyself, \textit{Trim},\tsk and what with thy care
-of him, and the old woman’s and his boy’s, and mine
-together, we might recruit him again at once, and set him upon his
-legs.\tsh
+In the second place, for which, indeed,\break
+\stick{thou hast the same excuse, continued my} 
+\stick{uncle \toby,\tsk when thou offeredst him} 
+\stick{whatever was in my house,\tsk thou} 
+\stick{shouldst have offered him my house too:}
+\stick{\tsh A sick brother officer should have} 
+\stick{the best quarters, \trim, and if we had} 
+\stick{him with us,\tsk we could tend and look}
+\stick{to him:\tsh Thou art an excellent nurse} 
+\stick{thyself, \trim,\tsk and what with thy care}
+\stick{of him, and the old woman’s, and his} 
+\stick{boy’s, and mine together, we might re-}
+\stick{cruit him again at once, and set him} 
+upon his legs.\tsh
 
-\tsh In a fortnight or three weeks, added my uncle
-\textit{Toby}, smiling,\tsh he might march.\tsh He
-will never march,\catch{an’} an’ please your honour, in this world, said
-the corporal:\tsh He will march; said my uncle
-\textit{Toby}, rising up from the side of the bed, with one shoe
-off:\tsh\break
-An’ please your honour, said the corporal,
-he will never march but to his grave:\tsh He shall march,
-cried my uncle \textit{Toby}, marching the foot which had a shoe on,
-though without advancing an inch,\tsk he shall march to his
-regiment.\tsh He cannot stand it, said the
-corporal;\tsh He shall be supported, said my uncle
-\textit{Toby};\tsh He’ll drop at last, said the
-corporal, and what will become of his boy?\tsh He shall
-not drop, said my uncle \textit{Toby},
-firmly.\tsh A-well-o’day,\break\tsk do what we can for
-him, said \textit{Trim}, maintaining his point,\tsk the poor soul
-will die:\tsh He shall not die, by G\tsk , cried my
-uncle \textit{Toby.}\patch{\tsk The}
+\tsh In a fortnight or three weeks,\break
+\stick{added my uncle \toby, smiling,\tsk he}
+\stick{might march.\tsh He will never march,}\catch{an’}
+\stick{an’ please your honour, in this world,} 
+\stick{said the corporal:\tsh He will march;} 
+\stick{said my uncle \toby, rising up from the}
+\stick{side of the bed, with one shoe off:\tsh}
+\stick{An’ please your honour, said the cor-}
+\stick{poral, he will never march, but to his} 
+\stick{grave:\tsh He shall march, cried my} 
+\stick{uncle \toby, marching the foot which} 
+\stick{had a shoe on, though without advanc-}
+\stick{ing an inch,\tsk he shall march to his regi-}
+\stick{ment.\tsh He cannot stand it, said the}
+\stick{corporal;\tsh He shall be supported, said} 
+\stick{my uncle \toby;\tsh He’ll drop at last,}
+\stick{said the corporal, and what will become}
+\stick{of his boy?\tsh He shall not drop, said}
+\stick{my uncle \toby, firmly.\tsh A-well-o’day,}
+\stick{\tsk do what we can for him, said \trim,}
+\stick{maintaining his point,\tsk the poor soul}
+\stick{will die:\tsh He shall not die, by G\tsk,}
+cried my uncle \textit{Toby.}\patch{\tsk The}
 
-\tsk The \textsc{accusing spirit}, which flew up to
-heaven’s chancery with the oath, blush’d as he gave it
-in;\tsk and the \textsc{recording angel}, as he wrote it
-down, dropp’d a tear upon the word, and blotted it out for
-ever.
+\null
+
+\tsk The \textscl{accusing spirit}, which flew\break
+\stick{up to heaven’s chancery with the oath,} 
+\stick{blush’d as he gave it in;\tsk and the} 
+\stick{\textscl{recording angel}, as he wrote it down,}
+\stick{dropp’d a tear upon the word, and blot-}
+ted it out for ever.
 
 \section{\lsss{CHAP}.\enspace IX.}
 
-\dropcap{\Tsk M}{y} uncle \textit{Toby}
-went to his bureau,\tsk put his purse into his breeches pocket,
-and having ordered the corporal to go early in the morning for a
-physician,\tsk he went to bed, and fell asleep.
+\dropcap{\Tsk M}{y} uncle \textit{Toby} went to his\break
+\tight{bureau,\tsk put his purse into}\break
+\stick{his breeches pocket, and having order-}
+\stick{ed the corporal to go early in the morn-}
+\stick{ing for a physician,\tsk he went to bed,} 
+and fell asleep.\patch{\ls{CHAP}.}
 
-\vfill\rightline{\ls{CHAP}.}\eject
-\null\par
+\null
 \section{\lsss{CHAP}.\enspace X.}
 
-\smallskip
-\centerline{\textit{The Story of} \textsc{Le Fever} \textit{concluded}.}
+\bigskip
+\centerline{\textit{The Story of} \textscl{Le Fever} \textit{concluded}.}
 
-\dropcap{T}{he} sun looked bright the morning
-after, to every eye in the village but \textit{Le Fever}’s and
-his afflicted son’s; the hand of death press’d heavy upon his
-eye-lids,\tsh and hardly could the wheel at the cistern
-turn round its circle,\break\tsk when my uncle \textit{Toby}, who had
-rose up an hour before his wonted time, entered the
-lieutenant’s room, and without preface or apology, sat
-himself down upon the chair by the bed-side, and, independently of
-all modes and customs, opened the curtain in the manner an old
-friend and brother officer would have done it, and asked him how he
-did,\tsk how he had rested in the night,\tsk what\catch{was} was his
-complaint,\tsk where was his pain,\tsk and what he could do to
-help him:\tsh and without giving him time to answer any
-one of the enquiries, went on, and told him of the little plan
-which he had been concerting with the corporal the night
-before for him.\tsh
+\dropcap{T}{he} sun looked bright the morn-\break
+ing after, to every eye in the vil-\break
+\stick{lage but \textit{Le Fever}’s and his afflicted son’s;}
+\stick{the hand of death press’d heavy upon}
+\stick{his eye-lids,\tsk and hardly could the}
+\stick{wheel at the cistern turn round its circle,}
+\stick{\tsk when my uncle \toby, who had rose}
+\stick{up an hour before his wonted time, en-}
+\stick{tered the lieutenant’s room, and without}
+\stick{preface or apology, sat himself down}
+\stick{upon the chair by the bed-side, and, inde-}
+\stick{pendantly of all modes and customs,}
+\stick{opened the curtain in the manner an old}
+\stick{friend and brother officer would have} 
+\stick{done it, and asked him how he did,\tsk}
+\stick{how he had rested in the night,\tsk what}\catch{was} 
+\stick{was his complaint,\tsk where was his} 
+\stick{pain,\tsk and what he could do to help} 
+\stick{him:\tsh and without giving him time} 
+\stick{to answer any one of the enquiries, went} 
+\stick{on and told him of the little plan which}
+\stick{he had been concerting with the corpo-}
+ral the night before for him.\tsh
 
-\tsh You shall go home directly, \textit{Le Fever}, said
-my uncle \textit{Toby}, to my house,\break\tsk and we’ll send for a
-doctor to see what’s the matter,\tsk and we’ll have
-an apothecary,\tsk and the corporal shall be your
-nurse;\tsh and I’ll be your servant,\break
+\tsh You shall go home directly, \textit{Le}\break
+\stick{\textit{Fever}, said my uncle \toby, to my house,}
+\stick{\tsk and we’ll send for a doctor to see} 
+\stick{what’s the matter,\tsk and we’ll have an} 
+\stick{apothecary,\tsk and the corporal shall be} 
+\stick{your nurse;\tsh and I’ll be your servant,}
 \textit{Le Fever}.
 
-There was a frankness in my uncle \textit{Toby},\tsk not the
-\textit{effect} of familiarity,\tsk but the \textit{cause} of
-it,\tsk which let you at once into his soul, and shewed you the
-goodness of his nature; to this there was\catch{some-} something in his looks,
-and voice, and manner, superadded, which eternally beckoned to the
-unfortunate to come and take shelter under him; so that before my
-uncle \textit{Toby} had half finished the kind offers he was making
-to the father, had the son insensibly pressed up close to his
-knees, and had taken hold of the breast of his coat, and was
-pulling it towards him.\tsh The blood and spirits of \textit{Le
-Fever}, which were waxing cold and\break
-slow within him, and were
-retreating to their last citadel, the heart\tsk rallied
-back,\tsk the film forsook his eyes for a moment,\tsk he looked
-up wishfully in my uncle \textit{Toby}’s face,\tsk then cast
-a look upon his boy,\tsh and that \textit{ligament}, fine as
+There was a frankness in my uncle\break
+\stick{\toby,\tsk not the \textit{effect} of familiarity,\tsk but}
+\stick{the \textit{cause} of it,\tsk which let you at once}
+\stick{into his soul, and shewed you the good-}
+\stick{ness of his nature; to this, there was}\catch{some-}
+\stick{something in his looks, and voice, and}
+\stick{manner, superadded, which eternally}
+\stick{beckoned to the unfortunate to come and}
+\stick{take shelter under him; so that before}
+\stick{my uncle \toby had half finished the kind}
+\stick{offers he was making to the father, had}
+\stick{the son insensibly pressed up close to his}
+\stick{knees, and had taken hold of the breast} 
+\stick{of his coat, and was pulling it towards}
+\stick{him.\tsk The blood and spirits of \textit{Le}} 
+\stick{\textit{Fever}, which were waxing cold and}
+\stick{slow within him, and were retreating to}
+\stick{their last citadel, the heart,\tsk rallied}
+\stick{back,\tsk the film forsook his eyes for a}
+\stick{moment,\tsk he looked up wishfully in my}
+\stick{uncle \toby's face,\tsk then cast a look upon}
+\stick{his boy,\tsk and that \textit{ligament}, fine as} 
 it was,\tsk was never broken.\tsh
 
-Nature instantly ebb’d again,\tsk the film returned to
-its place,\tsh the pulse\catch{flut-}
-fluttered\tsh stopp’d\tsh went on\tsh\break
-\tsh throb’d\tsh stopp’d again\tsh moved\tsh stopp’d\tsh shall
-I go on?\tsh\break
+Nature instantly ebb’d again,\tsh the\break
+\stick{film returned to its place,\tsh the pulse}\catch{flut-}
+\stick{fluttered\tsh stopp’d\tsh went on\tsh}
+\stick{\tsh throb’d\tsh stopp’d again\tsh mo-}
+\stick{ved\tsh stopp’d\tsh shall I go on?\tsh}
 No.
 
 \section{\lsss{CHAP}.\enspace XI.}
 
-\initial{I}{Am} so impatient to return to my own
-story, that what remains of young\break\textit{Le Fever}’s, that is,
-from this turn of his fortune, to the time my uncle
-\textit{Toby}\break
-recommended him for my preceptor, shall be told in a very few words
-in the next chapter.\tsk All that is necessary to be added to
-this chapter is as follows.\tsk 
+\initial{I}{Am} so impatient to return to my own\break
+story, that what remains of young\break
+\stick{\textit{Le Fever}’s, that is, from this turn} 
+\stick{of his fortune, to the time my uncle \textit{Toby}}
+\stick{recommended him for my preceptor,} 
+\stick{shall be told in a very few words in the}
+\stick{next chapter.\tsk All that is necessary to} 
+be added to this chapter is as follows.\tsk 
 
-That my uncle \textit{Toby}, with young \textit{Le Fever} in his
-hand, attended the poor\break lieutenant, as chief mourners, to his\break
+That my uncle \toby, with young \textit{Le}\break
+\stick{\textit{Fever} in his hand, attended the poor}
+\stick{lieutenant, as chief mourners, to his}
 grave.\patch{That}
 
-\noindent\stick{\hfill That the governor of \textit{Dendermond} paid}
-his obsequies all
-military honours,\tsk and that \textit{Yorick}, not to be
-behind-hand\tsk\break
-paid him all ecclesiastic\tsk for he buried him
-in his chancel:\tsk And it appears likewise, he preached a
-funeral sermon over him\tsh I say it
-\textit{appears},\tsk for it\break was \textit{Yorick}’s custom,
-which I suppose a \stick{general one with those of his
-profession,} on the
-first leaf of every sermon which he composed, to chronicle down the
-time, the place, and the occasion of its being preached: to this,
-he was ever wont to add some short comment or stricture upon the
-sermon itself, seldom, indeed, much to its credit:\tsk For
-instance, \textit{This sermon upon the jewish dispensation\tsk I
-don’t like it at all;\tsk Though I own there is a world
-of} \textsc{water-landish} \textit{knowledge in it;\tsk but
-’tis all tritical, and\catch{most} most tritically put
-together.\tsk This is but a flimsy kind of a composition; what
-was in my head when I made it?}
+\indent\vrule width 0pt height 18pt
+That the governor of \textit{Dendermond} paid\break
+\stick{his obsequies all military honours,\tsk and} 
+\stick{that \textit{Yorick}, not to be behind-hand\tsk}
+\stick{paid him all ecclesiastic\tsk for he buried}
+\stick{him in his chancel:\tsk And it appears}
+\stick{likewise, he preached a funeral sermon} 
+\stick{over him\tsh I say it \textit{appears},\tsk for it}
+\stick{was \textit{Yorick}’s custom, which I suppose a} 
+\stick{general one with those of his profession,} 
+\stick{on the first leaf of every sermon which}
+\stick{he composed, to chronicle down the}
+\stick{time, the place, and the occasion of its}
+\stick{being preached: to this, he was ever} 
+\stick{wont to add some short comment or}
+\stick{stricture upon the sermon itself, seldom,}
+\stick{indeed, much to its credit:\tsk For in-} 
+\stick{stance, \textit{This sermon upon the jewish dispen}-}
+\stick{\textit{sation\tsk I don’t like it at all};\tsk \textit{Though I}}
+\stick{\textit{own there is a world of} \textscl{water-landish}} 
+\stick{\textit{knowlege\sic in it},\tsk \textit{but ’tis all tritical}, \textit{and}}\catch{\textit{most}}
+\stick{\textit{most tritically put together.\tsh This is}}
+\stick{\textit{but a flimsy kind of a composition}; \textit{what}}
+\textit{was in my head when I made it?}
 
-\tsh N.B. \textit{The excellency of this text is, that it
-will suit any sermon,\tsk and of this sermon,\tsh that
-it will suit any text.\tsh}
+\tsk N.\@ B.\@ \textit{The excellency of this text\break 
+is, that it will suit any sermon,\tsk and of\break 
+this sermon,\tsk that it will suit any\break
+text}.\tsh
 
 \tsh \textit{For this sermon I shall be hanged,\break
-\tsk for I have stolen the greatest part of it. Doctor}
-Paidagunes \textit{found me out.\hfill \fist  Set\break a 
-thief to catch a thief.\tsh}
+\tsk for I have stolen the greatest part of it.\break
+Doctor} Paidagunes \textit{found me out.\hfill \fist  Set\break
+a  thief to catch a thief}.\tsh
 
-On the back of half a dozen I find written, \textit{So}, \textit{so}, and no
-more\tsh and upon a couple \textit{Moderato}; by which, as
-far as one may gather from \textit{Altieri’s Italian}
-dictionary,\tsk but mostly from the authority of a piece of green
-whipcord, which seemed to have been the unravel-\catch{ling} ling of
-\textit{Yorick}’s whip-lash, with which he has left us the two
-sermons marked \textit{Moderato}, and the half dozen of \textit{So,
-so}, tied fast together in one bundle by them-\break
-\stck{selves,\tsk one may safely suppose he meant}\break pretty near the same thing.
+On the back of half a dozen I find\break
+\stick{written, \textit{So}, \textit{so}, and no more\tsh and} 
+\stick{upon a couple \textit{Moderato}; by which, as} 
+\stick{far as one may gather from \textit{Altieri’s Ita}-}
+\stick{\textit{lian} dictionary,\tsk but mostly from the}
+\stick{authority of a piece of green whipcord,}
+\stick{which seemed to have been the unravel-}\catch{ling} 
+\stick{ling of \textit{Yorick}’s whip-lash, with which} 
+\stick{he has left us the two sermons marked}
+\stick{\textit{Moderato}, and the half dozen of \textit{So}, \textit{so},} 
+\stick{tied fast together in one bundle by them-}
+\stck{selves,\tsk one may safely suppose he meant}
+pretty near the same thing.
 
-There is but one difficulty in the way of this conjecture, which
-is this, that the \textit{moderato}’s are five times better
-than the \textit{so, so}’s;\tsk show ten times more know\-ledge
-of the human heart;\tsk have seventy times more wit and spirit in
-them;\tsk (and, to rise properly in my climax)\tsk discover a
-thousand times more genius;\break\tsk and to crown all, are infinitely
-more 
-\stck{entertaining than those tied up with them;}\break
-\tsk for
-which reason, whene’er \textit{Yorick’s dramatic} sermons
-are offered to the world, though I shall admit but one out of the
-whole number of the \textit{so, so}’s, I shall,\catch{never-} nevertheless,
-adventure to print the two \textit{moderato}’s without any sort
-of scruple.
+There is but one difficulty in the way\break
+\stick{of this conjecture, which is this, that}
+\stick{the \textit{moderato}’s are five times better than}
+\stick{the \textit{so}, \textit{so}’s;\tsk shew ten times more know-}
+\stick{lege\sic of the human heart;\tsk have seventy} 
+\stick{times more wit and spirit in them;\tsk} 
+\stick{(and, to rise properly in my climax)\tsk} 
+\stick{discover a thousand times more genius;}
+\stick{\tsk and to crown all, are infinitely more}
+\stck{entertaining than those tied up with them;}
+\stick{\tsk for which reason, whene’er \textit{Yorick}’s}
+\stck{\textit{dramatic} sermons are offered to the world,} 
+\stick{though I shall admit but one out of the} 
+\stick{whole number of the \textit{so}, \textit{so}’s, I shall,}\catch{never-}
+\stick{nevertheless, adventure to print the two}
+\textit{moderato}’s without any sort of scruple.
 
-What \textit{Yorick} could mean by the words
-\textit{lentamente,\tsk tenutè,\tsk grave},\tsk and
-sometimes \textit{adagio},\tsk as applied to \textit{theological}
-compositions, and with which he has characterised some of these
-sermons, I dare not venture to guess.\tsh I am more
-puzzled still upon finding \textit{a l’octava alta!}
+What \textit{Yorick} could mean by the words\break
+\stick{\textit{lentamente},\tsk \textit{tenutè},\tsk \textit{grave},\tsk and some-} 
+\stick{times \textit{adagio},\tsk as applied to \textit{theological}}
+\stick{compositions, and with which he has} 
+\stick{characterized some of these sermons, I} 
+\stick{dare not venture to guess.\tsh I am more}
+\stick{puzzled still upon finding \textit{a l’octava alta!}}
 \stick{upon one;\tsh \textit{Con strepito} upon the back}
 \stick{of another;\tsh \textit{Scicilliana} upon a third;}
 \stick{\tsk \textit{Alla capella} upon a fourth;\tsk}
@@ -929,53 +1136,72 @@ puzzled still upon finding \textit{a l’octava alta!}
 \stick{I will make no doubt, but that by some}
 \stick{quaint application of such metaphors to}
 \stick{the compositions in hand, they impressed}
-very distinct ideas of their several cha-\catch{racters} racters upon his fancy,\tsk whatever
-they may do upon that of others.
+\stick{very distinct ideas of their several cha-}\catch{racters} 
+\stick{racters upon his fancy,\tsk whatever they}
+may do upon that of others.
 
-Amongst these, there is that particular sermon which has
-unaccountably led me into this digression\tsh The funeral
-sermon upon poor \textit{Le Fever}, wrote out very fairly, as if from
-a hasty copy.\tsk I take notice of it the more, because it seems
-to have been his favourite composition\tsh It is upon
-mortality; and is tied length-ways and cross-ways with a yarn
-thrum, and then rolled up and twisted round with a half-sheet of
-dirty blue paper, which seems to have been once the cast cover of a
-general review, which to this day smells horribly of\break
-horse-drugs.\tsh Whether these marks\break of humiliation were
-designed,\tsk I something doubt;\tsh because at the end
-of the sermon (and not at the beginning\catch{of} of it)\tsk very different
-from his way of treating the rest, he had wrote\tsh
+Amongst these, there is that particular\break
+\stick{sermon which has unaccountably led me}
+\stick{into this digression\tsh The funeral ser-}
+\stick{mon upon poor \textit{Le Fever}, wrote out}
+\stick{very fairly, as if from a hasty copy.\tsk I} 
+\stick{take notice of it the more, because it}
+\stick{seems to have been his favourite compo-}
+\stick{sition\tsh It is upon mortality; and is}
+\stick{tied length-ways and cross-ways with a}
+\stick{yarn thrum, and then rolled up and}
+\stick{twisted round with a half sheet of dirty}
+\stick{blue paper, which seems to have been} 
+\stick{once the cast cover of a general review,}
+\stick{which to this day smells horribly of}
+\stick{horse-drugs.\tsh Whether these marks}
+\stick{of humiliation were designed,\tsk I some-}
+\stick{thing doubt;\tsh because at the end of}
+\stick{the sermon, (and not at the beginning}\catch{of}
+\stick{of it)\tsk very different from his way of}
+\stick{treating the rest, he had wrote\tsk\qquad}
+\stick{\hfill Bravo! \hfill}
+\stick{\indent\tsk Though not very offensively,}
+\stick{\tsk for it is at two inches, at least,}
+\stick{and a half’s distance from, and below} 
+\stick{the concluding line of the sermon, at}
+\stick{the very extremity of the page, and in}
+\stick{that right hand corner of it, which, you}
+\stick{know, is generally covered with your}
+\stick{thumb; and, to do it justice, it is wrote}
+\stick{besides with a crow’s quill so faintly in a} 
+\stick{small \textit{Italian} hand, as scarce to sollicit} 
+\stick{the eye towards the place, whether your}
+\stick{thumb is there or not,\tsk so that from the} 
+\stick{\textit{manner of it}, it stands half excused;} 
+\stick{and being wrote moreover with very pale}
+\stick{ink, diluted almost to nothing,\tsk ’tis}
+\stick{more like a \textit{ritratto} of the shadow of va-}
+\stick{nity, than of \textscl{Vanity} herself\tsk of the} 
+\stick{two; resembling rather a faint thought}\catch{of}
+\stick{of transient applause, secretly stirring}
+\stick{up in the heart of the composer, than a}
+\stick{gross mark of it, coarsely obtruded}
+upon the world.
 
-\centerline{Bravo!}
-\vskip-\parskip
+With all these extenuations, I am\break
+\stick{aware, that in publishing this, I do no}
+\stick{service to \textit{Yorick}’s character as a modest}
+\stick{man;\tsk but all men have their failings!}
+\stick{and what lessens this still farther, and}
+\stick{almost wipes it away, is this; that the}
+\stick{word was struck through sometime af-}
+\stick{terwards (as appears from a different}
+\stick{tint of the ink) with a line quite across} 
+\stick{it in this manner, \hbox to
+34pt{\rlap{\,BRAVO}\leaders\hrule width
+1pt height 3.4pt depth -3.1pt\hfill}\tsk as if}
+\stick{he had retracted, or was ashamed of the} 
+opinion he had once entertained of it.
 
-\tsh Though not very offensively,\break\tsh for it
-is at two inches, at least, and a half’s distance from, and
-below the concluding line of the sermon, at the very extremity of
-the page, and in that right hand corner of it, which, you know, is
-generally covered with your thumb; and, to do it justice, it is
-wrote besides with a crow’s quill so faintly in a small
-\textit{Italian} hand, as scarce to sollicit the eye towards the
-place, whether your thumb is there or not,\tsk so that from the
-\textit{manner of it}, it stands half excused; and being wrote
-moreover with very pale ink, diluted almost to
-nothing,\tsk ’tis more like a \textit{ritratto} of the shadow
-of vanity, than of \textsc{Vanity} herself\tsk of the two;
-resembling rather a faint thought\catch{of} of transient applause, secretly
-stirring up in the heart of the composer; than a gross mark of it,
-coarsely obtruded upon the world.
-
-With all these extenuations, I am aware, that in publishing
-this, I do no service to \textit{Yorick}’s character as a
-modest man;\tsk but all men have their failings! and what lessens
-this still farther, and almost wipes it away, is this; that the
-word was struck through sometime afterwards (as appears from a
-different tint of the ink) with a line quite across it in this manner,
-\hbox to 33pt{\rlap{\,BRAVO}\leaders\hrule width 1pt height 3.4pt depth -3.1pt\hfill}\tsh as if he had retracted, or was
-ashamed of the opinion he had once entertained of it.
-
-These short characters of his sermons were always written,
-excepting in this one instance, upon the first leaf of his\catch{sermon,}
+These short characters of his sermons\break 
+\stick{were always written, excepting in this}
+\stick{one instance, upon the first leaf of his}\catch{sermon,}
 \stick{sermon, which served as a cover to it;}
 \stick{and usually upon the inside of it, which}
 \stick{was turned towards the text;\tsk but at}
@@ -998,25 +1224,25 @@ excepting in this one instance, upon the first leaf of his\catch{sermon,}
 \null\kern-\baselineskip
 \section{\lsss{CHAP}.\enspace XII.}
 
-\dropcap{W}{hen} my uncle \textit{Toby} had turned
+\dropcap{W}{hen} my uncle \toby had turned
 every thing into money, and\break settled all accounts betwixt the agent
 of the regiment and \textit{Le Fever}, and betwixt \textit{Le Fever}
 and all mankind,\tsh\break
-there remained nothing more in my uncle \textit{Toby}’s hands, than an old
-regimental coat and a sword; so that my uncle \textit{Toby} found little or no
+there remained nothing more in my uncle \toby's hands, than an old
+regimental coat and a sword; so that my uncle \toby found little or no
 opposition from the world in taking administration. The coat my uncle \textit{Toby}
 gave the corporal;\break
-\tsh Wear it, \textit{Trim}, said my uncle \textit{Toby}, as long
+\tsh Wear it, \trim, said my uncle \toby, as long
 as it will hold together, for the sake of the poor lieutenant\tsh And this,\tsh said
-my uncle \textit{Toby}, taking up the sword in his hand, and drawing it out of the
+my uncle \toby, taking up the sword in his hand, and drawing it out of the
 scabbard as he spoke\tsk and\break this, \textit{Le Fever}, I’ll save for thee,\tsk
-’tis\catch{all} all the fortune, continued my uncle \textit{Toby}, hanging it up upon a
+’tis\catch{all} all the fortune, continued my uncle \toby, hanging it up upon a
 crook, and pointing to it,\tsk ’tis all the fortune, my dear \textit{Le Fever},
 which God has left thee;\break
 but if he has given thee a heart to fight thy way with it
 in the world,\tsk and thou doest it like a man of honour,\tsk ’tis enough for us.
 
-As soon as my uncle \textit{Toby} had laid a foundation, and
+As soon as my uncle \toby had laid a foundation, and
 taught him to inscribe a regular polygon in a circle, he sent him
 to a public school, where, excepting \textit{Whitsontide} and
 \textit{Christmas}, at which times the corporal was punctually
@@ -1025,32 +1251,32 @@ seventeen; when the stories of the emperor’s sending his army
 into \textit{Hungary} against the \textit{Turks}, kindling a spark of
 fire in his bosom, he left his \textit{Greek} and \textit{Latin}
 without leave, and\catch{throw-} throwing himself upon his knees before my uncle
-\textit{Toby}, begged his father’s sword, and my uncle
-\textit{Toby}’s leave along with it, to go and try his fortune
-under \textit{Eugene.}\tsk Twice did my uncle \textit{Toby} forget
+\toby, begged his father’s sword, and my uncle
+\toby's leave along with it, to go and try his fortune
+under \textit{Eugene.}\tsk Twice did my uncle \toby forget
 his wound and cry out, \textit{Le Fever!} I will go with thee, and
 thou shalt fight beside me\tsh And twice he laid his hand
 upon his groin, and hung down his head in sorrow and
 disconsolation.\tsh
 
-My uncle \textit{Toby} took down the sword from the
+My uncle \toby took down the sword from the
 crook, where it had hung untouched ever since the
 lieutenant’s death, and delivered it to the corporal to
 brighten up;\tsh and having detained \textit{Le Fever} a
 single fortnight to equip him, and contract for his passage to
 \textit{Leghorn},\break\tsk he put the sword into his
 hand,\tsh If thou art brave, \textit{Le Fever}, said my
-uncle \textit{Toby}, this will not fail thee,\tsh\catch{but} but
+uncle \toby, this will not fail thee,\tsh\catch{but} but
 Fortune, said he, (musing a little),\break\tsh Fortune
-may\tsh And if she does,\break\tsk added my uncle \textit{Toby},
+may\tsh And if she does,\break\tsk added my uncle \toby,
 embracing him, come back again to me, \textit{Le Fever}, and we will
 shape thee another course.
 
 The greatest injury could not have oppressed the heart of \textit{Le
-Fever} more than my uncle \textit{Toby}’s paternal
-kindness;\tsh he parted from my uncle \textit{Toby}, as the
+Fever} more than my uncle \toby's paternal
+kindness;\tsh he parted from my uncle \toby, as the
 best of sons from the best of fathers\tsh\break both dropped
-tears\tsh and as my uncle \textit{Toby} gave him his last
+tears\tsh and as my uncle \toby gave him his last
 kiss, he slipped sixty guineas, tied up in an old purse of his
 father’s, in which was his mother’s ring, into his
 hand,\tsk and bid God bless him.
@@ -1072,11 +1298,11 @@ the first ship to return back to him.
 
 As this letter came to hand about six weeks before
 \textit{Susannah}’s accident, \textit{Le}\catch{\textit{Fever}} \textit{Fever} was hourly
-expected; and was uppermost in my uncle \textit{Toby}’s mind
+expected; and was uppermost in my uncle \toby's mind
 all the time my father was giving him and 
 \stick{\textit{Yorick} a description of what kind of a}
 \stick{person he would chuse for a preceptor}
-to me: but as my uncle \textit{Toby} thought my father at first somewhat fanciful in the
+to me: but as my uncle \toby thought my father at first somewhat fanciful in the
 accomplishments he required, he forbore mentioning \textit{Le
 Fever}’s name,\break
 \tsh till the character, by \textit{Yorick}’s inter-\break
@@ -1084,16 +1310,16 @@ position, ending unexpectedly, in one,
 who should be gentle tempered, and ge\-nerous, and good, it impressed
 the image of \textit{Le Fever}, and his interest, upon my\break
 uncle
-\textit{Toby} so forcibly, he rose instantly off his chair; and
+\toby so forcibly, he rose instantly off his chair; and
 laying down his pipe, in order to take hold of both my
 father’s hands\tsh I beg, brother \textit{Shandy},
-said my uncle \textit{Toby}, I may recommend poor \textit{Le
+said my uncle \toby, I may recommend poor \textit{Le
 Fever}’s son to you\tsk I beseech\break you, do, added
 \textit{Yorick}\tsh He has a good\catch{heart,} heart, said my uncle
 \textit{Toby}\tsh And a brave one too, an’ please your
 honour, said the corporal.
 
-\tsh The best hearts, \textit{Trim}, are ever the
+\tsh The best hearts, \trim, are ever the
 bravest, replied my uncle \textit{Toby.}\break
 \tsh And the greatest cowards, an’ please your honour, in our regiment,
 were the greatest rascals in it.\tsk There was serjeant
@@ -1147,7 +1373,7 @@ the opinion of the other half.\tsh
 \tsh Was ever poor devil of a country gentleman so
 hampered? said my\break father.\patch{I would}
 
-I would shew him publickly, said my uncle \textit{Toby}, at the
+I would shew him publickly, said my uncle \toby, at the
 market cross.
 
 \tsh ’Twill have no effect, said my father.
@@ -1560,7 +1786,7 @@ the work.
 
 \dropcap{I}{f} the reader has not a clear
 conception of the rood and the half of ground which lay at the
-bottom of my uncle \textit{Toby}’s kitchen-garden, and which
+bottom of my uncle \toby's kitchen-garden, and which
 was the scene of so many of his delicious hours,\tsk the fault is
 not in me,\tsk but in his imagination;\tsk for I am sure I gave
 him so minute a description, I was almost ashamed of it.
@@ -1577,11 +1803,11 @@ and so \textit{little} of it too, as not to cling
 to the spade, and render works of so much glory, nasty in foul
 weather.
 
-My uncle \textit{Toby} came down, as the reader has been informed,
+My uncle \toby came down, as the reader has been informed,
 with plans along with him, of almost every fortified town in
 \textit{Italy} and \textit{Flanders}; so let the Duke of
 \textit{Marlborough}, or the allies, have set down before what town
-they pleased, my uncle \textit{Toby} was prepared for\break them.
+they pleased, my uncle \toby was prepared for\break them.
 
 His way, which was the simplest one in the world, was this; as
 soon as ever a town was invested\tsk (but sooner when\catch{the} 
@@ -1597,26 +1823,26 @@ glacis, and the precise height of the several banquets, parapets,
 \&c.\tsk he set the corporal to work\tsh and sweetly went it
 on:\tsh The nature of the soil,\tsk the nature of the
 work itself,\tsk and above all, the good nature of my uncle
-\textit{Toby} sitting by from morning to night, and chatting kindly
+\toby sitting by from morning to night, and chatting kindly
 with the corporal upon\catch{past-} past-done deeds,\tsk left
 \textsc{labour} little else but the ceremony of the name.
 
 When the place was finished in this 
 manner, and put into a proper posture
 of defence,\tsk it was invested,\tsk and my\break
-uncle \textit{Toby} and the corporal began to run\break
+uncle \toby and the corporal began to run\break
 their first parallel.\tsk I beg I may not\break
 be interrupted in my story, by being\break
 told, \textit{That the first parallel should be at least three
 hundred toises distant from the main body of the place,\tsk and
 that I have not left a single inch for it};\tsh for my
-uncle \textit{Toby} took the liberty of incroaching upon his
+uncle \toby took the liberty of incroaching upon his
 kitchen garden, for the sake of enlarging his works on the
 bowling green, and for that reason generally ran his first and
 second parallels betwixt two rows of his cabbages and his
 collyflowers; the conveniences and inconveniences of which will be
 consi-\catch{dered} dered at large in the history of my\break
-uncle \textit{Toby}’s and the corporal’s cam-\break
+uncle \toby's and the corporal’s cam-\break
 paigns, of which,
 this I’m now writing is but a sketch, and will be finished,
 if\break
@@ -1643,7 +1869,7 @@ uncle \textit{Toby}\break received from the daily papers,\tsk they
 went on, during the whole siege, step by step with the allies.
 
 When the duke of \textit{Marlborough} made a
-lodgment,\tsh my uncle \textit{Toby} made a\break lodgment
+lodgment,\tsh my uncle \toby made a\break lodgment
 too.\tsh And when the face of a bastion was battered down,
 or a defence ruined,\tsk the corporal took his mattock and did as
 much,\tsk and so on;\break
@@ -1657,11 +1883,11 @@ could not have been a greater sight in the world, than, on a
 post-morning, in which a\break practicable breach had been made by the
 duke of \textit{Marlborough}, in the main body of the place,\tsk
 to have stood behind the horn beam hedge, and observed the
-spirit with which my uncle \textit{Toby}, with \textit{Trim}
+spirit with which my uncle \toby, with \textit{Trim}
 behind him, sallied forth;\tsh the one with the \textit{Gazette}
 in his hand,\tsk the other with a spade on his shoulder to
 execute the contents.\tsh What an honest triumph in my uncle
-\textit{Toby}’s looks as he marched up to the ramparts! What
+\toby's looks as he marched up to the ramparts! What
 intense pleasure swimming in his eye as he stood over the
 corporal, reading the paragraph ten times over to him, as he was
 at work, lest, peradventure, he should make the breach an inch
@@ -1677,7 +1903,7 @@ interruption to it,\break except now and then when the wind continued to
 blow due west for a week or ten days together, which detained the
 \textit{Flanders} mail, and kept them so long in torture,\tsk but
 still ’twas the torture of the happy\tsh In this
-track, I say, did my uncle \textit{Toby} and \textit{Trim} move for
+track, I say, did my uncle \toby and \trim move for
 many years, every year of which, and sometimes every
 month, from the invention\catch{of} of either the one or the other of them,
 adding some new conceit or quirk of\break improvement to their
@@ -1687,7 +1913,7 @@ carrying them on.
 The first year’s campaign was carried on from beginning to
 end, in the plain and simple method I’ve related.
 
-In the second year, in which my uncle \textit{Toby} took
+In the second year, in which my uncle \toby took
 \textit{Liege} and \textit{Ruremond}, he thought he might afford the
 expence of four handsome draw-bridges, two of which I have given
 an exact description, in the former part of my work.
@@ -1695,7 +1921,7 @@ an exact description, in the former part of my work.
 At the latter end of the same year he added a couple of gates
 with port-cullises:\tsh These last were converted\break
 afterwards in orgues, as the better thing;\catch{and}
-and during the winter of the same year, my uncle \textit{Toby},
+and during the winter of the same year, my uncle \toby,
 instead of a new suit of cloaths, which he always had at
 \textit{Christmas}, treated himself with a handsome sentry-box,
 to stand at the corner of the bowling-green, betwixt which point
@@ -1706,17 +1932,17 @@ of war upon.
 \tsh The sentry-box was in case of rain.
 
 All these were painted white three times over the ensuing
-spring, which\break enabled my uncle \textit{Toby} to take the field with
+spring, which\break enabled my uncle \toby to take the field with
 great splendour.
 
 My father would often say to \textit{Yorick}, that if any mortal
 in the whole universe\catch{had}
-had done such a thing, except his bro\-ther \textit{Toby}, it
+had done such a thing, except his bro\-ther \toby, it
 would have been looked upon by the world as one of the most
 refined satyrs upon the parade and prancing manner, in which
 \textit{Lewis} XIV.\@ from the beginning of the war, but
 particularly that very year, had taken the field\break\tsh But ’tis
-not my brother \textit{Toby}’s nature, kind soul!\@ my father
+not my brother \toby's nature, kind soul!\@ my father
 would add,\break to insult any one.
 
 \tsh But let us go on.
@@ -1729,18 +1955,18 @@ town at that time within the polygon;\break that addition was not made
 till the summer following the spring in which the bridges and
 sentry-box were painted,\catch{which}
 \stick{which was the third year of my uncle}
-\textit{Toby}’s campaigns,\tsk when upon his taking
+\toby's campaigns,\tsk when upon his taking
 \textit{Amberg}, \textit{Bonn}, and \textit{Rhinberg}, and \textit{Huy}
 and \textit{Limbourg}, one after another, a thought came into
 the corporal’s head, that to talk of taking so many towns,
 \textit{without one} \textsc{town} \textit{to shew for it},\tsk
 was a very nonsensical way of going to work, and so proposed to
-my uncle \textit{Toby}, that \stick{they should have a little model of a}
+my uncle \toby, that \stick{they should have a little model of a}
 town built for them,\tsk to be run up together of slit deals,
 and then painted, and clapped within the interior polygon to
 serve for all.
 
-My uncle \textit{Toby} felt the good of the project instantly, and
+My uncle \toby felt the good of the project instantly, and
 instantly agreed to it, but with the addition of two singular
 improvements, of which he was almost as proud, as if he had been the
 original inventor of the project itself.\patch{The}
@@ -1757,7 +1983,7 @@ The other was, not to have the houses run up together, as the
 corporal propos\-ed, but to have every house independent, to hook on,
 or off, so as form into the plan of whatever town they pleased.
 This was put directly into hand, and many and many a look of mutual
-congratulation was exchanged between my uncle \textit{Toby} and the
+congratulation was exchanged between my uncle \toby and the
 corporal, as the carpenter did the work.\patch{\tsh It}
 
 \tsh It answered prodigiously the next
@@ -1770,18 +1996,18 @@ summer\tsh the town was a perfect
 
 \tsh Surely never did any \textsc{town} act so
 many parts, since \textit{Sodom} and \textit{Gomorrah}, as my uncle
-\textit{Toby}’s town did.
+\toby's town did.
 
-In the fourth year, my uncle \textit{Toby} thinking a town looked
+In the fourth year, my uncle \toby thinking a town looked
 foolishly without a church, added a very fine one with a
-steeple.\tsh \textit{Trim} was for having bells in
-it;\tsh my uncle \textit{Toby} said, the\break
+steeple.\tsh \trim was for having bells in
+it;\tsh my uncle \toby said, the\break
 mettle had better be cast into cannon.
 
 This led the way the next campaign for half a dozen brass
 field pieces,\tsk to be\catch{planted} 
 \stick{\tight{planted three and three on each side of my}}
-\stick{uncle \textit{Toby}’s sentry-box; and in a short}
+\stick{uncle \toby's sentry-box; and in a short}
 \stick{\tight{time, these led the way for a train of some-}}
 what larger,\tsk and so
 on\tsk (as must always be the case in hobby-horsical affairs)
@@ -1790,14 +2016,14 @@ father’s jack boots.
 
 The next year, which was that in which \textit{Lisle} was
 besieged, and at the close of which both \textit{Ghent} and
-\textit{Bruges} fell into our hands,\tsk my uncle \textit{Toby} was
+\textit{Bruges} fell into our hands,\tsk my uncle \toby was
 sadly put to it for \textit{proper} ammunition;\break
 \tsh I say proper ammunition\tsh because his great artillery
 would not bear powder; and ’twas well for the \textit{Shandy}
 family they would not\tsh For so full were the papers, from the
 beginning to the end of the siege, of the incessant\break firings kept
 up by the besiegers,\tsh and so heated was my uncle
-\textit{Toby}’s imagina-\catch{tion} tion with the accounts of them, that he
+\toby's imagina-\catch{tion} tion with the accounts of them, that he
 had infallibly shot away all his estate.
 
 \textsc{Something} therefore was wanting,\break
@@ -1808,7 +2034,7 @@ and this \textit{something}, the corporal, whose principal
 strength lay in invention, supplied by an entire new system of
 battering of his own,\tsk without which, this had been objected
 to by military critics, to the end of the world, as one of the
-great \textit{desiderata} of my uncle \textit{Toby}’s ap\-paratus.
+great \textit{desiderata} of my uncle \toby's ap\-paratus.
 
 This will not be explained the worse, for setting off, as I
 generally do, at a little distance from the subject.
@@ -1837,7 +2063,7 @@ tipp’d with\break silver.\patch{My}
 My father, who saw all things in lights different from the rest
 of the\break world, would say to the corporal, that he ought to look
 upon these two presents more as tokens of his brother’s nicety,
-than his affection.\tsh Tom did not care, \textit{Trim}, he
+than his affection.\tsh Tom did not care, \trim, he
 would say, to put on the cap, or to smoak in the tobacco-pipe of
 a \textit{Jew}.\break\tsh God bless your honour, the corporal would
 say, (giving a strong reason to the contrary)\tsk how can that
@@ -1876,36 +2102,36 @@ I must add the most bloody too, for it cost the allies themselves
 that morning above eleven hundred men,\tsk my uncle \textit{Toby}
 prepared himself for it with a more than ordinary solemnity.
 
-The eve which preceded, as my uncle \textit{Toby} went to bed, he
+The eve which preceded, as my uncle \toby went to bed, he
 ordered his ramallie wig, which had laid inside out for many years
 in the corner of an old campaigning trunk, which stood by his\catch{bed-}
 \setlength{\baselineskip}{13.3636pt}% 21*14 = 294   13.363636363636363 
 bedside, to be taken out and laid upon the lid of it, ready for the morning;\tsk and the
 very first thing he did in his shirt, when he had stepped out of
-bed, my uncle \textit{Toby}, after he had turned the rough side
+bed, my uncle \toby, after he had turned the rough side
 outwards,\tsk put it on:\tsh\break This done, he proceeded
 next to his breeches, and having buttoned the waist-band, he
 forthwith buckled on his sword belt, and had got his sword half way
 in,\break\tsk when he considered he should want shaving, and that it
 would be very inconvenient doing it with his sword on,\tsk so
 took it off:\tsh In essaying to put on his regimental coat
-and waistcoat, my uncle \textit{Toby} found the same objection in his
+and waistcoat, my uncle \toby found the same objection in his
 wig,\tsk so that went off too:\tsk So that what with one thing,
 and what with another, as always falls out when a man is in the
 most haste,\tsk ’twas ten o’clock, which was half an
-hour later than his\catch{usual} usual time, before my uncle \textit{Toby} sallied
+hour later than his\catch{usual} usual time, before my uncle \toby sallied
 out.
 
 \etp
 \section{\lsss{CHAP}.\enspace XXV.}
 
-\dropcap{M}{y} uncle \textit{Toby} had scarce
+\dropcap{M}{y} uncle \toby had scarce
 turned the corner of his yew hedge,\break which separated his
 kitchen garden from his bowling green, when he perceived the
 corporal had begun the attack without him.\tsh
 
 Let me stop and give you a picture of the corporal’s apparatus; and of the corporal
-himself in the height of his attack just as it struck my uncle \textit{Toby}, as he
+himself in the height of his attack just as it struck my uncle \toby, as he
 turned towards the sentry box, where the corporal was at work,\tsh for in nature
 there is not such another,\tsh\break nor can any combination of all that is
 grotesque and whimsical in her works produce its equal.
@@ -1962,7 +2188,7 @@ had resolved in his mind, to\break
 supply the grand \textit{desideratum}, of keeping\break up something like an incessant
 firing upon the enemy during the heat of the \stick{attack,\tsk had no further idea in his
 fancy} at that time, than a contrivance of smoaking tobacco against the town, out of
-one of my uncle \textit{Toby}’s six field pieces, which were planted on each side of
+one of my uncle \toby's six field pieces, which were planted on each side of
 his\break
 sentry-box; the means of effecting which\break
 occurring to his fancy at the same time,\break
@@ -2013,12 +2239,12 @@ contentment to bed.
 \kern-.6\baselineskip
 
 \dropcap{T}{he} corporal had slipped out about
-ten minutes before my uncle \textit{Toby}, in order to fix his
+ten minutes before my uncle \toby, in order to fix his
 apparatus, and just give the enemy a shot or two before my uncle
-\textit{Toby} came.
+\toby came.
 
 He had drawn the six field-pieces for this end, all close up
-together in front of my uncle \textit{Toby}’s sentry-box,
+together in front of my uncle \toby's sentry-box,
 leaving only an interval of about a yard and a half betwixt the
 three, on the right and left, for the convenience of charging,
 \&c.\tsk and the sake possibly of two batteries, which he
@@ -2041,33 +2267,33 @@ His first intention, as I said, was no more than giving
 the enemy a single puff or two;\tsk but the pleasure of the
 \textit{puffs}, as well as the \textit{puffing}, had insensibly got
 hold of the corporal, and drawn him on from puff to puff, into the
-very height\catch{of} of the attack, by the time my uncle \textit{Toby} joined
+very height\catch{of} of the attack, by the time my uncle \toby joined
 him.
 
-’Twas well for my father, that my\break uncle \textit{Toby} had
+’Twas well for my father, that my\break uncle \toby had
 not his will to make that day.
 
 \section{\lsss{CHAP}.\enspace XXVIII.}
 
-\dropcap{M}{y} uncle \textit{Toby} took the ivory
+\dropcap{M}{y} uncle \toby took the ivory
 pipe out of the corporal’s hand,\tsk looked at it for half
 a minute, and returned it.
 
-In less than two minutes, my uncle \textit{Toby} took the pipe
+In less than two minutes, my uncle \toby took the pipe
 from the corporal again, and raised it half way to his
 mouth\break
 \tsh then hastily gave it back a second time.
 
 The corporal redoubled the attack,\break
-\tsh my uncle \textit{Toby} smiled,\tsh then looked
+\tsh my uncle \toby smiled,\tsh then looked
 grave,\tsh then smiled for a moment,\tsh then
 looked serious for a long\catch{time;} time;\tsh Give me hold of the
-ivory pipe, \textit{Trim}, said my uncle \textit{Toby}\tsh my
-uncle \textit{Toby} put it to his lips,\tsh drew it back
+ivory pipe, \trim, said my uncle \textit{Toby}\tsh my
+uncle \toby put it to his lips,\tsh drew it back
 directly,\tsh gave a peep over the horn-beam
-hedge;\tsh never did my uncle \textit{Toby}’s mouth
+hedge;\tsh never did my uncle \toby's mouth
 water so much for a pipe in his life.\tsh My uncle
-\textit{Toby} retired into the sentry-box with the pipe\break
+\toby retired into the sentry-box with the pipe\break
 in his hand.\tsh
 
 \tsh Dear uncle \textit{Toby!} don’t go into the
@@ -2078,16 +2304,16 @@ man’s self with such a\break thing in such a corner.
 \section{\lsss{CHAP}.\enspace XXIX.}
 
 \initial{I}{Beg} the reader will assist me here, to\break
-wheel off my uncle \textit{Toby}’s ordnance behind the
+wheel off my uncle \toby's ordnance behind the
 scenes,\tsh to remove his sentry-box, and clear the
 theatre, \textit{if possible}, of horn-works and half moons, and get the
 rest of his military appa\-ratus out of the way;\tsh that
 done,\catch{my} my dear friend \textit{Garrick}, we’ll snuff the candles
 bright,\tsk sweep the stage with a new broom,\tsk draw up the
-curtain, and exhibit my uncle \textit{Toby} dressed in a new
+curtain, and exhibit my uncle \toby dressed in a new
 character, throughout which the world can have no idea how he will
 act: and yet, if pity be a-kin to love,\tsk and bravery no alien
-to it, you have seen enough of my uncle \textit{Toby} in these, to
+to it, you have seen enough of my uncle \toby in these, to
 trace these family likenesses, betwixt the two passions (in case
 there is one) to your heart’s content.
 
@@ -2095,7 +2321,7 @@ Vain science! thou assistest us in no case of this
 kind\tsk and thou puzzlest us in every one.
 
 There was, Madam, in my uncle\break 
-\stick{\textit{Toby}, a singleness of heart which misled}
+\stick{\toby, a singleness of heart which misled}
 him so far out of the little serpentine tracks in
 which things of this nature\break usually go on; you can\tsk you can
 have no conception of it: with this, there\catch{was} was a plainness and
@@ -2103,13 +2329,13 @@ simplicity of thinking, with such an unmistrusting ignorance of the
 plies and foldings of the heart of woman;\tsh and so naked
 and defenceless did he stand before you, (when a siege was out of
 his head) that you might have stood behind any one of your
-serpentine walks, and shot my uncle \textit{Toby} ten times in a day,
+serpentine walks, and shot my uncle \toby ten times in a day,
 through his liver, if nine times in a day, Madam, had not served
 your purpose.
 
 \etp
 With all this, Madam,\tsk and what confounded every thing as
-much on the other hand, my uncle \textit{Toby} had that unparalleled
+much on the other hand, my uncle \toby had that unparalleled
 modesty of nature I once told you of, and which, by the bye,
 stood\break
 eternal sentry upon his feelings, that you might as soon\tsh But where am I going?
@@ -2158,10 +2384,10 @@ did that year.
 \dropcap{A}{mongst} the many ill consequences of
 the treaty of \textit{Utrecht}, 
 \stick{it was within a point of giving my uncle}
-\stick{\textit{Toby} a surfeit of sieges; and though he}
+\stick{\toby a surfeit of sieges; and though he}
 recovered his appetite afterwards, yet\catch{\textit{Calais}} \textit{Calais} itself left not a deeper
 scar in \textit{Mary}’s heart, than \textit{Utrecht} upon my\break
-uncle \textit{Toby}’s. To the end of his life he never could hear \textit{Utrecht} mentioned upon any
+uncle \toby's. To the end of his life he never could hear \textit{Utrecht} mentioned upon any
 account whatever,\tsk or so much as read an article of news
 extracted out of the \textit{Utrecht Gazette}, without fetching a
 sigh, as if his heart would break in\break twain.
@@ -2171,21 +2397,21 @@ consequently a very dangerous person for a man to sit by, either\break
 laughing or crying,\tsk for he generally\break
 knew your motive for doing both, much\break
 better than you knew it yourself\tsk would\break
-\stick{always console my uncle \textit{Toby} upon these}\break
+\stick{always console my uncle \toby upon these}\break
 occasions, in a way, which shewed\break
 plainly, he imagined my uncle \textit{Toby}\break
 grieved for nothing in the whole affair,\break
 so much as the loss of his \textit{hobby-horse.}\break
-\tsk Never mind, brother \textit{Toby}, he\break
+\tsk Never mind, brother \toby, he\break
 would say,\tsk by God’s blessing we shall\catch{have}
 have another
 war break out again some of these days; and when it does,\tsk the
 belligerent powers, if they would hang themselves, cannot keep us
-out of play.\break\tsh I defy ’em, my dear \textit{Toby}, he
+out of play.\break\tsh I defy ’em, my dear \toby, he
 would\break add, to take countries without taking towns,\tsh or
 towns without sieges.
 
-My uncle \textit{Toby} never took this back-stroke of my
+My uncle \toby never took this back-stroke of my
 father’s at his hobby horse kindly.\tsh He thought
 the stroke unge\-nerous; and the more so, because in striking the
 horse, he hit the rider too,\break and in the most dishonourable part a
@@ -2194,18 +2420,18 @@ his pipe upon the table with more fire to defend himself than
 common.
 
 I told the reader, this time two years, that my uncle
-\textit{Toby} was not eloquent; and in the very same page gave an
+\toby was not eloquent; and in the very same page gave an
 instance to the contrary:\tsh I repeat the observation,
 and a fact which contradicts\catch{it} it again.\tsk He was not
-eloquent,\tsk it was not easy to my uncle \textit{Toby} to make
+eloquent,\tsk it was not easy to my uncle \toby to make
 long harangues,\tsk and he hated florid ones;\break
 but there were occasions where the stream overflowed the man, and ran so counter to
-its usual course, that in some parts my uncle \textit{Toby}, for a time, was at
+its usual course, that in some parts my uncle \toby, for a time, was at
 least equal to \textit{Tertullus}\tsh but in others, in my own opinion, infinitely
 above him.
 
 My father was so highly pleased with one of these apologetical
-orations of my uncle \textit{Toby}’s, which he had delivered
+orations of my uncle \toby's, which he had delivered
 one evening before him and \textit{Yorick}, that he wrote it down
 before he went to bed.
 
@@ -2221,7 +2447,7 @@ endorsed,\patch{\textit{My}}
 
 \noindent
 I may safely say, I have read over this apologetical oration of
-my uncle \textit{Toby}’s a hundred times, and think it so fine
+my uncle \toby's a hundred times, and think it so fine
 a model of defence,\tsk and shews so sweet a temperament of
 gallantry and good principles in him, that I give it the world,
 word for word, (interlineations and all), as I find it.
@@ -2383,9 +2609,9 @@ I begin the chapter over again.
 \section{\lsss{CHAP}.\enspace XXXIV.}
 
 \initial{I}{Told} the Christian reader in the beginning of the chapter which
-preceded my uncle \textit{Toby}’s apologetical oration,\tsk though in a different
+preceded my uncle \toby's apologetical oration,\tsk though in a different
 trope from what I should make use of now, That the peace of \textit{Utrecht} was
-within an ace of creating the same shyness betwixt my uncle \textit{Toby} and his
+within an ace of creating the same shyness betwixt my uncle \toby and his
 hobby-horse, as it did betwixt the queen and the rest of the confederating powers.
 
 There is an indignant way in which a\break
@@ -2394,13 +2620,13 @@ which, as good as says to him, \lqq I’ll go\break
 \lqq afoot, Sir, all the days of my life\break
 \lqq before I would ride a single mile upon\break
 \lqq your back again.” Now my uncle\break
-\textit{Toby} could not be said to dismount his\break
+\toby could not be said to dismount his\break
 horse in this manner; for in strictness of\break
 language, he could not be said to dis-\catch{mount} mount his horse at all\tsh his horse rather flung him\tsh and
-somewhat \textit{viciously}, which made my uncle \textit{Toby} take it ten times
+somewhat \textit{viciously}, which made my uncle \toby take it ten times
 more unkindly. Let this\break
 matter be settled by state jockies as they like.\tsh It
-created, I say, a sort of shy-\break ness betwixt my uncle \textit{Toby} and his
+created, I say, a sort of shy-\break ness betwixt my uncle \toby and his
 hobby-horse.\tsh He had no occasion for him from the month of \textit{March} to
 \textit{November}, which was the summer after the articles were signed, except it
 was now and then to take a short ride out, just to see that the fortifications and
@@ -2428,7 +2654,7 @@ their hearts to have the town
 \stick{\indent\astfill}
 \stick{\astfill}
 \stick{\astfill; so that the whole went hea-}
-vily on with my uncle \textit{Toby}; insomuch, that it
+vily on with my uncle \toby; insomuch, that it
 was not within three full months, after he and the corporal had
 constructed the town, and put it in a condition to be destroyed,
 that the several commandants, commissaries, deputies, negociators,
@@ -2438,13 +2664,13 @@ it.\tsh Fatal interval of inactivity!
 The corporal was for beginning the demolition, by making a
 breach in the ramparts, or main fortifications of the
 town\tsh No,\tsk that will never do, cor-\break poral, said my
-uncle \textit{Toby}, for in going that way to work with the town, the\break
+uncle \toby, for in going that way to work with the town, the\break
 \textit{English} garrison will not be safe in it an hour; because if
 the French are treache\-rous\tsh They are as treacherous as de-\break vils,
 an’ please your honour, said the\break
 \stick{corporal\tsh It gives me concern always}
-\stick{when I hear it, \textit{Trim}, said my uncle}
-\stick{\textit{Toby};\tsk for they don’t want personal bra-}
+\stick{when I hear it, \trim, said my uncle}
+\stick{\toby;\tsk for they don’t want personal bra-}
 \stick{very; and if a breach is made in the}
 \stick{ramparts, they may enter it, and make}
 \stick{themselves masters of the place when}
@@ -2454,7 +2680,7 @@ an’ please your honour, said the\break
 \stick{going to lay about him with it,\tsk let}
 them enter, an’ please your honour, if\catch{they}
 they dare.\tsh In cases like this, corporal, said my uncle
-\textit{Toby}, slipping his\break
+\toby, slipping his\break
 right hand down to the middle of his\break
 cane, and holding it afterwards trun-\break 
 cheon-wise with his forefinger extended,\break
@@ -2478,14 +2704,14 @@ looking at the church.
 
 \initial[findent=2pt]{A}{Delusive}, delicious consultation or\break
 two of this kind, betwixt my uncle\break 
-\textit{Toby} and \textit{Trim},
+\toby and \trim,
 upon the demolition of \textit{Dunkirk},\tsk for a moment rallied
 back the ideas of those pleasures, which were slipping from under
 him:\tsk still\tsk still all\break went on
 heavily\tsh the magic left the mind the
 weaker\tsk \textsc{Stillness}, with \textsc{Silence}
 at her back, entered the solitary parlour, and drew their gauzy
-mantle over my uncle \textit{Toby}’s head;\tsk\!\tsk and\break
+mantle over my uncle \toby's head;\tsk\!\tsk and\break
 \textsc{Listlessness}, with her lax fibre and un\-directed eye,
 sat quietly down beside him in his arm chair.\tsh No longer
 \textit{Amberg}\break and \textit{Rhinberg}, and \textit{Limbourg}, and
@@ -2495,7 +2721,7 @@ sat quietly down beside him in his arm chair.\tsh No longer
 longer did saps, and mines, and blinds, and gabions, and
 palisadoes,\catch{keep} keep out this fair enemy of man’s
 repose:\tsh No more could my uncle\break
-\textit{Toby}, after passing the \textit{French} lines, as\break
+\toby, after passing the \textit{French} lines, as\break
 he eat his egg at supper, from thence\break
 break into the heart of \textit{France},\tsk cross\break
 over the \textit{Oyes}, and with all \textit{Picardie} open\break
@@ -2520,7 +2746,7 @@ thou\break touch it, my dear uncle \textit{Toby}?
 \dropcap{N}{ow}, because I have once or twice
 said, in my inconsiderate way of \stick{talking, That I was confident the
 follow-}\break
-\stick{\tight{ing memoirs of my uncle \textit{Toby}’s courtship}}
+\stick{\tight{ing memoirs of my uncle \toby's courtship}}
 of
 widow \textit{Wadman}, whenever I got time to write them, would turn
 out one of the most compleat systems, both of the elementary and
@@ -2580,19 +2806,19 @@ again.
 These are disquisitions, which my father, who had laid in a great
 stock of knowledge of this kind, will be very busy with, in the
 progress of my uncle\break
-\textit{Toby}’s affairs: I must anticipate thus much, That from his theories of
-love, (with which, by the way, he contrived to crucify my uncle \textit{Toby}’s
+\toby's affairs: I must anticipate thus much, That from his theories of
+love, (with which, by the way, he contrived to crucify my uncle \toby's
 mind, almost as much as his amours themselves)\tsk he\break took a single step into
 practice;\tsk and by means of a camphorated cerecloth, which he found means to
-impose upon the taylor for buckram, whilst he was making my uncle \textit{Toby} a
+impose upon the taylor for buckram, whilst he was making my uncle \toby a
 new pair of breeches, he produced \textit{Gordonius}’s effect upon my uncle
-\textit{Toby} without the disgrace.
+\toby without the disgrace.
 
 What changes this produced, will be read in its proper place:
 all that is need-\catch{ful} ful to be added to the anecdote, is
 this\break\tsh That whatever effect it had upon my uncle
-\textit{Toby},\tsh it had a vile effect upon the
-house;\tsh and if my uncle \textit{Toby} had not smoaked it
+\toby,\tsh it had a vile effect upon the
+house;\tsh and if my uncle \toby had not smoaked it
 down as he did, it might have had a vile effect upon my\break father
 too.
 
@@ -2659,11 +2885,11 @@ covers, which \textsc{Malice} will not blacken, and which
 
 \dropcap[findent=2pt]{A}{s} \textit{Susannah} was informed by an
 express from Mrs.\@ \textit{Bridget}, of my\break
-uncle \textit{Toby}’s falling in love with her\break
+uncle \toby's falling in love with her\break
 mistress, fifteen days before it happened,\break
 \tsk the contents of which express, \textit{Susan\-nah}
 communicated to my mother the next day,\tsk it has just given me
-an op\-portunity of entering upon my uncle \textit{Toby}’s amours
+an op\-portunity of entering upon my uncle \toby's amours
 a fortnight before their\break existence.\patch{I have}
 
 I have an article of news to tell you, Mr.\@ \textit{Shandy}, quoth
@@ -2673,7 +2899,7 @@ Now my father was then holding one of his second beds of
 justice, and was musing within himself about the hardships of
 matrimony, as my mother broke silence.\tsh
 
-“\tsk My brother \textit{Toby}, quoth she,\break
+“\tsk My brother \toby, quoth she,\break
 \lqq is going to be married to Mrs.\@ \textit{Wad-}\break
 \lqq \textit{man}.\,”
 
@@ -2729,7 +2955,7 @@ children.\tsh
 \initial{I}{Am} now beginning to get fairly into
 my work; and by the help of a vegitable\sic\ diet, with a few of the
 cold seeds, I make no doubt but I shall be able to go on with my
-uncle \textit{Toby}’s story, and my own, in a tolerable
+uncle \toby's story, and my own, in a tolerable
 straight line.\break Now,\\
 \hbox to \textwidth{\hss\begin{mplibcode}
     beginfig(0);
@@ -2778,8 +3004,8 @@ plot4 = ((-160, -40) {dir 245} .. (-165, -44) .. (-166, -40) .. (-160, -31) ..
 .. {dir -30} (148, -72) -- (170, -72)
 ) scaled 1/2;
 
-label.rt(TEX("\small\itshape Inv.T.S") scaled .8, (-86.5, -62.1));
-label.rt(TEX("\small\itshape Scul.T.S") scaled .8, (59.6, -62.1));
+    label.rt(TEX("\small\itshape Inv.T.S") scaled .8, (-86.5, -62.1));
+    label.rt(TEX("\small\itshape Scul.T.S") scaled .8, (59.6, -62.1));
 
     draw subpath (26.7, 27.5) of plot1 shifted (1/4, 2) withpen pencircle
     scaled 3/4;
@@ -2824,14 +3050,14 @@ draw (
     .. (1900, -144) .. (1800, -270) {down} .. (1850,-320) .. (1890, -280) .. (1860, -250)
 ) scaled 1/20 withpen pencircle scaled 1;
 
-label.urt(TEX("\large A"), (-80, 8)); 
-label.urt(TEX("\large B"), (-60, 8)); 
-label.urt(TEX("\itshape c"), (-14, 4));
-label.urt(TEX("\itshape c"), (-1, 4));
-label.urt(TEX("\itshape c"), (24, 4));
-label.urt(TEX("\itshape c"), (35, 5));
-label.urt(TEX("\itshape c"), (42, 4));
-label.urt(TEX("\large D"), (62, 14));
+label.urt("\large A", (-80, 8)); 
+label.urt("\large B", (-60, 8)); 
+label.urt("\itshape c", (-14, 4));
+label.urt("\itshape c", (-1, 4));
+label.urt("\itshape c", (24, 4));
+label.urt("\itshape c", (35, 5));
+label.urt("\itshape c", (42, 4));
+label.urt("\large D", (62, 14));
 endfig; 
 \end{mplibcode}}
 
@@ -2853,7 +3079,7 @@ into nothing.
 
 In this last volume I have done better still\tsk for from the
 end of \textit{Le Fever}’s episode, to the beginning of my uncle
-\textit{Toby}’s campaigns,\tsk I have scarce stepped a yard
+\toby's campaigns,\tsk I have scarce stepped a yard
 out of my way.
 
 If I mend at this rate, it is not impossible\tsh by the

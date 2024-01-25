@@ -45,10 +45,10 @@ you may think I have wrongly called out some of those that I have marked.  The
 originals I used are the scanned copies linked above.
 
 I have not attempted to mark variations of spelling -- only those where the
-mis-spelled word is obviously misprinted.  I've also ignored the more or less
+mis-spelled word is apparently misprinted.  I've also ignored the more or less
 random variation between -ic and -ick suffixes, and the "grocer's apostrophes"
-that abound -- with the exception of "it's" which occurs exclusively (but not
-consistently) in Vol. VII and Vol. VIII
+that abound -- with the exception of "it's" which occurs once in Vol. V and at
+random throughout Vol. VII and Vol. VIII
 
 ### Vol. I - 1760 Dodsley (first London edition)
 
@@ -113,23 +113,27 @@ consistently) in Vol. VII and Vol. VIII
 
 - p.33, line 2      Missing closing paren after "suspicions."
 - p.33, line 5      Missing "it" after "may"
-- p.70, line 16     "Tristra-pœdia" --> "Tristra-pædia", compositor confused oe and ae ligatures 
+- p.70, line 16     "Tristra-pœdia" --> "Tristra-pædia", compositor confused oe and ae ligatures
 - p.70, catch-word  Unwanted space in "le scence."
 - p.73, line 10     opening paren in roman, but closing in italic type
 - p.79, line 10     opening paren in italic, but closing in roman type
 - p.106, line 10    no matching closing paren
 - p.109, line 15    opening paren in roman, but closing in italic type
-- p.109, line 21    "πρώτισα" --> "πρώτιστα"
-- p.112, line 16       opening paren in roman, but closing in italic type
+- p.109, line 21    "πρώτισα" --> "πρώτιστα" (possibly Sterne's mistake)
+- p.112, line 16    opening paren in roman, but closing in italic type
 - p.117, line 15    "it's" --> "its"
 - p.127, line 1,2   "Jerico" --> "Jericho"
+- p.139, line 17    "Tristra-pœdia" --> "Tristra-pædia", compositor confused oe and ae ligatures
 - p.146, line 7     "Yo do?" --> "You do?"
 
 ### Vol. VI - 1762 Becket
 
 - p.8, line 10   "anodines" --> "anodynes" (maybe ?)
+- p.15, line 8    opening paren in roman, but closing in italic type
 - p.19, line 15  "neither" --> "either" (sense is positive)
 - p.38, line 5   "Derdermond" --> "Dendermond"
+- p.47, line 20  "knowlege" --> "knowledge" 
+- p.49, line 20  "knowlege" --> "knowledge" (setter is consistent at least!)
 - p.152, line 3  "vegitable" --> "vegetable"
 
 ### Vol. VII - 1765 Becket

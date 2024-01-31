@@ -41,9 +41,12 @@
 \def\et{{\raise0pt\hbox{\egb\&}}}
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
+%
 \long\def\patch#1 {\par\vfill\rightline{#1}\eject}
 \long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
+%
 \def\topstrut{\vrule width 0pt height 19pt}
+\def\chapstrut{\vrule width 0pt height 24pt}
 \def\ast{\hbox{\zap ❋}}
 \def\fnast{\raise0.5ex\ast}
 \def\vastfill#1{\fnast\xleaders\hbox to #1{\hss\fnast}\hfill}
@@ -57,8 +60,9 @@
 \def\astiv{\hbox{\ast\xleaders\hbox to 0.6em{\hss\ast}\hskip 2.1em}}
 \def\wastiv{\hbox{\ast\xleaders\hbox to 1em{\hss\ast}\hskip 3em}}
 \newcount\a
-\def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-2pt\hbox{\ast}\repeat}
-\def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \lower-1pt\hbox to .66em{\hss\ast\hss}\repeat}
+\def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \fnast\repeat}
+\def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise1pt\hbox to .66em{\hss\ast\hss}\repeat}
+\def\astWW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise1pt\hbox to .81em{\hss\ast\hss}\repeat}
 %
 % alt is for the interlineal alternatives in the Curses of Ernulphus
 \def\alt#1#2{\hbox{\vbox to 3.6ex{\vss\openup-6pt\halign{##\cr\hss\scriptsize #2\hss\cr#1\cr}}}}

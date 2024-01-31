@@ -140,19 +140,20 @@ random throughout Vol. VII and Vol. VIII
 
 The scanned edition used includes a list of Errata at the start, discussed below.
 
-- Titlepage     "Dehont" --> "Dehondt" ???
-- p.14, lines 6 and 16  "it’s" --> "its"
-- p.19, line 18    "enterance" --> "entrance"
+- Titlepage      "Dehont" --> "Dehondt" ???
+- p.5, line 6    Missing opening paren before "holding"
+- p.14, line 6   "it’s" --> "its"
+- p.14, line 16  "it’s" --> "its"
+- p.19, line 18  "enterance" --> "entrance"
 
 - p.33, last line  - This is the first erratum in the edition, which says: delete "and".
                    But that does not really help!  Better to change "e’er" --> "ere"
-
-- p.65, line 1    diarrhaea --> diarrhoea (wrong ligature type chosen)
 
 - p.71, line 3  - This is the second erratum -- "striking" --> "sticking"
 
 - p.83, line 1  "Andouillets" --> "Andoüillets" 
 - p.85, line 7  "Andouillets" --> "Andoüillets" 
+- p.85, line 9  "then" -->"than"
 - p.86, line 14  "Andouillets" --> "Andoüillets"  
 
   That these three are all in signature "G" (pp 81--96) perhaps suggests
@@ -160,7 +161,6 @@ The scanned edition used includes a list of Errata at the start, discussed below
   when "G" was being composed.
 
 - p.94, line 1   "it’s" --> "its"
-- p.104 line 10  "Cotê" --> "Côte"
 - p.105 line 9   "Andoüillet’s" --> "Andoüillets’s" ??
 - p.110 line 13  "Jesuists" --> "Jesuits"
 - p.123 line 14  "Andoüillet’s" --> "Andoüillets’s" ??

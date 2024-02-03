@@ -163,6 +163,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.94, line 1   "it’s" --> "its"
 - p.105 line 9   "Andoüillet’s" --> "Andoüillets’s" ??
 - p.110 line 13  "Jesuists" --> "Jesuits"
+- p.116 line 19  quotation marks from line 12 never closed
 - p.123 line 14  "Andoüillet’s" --> "Andoüillets’s" ??
 - p.125 line 1   Chapter number jumps from XXXII to XXXIV
 - p.127 line 2   "Avignion" --> "Avignon"
@@ -179,15 +180,16 @@ The scanned edition used includes a list of Errata at the start, discussed below
 
 - Titlepage     "Dehont" --> "Dehondt" ???
 - p.11 line 5   "so see" --> "to see"
-- p.18 last line "run-"  --> "runn-" -- doubled "n" lost at page break
-
+- p.18 last line "run-ing" --> "run-ning"  doubled "n" lost at page break
 - p.34 line 13  "inflamgatory" --> "inflammatory" -- This is the third 
   erratum from the list at the start of Vol. VII
 
+- p.35 line 5    second line is indented instead of flush to LH margin
 - p.47, line 8   "it’s" --> "its"
 - p.48, line 16   "it’s" --> "its"
 - p.51, last line  "it’s" --> "its"
 - p.83, line 17  "it’s" --> "its"
+- p.85, line 11  "its" --> "it’s"  (this one is the other way round!) 
 - p.112, catch-word  "--There" --> "--there" (or possibly line 1 of p.113 should be "--There")
 - p.143, line 15  "it’s" --> "its"
 - p.156, line 6  "it’s" --> "its"

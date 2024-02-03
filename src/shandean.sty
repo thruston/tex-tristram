@@ -21,7 +21,7 @@
 \def\lqq{\leavevmode\rlap{“}\kern .6em}
 %
 \def\bnq{\break\null\quad}
-\def\tspace{\kern 3pt}
+\def\tspace{\kern 2.5pt}
 %
 \def\etp{\enlargethispage\baselineskip}
 \def\etpp{\enlargethispage{2\baselineskip}}
@@ -44,6 +44,7 @@
 %
 \long\def\patch#1 {\par\vfill\rightline{#1}\eject}
 \long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
+\long\def\natch#1 {\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
 %
 \def\topstrut{\vrule width 0pt height 19pt}
 \def\chapstrut{\vrule width 0pt height 24pt}

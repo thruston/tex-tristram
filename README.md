@@ -190,7 +190,9 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.51, last line  "it’s" --> "its"
 - p.83, line 17  "it’s" --> "its"
 - p.85, line 11  "its" --> "it’s"  (this one is the other way round!) 
-- p.112, catch-word  "--There" --> "--there" (or possibly line 1 of p.113 should be "--There")
+- p.113, line 1  "--there" --> "--There" (to match the catch word)
+- p.117, line 5   "fefell" --> "befell"
+- p.131, line 5   final "the" repeated on next line
 - p.143, line 15  "it’s" --> "its"
 - p.156, line 6  "it’s" --> "its"
 

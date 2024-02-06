@@ -215,6 +215,8 @@ The "it's" (which are never correct) are mainly in Vol VII and VIII
 
 - 2nd page of Dedication, line 1  "riori" --> "ori" -- extra "ri" carried over in page break
 - p.17, after flourish  Missing catch-word "A"
+- p.59, line 3          final "e" in the line has slipped
+- p.90, line 14         "been" --> "had been" (word dropped at line break)
 - p.99, line 14         The "u" in "Garagantua" has been inverted
 - p.100, last line      Missing catch-word ?
 

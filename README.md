@@ -217,6 +217,6 @@ The "it's" (which are never correct) are mainly in Vol VII and VIII
 - p.17, after flourish  Missing catch-word "A"
 - p.59, line 3          final "e" in the line has slipped
 - p.90, line 14         "been" --> "had been" (word dropped at line break)
-- p.99, line 14         The "u" in "Garagantua" has been inverted
-- p.100, last line      Missing catch-word ?
+- p.99, line 14         "Garagantna" --> "Garagantua" (compositor confused u and n)
+- p.100, last line      Missing catch-word ? "The" in Gothic type?
 

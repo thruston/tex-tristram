@@ -55,8 +55,8 @@ random throughout Vol. VII and Vol. VIII
 
 - p.16, last line  "ate very" --> "at every"
 - p.20, lines 7,8  "left it, seems," --> "left, it seems,"
-- p.27, at the bottom -- catch-word "form," has unwanted comma
-- p.35, line 16  "uudoubtedly" --> "undoubtedly", compositor confused u and n
+- p.28  line 1      "form" --> "form," to match the comma on the previous   catch word
+- p.35, line 16     "uudoubtedly" --> "undoubtedly", compositor confused u and n
 - p.56, at the bottom -- catch-word "folly:" but next page text has "folly;"
 - p.166, line 9  "ofter" --> "after", compositor confused o and a
 

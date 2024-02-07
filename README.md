@@ -9,14 +9,15 @@ some cases the hyphenation of the lines are all meaningful.
 
 This project therefore presents the text in nine separate PDF files, designed
 to be read in a PDF viewer that allows you to see two pages at once, like an
-open book.  Each page break faithfully follows the line and page breaks in the
+open book.  Each page faithfully follows the line and page breaks in the
 originals, and the text includes all the dashes, asterisks, blanks, and
 catch-words.
 
 The spelling and punctuation is all Sterne's (as far as human proof-reading can
 be sure), but the medial long-s characters are replaced with modern ones.  The
 font used is Linux Libertine, with historical swash ligatures for ct and st.
-The same font is used for the occasional Greek quotations so the characters are
+
+The same font is used for the occasional bits of Greek so the characters are
 slightly more contemporary than Sterne's printers used; I have not attempted to
 correct any of the (appallingly bad) grammar nor the slightly random accents
 and breathing marks, nor the occasional terminal sigma in the middle of a
@@ -45,7 +46,7 @@ you may think I have wrongly called out some of those that I have marked.  The
 originals I used are the scanned copies linked above.
 
 I have not attempted to mark variations of spelling -- only those where the
-mis-spelled word is apparently misprinted.  I've also ignored the more or less
+mis-spelled word is apparently mis-printed.  I've also ignored the more or less
 random variation between -ic and -ick suffixes, and the "grocer's apostrophes"
 that abound -- with the exception of "it's" which occurs once in Vol. V and at
 random throughout Vol. VII and Vol. VIII

@@ -55,10 +55,12 @@ random throughout Vol. VII and Vol. VIII
 
 - p.16, last line  "ate very" --> "at every"
 - p.20, lines 7,8  "left it, seems," --> "left, it seems,"
-- p.28  line 1      "form" --> "form," to match the comma on the previous   catch word
-- p.35, line 16     "uudoubtedly" --> "undoubtedly", compositor confused u and n
-- p.57, line 1      "folly;" but previous catch-word has "folly:" (colon for semicolon)
-- p.166, line 9  "ofter" --> "after", compositor confused o and a
+- p.28, line 1     "form" --> "form," to match the comma on the previous catch word
+- p.35, line 16    "uudoubtedly" --> "undoubtedly", compositor confused u and n
+- p.57, line 1     "folly;" but previous catch-word has "folly:" (colon for semicolon)
+- p.144, line 8    opening paren in roman, but closing in italic type
+- p.166, line 9    "ofter" --> "after", compositor confused o and a
+- p.170, line 16   "his own" --> "their own", revision error?
 
 ### Vol. II - 1760 Dodsley (first London edition)
 
@@ -145,7 +147,6 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.5, line 6    Missing opening paren before "holding"
 - p.14, line 6   "it’s" --> "its"
 - p.14, line 16  "it’s" --> "its"
-- p.19, line 18  "enterance" --> "entrance"
 
 - p.33, last line  - This is the first erratum in the edition, which says: delete "and".
                    But that does not really help!  Better to change "e’er" --> "ere"

@@ -64,8 +64,9 @@ random throughout Vol. VII and Vol. VIII
 
 ### Vol. II - 1760 Dodsley (first London edition)
 
-- p.64, line 15  opening parenthesis in italic, but closing in roman type
-- p.75, line 2  "aliks" -->  "alike", compositor confused s and e
+- p.39, line 6   opening paren in roman, but closing in italic type
+- p.64, line 15  opening paren in italic, but closing in roman type
+- p.75, line 2   "aliks" --> "alike", compositor confused s and e
 
 ### Vol. III - 1761 Dodsley
 

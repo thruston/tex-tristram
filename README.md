@@ -67,6 +67,8 @@ random throughout Vol. VII and Vol. VIII
 - p.39, line 6   opening paren in roman, but closing in italic type
 - p.64, line 15  opening paren in italic, but closing in roman type
 - p.75, line 2   "aliks" --> "alike", compositor confused s and e
+- p.78, line 5   "fifth" --> "second" - Sterne's revision error?
+- p.182, line 7  "Alquise" --> "Alquife", compositor confused long-s and f
 
 ### Vol. III - 1761 Dodsley
 

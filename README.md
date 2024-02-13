@@ -60,15 +60,18 @@ random throughout Vol. VII and Vol. VIII
 - p.57, line 1     "folly;" but previous catch-word has "folly:" (colon for semicolon)
 - p.144, line 8    opening paren in roman, but closing in italic type
 - p.166, line 9    "ofter" --> "after", compositor confused o and a
-- p.170, line 16   "his own" --> "their own", revision error?
+- p.170, line 16   "his own" --> "their own", Sterne's revision error?
 
 ### Vol. II - 1760 Dodsley (first London edition)
 
-- p.39, line 6   opening paren in roman, but closing in italic type
-- p.64, line 15  opening paren in italic, but closing in roman type
-- p.75, line 2   "aliks" --> "alike", compositor confused s and e
-- p.78, line 5   "fifth" --> "second" - Sterne's revision error?
-- p.182, line 7  "Alquise" --> "Alquife", compositor confused long-s and f
+- p.39, line 6    opening paren in roman, but closing in italic type
+- p.64, line 15   opening paren in italic, but closing in roman type
+- p.75, line 2    "aliks" --> "alike", compositor confused s and e
+- p.78, line 5    "fifth" --> "second" - Sterne's revision error?
+- p.150, line 15  opening paren in roman, but closing in italic type
+- p.169, line 8   opening paren in roman, but closing in italic type
+- p.177, line 7   "pref-" --> "pres-", compositor confused f and long-s
+- p.182, line 7   "Alquise" --> "Alquife", compositor confused long-s and f
 
 ### Vol. III - 1761 Dodsley
 

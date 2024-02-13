@@ -32,6 +32,10 @@ for line in lines[1:-1]:
         print(line)
         continue
 
+    if line.startswith("\\tight{"):
+        print("\\stck{" + line[7:])
+        continue
+
     print("\\stick{" + line + "}")
 
 print(lines[-1])

@@ -78,14 +78,16 @@ random throughout Vol. VII and Vol. VIII
 - p.5, 2nd last line   "quoth" should not be in italics
 - p.19, third para.    "my uncle" --> "my father"
 - p.46, line 1         closing paren should have been a comma
+- p.51, line 5         opening paren in roman, but closing in italic type
+- p.55, line 5         unwanted space in "Hamet"
 - p.70, catch word     Catch is set to the right of the margin
-- p.72, line 15        unwanted ; after , 
+- p.72, line 15        unwanted , before ; 
 - p.81, line 15        unwanted space in "regions"
 - p.94, line 10        "your" --> "you"
 - p.99. line 14, 15    final "a" repeated on next line
 - p.99. line 16, 17    final "the" repeated on next line
 - p.110, lines 7,8     "elegant" --> "eloquent" ?
-- p.117, line 10       "fitst" --> "first" 
+- p.117, line 10       "fitst" --> "first"
 - p.123, line 11       "would laid down" --> "would have laid down"
 - p.138, second para.  "brothet" --> "brother"
 - p.138, catch word    Catch has "CHAP," instead of "CHAP."

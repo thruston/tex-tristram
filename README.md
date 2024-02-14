@@ -83,6 +83,7 @@ random throughout Vol. VII and Vol. VIII
 - p.70, catch word     Catch is set to the right of the margin
 - p.72, line 15        unwanted , before ; 
 - p.81, line 15        unwanted space in "regions"
+- p.86, line 3         "Agalastes" --> "Agelastes" - Sterne's error here?
 - p.94, line 10        "your" --> "you"
 - p.99. line 14, 15    final "a" repeated on next line
 - p.99. line 16, 17    final "the" repeated on next line

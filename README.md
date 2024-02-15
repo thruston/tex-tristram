@@ -93,7 +93,11 @@ random throughout Vol. VII and Vol. VIII
 - p.138, second para.  "brothet" --> "brother"
 - p.138, catch word    Catch has "CHAP," instead of "CHAP."
 - p.144, line 15       "or" --> "nor" (maybe?)
+- p.167, line 18       opening paren in italic, but closing in roman type
+- p.171, line 1        "poenitet" --> "paenitet", comp confused ae and oe ligatures
 - p.171, line 3        closing quote is single ’ instead of double ”
+- p.171, line 4        "poeniteat" --> "paeniteat", comp confused ae and oe ligatures
+- p.177, line 12       "dialectially" --> "dialectically", comp missed "c"
 - p.191, line 5        closing paren is in italic font
 
 ### Vol. IV - 1761 Dodsley

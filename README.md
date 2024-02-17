@@ -102,6 +102,7 @@ random throughout Vol. VII and Vol. VIII
 
 ### Vol. IV - 1761 Dodsley
 
+- p.3, line 8          "entred" --> "entered" (as two lines later...)
 - p.8, line 4          "titigimus" -> "tetigimus" 
 - p.20, line 11        "perveneo" -> "pervenio" 
 - p.21, line 17        "never tell I am got" --> "never till I am got"
@@ -112,9 +113,12 @@ random throughout Vol. VII and Vol. VIII
 - p.45, line 7 of fn   "seclestissima" --> "scelestissima"
 - p.46, line 8         first letter of line has slipped down
 - p.46, line 15        two digits missing before "83" -- apparently 14?
+- p.56, line 12        opening paren in roman, but closing in italic type
+- p.56, line 17        "Epistasis" --> "Epitasis" -- Sterne's error? (correct on p.57)
 - p.56, line 18        first letter of line has slipped down
 - p.67, line 4 of Ode  "move-/-ment" has an extra hyphen
 - p.73, line 3         "facy" --> "fancy"
+- p.80, line 1         opening paren in roman, but closing in italic type
 - p.94, line 4         "anew" --> "enow" ? or "enew" as in Vol. I. ?
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
 - p.118, line 21       closing paren is italic font

@@ -120,6 +120,7 @@ random throughout Vol. VII and Vol. VIII
 - p.73, line 3         "facy" --> "fancy"
 - p.80, line 1         opening paren in roman, but closing in italic type
 - p.94, line 4         "anew" --> "enow" ? or "enew" as in Vol. I. ?
+- p.96, line 14        "?" --> "!"  (maybe...)
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
 - p.118, line 21       closing paren is italic font
 - p.139, line 1        Footnote asterisk (apparently) missing from text

@@ -104,6 +104,7 @@ random throughout Vol. VII and Vol. VIII
 
 - p.3, line 8          "entred" --> "entered" (as two lines later...)
 - p.8, line 4          "titigimus" -> "tetigimus" 
+- p.19, catch word     "’Tis" --> "There’s" -- catch matches 2nd para not first on p.21
 - p.20, line 11        "perveneo" -> "pervenio" 
 - p.21, line 17        "never tell I am got" --> "never till I am got"
 - p.30, line 7         opening paren in roman, but closing in italic type
@@ -123,6 +124,8 @@ random throughout Vol. VII and Vol. VIII
 - p.96, line 14        "?" --> "!"  (maybe...)
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
 - p.118, line 21       closing paren is italic font
+- p.128, catch word    "Or" --> "--Or", dash is missing in catch word
+- p.138, line 16       "firft" --> "first", comp confused f-t ligature with long-s-t (maybe..)
 - p.139, line 1        Footnote asterisk (apparently) missing from text
 - p.143, line 5        first letter of line has slipped down
 - p.175, line 10       "its accord" -> "its own accord"

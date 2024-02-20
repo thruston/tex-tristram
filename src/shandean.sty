@@ -14,6 +14,7 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
+%
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
@@ -69,7 +70,7 @@
 \def\lowastiv{\hbox{\ast\xleaders\hbox to 1em{\hss\ast}\hskip 3em}}
 \newcount\a
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \fnast\repeat}
-\def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise1pt\hbox to .66em{\hss\ast\hss}\repeat}
+\def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise2pt\hbox to .66em{\hss\ast\hss}\repeat}
 \def\astWW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise1pt\hbox to .81em{\hss\ast\hss}\repeat}
 %
 % alt is for the interlineal alternatives in the Curses of Ernulphus
@@ -121,12 +122,11 @@
 \newcommand\initial[3][]{\lettrine[findent=5pt, lraise=0.07, loversize=0.05, #1]{#2}{}#3}
 \usepackage[sc, tiny, center]{titlesec}
 %
-\usepackage[indent=12pt, skip=1\baselineskip plus 8pt minus 8pt]{parskip}
+\usepackage[indent=12pt, skip=1\baselineskip plus 7pt minus 7pt]{parskip}
 %
 \global\catcode`\:=\active \gdef:{\thinspace\char`\: }
 \global\catcode`\;=\active \gdef;{\thinspace\char`\; }
 \global\catcode`\?=\active \gdef?{\thinspace\char`\? }
 \global\catcode`\!=\active \gdef!{\thinspace\char`\! }
 %
-\hyphenation{Yo-r-ick}
 \overfullrule=2pt

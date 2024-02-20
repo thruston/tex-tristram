@@ -135,14 +135,18 @@ random throughout Vol. VII and Vol. VIII
 
 ### Vol. V - 1762 Becket
 
+- p.30, line 10     opening paren in roman, but closing in italic type
 - p.33, line 2      Missing closing paren after "suspicions."
 - p.33, line 5      Missing "it" after "may"
+- p.52, line 10     opening paren in italic, but closing in roman type
+- p.63, line 5      opening paren in roman, but closing in italic type
 - p.70, line 16     "Tristra-pœdia" --> "Tristra-pædia", compositor confused oe and ae ligatures
 - p.70, catch-word  Unwanted space in "le scence."
 - p.73, line 10     opening paren in roman, but closing in italic type
 - p.79, line 10     opening paren in italic, but closing in roman type
+- p.101, line 17    "Pharoah" --> "Pharaoh" -- Sterne's error?”
 - p.106, line 10    no matching closing paren
-- p.109, line 15    opening paren in roman, but closing in italic type
+- p.109, line 15    opening paren in roman, but closing in italic type    
 - p.109, line 21    "πρώτισα" --> "πρώτιστα" (possibly Sterne's mistake)
 - p.112, line 16    opening paren in roman, but closing in italic type
 - p.117, line 15    "it's" --> "its"

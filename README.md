@@ -156,13 +156,14 @@ random throughout Vol. VII and Vol. VIII
 
 ### Vol. VI - 1762 Becket
 
-- p.8, line 10   "anodines" --> "anodynes" (maybe ?)
-- p.15, line 8    opening paren in roman, but closing in italic type
-- p.19, line 15  "neither" --> "either" (sense is positive)
-- p.38, line 5   "Derdermond" --> "Dendermond"
-- p.47, line 20  "knowlege" --> "knowledge" 
-- p.49, line 20  "knowlege" --> "knowledge" (setter is consistent at least!)
-- p.152, line 3  "vegitable" --> "vegetable"
+- p.15, line 8      opening paren in roman, but closing in italic type
+- p.19, line 15     "neither" --> "either" (sense is positive)
+- p.20, catch word  catch word not aligned to margin
+- p.38, line 5      "Derdermond" --> "Dendermond"
+- p.45, line 15     "wishfully" --> "wistfully", comp confused "sh" and "st" ligatures (?)
+- p.47, line 20     "knowlege" --> "knowledge"
+- p.49, line 20     "knowlege" --> "knowledge" (comp is consistent at least!)
+- p.152, line 3     "vegitable" --> "vegetable"
 
 ### Vol. VII - 1765 Becket
 

@@ -52,6 +52,8 @@
 \long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
 \long\def\natch#1 {\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
 %
+\def\chap#1#2#3{\noindent\centerline{{\addfontfeature{LetterSpace=64.0}CHAP}.\quad
+{\addfontfeature{LetterSpace=8.0}#1}.\vrule width 0pt height #2 depth #3}\par\kern-4pt}
 \def\topstrut{\vrule width 0pt height 19pt}
 \def\chapstrut{\vrule width 0pt height 24pt}
 \def\chapstrutt{\vrule width 0pt height 36pt}
@@ -125,7 +127,7 @@
 \newcommand\initial[3][]{\lettrine[findent=5pt, lraise=0.07, loversize=0.05, #1]{#2}{}#3}
 \usepackage[sc, tiny, center]{titlesec}
 %
-\usepackage[indent=12pt, skip=1\baselineskip plus 7pt minus 7pt]{parskip}
+\usepackage[indent=12pt, skip=0.75\baselineskip plus 2pt]{parskip}
 %
 \global\catcode`\:=\active \gdef:{\thinspace\char`\: }
 \global\catcode`\;=\active \gdef;{\thinspace\char`\; }

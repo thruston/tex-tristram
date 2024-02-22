@@ -163,7 +163,6 @@ random throughout Vol. VII and Vol. VIII
 - p.45, line 15     "wishfully" --> "wistfully", comp confused "sh" and "st" ligatures (?)
 - p.47, line 20     "knowlege" --> "knowledge"
 - p.49, line 20     "knowlege" --> "knowledge" (comp is consistent at least!)
-- p.152, line 3     "vegitable" --> "vegetable"
 
 ### Vol. VII - 1765 Becket
 

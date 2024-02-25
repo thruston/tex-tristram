@@ -210,23 +210,23 @@ The scanned edition used includes a list of Errata at the start, discussed below
 
 ### Vol. VIII - 1765 Becket
 
-- Titlepage     "Dehont" --> "Dehondt" ???
-- p.11 line 5   "so see" --> "to see"
-- p.18 last line "run-ing" --> "run-ning"  doubled "n" lost at page break
-- p.34 line 13  "inflamgatory" --> "inflammatory" -- This is the third 
-  erratum from the list at the start of Vol. VII
-
-- p.35 line 5    second line is indented instead of flush to LH margin
-- p.47, line 8   "it’s" --> "its"
-- p.48, line 16   "it’s" --> "its"
+- Titlepage        "Dehont" --> "Dehondt" ???
+- p.11 line 5      "so see" --> "to see"
+- p.12 last line   quotation marks never closed
+- p.18 last line   "run-ing" --> "run-ning" doubled "n" lost at page break
+- p.34 line 13     "inflamgatory" --> "inflammatory" -- This is the third
+-                  erratum from the list at the start of Vol. VII
+- p.35 line 5      second line is indented instead of flush to LH margin
+- p.47, line 8     "it’s" --> "its"
+- p.48, line 16    "it’s" --> "its"
 - p.51, last line  "it’s" --> "its"
-- p.83, line 17  "it’s" --> "its"
-- p.85, line 11  "its" --> "it’s"  (this one is the other way round!) 
-- p.113, line 1  "--there" --> "--There" (to match the catch word)
-- p.117, line 5   "fefell" --> "befell"
-- p.131, line 5   final "the" repeated on next line
-- p.143, line 15  "it’s" --> "its"
-- p.156, line 6  "it’s" --> "its"
+- p.83, line 17    "it’s" --> "its"
+- p.85, line 11    "its" --> "it’s" (this one is the other way round)
+- p.113, line 1    "--there" --> "--There" (to match the catch word)
+- p.117, line 5    "fefell" --> "befell"
+- p.131, line 5    final "the" repeated on next line
+- p.143, line 15   "it’s" --> "its"
+- p.156, line 6    "it’s" --> "its"
 
 The "it's" (which are never correct) are mainly in Vol VII and VIII
 

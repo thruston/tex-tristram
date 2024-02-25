@@ -48,7 +48,8 @@
 \def\etc{\et{\itshape c}.\@\ }
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
 %
-\long\def\patch#1 {\par\vfill\rightline{#1}\eject}
+\newcommand{\patch}[2][0pt]{\par\vfill\rightline{#2\vrule width 0pt depth #1}\eject}
+% \long\def\patch#1 {\par\vfill\rightline{#1}\eject}
 \long\def\catch#1 {\smash{\lower\baselineskip\hbox{\llap{#1}}}\bgroup\parfillskip0pt\par\egroup\eject\noindent}
 \long\def\natch#1 {\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
 %

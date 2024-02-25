@@ -160,7 +160,7 @@ random throughout Vol. VII and Vol. VIII
 - p.19, line 15     "neither" --> "either" (sense is positive)
 - p.20, catch word  catch word not aligned to margin
 - p.38, line 5      "Derdermond" --> "Dendermond"
-- p.45, line 15     "wishfully" --> "wistfully", comp confused "sh" and "st" ligatures (?)
+- p.45, line 15     "wishfully" --> "wistfully", comp confused "sh" and "st" ligatures ?
 - p.47, line 20     "knowlege" --> "knowledge"
 - p.49, line 20     "knowlege" --> "knowledge" (comp is consistent at least!)
 
@@ -174,32 +174,37 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.14, line 16  "it’s" --> "its"
 
 - p.33, last line  - This is the first erratum in the edition, which says: delete "and".
-                   But that does not really help!  Better to change "e’er" --> "ere"
+                   But that does not really help!  
+                   Perhaps change "e’er" (ever) --> "ere" (meaning before)
 
-- p.71, line 3  - This is the second erratum -- "striking" --> "sticking"
+- p.43, line 6   opening paren in italic, but closing in roman type
+- p.71, line 3   This is the second erratum -- "striking" --> "sticking"
 
-- p.83, line 1  "Andouillets" --> "Andoüillets" 
-- p.85, line 7  "Andouillets" --> "Andoüillets" 
-- p.85, line 9  "then" -->"than"
-- p.86, line 14  "Andouillets" --> "Andoüillets"  
+- p.83, line 1   "Andouillets" --> "Andoüillets"
+- p.85, line 7   "Andouillets" --> "Andoüillets"
+- p.85, line 9   "then" -->"than"
+- p.86, line 14  "Andouillets" --> "Andoüillets"
 
   That these three are all in signature "G" (pp 81--96) perhaps suggests
   that the typesetter did not have (or ignored) the diacritic ü character 
   when "G" was being composed.
 
-- p.94, line 1   "it’s" --> "its"
-- p.105 line 9   "Andoüillet’s" --> "Andoüillets’s" ??
-- p.110 line 13  "Jesuists" --> "Jesuits"
-- p.116 line 19  quotation marks from line 12 never closed
-- p.123 line 14  "Andoüillet’s" --> "Andoüillets’s" ??
-- p.125 line 1   Chapter number jumps from XXXII to XXXIV
-- p.127 line 2   "Avignion" --> "Avignon"
-- p.132 line 15  "Avignion" --> "Avignon"
-- p.142, line 1  "it’s" --> "its"
-- p.145 line 3   "Avignion" --> "Avignon"
-- p.146 thrice   "Avignion" --> "Avignon"
-- p.147 line 4   "Avignion" --> "Avignon"
-- p.151 line 16  repeated "of" at end of line 15
+- p.94, line 1      "it’s" --> "its"
+- p.104 line 10     "Cotê roti" --> Côte-Rôtie" (possibly Sterne? perhaps comic?)
+- p.105 line 9      "Andoüillet’s" --> "Andoüillets’s" ??
+- p.110 line 13     "Jesuists" --> "Jesuits"
+- p.116 line 19     quotation marks from line 12 never closed
+- p.123 line 14     "Andoüillet’s" --> "Andoüillets’s" ??
+- p.125 line 1      Chapter number jumps from XXXII to XXXIV
+- p.127 line 2      "Avignion" --> "Avignon"
+- p.128 catch word  "And" --> "--And", leading dash is missing
+- p.132 line 15     "Avignion" --> "Avignon"
+- p.142, line 1     "it’s" --> "its"
+- p.142, catch word  "For" should be in italics to match next page
+- p.145 line 3      "Avignion" --> "Avignon"
+- p.146 thrice      "Avignion" --> "Avignon"  (and once correctly on the same page)
+- p.147 line 4      "Avignion" --> "Avignon"
+- p.151 line 16     repeated "of" at end of line 15
 
   The seven uses of "Avignion" outnumber the three uses of "Avignon".
 
@@ -236,6 +241,8 @@ The "it's" (which are never correct) are mainly in Vol VII and VIII
     VII    16     4
     VIII   13     6
     IX     13     0
+
+Sterne's usual abbreviation for "it is" is "’tis".
 
 
 ### Vol. IX - 1767 Becket

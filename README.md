@@ -163,6 +163,7 @@ random throughout Vol. VII and Vol. VIII
 - p.45, line 15     "wishfully" --> "wistfully", comp confused "sh" and "st" ligatures ?
 - p.47, line 20     "knowlege" --> "knowledge"
 - p.49, line 20     "knowlege" --> "knowledge" (comp is consistent at least!)
+- p.132, line 16    "diligentias" --> "diligentius", Sterne's error copying from Burton?
 
 ### Vol. VII - 1765 Becket
 
@@ -222,6 +223,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.51, last line  "it’s" --> "its"
 - p.83, line 17    "it’s" --> "its"
 - p.85, line 11    "its" --> "it’s" (this one is the other way round)
+- p.111, line 16   "incidesset" --> "incidisset", Sterne's error copying from Burton?
 - p.113, line 1    "--there" --> "--There" (to match the catch word)
 - p.117, line 5    "fefell" --> "befell"
 - p.131, line 5    final "the" repeated on next line

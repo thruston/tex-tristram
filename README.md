@@ -250,9 +250,11 @@ Sterne's usual abbreviation for "it is" is "’tis".
 ### Vol. IX - 1767 Becket
 
 - 2nd page of Dedication, line 1  "riori" --> "ori" -- extra "ri" carried over in page break
+- p.9, line 10          "assimulated" --> "assimilated", possibly Sterne's choice of spelling
 - p.17, after flourish  Missing catch-word "A"
 - p.59, line 3          final "e" in the line has slipped
 - p.90, line 14         "been" --> "had been" (word dropped at line break)
 - p.99, line 14         "Garagantna" --> "Garagantua" (compositor confused u and n)
 - p.100, last line      Missing catch-word ? "The" in Gothic type?
+- p.140, line 2         opening paren in roman, but closing in italic type
 

@@ -53,14 +53,15 @@ random throughout Vol. VII and Vol. VIII
 
 ### Vol. I - 1760 Dodsley (first London edition)
 
-- p.16, last line  "ate very" --> "at every"
-- p.20, lines 7,8  "left it, seems," --> "left, it seems,"
-- p.28, line 1     "form" --> "form," to match the comma on the previous catch word
-- p.35, line 16    "uudoubtedly" --> "undoubtedly", compositor confused u and n
-- p.57, line 1     "folly;" but previous catch-word has "folly:" (colon for semicolon)
-- p.144, line 8    opening paren in roman, but closing in italic type
-- p.166, line 9    "ofter" --> "after", compositor confused o and a
-- p.170, line 16   "his own" --> "their own", Sterne's revision error?
+- p.16, last line    "ate very" --> "at every"
+- p.20, lines 7,8    "left it, seems," --> "left, it seems,"
+- p.27, catch word   "form," --> "form" -- following page has "form and place" with no comma
+- p.35, line 16      "uudoubtedly" --> "undoubtedly", compositor confused u and n
+- p.56, catch word   "folly:" --> "folly;" -- following page has semi-colon
+- p.124, catch word  "He," --> "He" -- following page has no comma
+- p.144, line 8      opening paren in roman, but closing in italic type
+- p.166, line 9      "ofter" --> "after", compositor confused o and a
+- p.170, line 16     "his own" --> "their own", Sterne's revision error?
 
 ### Vol. II - 1760 Dodsley (first London edition)
 

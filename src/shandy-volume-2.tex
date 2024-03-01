@@ -10,14 +10,17 @@
 \date{Vol 1}
 \begin{document}
 \pagestyle{empty}
-\vbox{\openup 10pt\halign{\hss #\hss\cr
+\vbox{\openup 14pt\halign{\hss #\hss\cr
 \hbox to 3em{T H E}\cr
-\lower 2pt\hbox to 9em{\Large L I F E}\cr
+\noalign{\vskip 4pt}
+\hbox to 14em{\huge L I F E}\cr
 \hbox to 3em{A N D}\cr
-\lower 3pt\hbox to 15em{\Large O P I N I O N S}\cr
+\lower 3pt\hbox to 15em{\huge O P I N I O N S}\cr
 \textsc{o f}\cr
-\hbox{\large\lsss{TRISTRAM SHANDY},}\cr
-\lower-2pt\hbox{\textsc{\lss{Gentleman}.}}\cr
+\noalign{\vskip 6pt}
+\hbox{\Large\lss{TRISTRAM\enspace SHANDY},}\cr
+\noalign{\vskip -8pt}
+\hbox{\textsc{\lsss{Gentleman}.}}\cr
 }}
 \vfill
 \vbox{\openup 2pt\halign to 180pt{\footnotesize #\cr
@@ -37,16 +40,19 @@
 \pagestyle{fancy}
 \thispagestyle{empty}
 \setcounter{page}{1}
-\[\vbox{\openup 12pt\halign to \textwidth{\hss\large # \hss\cr
+\null
+\vskip 2pt
+\vbox{\openup 12pt\halign to \textwidth{\hss\large # \hss\cr
 \addfontfeature{LetterSpace=12.0}\textsc{the}\cr
 {\addfontfeature{LetterSpace=28.0}LIFE}\enspace and\enspace
 {\addfontfeature{LetterSpace=28.0} OPINIONS}\cr
 \addfontfeature{LetterSpace=12.0}\textsc{of}\cr
-{\addfontfeature{LetterSpace=22.0}TRISTRAM SHANDY}, Gent.\cr}}\]
+{\addfontfeature{LetterSpace=22.0}TRISTRAM SHANDY}, Gent.\cr}}
 
-\setlength{\baselineskip}{13.5pt}  % 22*13.5 = 297 
+\baselineskip 13pt
+\parskip 12pt
 
-\section{\chapstrut\lsss{CHAP}.\enspace  I.}
+\chap{I}{28pt}{10pt}
 
 \initial[lines=3,lraise=0,nindent=0.6pt]{I}{Have} 
 begun a new book, on purpose\break
@@ -203,7 +209,7 @@ All this succeeded to his wishes, and\break
 \stick{procuring my uncle \toby his \s{Hobby-}}
 \s{Horse}.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  II.}
+\chap{II}{36pt}{12pt}
 
 \dropcap{T}{here} is nothing so foolish, when\break
 you are at the expence of making\break
@@ -224,13 +230,14 @@ table.
 \stick{the first place, I have left half a dozen}
 \stick{places purposely open for them;\tsk and,}
 \stick{in the next place, I pay them all court,\tsk}
-\stick{Gentlemen, I kiss your hands,\tsh I pro-}
+\stick{Gentlemen, I kiss your hands,\tsk I pro-}
 \stick{test no company could give me half the}
 \stick{pleasure,\tsk by my soul I am glad to see}
-\stick{you,\tsh I beg only you will make no}
+\stick{you,\tsk I beg only you will make no}
 \stick{strangers of yourselves, but sit down}
 \stick{without any ceremony, and fall on hear-}
-tily.\patch{I}
+tily.
+\patch[28pt]{I}
 
 I said I had left six places, and I was\break
 \stick{upon the point of carrying my complai-}
@@ -292,7 +299,7 @@ Pray, Sir, in all the reading which you\break
 \stick{instruct, I will tell you in three words}
 \stick{what the book is.\tsk It is a history.\tsk A}
 \stck{history! of who? what? where? when?}
-\stick{Don’t hurry yourself.\tsk It is a history-}
+\stick{Don’t hurry yourself.\tsh It is a history-}
 \stick{book, Sir, (which may possibly recom-}
 \stick{mend it to the world) of what passes in a}
 \stick{man’s own mind; and if you will say so}
@@ -346,7 +353,7 @@ Sir, of red seal-wax.
 \stick{and last of all, supposing the wax good,}
 \stick{and eke the thimble, but applied there-}
 \stick{to in careless haste, as her Mistress rings}
-\stick{the bell;\tsh in any one of these three}
+\stick{the bell;\tsk in any one of these three}
 \stick{cases, the print, left by the thimble, will}
 \stick{be as unlike the prototype as a brass-}
 jack.
@@ -399,7 +406,7 @@ of them without tears in his eyes.
 \stick{’Twas not by ideas,\tsh by heaven!}
 his life was put in jeopardy by words.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  III.}
+\chap{III}{28pt}{10pt}
 
 \dropcap{W}{hen} my uncle \toby got his map\break
 of \i{Namur} to his mind, he began\break
@@ -492,7 +499,8 @@ Towards the beginning of the third\break
 \stick{a canon-ball’s doing all that mischief}
 \stick{under the notion of a right line.\tsk This}
 \stick{\i{N.\@ Tartaglia} proved to my uncle \toby to}
-be an impossible thing.\patch{\tsk Endless}
+be an impossible thing.
+\patch[2pt]{\tsk Endless}  
 
 \tsh Endless is the Search of\break 
 Truth!
@@ -535,9 +543,10 @@ No sooner was my uncle \toby satisfied\break
 \stick{\tsk bring thee into a costive habit of body,}
 \stick{impair thy health,\tsk and hasten all the}
 \stick{infirmities of thy old age.\tsk O my uncle!}
-my uncle \i{Toby!}\patch{\ls{CHAP}.}
+my uncle \i{Toby!}
+\patch[14pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  IV.}
+\chap{IV}{28pt}{10pt}
 
 \initial[nindent=0pt]{I}{Would}
 not give a groat for that man’s\break
@@ -652,7 +661,7 @@ The desire of life and health is im-\break
 \stick{where we left my uncle \toby in the mid-}
 dle of his sentence.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  V.}
+\chap{V}{28pt}{10pt}
 
 \dropcap{W}{hen} a man gives himself up to\break 
 the government of a ruling pas-\break
@@ -732,7 +741,7 @@ of him.
 \stick{enough to get down to your country seat,}
 \stick{where,\tsk as your Honour takes so much}
 \stick{pleasure in fortification, we could ma-}
-nage this matter to a T.\patch{I}
+nage this matter to a T.\patch[8pt]{I}
 
 I must here inform you, that this ser-\break
 \stick{vant of my uncle \toby's, who went by} 
@@ -776,7 +785,8 @@ My uncle \toby loved the man in re-\break
 \stick{and was thought, by the cook and cham-}
 \stick{ber-maid, to know as much of the na-}
 \stick{ture of strong-holds as my uncle \toby}
-himself.\patch{I}
+himself.
+\patch[8pt]{I}
 
 I have but one more stroke to give to
 \stick{finish Corporal \trim's character,\tsk and it}
@@ -820,7 +830,7 @@ If I durst presume, continued \trim,\break
 \stck{map of \i{Dunkirk}, which was pinn’d against}
 \stick{the hangings,\tsk I think, quoth Corporal}
 \stick{\trim, with humble submission to your}
-\stick{Honour’s better judgment,\tsh that these}
+\stick{Honour’s better judgment,\tsk that these}
 \catch{ravelins,}
 \stick{ravelins, bastions, curtins, and horn-}
 \stick{works, make but a poor, contemptible,}
@@ -865,7 +875,7 @@ If I durst presume, continued \trim,\break
 \stick{matter, replied \trim, your Honour knows}
 \stick{they are ten times beyond a facing either}
 \stick{of brick or stone;\tsh I know they are,}
-\catch{\trim}
+\catch{\trim,}
 \stck{\trim, in some respects,\tsh quoth my uncle}
 \stick{\toby, nodding his head;\tsk for a cannon-}
 \stick{ball enters into the gazon right onwards,} 
@@ -993,16 +1003,17 @@ not have it known!
 \stick{teresting under-plot in the epitasis and} 
 \stick{working up of this drama.\tsk At present} 
 \stick{the scene must drop,\tsk and change for} 
-the parlour fire-side.\patch{\ls{CHAP}.}
+the parlour fire-side.
+\patch[28pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  VI}
+\chap{VI}{26pt}{6pt}
 
-\quad\tsh What can they be doing,\break
+\tsh What can they be doing,\break
 \stick{brother? said my father.\tsk I think, re-}
 \stick{plied my uncle \toby,\tsk taking, as I told} 
 \stick{you, his pipe from his mouth, and strik-}
 \stick{ing the ashes out of it as he began his} 
-\stick{sentence;\tsh I think, replied he,\tsk it would}
+\stick{sentence;\tsk I think, replied he,\tsk it would}
 \stick{not be amiss, brother, if we rung the}
 bell.
 
@@ -1037,7 +1048,7 @@ It is very strange, says my father, ad-\break
 \stick{one misfortune already, to the ignorance} 
 \stick{of an old woman;\tsh and not only the}
 \stick{life of my child, brother,\tsk but her own}
-\catch{life}
+\catch{life,}
 \stick{life, and with it the lives of all the chil-}
 \stick{dren I might, peradventure, have begot} 
 out of her hereafter.
@@ -1103,9 +1114,10 @@ But whether that was the case or not
 \stick{the case;\tsk or whether the snapping of} 
 \stick{my father’s tobacco-pipe, so critically,}
 \stick{happened thro’ accident or anger,\tsk will}
-be seen in due time.\patch{\ls{CHAP}.}
+be seen in due time.
+\patch[14pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  VII.}
+\chap{VII}{26pt}{8pt}
 
 \dropcap{T}{ho}’ my father was a good natural\break
 philosopher,\tsk yet he was some-\break
@@ -1118,15 +1130,15 @@ philosopher,\tsk yet he was some-\break
 \stick{He did no such thing;\tsh he threw them} 
 \stick{with all the violence in the world;\tsk and,}
 \stick{to give the action still more emphasis,\tsk}
-\stick{he started upon both his legs to}
+\stick{he started up upon both his legs to}
 do it.
 
 This look’d something like heat;\tsh\break
 \stick{and the manner of his reply to what}
 \stick{my uncle \toby was saying, prov’d it}
-was so.\patch{\lqq Not}
-
-\tsh \lqq Not choose,” quoth my father,
+\stick{was so.\hfill}
+\catch{\lqq Not\sic}
+\stick{\indent\tsk \lqq Not choose,” quoth my father,}
 \stick{repeating my uncle \toby's words, \lqq to let}
 \stick{\lqq a man come so near her.”\tsh By hea-}
 \stick{ven, brother \i{Toby!} you would try the}
@@ -1134,7 +1146,7 @@ was so.\patch{\lqq Not}
 \stick{the plagues of one already, without it.}
 \stick{\tsh Why?\tsk Where?\tsk Wherein?\tsh}
 \stick{Wherefore?\tsh Upon what account? re-} 
-\stick{plied my uncle \toby: in the utmost asto-}
+\stick{plied my uncle \toby, in the utmost asto-}
 \stick{nishment.\tsh To think, said my father,}
 \stick{of a man living to your age, brother,} 
 \stick{and knowing so little about women!\tsh}
@@ -1149,7 +1161,7 @@ was so.\patch{\lqq Not}
 \stick{That I neither know, nor do pretend to}
 \catch{know,}
 \stick{know, any thing about ’em, or their}
-\stick{concerns either.\tsh Methinks, brother,}
+\stick{concerns either.\tsk Methinks, brother,}
 \stick{replied my father, you might, at least,}
 \stick{know so much as the right end of a}
 woman from the wrong.
@@ -1162,7 +1174,7 @@ It is said in \i{Aristotle}’s \i{Master-Piece},\break
 \stick{\lqq he looketh up towards the heavens.”\hfill}
 
 My uncle \toby, I suppose, thought of\break
-\stick{neither, for he look’d horizontally.\tsk}
+\stick{neither,\tsk for he look’d horizontally.\tsk}
 \stick{Right end,\tsk quoth my uncle \toby, mut-}
 \stick{tering the two words low to himself, and}
 \stick{fixing his two eyes insensibly as he mut-}
@@ -1216,7 +1228,7 @@ Every thing in this world, continued\break
 \stick{I shall be able to find a place for it in}
 the third volume or not.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  VIII.}
+\chap{VIII}{26pt}{8pt}
 
 \dropcap{I}{t} is about an hour and a half’s tole-\break
 rable good reading since my uncle\break
@@ -1293,7 +1305,7 @@ too.
 Imagine to yourself;\tsk but this had\break
 better begin a new chapter.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  IX.}
+\chap{IX}{26pt}{8pt}
 
 \initial[findent=1pt, nindent=6pt]{I}{Magine}
 to yourself a little, squat, un-\break
@@ -1363,10 +1375,9 @@ Had \drslop beheld \i{Obadiah} a mile\break
 \stick{in nature, can be supposed more terrible,}
 \stick{than such a Rencounter,\tsk so imprompt!} 
 \stick{so ill prepared to stand the shock of it as} 
-\drslop was!
-\patch{What}
-
-What could \drslop do?\tsh He cross’d
+\stick{\drslop was!\hfill}
+\catch{What}
+\stick{\indent What could \drslop do?\tsh He cross’d}
 \stick{himself ✝︎ \tsk Pugh!\tsk but the doctor,}
 \stick{Sir, was a Papist.\tsk No matter; he had}
 \stick{better have kept hold of the pummel.}
@@ -1408,9 +1419,10 @@ twelve inches deep in the mire.
 \stick{\i{diah} had better have been a league off.}
 \stick{In short, never was a \drslop so beluted,}
 \stick{and so transubstantiated, since that affair}
-came into fashion.\patch{\ls{CHAP}.}
+came into fashion.
+\patch[14pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  X.}
+\chap{X}{28pt}{10pt}
 
 \dropcap{W}{hen} \drslop entered the back-\break
 \tight{parlour, where my father and my}\break
@@ -1419,26 +1431,27 @@ came into fashion.\patch{\ls{CHAP}.}
 \stick{mine whether \drslop's figure, or Dr.}
 \stck{\i{Slop}’s presence, occasioned more surprize}
 \stick{to them; for as the accident happened so}
-\stick{near the house, as not to make it worth} 
+\stick{near the house, as not to make it worth}
 \stick{while for \i{Obadiah} to remount him,\tsk}
 \stick{\i{Obadiah} had led him in as he was, \i{un-}}
 \stick{\i{wiped}, \i{unappointed}, \i{unanealed}, with all his}
 \stick{stains and blotches on him.\tsh He}
 \stick{stood like \i{Hamlet}’s ghost, motionless and}
 \stick{speechless, for a full minute and a half,}
-at the parlour door \i{(Obadiah}\sic still hold-
-\stick{ing his hand) with all the majesty of mud.} 
+\stick{at the parlour door \i{(Obadiah}\sic still hold-}
+\stick{ing his hand) with all the majesty of mud.}
 \stick{His hinder parts, upon which he had re-}
 \stick{ceived his fall, totally besmear’d,\tsk and}
 \catch{in}
-in every other part of him, blotched over in such a manner with
-\i{Obadiah}’s explosion, that you would have sworn
-(without mental reservation) that every grain of it had taken
-effect.
+\stick{in every other part of him, blotched over}
+\stick{in such a manner with \i{Obadiah}’s explo-}
+\stick{sion, that you would have sworn (with-}
+\stick{out mental reservation) that every grain}
+of it had taken effect.
 
-Here was a fair opportunity for my 
+Here was a fair opportunity for my\break
 \stick{uncle \toby to have triumph’d over my}
-\stick{father in his turn;\tsk for no mortal, who} 
+\stick{father in his turn;\tsk for no mortal, who}
 \stick{had beheld \drslop in that pickle, could}
 \stick{have dissented from so much, at least, of}
 \stick{my uncle \toby's opinion, \lqq That may-}
@@ -1449,7 +1462,9 @@ Here was a fair opportunity for my
 \stick{\toby was not very expert at it, you may}
 \stick{think, he might not care to use it.\tsk}
 \stick{No; the reason was,\tsk ’twas not his na-}
-ture to insult.\patch{Dr.}
+ture to insult.
+
+\patch[21pt]{Dr.}
 
 \drslop's presence at that time, was\break
 \stick{no less problematical than the mode of}
@@ -1488,10 +1503,11 @@ The ringing of the bell, and the rap\break
 \stick{great engineer, along with them, into}
 \stick{my uncle \toby's mind:\tsk What business}
 \stick{\i{Stevinus} had in this affair,\tsk is the greatest}
-\stick{problem of all;\tsh it shall be solved,\tsk}
-but not in the next chapter.\patch{\ls{CHAP}.}
+\stick{problem of all;\tsk it shall be solved,\tsk}
+but not in the next chapter.
+\patch[30pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XI.}
+\chap{XI}{28pt}{10pt}
 
 \initial[findent=1pt]{W}{Riting},
 when properly managed,\break
@@ -1511,10 +1527,9 @@ as well as yourself.
 For my own part, I am eternally pay-\break
 \stick{ing him compliments of this kind, and}
 \stick{do all that lies in my power to keep his}
-imagination as busy as my own.
-\patch{’Tis}
-
-’Tis his turn now;\tsk I have given an\break
+\stick{imagination as busy as my own.\hfill}
+\catch{’Tis}
+\stick{\indent ’Tis his turn now;\tsk I have given an}
 \stick{ample description of \drslop's sad over-}
 \stick{throw, and of his sad appearance in the}
 \stick{back parlour;\tsh his imagination must} 
@@ -1564,12 +1579,12 @@ Truce!\tsk truce, good \drslop\/\i{!}\tsk stay\break
 \stick{\i{Obadiah} back upon the coach-horse to}
 bring them with all speed.
 
-\tsh Make great haste, \i{Obadiah}, quoth 
+\tsk Make great haste, \i{Obadiah}, quoth 
 \stick{my father, and I’ll give thee a crown;\tsh}
 \stick{and, quoth my uncle \toby, I’ll give him} 
 another.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XII.}
+\chap{XII}{24pt}{8pt}
 
 \dropcap{Y}{our} sudden and unexpected ar-\break
 rival, quoth my uncle \toby, ad-\break
@@ -1603,7 +1618,7 @@ He has so,\tsk replied my uncle \toby.\tsk\break
 \catch{tinued}
 \stick{tinued my father,\tsh I declare I would}
 \stick{not have my head so full of curtins and} 
-\stick{horn-works.\tsh That, I dare say, you}
+\stick{horn-works.\tsk That, I dare say, you}
 \stick{would not, quoth \drslop, interrupting} 
 \stick{him, and laughing most immoderately at}
 his pun.
@@ -1665,9 +1680,9 @@ Sir, quoth my uncle \toby, addressing\break
 \stick{a half-moon;\tsk ’tis no more than a rave-}
 \stick{lin.\tsk I think, quoth my father, that the} 
 \stick{noble science of defence has its weak} 
-sides,\tsk as well as others.\patch{\tsk As}
-
-\tsk As for the horn-works (high! ho!\break
+\stick{sides,\tsk as well as others.\hfill}
+\catch{\tsk As}
+\stick{\indent \tsk As for the horn-works (high! ho!}
 \stick{sigh’d my father) which, continued my}
 \stick{uncle \toby, my brother was speaking of,}
 \stick{they are a very considerable part of an} 
@@ -1728,9 +1743,9 @@ My uncle \toby was a man patient of
 \stick{jarring element in it,\tsk all was mix’d up}
 \stick{so kindly within him; my uncle \i{Toby}}
 \stick{had scarce a heart to retaliate upon}
-a fly.\patch{\tsk Go}
-
-\tsk Go\tsk says he, one day at dinner, to
+\stick{a fly.\hfill}
+\catch{\tsk Go}
+\stick{\indent \tsk Go\tsk says he, one day at dinner, to}
 \stick{an over-grown one which had buzz’d} 
 \stick{about his nose, and tormented him cruel-}
 \stick{ly all dinner-time,\tsk and which, after in-}
@@ -1772,15 +1787,15 @@ I was but ten years old when this hap-
 that one accidental impression.
 
 \fist This is to serve for parents and\break
-\stick{governors instead of a whole volume\break} 
-upon the subject.\etp\patch{I}
-
-I could not give the reader this stroke\break
+\stick{governors instead of a whole volume}
+\stick{upon the subject.\hfill}
+\catch{I}
+\stick{\indent I could not give the reader this stroke}
 \stick{in my uncle \toby's picture, by the instru-}
 \stick{ment with which I drew the other parts}
-\stick{of it,\tsh that taking in no more than}
+\stick{of it,\tsk that taking in no more than}
 \stick{the mere \s{Hobby-Horsical} likeness;}
-\stick{\tsh this is a part of his moral character.} 
+\stick{\tsk this is a part of his moral character.} 
 \stick{My father, in this patient endurance of} 
 \stick{wrongs, which I mention, was very dif-}
 \stick{ferent, as the reader must long ago have} 
@@ -1793,7 +1808,7 @@ I could not give the reader this stroke\break
 \stick{apt to shew itself in a drollish and witty} 
 \stick{kind of peevishness:\tsh He was, how-}
 \stick{ever, frank and generous in his nature;}
-\stick{\tsh at all times open to conviction;}
+\stick{\tsk at all times open to conviction;}
 \stick{and in the little ebullitions of this sub-}
 \stick{acid humour towards others, but parti-}
 \catch{cularly}
@@ -1817,9 +1832,9 @@ I need not tell the reader, if he keeps a
 \stick{strokes, at my uncle \toby's could not be}
 \stick{unfelt by him.\tsk No;\tsk as I said above,}
 \stick{my uncle \toby did feel them, and very}
-sensibly too.\patch{Pray,}
-
-Pray, Sir, what said he?\tsk How did\break
+\stick{sensibly too.\hfill}
+\catch{Pray,}
+\stick{\indent Pray, Sir, what said he?\tsk How did}
 \stick{he behave?\tsk Oh, Sir!\tsk it was great:} 
 \stick{For as soon as my father had done in-}
 \stick{sulting his \s{Hobby-Horse},\tsh he turned}
@@ -1860,13 +1875,13 @@ their measure?
 \stick{are much mistaken in this point;\tsk for} 
 \stick{you do increase my pleasure very much,} 
 \stick{in begetting children for the \i{Shandy} fa-}
-\stick{mily at your time of life.\tsh But, by} 
+\stick{mily at your time of life.\tsk But, by} 
 \stick{that, Sir, quoth \drslop, Mr.\@ \i{Shandy} in-}
 \catch{creases}
 \stick{creases his own.\tsh Not a jot, quoth}
 my father.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XIII.}
+\chap{XIII}{28pt}{10pt}
 
 \dropcap[findent=2pt]{M}{y} 
 brother, does it, quoth my uncle\break
@@ -1875,7 +1890,7 @@ brother, does it, quoth my uncle\break
 \stick{Pshaw!\tsk said my father,\tsk ’tis not worth}
 talking of.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XIV.}
+\chap{XIV}{28pt}{10pt}
 
 \dropcap[findent=1pt]{A}{t} the end of the last chapter, my\break
 father and my uncle \toby were\break
@@ -2018,7 +2033,7 @@ My father here had got into his ele-\break
 \stick{he opened his mouth to begin the next}
 sentence,
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XV.}
+\chap{XV}{28pt}{10pt}
 
 \dropcap{I}{n}
 popp’d Corporal \trim with \i{Stevi}-\break
@@ -2099,9 +2114,10 @@ I have ever a strong propensity, said
 \stick{right at liberty,\tsk he advanced, nothing} 
 \stick{doubting, into the middle of the room,} 
 \stick{where he could best see, and be best seen}
-by, his audience.\patch{\ls{CHAP}.}
+by, his audience.
+\patch[14pt]{\lsss{CHAP}.}
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XVI.}
+\chap{XVI}{28pt}{10pt}
 
 \tsh If you have any objection,\tsk said\break
 \stick{my father, addressing himself to \drslop.}
@@ -2126,9 +2142,9 @@ Begin, \trim,\tsh and read distinctly,
 \stick{bow, and bespeaking attention with a}
 slight movement of his right-hand.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XVII.}
+\chap{XVII}{28pt}{10pt}
 
-\quad\tsh But before the Corporal begins,\break
+\tsh But before the Corporal begins,\break
 \stick{I must first give you a description of his}
 \stick{attitude;\tsh otherwise he will naturally} 
 \stick{stand represented, by your imagination,} 
@@ -3425,7 +3441,7 @@ The second reason is, That, by laying\break
 \stick{vice,\tsh and much good may they}
 do it.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XVIII.}
+\chap{XVIII}{28pt}{10pt}
 
 \dropcap{O}{badiah} gain’d the two crowns\break
 without dispute; for he came in\break
@@ -3494,7 +3510,7 @@ They are in the right of it,\tsk quoth\break
 \stick{seen what prodigious armies we had in}
 \i{Flanders}.
 
-\section{\chapstrut\lsss{CHAP}.\enspace  XIX.}
+\chap{XIX}{28pt}{10pt}
 
 \initial{I}{Have} dropp’d the curtain over this\break
 scene for a minute,\tsk to remind you\break

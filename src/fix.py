@@ -34,7 +34,7 @@ for p in paras:
 
     for line in p[1:-1]:
 
-        if line.startswith("\\natch{"):
+        if line.startswith("\\catch{"):
             print(line)
             continue
 

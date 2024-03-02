@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 
-import argparse
 import fileinput
-import re 
+import re
+patch = re.compile(r"(.*)(\\patch{.*})\s*$")
 
 lines = []
 raw = []
@@ -10,8 +10,13 @@ raw = []
 for line in fileinput.input():
     line = line.strip()
     raw.append(line)
-    if line:
-        lines.append(line.removesuffix("\\break"))
+    line = line.removesuffix("\\break")
+    p = patch.match(line)
+    if p is not None:
+        lines.append(p.group(1))
+        lines.append(p.group(2))
+    elif line:
+        lines.append(line)
 
 if len(lines) == 3:
     print(f"\\stick{{{lines[0]}\\hfill}}")
@@ -20,5 +25,3 @@ if len(lines) == 3:
 
 else:
     print("\n".join(raw))
-
-

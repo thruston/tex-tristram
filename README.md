@@ -224,7 +224,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.48, line 16    "it’s" --> "its"
 - p.51, last line  "it’s" --> "its"
 - p.83, line 17    "it’s" --> "its"
-- p.85, line 11    "its" --> "it’s" (this one is the other way round)
+- p.85, line 11    "Its" --> "It’s" (this one is the other way round)
 - p.111, line 16   "incidesset" --> "incidisset", Sterne's error copying from Burton?
 - p.113, line 1    "--there" --> "--There" (to match the catch word)
 - p.117, line 5    "fefell" --> "befell"
@@ -234,19 +234,23 @@ The scanned edition used includes a list of Errata at the start, discussed below
 
 The "it's" (which are never correct) are mainly in Vol VII and VIII
 
-    Vol   its  it's
-    ---------------
-    I      13     0
-    II     24     0
-    III    22     0
-    IV     24     0
-    V      15     1
-    VI     19     0
-    VII    16     4
-    VIII   13     6
-    IX     13     0
+    Vol    its  it's
+    ----------------
+    I       13     0   Dodsley 1760
+    II      24     0   Dodsley 1760
+    III     22     0   Dodsley 1761
+    IV      24     0   Dodsley 1761
+    V       15     1   Becket 1762
+    VI      19     0   Becket 1762
+    VII     16     4   Becket 1765
+    VIII    13     6   Becket 1765
+    IX      13     0   Becket 1767
+    ----------------
+    Total  159    11
 
-Sterne's usual abbreviation for "it is" is "’tis".
+Sterne's usual abbreviation for "it is" is "’tis" (400 occurrences).
+Uncle Toby does once say (Vol VIII, p.85) "It's high time I should [hear Trim's story].
+Unfortunately the setter has this as "Its high time I should", as noted above.
 
 
 ### Vol. IX - 1767 Becket

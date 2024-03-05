@@ -86,15 +86,20 @@ random throughout Vol. VII and Vol. VIII
 - p.72, line 15        unwanted , before ; 
 - p.81, line 15        unwanted space in "regions"
 - p.86, line 3         "Agalastes" --> "Agelastes" - Sterne's error here?
+- p.88, line 16        "these veral" --> "the several"
 - p.94, line 10        "your" --> "you"
 - p.99. line 14, 15    final "a" repeated on next line
 - p.99. line 16, 17    final "the" repeated on next line
-- p.110, lines 7,8     "elegant" --> "eloquent" ?
+- p.100, line 20       "catchesing" --> "catching", apparently Sterne's error?
+- p.110, lines 7,8     "elegant" --> "eloquent", Sterne's error?
+- p.112, line 10       "his parlour" --> "the parlour", Sterne's error?
 - p.117, line 10       "fitst" --> "first"
 - p.123, line 11       "would laid down" --> "would have laid down"
 - p.138, second para.  "brothet" --> "brother"
 - p.138, catch word    Catch has "CHAP," instead of "CHAP."
 - p.144, line 15       "or" --> "nor" (maybe?)
+- p.157, line 9        unwanted space at beginning of line
+- p.164, line 12       "Bruscumbilles" --> "Bruscambilles", comp confused italic a and u
 - p.167, line 18       opening paren in italic, but closing in roman type
 - p.171, line 1        "poenitet" --> "paenitet", comp confused ae and oe ligatures
 - p.171, line 3        closing quote is single ’ instead of double ”

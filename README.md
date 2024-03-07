@@ -121,6 +121,7 @@ random throughout Vol. VII and Vol. VIII
 - p.45, line 7 of fn   "seclestissima" --> "scelestissima"
 - p.46, line 8         first letter of line has slipped down
 - p.46, line 15        two digits missing before "83" -- apparently 14?
+- p.51, line 12        "cannot" -->  "can", Sterne's error? (sense requires positive) 
 - p.56, line 12        opening paren in roman, but closing in italic type
 - p.56, line 17        "Epistasis" --> "Epitasis" -- Sterne's error? (correct on p.57)
 - p.56, line 18        first letter of line has slipped down

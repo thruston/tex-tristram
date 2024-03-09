@@ -52,6 +52,7 @@
 \long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
 %
 \newcommand{\patch}[2][0pt]{\par\vfill\rightline{#2\vrule width 0pt depth #1}\eject}
+\newcommand{\natch}[2][0pt]{\par\vskip#1\rightline{#2}\par\vfill\eject}
 \long\def\catch#1 {\hbox to \hsize{\hfill #1}\par\vfill\eject\noindent}
 %
 \def\chap#1#2#3{\noindent\centerline{{\addfontfeature{LetterSpace=64.0}CHAP}.\quad

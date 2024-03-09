@@ -133,7 +133,6 @@ random throughout Vol. VII and Vol. VIII
 - p.107, line 19       "I perceive shall" --> "I perceive I shall"
 - p.118, line 21       closing paren is italic font
 - p.128, catch word    "Or" --> "--Or", dash is missing in catch word
-- p.138, line 16       "firft" --> "first", comp confused f-t ligature with long-s-t (maybe..)
 - p.139, line 1        Footnote asterisk (apparently) missing from text
 - p.143, line 5        first letter of line has slipped down
 - p.175, line 10       "its accord" -> "its own accord"

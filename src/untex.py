@@ -4,6 +4,7 @@ import argparse
 import fileinput
 import re
 import sys
+import textwrap
 
 def get_nested_contents(text, start):
     '''Extract nested brace content
@@ -64,7 +65,7 @@ def unstick(para):
     
     '''
     while True:
-        m = re.search(r'\\sti?ck{', para)
+        m = re.search(r'\\sti?c?k{', para)
         if m is None:
             break
         prefix, content, suffix = get_nested_contents(para, m.start())
@@ -92,6 +93,26 @@ if __name__ == "__main__":
     for line in fileinput.input(files=args.source):
         t = line.strip()
         t = t.split('%')[0]  # decomment before joining in paragraph
+
+        m = re.match(r'\\(baseline|par)skip\s*(\d+|\d+\.\d+)\s*pt\s*$', t)
+        if m is not None:
+            continue
+
+        m = re.match(r'\\chap{([LXVI]+)}', t)
+        if m is not None:
+            if buffer:
+                paragraphs.append(' '.join(buffer))
+                buffer.clear()
+            paragraphs.append('CHAP ' + m.group(1) + '.')
+            continue
+
+        m = re.match(r'\\chapx{(.*?)}{\d+pt}{\d+pt}', t)
+        if m is not None:
+            if buffer:
+                paragraphs.append(' '.join(buffer))
+                buffer.clear()
+            paragraphs.append(m.group(1))
+            continue
 
         if skipping:
             i = t.find('\\end{mplibcode}')
@@ -128,7 +149,7 @@ if __name__ == "__main__":
 
     dimen_tags = '''
     enlargethispage vskip hskip kern lower raise openup vspace moveright hsize
-    parfillskip parindent parskip
+    parfillskip parindent 
     '''.strip().split()
 
     dump_ones = '''
@@ -141,12 +162,13 @@ if __name__ == "__main__":
     '''.strip().split()
 
     text_decor = '''
-    smallit lsss lss ls textit textsc section gothic rlap
+    smallit lsss lss ls textit textsc section gothic rlap i s textnormal 
     '''.strip().split()
 
     subs = {
         '\\tsk': ' -- ',
         '\\tsh': ' --- ',
+        '\\tsfill': ' -------- ',
         '\\crfill': ' - - ',
         '\\lqq': '“ ',
         '\\wastiv': '* * * *',
@@ -178,6 +200,9 @@ if __name__ == "__main__":
         '~': ' ',
         '#': ' ',
         '$': '',
+        '\\toby': 'Toby',
+        '\\trim': 'Trim',
+        '\\drslop': 'Dr. Slop',
     }
 
     for p in paragraphs:
@@ -200,9 +225,11 @@ if __name__ == "__main__":
         for t in simple_tags:
             p = re.sub(rf'\\{t}\b\s*', ' ', p)
 
-        p = p.replace('\\baselineskip', '12pt')
-        p = p.replace('\\parskip0pt', '')
-        p = p.replace('\\parskip', '12pt')
+        for t in dimen_tags:
+            p = re.sub(rf'\\{t}\s*-?(\d+|\.\d+|\d+\.\d*)?(pt|em|ex)', '', p)
+
+        p = re.sub(r'(-|\d)\\baselineskip', '12pt', p)
+        p = re.sub(r'(.)\\parskip', r'\1 12pt', p)
         for t in dimen_tags:
             p = re.sub(rf'\\{t}\s*-?(\d+|\.\d+|\d+\.\d*)?(pt|em|ex)', '', p)
 
@@ -234,6 +261,7 @@ if __name__ == "__main__":
         p = re.sub(r'\A\\dropcap(?:\[[^]]+\])?{\s*([A-Z])}{\s*([a-z]+)}', r'\1\2', p)
         p = re.sub(r'\A\\dropcap{\s*([A-Z])}{} ', r'\1', p)
         p = re.sub(r'\A\\dropcap(?:\[[^]]+\])?{(.*?)}{(.*?)}', r'\1\2', p)
+        p = re.sub(r'\A\\dropcaptight{(.*?)}{(.*?)}', r'\1\2', p)
         p = re.sub(r'\\initial(?:\[[^]]+\])?{([-A-Z“ ]+)}{\s*([A-Za-z!, ]+)}', fix_initial, p)
 
         # alternative text in the anathema
@@ -244,8 +272,7 @@ if __name__ == "__main__":
         p = re.sub(r'\\[vh]rule', '', p)
 
         # catches...
-
-        p = re.sub(r'\\[cp]atch{[-A-Za-zéæÆ:;,.’“?!()\]*— ]+}', r'\\break', p)
+        p = re.sub(r'\\[cpn]atch(\[\d+pt\])?{[-A-Za-zéæÆ:;,.’“?!()\]*— ]+}', r'\\break', p)
         p = re.sub(r'\\rightline{[-A-Za-zé:;,.’“ ]{,9}}', r'\\break', p)
 
         # make sticks into breaks
@@ -276,6 +303,6 @@ if __name__ == "__main__":
             p = p.replace('move- - ment', 'movement')
 
         if p:
-            print(p)
+            print(textwrap.fill(p))
             print()
 

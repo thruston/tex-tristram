@@ -8,37 +8,48 @@
 \date{Vol 1}
 \begin{document}
 \pagestyle{empty}
-\null\newpage\noindent
+\null
+\vfill
+\eject
+\noindent
 \includegraphics[width=\textwidth]{hogarth-front-1}
-\newpage
-\vbox{\openup 10pt\halign{\hss #\hss\cr
-\hbox to 3em{T H E}\cr
-\lower 2pt\hbox to 9em{\Large L I F E}\cr
-\hbox to 3em{A N D}\cr
-\lower 3pt\hbox to 15em{\Large O P I N I O N S}\cr
-\s{o f}\cr
-\hbox{\large\lsss{TRISTRAM SHANDY},}\cr
-\lower-2pt\hbox{\s{\lss{Gentleman}.}}\cr
-}}
 \vfill
-\vbox{\openup -2pt\halign to 180pt{\footnotesize #\cr
-\quad Ταράσσει τοὺς Ἀνθρὠπους οὐ τὰ Πράγματα,\cr
-ἀλλὰ τὰ περὶ τῶν Πραγμάτων, Δογμάτα.\hfill\cr}}
-\vfill
-\centerline{\lsss{VOL}.\quad I.}
-\smallskip
-\centerline{The\kern 5pt \lss{\s{Second Edition}}.}
-\vfill
-\centerline{\itshape\lsss{LONDON}:}
+\eject
+\noindent
+\stick{\fontsize{09}{14}\selectfont\hfill\lsv{70}{THE}\hfill}\\[16pt]
+\stick{\fontsize{16}{24}\selectfont\hfill\lsv{180}{LIFE}\hfill}\\[12pt]
+\stick{\fontsize{09}{14}\selectfont\hfill\lsv{70}{AND}\hfill}\\[18pt]
+\stick{\fontsize{16}{24}\selectfont\hfill\lsv{70}{OPINIONS}\hfill}\\[12pt]
+\stick{\fontsize{09}{14}\selectfont\hfill\lsv{50}{OF}\hfill}\\[17pt]
+\stick{\fontsize{14}{20}\selectfont\hfill\lsv{20}{TRISTRAM}\enspace\lsv{20}{SHANDY},\hfill}\\[6pt]
+\stick{\fontsize{10}{14}\selectfont\hfill\ss{Gentleman}.\hfill}
+
+\vskip 20pt
+
+\bgroup\fontsize{8}{10}\selectfont
+\stick{\quad Ταράσσει τοὺς Ἀνθρὠπους οὐ τὰ Πράγματα,}
+\stick{ἀλλὰ τὰ περὶ τῶν Πραγμάτων, Δογμάτα.\hfill}
+\par\egroup
+
+\vskip 16pt
+\centerline{\lsv{44}{VOL}.\quad I.}
+\vskip 10pt
+\centerline{The\kern 5pt \ss{Second Edition}.}
+\vskip 18pt
+\bgroup\fontsize{9}{11}\selectfont
+\centerline{\itshape\lsv{60}{LONDON}:}
+\vskip 2pt
 \centerline{\smaller Printed for R.\@ and J.\@ \lss{\s{Dodsley}} in \i{Pall-Mall}.}
 \centerline{M.DCC.LX.}
-
-\newpage
+\par
+\egroup
+\eject
 \null
-\newpage
+\vfill
+\eject
 \pagestyle{dedication}
 \thispagestyle{empty}
-\centerline{\addfontfeature{LetterSpace=2.0}\small To the Right Honourable}
+\centerline{\small\lsv{2}{To the Right Honourable}}
 
 \vskip 24pt
 
@@ -88,27 +99,28 @@ I humbly beg, Sir, that you\break
 \stick{\hfill \i{and most humble Fellow-Subject},}\\[20pt]
 \stick{\hfill\s{The Author}.}
 \egroup
-\vfill\eject\null
+\vfill
+\eject
 \thispagestyle{empty}
-\newpage
+\null
+\vfill
+\eject
 \setlength{\baselineskip}{14pt} % 21*14 = 294+14 = 308 (for the catch)
 \setcounter{page}{1}
 \pagestyle{folio}
 \thispagestyle{empty}
-\null\vskip12pt
-\centerline{\vbox{\openup 13pt\halign{\hss\large # \hss\cr
-\lsss{\s{the}}\cr
-\lsss{LIFE}\enspace and\enspace \lsss{OPINIONS}\cr
-\lsss{\s{of}}\cr
-\lss{TRISTRAM SHANDY}, Gent.\cr}}}
+\noindent
+\stick{\hfill \lsv{40}{\small THE}\tstrut 28pt \hfill}\\[12pt]
+\stick{\hfill \lsv{40}{\large LIFE}\quad and\quad \lsv{40}{\large OPINIONS}\hfill}\\[10pt]
+\stick{\hfill \lsv{80}{\small OF} \hfill}\\[12pt]
+\stick{\lsv{16}{\large TRISTRAM SHANDY}, Gent.}
 
-\vskip 12pt
+\vskip 16pt
 \hrule
 
-\chap{I}{14pt}{7pt}
+\chap{I}{16pt}{8pt}
 
-\initial[nindent=0pt, findent=5pt, lraise=0.05, loversize=0.05]{I}{Wish} 
-either my father or my mother,\break
+\initial[nindent=0pt, findent=5pt, lraise=0.05, loversize=0.05]{I}{Wish} either my father or my mother,\break
 or indeed both of them, as they\break
 \stick{were in duty both equally bound to it,} 
 \stick{had minded what they were about when}
@@ -118,10 +130,11 @@ or indeed both of them, as they\break
 \stick{production of a rational Being was con-}
 \stick{cern’d in it, but that possibly the happy} 
 \stick{formation and temperature of his body,}
-\catch{per-} 
-perhaps his genius and the very cast of\break
-his mind;\tsk and, for aught they knew to the contrary, even the fortunes of his
-whole house might take their turn from 
+\catch{per-}
+\stick{perhaps his genius and the very cast of}
+\stick{his mind;\tsk and, for aught they knew}
+\stick{to the contrary, even the fortunes of his}
+\stick{whole house might take their turn from}
 \stck{the humours and dispositions which were}
 \stick{then uppermost:\tsk Had they duly}
 \stick{weighed and considered all this, and}
@@ -377,10 +390,10 @@ It was attended but with one misfor-\break
 \stick{the nature of these things better than} 
 \stick{most men, affirms to have produced}
 \stick{more wry actions than all other sources}
-of prejudice whatsoever.\\\indent
-But this by the bye.\patch{Now}
-
-Now it appears, by a memorandum in\break
+\stick{of prejudice whatsoever.\hfill}
+\stick{\indent But this by the bye.\hfill}
+\catch{Now}
+\stick{\indent Now it appears, by a memorandum in}
 \stick{my father’s pocket-book, which now lies} 
 \stick{upon the table, \lqq That on \i{Lady-Day},} 
 \stick{which was on the 25th of the same month} 
@@ -403,11 +416,10 @@ all that time afflicted with a Sciatica.\patch[14pt]{\lsss{CHAP}.}
 
 \chap{V}{28pt}{10pt}
 
-\dropcap[findent=1pt]{O}{n} 
-the fifth day of \i{November}, 1718,\break
+\dropcap[findent=1pt]{O}{n} the fifth day of \i{November}, 1718,\break
 which to the æra fixed on, was as\break 
 \stck{near nine kalendar months as any husband}
-\stick{could in reason have expected,\tsk was I}\break
+\stick{could in reason have expected,\tsk was I}
 \stick{\i{Tristram Shandy}, Gentleman, brought}
 \stick{forth into this scurvy and disasterous}
 \stick{world of ours.\tsk I wish I had been born}
@@ -452,8 +464,7 @@ small \s{Hero} sustained.
 
 \chap{VI}{28pt}{10pt}
 
-\dropcap[findent=2pt]{I}{n} 
-the beginning of the last chapter,\break
+\dropcap[findent=2pt]{I}{n} the beginning of the last chapter,\break
 I inform’d you exactly \i{when} I was\break
 \stick{born;\tsk but I did not inform you, \i{how}.}
 \stick{\i{No}; that particular was reserved entirely} 
@@ -497,8 +508,7 @@ your temper.
 
 \chap{VII}{24pt}{1pt}
 
-\dropcap[findent=2pt]{I}{n}
-the same village where my father\break
+\dropcap[findent=2pt]{I}{n} the same village where my father\break
 and my mother dwelt, dwelt also a\break
 \stick{thin, upright, motherly, notable, good}
 \stick{old body of a midwife, who, with the}
@@ -512,7 +522,7 @@ and my mother dwelt, dwelt also a\break
 \stick{need I in this place inform your worship,}
 \catch{that}
 \baselineskip 13.3333pt
-\parskip 12 pt
+\parskip 12pt
 \stick{that I would be understood to mean no} 
 \stick{more of it, than a small circle described} 
 \stick{upon the circle of the great world, of}
@@ -685,9 +695,11 @@ Not one of these instances therefore\break
 \stick{the \s{Hobby-Horse}, with all his frater-}
 nity, at the Devil.
 
-My Lord,\\[-24pt]
-\initial{\rlap{\normalsize “}\lower-12pt\hbox{\normalsize \lqq }\,I}{Maintain} this to
-be a dedication,\break
+My Lord,
+
+\vskip -12pt
+
+\initial[ante=\rlap{“}\smash{\lower13pt\hbox{“}}\kern 3pt]{I}{Maintain} this to be a dedication,\break
 notwithstanding its singularity in\break
 \stick{\lqq\, the three great essentials of matter,}
 \catch{\lqq form,\sic}
@@ -700,18 +712,14 @@ notwithstanding its singularity in\break
 \stick{\lqq and that is, my Lord, when ever there}
 \stick{\lqq is occasion for it, and I will add, to the}
 \stick{\lqq best purposes too. I have the honour}
-\stick{\lqq to be,\hfill}
+\stick{\lqq to be,\hfill}\\[6pt]
+\stick{\hfill\i{My Lord}, \kern 52pt}\\[14pt]
+\stick{\hfill\i{Your Lordship’s most obedient}, \kern 24pt}\\[14pt]
+\stick{\hfill\i{and most devoted}, \kern 44pt}\\[14pt]
+\stick{\hfill\i{and most humble servant}, \kern 6pt}\\[14pt]
+\stick{\hfill\s{Tristram Shandy}.}
 
-\noindent\rightline{\vbox{\openup8pt\halign{\hss#\cr
-\i{My Lord}, \kern 60pt\cr
-\i{Your Lordship’s most obedient}, \kern 24pt\cr
-\i{and most devoted}, \kern 50pt\cr
-\i{and most humble servant}, \kern 6pt\cr
-\s{Tristram Shandy}.\cr
-}}}
-\vskip 36pt
-\rightline{\lsss{CHAP}.}
-\newpage
+\natch[18pt]{\lsss{CHAP}.}
 
 \chap{IX}{28pt}{10pt}
 
@@ -814,8 +822,7 @@ Be pleased, my good Lord, to order\break
 
 \vskip -5pt
 
-\initial[findent=2pt, nindent=0pt]{W}{Hatever} 
-degree of small merit,\break 
+\initial[findent=2pt, nindent=0pt]{W}{Hatever} degree of small merit,\break 
 the act of benignity in favour of\break
 \stick{the midwife, might justly claim, or in}
 \stick{whom that claim truly rested,\tsk at first}
@@ -1061,7 +1068,7 @@ What the loss in such a balance might\break
 \stick{tent,\tsk nothing for the aged,\tsk nothing}
 \stick{for the many comfortless scenes he was}
 \stick{hourly called forth to visit, where po-} 
-\stick{verty, and sickness, and affliction dwelt}\break
+\stick{verty, and sickness, and affliction dwelt}
 together.\patch[24pt]{For}
 
 For these reasons he resolved to dis-
@@ -1643,7 +1650,7 @@ both for his epitaph and elegy.
 
 \vskip 32pt
 
-\centerline{\fbox{\vrule width 0pt depth 8pt height 14pt Alas, poor \lss{YORICK}!}}
+\centerline{\fbox{\boxstrut Alas, poor \lss{YORICK}!}}
 
 \vskip 24pt
 
@@ -1673,8 +1680,7 @@ on,
 
 \chap{XIII}{24pt}{8pt}
 
-\dropcap{I}{t} 
-is so long since the reader of this\break
+\dropcap{I}{t} is so long since the reader of this\break
 rhapsodical work has been parted\break 
 \stick{from the midwife, that it is high time to}
 \stick{mention her again to him, merely to put}
@@ -2194,8 +2200,7 @@ make the most of it.
 
 \chap{XVIII}{28pt}{10pt}
 
-\dropcap[findent=0pt]{A}{s} 
-the point was that night agreed,\break 
+\dropcap[findent=0pt]{A}{s} the point was that night agreed,\break 
 or rather determin’d, that my mo-\break
 \stick{ther should lye-in of me in the country,}
 \stick{she took her measures accordingly; for} 
@@ -2639,7 +2644,7 @@ I never knew a man able to answer\break
 \catch{tainly}
 \stck{tainly irresistible, both in his orations and}
 \stick{disputations;\tsk he was born an orator;\tsk}
-\stick{{\small Θεοδίδακτος}.\tsk Persuasion hung upon his}
+\stick{\g{Θεοδίδακτος}.\tsk Persuasion hung upon his}
 \stick{lips, and the elements of Logick and}
 \stick{Rhetorick were so blended up in him,\tsk}
 \stick{and, withall, he had so shrewd guess at}
@@ -2913,17 +2918,17 @@ of \i{England}, read with it.
 \stick{I should be born before I was christen’d.”}
 \stick{Had my mother, Madam, been a Papist,}
 \stick{that consequence did not follow \fnast.\hfill}
-\rightline{It}
+\stick{\hfill It}
 
-\vfill
-\bgroup\fontsize{8}{11}\selectfont
+\bgroup\fontsize{8}{11}\selectfont\noindent
 \stick{\enspace\fnast\enspace The \i{Romish} Rituals direct the baptizing of the}
 \stick{child, in cases of danger, \i{before} it is born;\tsk but}
 \stick{upon this proviso, That some part or other of the}
 \stick{child’s body be seen by the baptizer:\tsh But~the}
 \stick{Doctors of the \i{Sorbonne}, by a deliberation held}
 \stick{amongst them, \i{April} 10, 1733,\tsk have enlarged the}
-\rightline{powers}\par\egroup\vfill\eject
+\catch{powers}
+\egroup
 
 It is a terrible misfortune for this same\break
 \stick{book of mine, but more so to the Re-}
@@ -2935,9 +2940,9 @@ It is a terrible misfortune for this same\break
 \stick{humours,\tsk and so wholly intent are we}
 \stick{upon satisfying the impatience of our}
 \stick{concupiscence that way,\tsk that nothing}
-\rightline{but}
+\stick{\hfill but}
 
-\bigskip
+\smallskip
 
 \bgroup\fontsize{8}{11}\selectfont
 \stick{\noindent powers of the midwives, by determining, That}
@@ -2952,7 +2957,9 @@ It is a terrible misfortune for this same\break
 \stick{\i{impossible},\tsk \lqq Infantes in maternis uteris existentes}
 \stick{(quoth St.\@ \i{Thomas}) baptizari possunt \i{nullo modo}.”\tsk}
 \stick{O \i{Thomas! Thomas!}\hfill}
-\rightline{If}\par\egroup\vfill\eject
+\rightline{If}
+\par\egroup
+\vfill\eject
 
 \noindent
 \stick{but the gross and more carnal parts of a} 
@@ -2984,14 +2991,13 @@ be taught to think as well as read.
 \stick{tors of the \i{Sorbonne},\tsk with their consultation there-}
 upon, it is as follows.\par\egroup
 
-\newpage
-\centerline{\vrule width 0pt height 18pt\s{Memoire} presenté à Messieurs les}
+\eject
+\centerline{\topstrut\s{Memoire} presenté à Messieurs les}
 \centerline{Docteurs de \s{Sorbonne} \fnast.}
 
 \vskip -2pt
 
-\dropcap[findent=0pt,lraise=0.2]{\smaller\i{U}}{\i{n}}
-\i{Chirurgien Accoucheur, represente à}\break
+\dropcap[findent=0pt,lraise=0.2]{\smaller\i{U}}{\i{n}} \i{Chirurgien Accoucheur, represente à}\break
 \i{Messieurs les Docteurs de} Sorbonne,\break
 \stick{\i{qu’il y a des cas, quoique trés rares, oú une}}
 \stick{\i{mere ne sçauroit accoucher, \et\ même oú}}
@@ -3009,119 +3015,113 @@ upon, it is as follows.\par\egroup
 \stick{\i{d’~exposer}.\hfill}\\[10pt]
 \stick{\hfill \ls{RE}-}\\[3pt]
 \stick{\hfill\footnotesize\fnast\ Vide Deventer. Paris Edit. 4to, 1734.\@ p.\@ 366.\hfill}
-\newpage
-\chapx{{\addfontfeature{LetterSpace=40}REPONSE}.}{24pt}{8pt}
 
-\dropcap[findent=-1pt,lraise=0.24]{\smaller\i{L}}{}\bgroup\fontsize{9.6}{14}\selectfont\itshape
-E Conseil estime, que la question proposée\break 
-souffre de grandes difficultes. Les Théo-\break
-logiens  posent d’un coté pour principe, que\break
-le baptéme, qui est une naissance spirituelle,\break
-suppose une premiere naissance\textnormal{;} il faut être né\break
-dans le monde, pour renaître en \textnormal{Jesus Christ},\break
-comme ils l’enseignent. S.\@ \textnormal{Thomas, 3 part.\break
-quæst.\@ 88.\@ artic.\@ 11.\@} suit cette doctrine\break 
-comme une verité constante\textnormal{;} l’on ne peut,\break
-dit ce S.\@ Docteur, baptiser les enfans qui sont\break
-renfermés dans le sein de leurs Meres, et S.\break 
-\textnormal{Thomas} est fondé sur ce, que les enfans ne\break 
-sont point nés, \et\ ne peuvent être comptés\break
-parmi les autres hommes\textnormal{;} d’ou il conclud,\break
-qu’ils ne peuvent être l’object d’une action\break 
-extérieure, pour recevoir par leur ministére, les\break
-sacremens nécessaires au salut:  \textnormal{Pueri in\break
-maternis uteris existentes nondum pro-}\break
-\rightline{\textnormal{dierunt}}
+\eject
+\chapx{\lsv{40}{REPONSE}.}{24pt}{8pt}
+
+\bgroup\fontsize{9.6}{14}\selectfont
+
+\dropcap[findent=-2pt,lraise=0.275,loversize=-0.21]{\i{L}}{\i{e}} \i{Conseil estime, que la question proposée}\break 
+\i{souffre de grandes difficultes. Les Théo-}\break
+\stick{\i{logiens  posent d’un coté pour principe, que}}
+\stick{\i{le baptéme, qui est une naissance spirituelle,}}
+\stck{\i{suppose une premiere naissance}; \i{il faut être né}}
+\stick{\i{dans le monde, pour renaître en} Jesus Christ,}
+\stick{\i{comme ils l’enseignent. S.\@} Thomas, 3 part.}
+\stick{quæst.\@ 88.\@ artic.\@ 11.\@ \i{suit cette doctrine}}
+\stick{\i{comme une verité constante}; \i{l’on ne peut,}}
+\stick{\i{dit ce S.\@ Docteur, baptiser les enfans qui sont}}
+\stick{\i{renfermés dans le sein de leurs Meres, et S.}}
+\stick{Thomas \i{est fondé sur ce, que les enfans ne}}
+\stick{\i{sont point nés, \et\ ne peuvent être comptés}}
+\stick{\i{parmi les autres hommes}; \i{d’ou il conclud},}
+\stick{\i{qu’ils ne peuvent être l’object d’une action}}
+\stick{\i{extérieure, pour recevoir par leur ministére, les}}
+\stick{\i{sacremens nécessaires au salut:} Pueri in}
+\stick{maternis uteris existentes nondum pro-}
+\catch{dierunt}
+\stick{dierunt in lucem ut cum aliis hominibus}
+\stick{vitam ducant; unde non possunt subjici}
+\stick{actioni humanæ, ut per eorum ministe-}
+\stick{rium sacramenta recipiant ad salutem.}
+\stick{\i{Les rituels ordonnent dans la pratique ce que}}
+\stick{\i{les théologiens ont établi sur les mêmes ma-}}
+\stick{\i{tiéres, \et\ ils deffendent tous d’une maniére}}
+\stick{\i{uniforme de baptiser les enfans qui sont ren-}}
+\stick{\i{fermés dans le sein de leurs meres, s’ils ne}}
+\stick{\i{font paroitre quelque partie de leurs corps.}}
+\stick{\i{Le concours des théologiens, \et\ des rituels,}}
+\stick{\i{qui sont les régles des diocéses, parôit former}}
+\stick{\i{une autorité qui termine la question presente};}
+\stick{\i{cependant le conseil de conscience considerant}}
+\stick{\i{d’un coté, que le raisonnement des théologiens}}
+\stick{\i{est uniquement fondé sur une raison de con-}}
+\stick{\i{venance, \et\ que la deffense des rituels, suppose}}
+\stick{\i{que l’on ne peut baptiser immediatement les}}
+\stick{\i{enfans ainsi renfermés dans le sein de leurs}}
+\stck{\i{meres, ce qui est contre la supposition presente};}
+\stick{\i{\et\ d’un autre côté, considerant que les mêmes}}
+\catch{\i{théo-}}
+\stick{\i{théologiens enseignent, que l’on peut risquer}}
+\stck{\i{les sacremens qu’} Jesus Christ \i{a établis comme}}
+\stick{\i{des moyens faciles, mais nécessaires pour}}
+\stick{\i{sanctifier les hommes}; \i{\et\ d’ailleurs estimant,}}
+\stick{\i{que les enfans renfermés dans le sein de leurs}}
+\stick{\i{meres, pourroient être capables de salut,}}
+\stick{\i{parce qu’ils sont capables de damnation};\tsk}
+\stick{\i{pour ces considerations, \et\ eu égard à l’ex-}}
+\stick{\i{posé, suivant lequel on assure avoir trouvé}}
+\stick{\i{un moyen certain de baptiser ces enfans ainsi}}
+\stick{\i{renfermés, sans faire aucun tort à la mere,}}
+\stick{\i{le Conseil estime que l’on pourroit se servir du}}
+\stick{\i{moyen proposé, dans la confiance qu’il a, que}}
+\stick{\i{Dieu n’ a point laissé ces sortes d’enfans}}
+\stick{\i{sans aucuns secours, \et\ supposant, comme}}
+\stick{\i{il est exposé, que le moyen dont il s’agit est}}
+\stick{\i{propre à leur procurer le baptême}; \i{cependant}}
+\stick{\i{comme il s’agiroit, en autorisant la pratique}}
+\stck{\i{proposée, de changer une régle universellement}}
+\stick{\i{établie, le Conseil croit que celui qui consulte}}
+\stick{\i{doit s’addresser a son évêque, \et\ à qui il ap-}}
+\catch{\i{partient}}
+\stick{\i{partient de juger de l’utilité, \et\ du danger}}
+\stick{\i{du moyen proposé, \et\ comme, sous le bon}}
+\stick{\i{plaisir de l’evêque, le conseil estime qu’il fau-}}
+\stick{\i{droit recourir au Pape, qui a le droit d’ex-}}
+\stick{\i{pliquer les régles de l’eglise, et d’ y déroger}}
+\stick{\i{dans le cas, ou la loi ne sçauroit obliger, quel-}}
+\stk{\i{que sage \et\ quelque utile que paroisse la maniére}}
+\stick{\i{de baptiser dont il s’agit, le conseil ne pourroit}}
+\stick{\i{l’approver sans le concours de ces deux auto-}}
+\stck{\i{rités. On conseile au moins à celui qui consulte,}}
+\stick{\i{de s’addresser à son evêque, \et\ de lui faire part}}
+\stick{\i{de la presente décision, afin que, si le prelat}}
+\stck{\i{entre dans les raisons sur lesquelles les docteurs}}
+\stk{\i{soussignés s’appuyent, il puisse être autorisé dans}}
+\stick{\i{le cas de nécessité, ou il risqueroit trop d'at-}}
+\stick{\i{tendre que la permission fût demandée \et\ ac-}}
+\stick{\i{cordée d’employer le moyen qu’il propose si}}
+\stick{\i{avantageux au salut de l’enfant. Au reste}}
+\stick{\i{le conseil, en estimant que l’on pourroit s’en}}
+\stick{\i{servir croit cependant, que si les enfans dont}}
+\stick{\i{il s’agit, venoient au monde, contre l’esperance}}
+\catch{\i{de}}
+\stick{\i{de ceux qui se séroient servis du même moyen,}}
+\stick{\i{il séroit nécessaire de les baptiser} sous condi-}
+\stick{tion, \i{\et\ en cela le conseil se conforme à tous}}
+\stick{\i{les rituels, qui en autorisant le baptême d’un}}
+\stick{\i{enfant qui fait paroître quelque partie de son}}
+\stick{\i{corps, enjoignent néantmoins, \et\ ordonnent de}}
+\stick{\i{le baptiser} sous condition, \i{s’il vient heu-}}
+\i{reusement au monde}.
+
 \egroup
 
-\newpage
-\bgroup\fontsize{9.6}{14}\selectfont\noindent
-dierunt in lucem ut cum aliis hominibus\break
-vitam ducant; unde non possunt subjici\break
-actioni humanæ, ut per eorum ministe-\break
-rium sacramenta recipiant ad salutem.\break
-\itshape 
-Les rituels ordonnent dans la pratique ce que\break
-les théologiens ont établi sur les mêmes ma-\break
-tiéres, \et\ ils deffendent tous d’une maniére\break
-uniforme de baptiser les enfans qui sont ren-\break
-fermés dans le sein de leurs meres, s’ils ne\break
-sont paroitre quelque partie de leurs corps.\break 
-Le concours des théologiens, \et\ des rituels,\break
-qui sont les régles des diocéses, parôit former\break
-une autorité qui termine la question presente\textnormal{;}\break
-cependant le conseil de conscience considerant\break
-d’un coté, que le raisonnement des théologiens\break
-est uniquement fondé sur une raison de con-\break
-venance, \et\ que la deffense des rituels, suppose\break
-que l’on ne peut baptiser immediatement les\break
-enfans ainsi renfermés dans le sein de leurs\break
-\stck{meres, ce qui est contre la supposition presente\textnormal{;}}\break
-\et\ d’un autre côté, considerant que les mêmes
-\catch{théo-}
-théologiens enseignent, que l’on peut risquer\break
-\tight{les sacremens qu’ \textnormal{Jesus Christ} a établis comme}\break
-des moyens faciles, mais nécessaires pour\break 
-sanctifier les hommes\textnormal{;} \et\ d’ailleurs estimant,\break
-que les enfans renfermés dans le sein de leurs\break
-meres, pourroient être capables de salut,\break
-parce qu’ils sont capables de damnation\textnormal{;}\tsk\break 
-pour ces considerations, \et\ eu égard à l’ex-\break
-posé, suivant lequel on assure avoir trouvé\break
-un moyen certain de baptiser ces enfans ainsi\break
-renfermés, sans faire aucun tort à la mere,\break
-le Conseil estime que l’on pourroit se servir du\break
-moyen proposé, dans la confiance qu’il a, que\break
-Dieu n’ a point laissé ces sortes d’enfans\break
-sans aucuns secours, \et\ supposant, comme\break
-il est exposé, que le moyen dont il s’agit est\break
-propre à leur procurer le baptême\textnormal{;} cependant\break
-comme il s’agiroit, en autorisant la pratique\break
-\tight{proposée, de changer une régle universellement}\break
-établie, le Conseil croit que celui qui consulte\break
-doit s’addresser a son évêque, \et\ à qui il ap-
-\catch{partient}
-partient de juger de l’utilité, \et\ du danger\break
-du moyen proposé, \et\ comme, sous le bon\break
-plaisir de l’evêque, le conseil estime qu’il fau-\break
-droit recourir au Pape, qui a le droit d’ex-\break
-pliquer les régles de l’eglise, et d’ y déroger\break
-dans le cas, ou la loi ne sçauroit obliger, quel-\break
-\tighter{que sage \et\ quelque utile que paroisse la maniére}\break
-de baptiser dont il s’agit, le conseil ne pourroit\break
-l’approver sans le concours de ces deux auto-\break
-\tight{rités. On conseile au moins à celui qui consulte,}\break
-de s’addresser à son evêque, \et\ de lui faire part\break
-de la presente décision, afin que, si le prelat\break
-\tight{entre dans les raisons sur lesquelles les docteurs}\break
-\tighter{soussignés s’appuyent, il puisse être autorisé dans}\break
-le cas de nécessité, ou il risqueroit trop d'at-\break
-tendre que la permission fût demandée \et\ ac-\break
-cordée d’employer le moyen qu’il propose si\break
-avantageux au salut de l’enfant. Au reste\break
-le conseil, en estimant que l’on pourroit s’en\break
-servir croit cependant, que si les enfans dont\break
-il s’agit, venoient au monde, contre l’esperance
-\catch{de}
-de ceux qui se séroient servis du même moyen,\break
-il séroit nécessaire de les baptiser \textnormal{sous condi-\break
-tion,} \et\ en cela le conseil se conforme à tous\break
-les rituels, qui en autorisant le baptême d’un\break
-enfant qui fait paroître quelque partie de son\break
-corps, enjoignent néantmoins, \et\ ordonnent de\break
-le baptiser \textnormal{sous condition}, s’il vient heu-\break
-reusement au monde. 
-\egroup 
-
 \noindent
-\stick{Déliberé en \i{Sorbonne}, le 10 \i{Avril}, 1733.}
-
-\bigskip
-
-\vbox{\halign{\kern 92pt\s{#}\hss\cr
-A.\@ \ls{Le Moyne},\cr
-L.\@ \ls{De Romigny},\cr
-\ls{De Marcilly}.\cr}}
+\stick{Déliberé en \i{Sorbonne}, le 10 \i{Avril}, 1733.}\\[12pt]
+\stick{\kern 92pt A.\@ \ss{Le Moyne},\hfill}
+\stick{\kern 92pt L.\@ \ss{De Romigny},}
+\stick{\kern 92pt \ss{De Marcilly}.\hfill}
 
 \vskip 7pt
 
@@ -3680,8 +3680,7 @@ spirits.
 
 \chap{XXIII}{28pt}{10pt}
 
-\initial[nindent=3pt]{I}{Have} 
-a strong propensity in me to\break
+\initial[nindent=3pt]{I}{Have} a strong propensity in me to\break
 \tight{begin this chapter very nonsensically,}\break
 \stick{and I will not balk my fancy.\tsk Accord-}
 ingly I set off thus.
@@ -3834,7 +3833,8 @@ To avoid all and every one of these\break
 \bgroup\fontsize{8}{11}\selectfont
 \stick{\enspace\fnast\enspace  Pentagraph, an instrument to copy prints and}
 \stick{pictures mechanically, and in any proportion.\hfill}
-\egroup\vfill\eject
+\par\egroup
+\vfill\eject
 
 \noindent
 \stick{no mechanical help whatever;\tsh nor}
@@ -3848,15 +3848,15 @@ To avoid all and every one of these\break
 character from his \s{Hobby-Horse}.
 
 
-\chap{XXIV}{30pt}{8pt}
+\chap{XXIV}{34pt}{7pt}
 
-\dropcap{I}{f} \tight{I was not morally sure that the
-reader} must be out of all patience for my\break
+\dropcap[findent=1pt]{I}{f i} \tight{was not morally sure that the reader}\break
+must be out of all patience for my\break
 \stick{uncle \toby's character,\tsh I would here}
 \stick{previously have convinced him, that}
 \stick{there is no instrument so fit to draw such}
 \stick{a thing with, as that which I have pitch’d}
-upon.\patch[14pt]{A}
+upon.\natch[12pt]{A}
 
 A man and his \s{Hobby-Horse},\break
 \stick{tho’ I cannot say that they act and re-act} 
@@ -4011,5 +4011,8 @@ book.
 
 \bigskip
 \centerline{\lsss{\itshape END}\kern 4pt of the \s{First Volume}.}
-\newpage\pagestyle{empty}\null
+\vfill
+\eject
+\pagestyle{empty}
+\null
 \end{document}

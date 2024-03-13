@@ -10,35 +10,37 @@ def get_nested_contents(text, start):
     '''Extract nested brace content
     >>> get_nested_contents('Hello \hbox{Toby} how are you doing?', 6)
     ('Hello ', 'Toby', ' how are you doing?')
+    >>> get_nested_contents('Hello \hbox{Toby how are you doing?', 6)
+    ('Hello ', 'Toby how are you doing?', '')
+    >>> get_nested_contents('Hello \hbox{', 6)
+    ('Hello ', '', '')
 
     '''
 
+    prefix, remainder = text[:start], text[start:]
+    
     nest = 0
-    stop = 0
-    prefix = []
     content = []
-    for i, c in enumerate(text):
-        if i < start:
-            prefix.append(c)
-            continue
-
+    suffix = ''
+    for i, c in enumerate(remainder):
         if c == '{':
             nest += 1
-            if nest == 1:
-                continue
         elif c == '}':
             nest -= 1
-            if nest == 0:
-                stop = i+1
-                break
+
+        if nest == 1 and c == '{':
+            continue
+
+        if nest == 0 and c == '}':
+            continue
 
         if nest > 0:
             content.append(c)
+        elif content:
+            suffix = remainder[i:]
+            break
 
-    suffix = text[stop:]
-
-
-    return (''.join(prefix), ''.join(content), suffix)
+    return (prefix, ''.join(content), suffix)
 
 
 def unbox(tag, para):
@@ -48,6 +50,7 @@ def unbox(tag, para):
     >>> unbox('textit', '\\\\textit{Jo-\\catch{seph} seph Scaliger}')
     'Jo-\\\\catch{seph} seph Scaliger'
     '''
+
     while True:
         p = para.find(f'\\{tag}{{')
         if p < 0:
@@ -65,7 +68,7 @@ def unstick(para):
     
     '''
     while True:
-        m = re.search(r'\\sti?c?k{', para)
+        m = re.search(r'\\[Ss]ti?c?k{', para)
         if m is None:
             break
         prefix, content, suffix = get_nested_contents(para, m.start())
@@ -98,7 +101,7 @@ if __name__ == "__main__":
         if m is not None:
             continue
 
-        m = re.match(r'\\chap{([LXVI]+)}', t)
+        m = re.match(r'\\chap{([^}]+)}', t)
         if m is not None:
             if buffer:
                 paragraphs.append(' '.join(buffer))
@@ -144,17 +147,18 @@ if __name__ == "__main__":
     null normalsize normalshape noindent newpage Large large itshape indent huge Huge
     hss vss hfill hfil vfill vfil footnotesize etpp etp enspace eject egroup egb
     club bigskip bgroup cr leaders thinspace clearpage begingroup endgroup medskip
-    sloppy xleaders bnq strut cleardoublepage obeylines nobreak leavevmode
+    sloppy xleaders bnq strut chapstrut topstrut cleardoublepage obeylines nobreak leavevmode
+    offinterlineskip frenchspacing
     '''.strip().split()
 
     dimen_tags = '''
     enlargethispage vskip hskip kern lower raise openup vspace moveright hsize
-    parfillskip parindent 
+    parfillskip parindent tstrut 
     '''.strip().split()
 
     dump_ones = '''
     documentclass usepackage pagestyle thispagestyle begin end date title author includegraphics
-    addfontfeature phantom noalign
+    addfontfeature phantom noalign mplibtextextlabel
     '''.strip().split()
 
     dump_twos = '''
@@ -162,10 +166,11 @@ if __name__ == "__main__":
     '''.strip().split()
 
     text_decor = '''
-    smallit lsss lss ls textit textsc section gothic rlap i s textnormal 
+    smallit lsss lss ls textit textsc textscl gothic rlap i s g textnormal 
     '''.strip().split()
 
     subs = {
+        '\\fist': ' ☞ ',
         '\\tsk': ' -- ',
         '\\tsh': ' --- ',
         '\\tsfill': ' -------- ',
@@ -173,9 +178,12 @@ if __name__ == "__main__":
         '\\lqq': '“ ',
         '\\wastiv': '* * * *',
         '\\astfill': '********',
+        '\\wastfill': '********',
         '\\astvi': '******',
         '\\astiv': '****',
+        '\\lowastiv': '****',
         '\\astv': '*****',
+        '\\nastv': '*****',
         '\\astw2': '**',
         '\\astw3': '***',
         '\\astw4': '****',
@@ -194,6 +202,7 @@ if __name__ == "__main__":
         '\\etc': '&c',
         '\\et': '&',
         '\\&': '&',
+        '\\/': '',
         '\\fnast': '*',
         '\\\\': '',
         '\\ ': ' ',
@@ -203,9 +212,12 @@ if __name__ == "__main__":
         '\\toby': 'Toby',
         '\\trim': 'Trim',
         '\\drslop': 'Dr. Slop',
+        '\\slop': 'Slop',
+        '\\susannah': 'Susannah',
     }
 
     for p in paragraphs:
+
         p = p.replace("\\ ", " ")   # forced space
         p = p.replace("\\,", " ")   # small space
         p = p.replace("\\;", " ")   # small space
@@ -222,14 +234,18 @@ if __name__ == "__main__":
         # specific to Vol 5. (Trim snapping his fingers)
         p = re.sub(r'\\xleaders\\hbox to \.3em{\\hss\.\\hss}', ' .. ', p) 
 
+        p = re.sub(r'\\vastfill{(\d+|\d\.\d+|\.\d+)em}', '* * * * * * * * *', p)
+
         for t in simple_tags:
             p = re.sub(rf'\\{t}\b\s*', ' ', p)
 
         for t in dimen_tags:
             p = re.sub(rf'\\{t}\s*-?(\d+|\.\d+|\d+\.\d*)?(pt|em|ex)', '', p)
 
+        p = re.sub(r'\\lsv{(\d+|\d\.\d+)}{(.*?)}', r'\2', p)
+
         p = re.sub(r'(-|\d)\\baselineskip', '12pt', p)
-        p = re.sub(r'(.)\\parskip', r'\1 12pt', p)
+        p = re.sub(r'\\parskip', '12pt', p)
         for t in dimen_tags:
             p = re.sub(rf'\\{t}\s*-?(\d+|\.\d+|\d+\.\d*)?(pt|em|ex)', '', p)
 
@@ -246,7 +262,7 @@ if __name__ == "__main__":
         for k, v in subs.items():
             p = p.replace(k, v)
 
-        p = re.sub(r'\\Usk{\d+pt}', '--', p)
+        p = re.sub(r'\\Usk{(\d+|\d+\.\d+)pt}', '--', p)
         p = re.sub(r'\\Tsk', '--', p)
         p = re.sub(r'\\rotatebox\[origin=c\].180.{(.)}', r'\1', p)
 
@@ -272,7 +288,7 @@ if __name__ == "__main__":
         p = re.sub(r'\\[vh]rule', '', p)
 
         # catches...
-        p = re.sub(r'\\[cpn]atch(\[\d+pt\])?{[-A-Za-zéæÆ:;,.’“?!()\]*— ]+}', r'\\break', p)
+        p = re.sub(r'\\[cpn]atch(\[\d+pt\])?{[-A-Za-zéæÆ:;,.‘’“?!()\]*— ]+}', r'\\break', p)
         p = re.sub(r'\\rightline{[-A-Za-zé:;,.’“ ]{,9}}', r'\\break', p)
 
         # make sticks into breaks

@@ -23,10 +23,12 @@ fbox hbox'''.split()
 container_tags.append('hbox to \\S+')
 container_tags.append('lsv{[0-9.]+}')
 
-dimen_tags_to_ignore = re.compile(r'\\(raise|lower|tstrut)\s*-?(\d+|\d*\.\d+)(pt|em|ex)\s*')
+dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
+
+dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({'|'.join(plain_tags)})\b\s*')
 arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
-space_tags = re.compile(r'\\(enspace|qquad|quad|indent|,|thinspace|hfill|kern \d+pt| )\s*')
+space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|kern\s*{dimen}| )\s*')
 quote_tags = re.compile(r'\\lqq\s*')
 content_tags = re.compile(rf'\\({'|'.join(container_tags)}){{(.*?)}}')
 chapters = re.compile(r'\\chap{([LXVI]+)}{\d+pt}{\d+pt}')
@@ -47,12 +49,15 @@ def make_catch_line(mark):
 subs = {
     '\\fnast': '*', 
     '\\sic': '♣︎',
+    '\\fist': ' ☞ ',
     '\\wastfill': '* * * * * * * * * * * * *',
     '\\astiv': '****',
+    '\\wastiv': '* * * *',
+    '\\lowastiv': '* * * *',
     '\\astv': '*****',
     '\\etc': '&c.',
     '\\&': '&',
-    '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 42,
+    '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 39,
     '\\hrule': rule,
     '\\tsk': ' -- ',
     '\\tsh': ' --- ',
@@ -62,6 +67,7 @@ subs = {
     '\\!': '',
     '\\/': '',
     '\\,': ' ',
+    '\\;': ' ',
     '\\et': '&',
     '\\&': '&',
     '\\toby': 'Toby',

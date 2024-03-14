@@ -17,18 +17,17 @@ itshape
 
 container_tags = '''
 ls lss lsss
-tight tighter 
-gothic i smallit s ss sss g textnormal 
+tight tighter rlap llap smash
+gothic i smallit s ss sss g textnormal textsc 
 fbox hbox'''.split()
 container_tags.append('hbox to \\S+')
-container_tags.append('lsv{[0-9.]+}')
 
 dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
 
 dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({'|'.join(plain_tags)})\b\s*')
 arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
-space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|kern\s*{dimen}| )\s*')
+space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|hss|kern\s*{dimen}|phantom{{.}}| )\s*')
 quote_tags = re.compile(r'\\lqq\s*')
 content_tags = re.compile(rf'\\({'|'.join(container_tags)}){{(.*?)}}')
 chapters = re.compile(r'\\chap{([LXVI]+)}{\d+pt}{\d+pt}')
@@ -38,6 +37,10 @@ dumptwos = re.compile(r'\\(fontsize|setlength|setcounter){[^}]+}{[^}]+}')
 initials = re.compile(r'\\initial(\[[^]]+\])?{([^}]+)}{([^}]+)}(.*)\Z')
 dropcaps = re.compile(r'\\dropcap(\[[^]]+\])?{([^}]+)}{([^}]+)}(.*)\Z')
 dropcapt = re.compile(r'\\dropcaptight(\[[^]]+\])?{([^}]+)}{([^}]+)}(.*)\Z')
+alterna = re.compile(r'\\alt{([a-z]+)}{([a-z ]+)(\\hss)?}')
+alternb = re.compile(r'\\alt{([a-z]+)}{\\c{([a-z ]+)}}')
+vastfills = re.compile(rf'\\vastfill{{{dimen}}}')
+lsvs = re.compile(r'\\lsv{[0-9.]+}{(.*?)}')
 
 vertical_skips = 'bigskip medskip smallskip vfill vss null'.split()
 rule = '-' * 39
@@ -54,6 +57,7 @@ subs = {
     '\\astiv': '****',
     '\\wastiv': '* * * *',
     '\\lowastiv': '* * * *',
+    '\\astvi': '******',
     '\\astv': '*****',
     '\\etc': '&c.',
     '\\&': '&',
@@ -77,6 +81,11 @@ subs = {
     '\\drslop': 'Dr. Slop',
 
 }
+
+def get_prefix(option_string):
+    '''find the "ante" part of a dropcap'''
+    m = re.search(r'ante=([^,\]]+)', option_string)
+    return m.group(1)
     
 
 if __name__ == "__main__":
@@ -108,6 +117,8 @@ if __name__ == "__main__":
         t = plain_tags_to_ignore.sub('', t)
         t = arg_tags_to_ignore.sub('', t)
         t = dumptwos.sub('', t)
+        t = vastfills.sub('* * * * * * * * * * * * * *', t)
+        t = lsvs.sub(r'\1', t)
         
         for old, new in subs.items():
             t = t.replace(old, new)
@@ -127,6 +138,9 @@ if __name__ == "__main__":
             if m is None:
                 break
             t = content_tags.sub(r'\2', t)
+
+        t = alterna.sub(r'\1<\2>', t)
+        t = alternb.sub(r'\1<\2>', t)
 
         t = dimen_tags_to_ignore.sub('', t)
         t = space_tags.sub(' ', t)
@@ -167,16 +181,22 @@ if __name__ == "__main__":
         if m is not None:
             t = m.group(2) + ' ' + m.group(3) + ' ' + m.group(4)
             t = t.rstrip()
+            if m.group(1) is not None and "ante=" in m.group(1):
+                t = get_prefix(m.group(1)) + ' ' + t
 
         m = dropcaps.match(t)
         if m is not None:
             t = m.group(2) + '' + m.group(3).upper() + ' ' + m.group(4)
             t = t.rstrip()
+            if m.group(1) is not None and "ante=" in m.group(1):
+                t = get_prefix(m.group(1)) + ' ' + t
 
         m = dropcapt.match(t)
         if m is not None:
             t = m.group(2) + '' + m.group(3).upper() + ' ' + m.group(4)
             t = t.rstrip()
+            if m.group(1) is not None and "ante=" in m.group(1):
+                t = get_prefix(m.group(1)) + ' ' + t
 
         t = t.removesuffix('\\break')
         t = t.removesuffix('\\\\')

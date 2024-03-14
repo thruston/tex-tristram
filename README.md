@@ -79,6 +79,7 @@ random throughout Vol. VII and Vol. VIII
 
 - p.5, 2nd last line   "quoth" should not be in italics
 - p.19, third para.    "my uncle" --> "my father"
+- p.39, catch word     "the" --> "“ the", leading quotation marks missing from catch
 - p.46, line 1         closing paren should have been a comma
 - p.51, line 5         opening paren in roman, but closing in italic type
 - p.55, line 5         unwanted space in "Hamet"
@@ -99,7 +100,7 @@ random throughout Vol. VII and Vol. VIII
 - p.138, catch word    Catch has "CHAP," instead of "CHAP."
 - p.144, line 15       "or" --> "nor" (maybe?)
 - p.157, line 9        unwanted space at beginning of line
-- p.164, line 12       "Bruscumbilles" --> "Bruscambilles", comp confused italic a and u
+- p.164, line 12       "Bruscumbilles" --> "Bruscambilles", comp confused italic a and u ? (or stall-man gets it wrong?)
 - p.167, line 18       opening paren in italic, but closing in roman type
 - p.171, line 1        "poenitet" --> "paenitet", comp confused ae and oe ligatures
 - p.171, line 3        closing quote is single ’ instead of double ”

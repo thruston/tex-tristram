@@ -12,7 +12,7 @@ catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 plain_tags = '''
 topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
 smaller small large Large huge Huge footnotesize cr
-itshape
+itshape frenchspacing
 '''.split()
 
 container_tags = '''
@@ -52,6 +52,7 @@ def make_catch_line(mark):
 subs = {
     '\\fnast': '*', 
     '\\sic': '♣︎',
+    '\\dagger': '†',
     '\\fist': ' ☞ ',
     '\\wastfill': '* * * * * * * * * * * * *',
     '\\astiv': '****',
@@ -59,6 +60,7 @@ subs = {
     '\\lowastiv': '* * * *',
     '\\astvi': '******',
     '\\astv': '*****',
+    '\\ast': '*', 
     '\\etc': '&c.',
     '\\&': '&',
     '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 39,

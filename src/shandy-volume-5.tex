@@ -5,57 +5,74 @@
 \usepackage{shandean}
 \title{The Life and Opinions of Tristram Shandy, Gentleman}
 \author{Laurence Sterne}
+\date{1762}
 \begin{document}
 \pagestyle{empty}
 % half title
 \null
 \vfill
-$$\vbox{\openup 10pt\halign{\hss #\hss\cr
-\hbox to 3em{T H E}\cr
-\large \ls{LIFE} and \ls{OPINIONS}\cr
-\hbox to 1.6em{O F}\cr
-\large \ls{TRISTRAM SHANDY}, Gent.\cr
-}}$$
+\noindent
+\centerline{\lsv{50}{THE}}
+\centerline{\tstrut 32pt\large \ls{LIFE}\enspace and\enspace \ls{OPINIONS}}
+\centerline{\tstrut 27pt\lsv{80}{OF}}
+\centerline{\tstrut 26pt\large \lss{TRISTRAM SHANDY}, Gent.}
 \vfill
-\newpage
+\eject
 \null
-\newpage % full title
-\vbox{\openup 10pt\halign{\hss #\hss\cr
-\hbox to 3em{T H E}\cr
-\lower 2pt\hbox to 9em{\Large L I F E}\cr
-\hbox to 3em{A N D}\cr
-\lower 3pt\hbox to 15em{\Large O P I N I O N S}\cr
-\textsc{o f}\cr
-\hbox{\large \lsss{TRISTRAM SHANDY},}\cr
-\lower-2pt\hbox{\textsc{\lss{Gentleman}.}}\cr
-}}
 \vfill
-\vbox{\openup -2pt\halign to \textwidth{\small #\cr
-\i{Dixero si quid fortè jocosius, hoc mihi juris}\hfill\cr
-\i{Cum venia dabis}.\tsh \hfill \textsc{Hor.}\cr
-\noalign{\vskip 4pt}
-\hbox to 1em{\tsk}\i{Si quis calumnietur levius esse quam decet theo-}\cr
-\quad\i{logum, aut mordacius quam deceat Christia-}\cr
-\quad\i{num \tsk non Ego, sed Democritus dixit}.\tsk\hfill\cr\hfill\textsc{Erasmus}.\cr}}
+\eject
+ % full title
+\noindent
+\centerline{\fontsize{10}{14}\selectfont\lsv{100}{THE}}
+\centerline{\tstrut 26pt\fontsize{20}{28}\selectfont\lsv{150}{LIFE}}
+\centerline{\tstrut 18pt\fontsize{10}{14}\selectfont\lsv{80}{AND}}
+\centerline{\tstrut 26pt\fontsize{20}{28}\selectfont\lsv{55}{OPINIONS}}
+\centerline{\tstrut 16pt\fontsize{08}{14}\selectfont\lsv{80}{OF}}
+\centerline{\tstrut 22pt\fontsize{14}{20}\selectfont\lsv{20}{TRISTRAM}\enspace\lsv{20}{SHANDY},}
+\centerline{\tstrut 14pt\fontsize{12}{14}\selectfont\lsv{16}{\textsc{Gentleman}}.}
+
+\vskip 8pt
+
+\bgroup\fontsize{8}{10}\selectfont\noindent
+\stick{\enspace\i{Dixero si quid fortè jocosius, hoc mihi juris}\hfill}
+\stick{\enspace\i{Cum venia dabis}.\tsh \hfill \textsc{Hor.}\enspace}
+\stick{\tstrut 13pt\enspace\hbox to 1em{\tsk}\i{Si quis calumnietur levius esse quam decet theo-}\enspace}
+\stick{\enspace\quad\i{logum, aut mordacius quam deceat Christia-}\enspace}
+\stick{\enspace\quad\i{num \tsk non Ego, sed Democritus dixit}.\tsk\hfill}
+\stick{\hfill\s{Erasmus}.}
+\par\egroup
+
 \vfill
 \centerline{\lsss{VOL}.\quad V.}
 \vfill
-\centerline{\lsss{LONDON}:}
-\centerline{\small Printed for T. \textsc{Becket} and P. A. \textsc{Dehondt},}
-\centerline{\small in the Strand.\quad M DCC LXII.}
 
-\newpage
+\centerline{\small \lsv{120}{LONDON}:}
+\centerline{\small Printed for T. \s{Becket} and P. A. \s{Dehondt},}
+\centerline{\small in the Strand.\quad M DCC LXII.}
+\eject
+
 \null
-\newpage
+\vfill
+\eject
+
 \bgroup\fontsize{11}{16}\selectfont
-\setlength{\baselineskip}{16pt}  % 21*14 = 294   294/23 \simeq 12.7826
+\baselineskip 16pt
 \centerline{\small To the Right Honourable}
-\vfill
-\centerline{\huge \hbox to 100pt{J O H N},}
-\vfill
-\centerline{\large Lord Viscount \lss{\textsc{Spencer}}.}
-\vfill
-\noindent\ \textsc{My Lord},\\[-24pt]
+
+\vskip 24pt
+
+\centerline{\Large \hbox to 100pt{J O H N},}
+
+\vskip 24pt
+
+\centerline{\large Lord\enspace Viscount\enspace \ss{Spencer}.}
+
+\vskip 20pt
+
+\s{My Lord},
+
+\vskip -6pt
+
 \initial{I}{Humbly} beg leave to offer you\break
 these two Volumes; they are\break
 \stick{the best my talents, with such bad}
@@ -63,9 +80,12 @@ these two Volumes; they are\break
 \stick{had providence granted me a larger}
 \stick{stock of either, they had been a}
 \stick{much more proper present to your}
-Lordship.\patch{I}
+Lordship.
+\natch{I}
 
-\centerline{\lss{DEDICATION}.}
+\centerline{\lsv{60}{DEDICATION}.}
+
+\vskip -6pt
 
 I beg your Lordship will forgive\break
 \stick{me, if, at the same time I dedi-}
@@ -77,48 +97,50 @@ I beg your Lordship will forgive\break
 \stick{my heart has informed me of, but}
 that the story is a humane one.
 
-\vskip2\parskip
+\vskip 24pt
 
-\rightline{\vbox{\halign{\hfill\fontsize{11}{14}\selectfont #\cr
-\i{I am,}\kern 80pt\cr
-\i{My Lord,}\kern 60pt\cr
-\i{Your Lordship’s}\kern 20pt\cr
-\i{Most devoted,}  \kern 20pt\cr
-\i{And most humble Servant,}\enspace\cr
-\noalign{\medskip}
-\textsc{Laur. Sterne.}\cr}}}
+\stick{\hfill\i{I am,}\kern 96pt}
+\stick{\hfill\i{My Lord,}\kern 68pt}
+\stick{\hfill\i{Your Lordship’s}\kern 24pt}
+\stick{\hfill\i{Most devoted,}\kern 22pt}
+\stick{\hfill\i{And most humble Servant,}\enspace}
+
+\vskip 8pt
+
+\rightline{\s{Laur. Sterne.}}
 \egroup
-\newpage
-\setlength{\baselineskip}{14pt}  % 22*14 = 308
-\parskip 12pt plus 4pt minus 6pt
+\vfill
+\eject
+%-------------------------- start of CHAP. I.
+\baselineskip 14pt  % 22*14 = 308
+\parskip 12pt 
 \setcounter{page}{1}
 \pagestyle{fancy}
 \thispagestyle{empty}
-$$\vbox{\openup 10pt\halign{\hss #\hss\cr
-\hbox to 3em{T H E}\rlap{\smash{\raise12pt\hbox{\includegraphics[width=74pt]{sterne5.png}}}}\cr
-\Large \ls{LIFE}\enspace and\enspace \ls{OPINIONS}\cr
-\hbox to 1.6em{O F}\cr
-\large \ls{TRISTRAM SHANDY}, Gent.\cr
-}}$$
+\noindent
+\centerline{\lsv{50}{THE}\rlap{\smash{\raise12pt\hbox{\includegraphics[width=74pt]{sterne5.png}}}}}
+\centerline{\tstrut 32pt\large \lsss{LIFE}\enspace and\enspace \lsss{OPINIONS}}
+\centerline{\tstrut 27pt\lsv{80}{OF}}
+\centerline{\tstrut 26pt\large \lss{TRISTRAM SHANDY}, Gent.}
 
-\bigskip
+\vskip 20pt
 
 \hrule
 
-\chap{I}{18pt}{10pt}
+\chap{I}{16pt}{8pt}
 
 \dropcap{I}{f} it had not been for those two\break
 mettlesome tits, and that madcap of\break
 \stick{a postillion, who drove them from Stil-}
 \stick{ton to Stamford, the thought had never}
 \stick{entered my head. He flew like light-}
-\stick{ning\tsh there was a slope of three miles}
-\stick{and a half\tsh we scarce touched the}
-\stick{ground\tsh the motion was most rapid}
-\stick{\tsk most impetuous\tsh ’twas communicat-}
+\stick{ning\tsk there was a slope of three miles}
+\stick{and a half\tsk we scarce touched the}
+\stick{ground\tsk the motion was most rapid}
+\stick{\tsk most impetuous\tsk ’twas communicat-}
 \catch{ed}
 \stick{ed to my brain\tsk my heart partook of it}
-\stick{\tsh By the great God of day, said I,}
+\stick{\tsk By the great God of day, said I,}
 \stick{looking towards the sun, and thrusting}
 \stick{my arm out of the fore-window of the}
 \stick{chaise, as I made my vow, \lqq I will}
@@ -134,8 +156,10 @@ The London waggon confirmed me in\break
 \stick{drag’d up by eight \i{heavy beasts}\tsk \lqq by}
 \stick{main strength!\tsk quoth I, nodding\tsk}
 \stick{but your betters draw the same way\tsk}
-\stick{and something of every bodies!\tsh}
-O rare!”\patch{Tell}
+\stick{and something of every bodies!\tsk}
+O rare!”
+
+\natch{Tell}
 
 Tell me, ye learned, shall we for ever\break
 \stick{be adding so much to the \i{bulk}\tsk so little}
@@ -156,7 +180,9 @@ Shall we be destined to the days of\break
 \stick{ing-days, to be shewing the \i{relicks of}}
 \stick{\i{learning}, as monks do the relicks of their}
 \stick{saints\tsk without working one\tsk one single}
-miracle with them?\patch{Who}
+miracle with them?
+\natch{Who}
+\parskip 10pt 
 
 Who made \textsc{Man}, with powers which\break
 \stick{dart him from earth to heaven in a mo-}
@@ -185,15 +211,12 @@ I scorn to be as abusive as Horace\break
 \stick{to the affair of \i{Whiskers}\tsh but, by what}
 \stick{chain of ideas\tsk I leave as a legacy in}
 \stick{\i{mort main} to Prudes and Tartufs, to}
-enjoy and make the most of.
-
-\bigskip
-\centerline{\i{Upon Whiskers}.}
-
-I’m sorry I made it\tsh ’twas as incon-\break
+\stick{enjoy and make the most of.\hfill}
+\centerline{\i{Upon Whiskers}.\tstrut 21pt}
+\stick{\indent I’m sorry I made it\tsk ’twas as incon-\tstrut 18pt}
 \stck{siderate a promise as ever entered a man’s}
 \stick{head\tsh A chapter upon whiskers!  alas!}
-\stick{the world will not bear it\tsk ’tis a deli-}
+\stick{the world will not bear it\tsh ’tis a deli-}
 \stick{cate world\tsk but I knew not of what}
 \stick{mettle it was made\tsk nor had I ever}
 \stick{seen the underwritten fragment; other-}
@@ -201,7 +224,8 @@ I’m sorry I made it\tsh ’twas as incon-\break
 \stick{whiskers are whiskers still; (let the world}
 \stick{say what it will to the contrary) so surely}
 \stick{would I have steered clear of this dan-}
-gerous chapter.\patch{\i{The}}
+gerous chapter.
+\natch{\i{The}}
 
 \noindent
 \centerline{\i{The Fragment}.}
@@ -211,7 +235,7 @@ gerous chapter.\patch{\i{The}}
 \stick{lady, said the old gentleman, taking}
 \stick{hold of the old lady’s hand and giving}
 \stick{it a gentle squeeze, as he pronounced}
-\stick{the word \i{Whiskers}\tsh shall we change}
+\stick{the word \i{Whiskers}\tsk shall we change}
 \stick{the subject? By no means, replied the}
 \stick{old lady\tsk I like your account of these}
 \stick{matters: so throwing a thin gauze}
@@ -220,6 +244,8 @@ gerous chapter.\patch{\i{The}}
 \stick{turned towards him, and advancing her}
 \stick{two feet as she reclined herself\tsk I desire,}
 continued she, you will go on.
+
+\vskip -3pt
 
 The old gentleman went on as follows.\break
 \stick{\tsh Whiskers! cried the queen of}
@@ -244,7 +270,9 @@ ing a courtesy as she repeated it.
 \stick{page’s interest upon the queen, that has}
 \stick{so gallant a pair\tsk Of what? cried \i{Mar}-}
 \stick{\i{garet}, smiling\tsh Of whiskers, said \i{La}}
-\i{Fosseuse}, with infinite modesty.\patch{The}
+\i{Fosseuse}, with infinite modesty.
+
+\natch[10pt]{The}
 
 The word whiskers still stood its\break
 \stick{ground, and continued to be made use}
@@ -265,7 +293,8 @@ The word whiskers still stood its\break
 \stick{as much as it lost; that is, the clergy}
 \stick{were for it\tsk the laity were against it\tsk}
 \stick{and for the women,\tsh \i{they} were di-}
-vided.\tsh\patch{The}
+vided.\tsh
+\natch{The}
 
 The excellency of the figure and mien\break
 \stick{of the young Sieur \i{de Croix}, was at that}
@@ -309,7 +338,7 @@ upon the cushion.
 
 \i{La Guyol}, \i{La Battarelle}, \i{La Maronette},\break
 \stick{\i{La Sabatiere}, retired instantly to their}
-\stick{\stick{chambers\tsk Whiskers! said all four of}}
+\stick{chambers\tsk Whiskers! said all four of}
 \catch{them}
 \stick{them to themselves, as they bolted their}
 doors on the inside.
@@ -354,7 +383,8 @@ fort the sick and the broken hearted.
 \tsh The Lady \i{Baussiere} rode on.
 
 A decayed kinsman bowed himself to\break
-the ground.\patch{\tsk The}
+the ground.
+\natch{\tsk The}
 
 \tsh The Lady \i{Baussiere} rode on.
 
@@ -397,7 +427,8 @@ St.\@ \i{Bridget}.
 \stick{outline of a small whisker, with the blunt}
 \stick{end of it, upon one side of her upper lip,}
 \stick{put in into \i{La Rebours}’s hand\tsk \i{La Re}-}
-\i{bours} shook her head.\patch{The}
+\i{bours} shook her head.
+\natch{The}
 
 The Lady \i{Baussiere} cough’d thrice into\break
 \stick{the inside of her muff\tsk \i{La Guyol} smiled}
@@ -441,10 +472,11 @@ Does not all the world know, said the\break
 \stk{the same association?\tsk Chastity, by nature,}
 \stick{the gentlest of all affections\tsk give it but}
 \stick{its head\tsk ’tis like a ramping and a roar-}
-ing lion.\patch{The}
+ing lion.
+\natch{The}
 % leading reduced in sig. C
-\setlength{\baselineskip}{12.8333pt}  % 22*14 = 308  308/24 \simeq 12.8333
-\parskip 11pt plus 3pt minus 5pt
+\baselineskip 12.8333pt  % 22*14 = 308  308/24 \simeq 12.8333
+\parskip 10pt 
 
 The drift of the curate \i{d’Estella}’s argu-\break
 \stick{ment was not understood.\tsk They ran}
@@ -455,7 +487,7 @@ The drift of the curate \i{d’Estella}’s argu-\break
 \stick{next provincial chapter together, they}
 may decree that bawdy also.
 
-\chap{II}{28pt}{10pt}
+\chap{II}{18pt}{8pt}
 
 \dropcap{W}{hen} my father received the\break
 letter which brought him the\break
@@ -469,6 +501,7 @@ letter which brought him the\break
 \stick{travel over again, and his calculation to}
 \stick{begin afresh, when he had almost got}
 \catch{to}
+\baselineskip 12.5pt
 \stick{to the end of it, by \i{Obadiah}’s opening}
 \stick{the door to acquaint him the family was}
 \stick{out of yeast\tsk and to ask whether he}
@@ -550,9 +583,9 @@ When the letter was brought into the\break
 \stick{elbows, as my uncle \toby hummed over}
 the letter.
 
-\vskip -0.5\baselineskip
+\vskip -6pt
 
-\noindent\etp
+\noindent
 \stick{\indent\tsh\quad\tsh\quad\tsh\quad\tsh\quad\tsh}
 \stick{\tsh\quad\tsh\quad\tsk\quad\tsh\quad\tsh\quad\tsh}
 \stick{\tsk\quad\tsh\quad\tsk\quad\tsk\quad\tsh\quad\tsk\quad\tsk}
@@ -568,6 +601,8 @@ the letter.
 \stick{my uncle \toby, in a low voice, and fetch-}
 \stick{ing a deep sigh from the bottom of his}
 \catch{heart,}
+\baselineskip 12pt
+\parskip 8pt
 \stick{heart, he has been ill enough, poor lad!}
 I’ll answer for him\tsk for he is dead.
 
@@ -585,7 +620,7 @@ pretend to reason from history?
 How my father went on, in my opi-\break
 nion, deserves a chapter to itself.\tsk
 
-\chap{III}{18pt}{10pt}
+\chap{III}{14pt}{6pt}
 
 \quad \tsh \quad \tsh \quad And a chapter it\break
 \stick{shall have, and a devil of a one too\tsk so}
@@ -606,7 +641,7 @@ look to yourselves.
 \stick{such griefs evacuate themselves best by}
 \stick{that particular channel.\tsk And accord-}
 \stick{ingly we find, that \i{David} wept for his}
-\stick{son \i{Absalom}\tsk \i{Adrian} for his \i{Antinous}\tsk}
+\stick{son \i{Absolom}\tsk \i{Adrian} for his \i{Antinous}\tsk}
 \stick{\i{Niobe} for her children, and that \i{Apollo}-}
 \stick{\i{dorus} and \i{Crito} both shed tears for \i{Socra}-}
 \i{tes} before his death.\etp
@@ -779,6 +814,7 @@ into his mouth.\etp
 \stick{\lqq world itself, brother \toby, must\tsk must}
 \stick{\lqq come to an end.\hfill}
 
+\baselineskip 12.3333pt
 \lqq Returning out of \i{Asia}, when I sailed\break
 \stick{\lqq from \i{Ægina} towards \i{Megara},\,” (\i{when}}
 \stck{\i{can this have been? thought my uncle Toby)}\sic}
@@ -792,9 +828,10 @@ into his mouth.\etp
 \stick{\lqq the loss of a child, when so much as}
 \stick{\lqq this lies awfully buried in his presence}
 \stick{\lqq \tsh Remember, said I to myself again}
-\stick{\lqq \tsk remember thou art a man.\,”\tsk\hfill}
-\catch{Now}
-\stick{\hfill Now my uncle \toby knew not that this}
+\lqq \tsk remember thou art a man.\,”\tsk
+\natch[12pt]{Now}
+
+Now my uncle \toby knew not that this\break
 \stick{last paragraph was an extract of \i{Servius}}
 \stick{\i{Sulpicius}’s consolatory letter to \i{Tully}.\tsk}
 \stick{He had as little skill, honest man, in the}
@@ -850,6 +887,7 @@ rangue with great spirit.
 \stick{good may\sic do them\tsk said my uncle \toby}
 to himself.\tsh
 
+\baselineskip 13pt
 \lqq My son is dead!\tsk so much the bet-\break
 \stick{\lqq ter;\tsk ’tis a shame in such a tempest to}
 \lqq have but one anchor.\,”
@@ -867,6 +905,7 @@ to himself.\tsh
 \stick{\lqq and made merry when a man went}
 \stick{\lqq out of the world; and with reason.\tsk}
 \catch{\lqq Death}
+\baselineskip 12pt
 \stick{\lqq Death opens the gate of fame, and}
 \stick{\lqq shuts the gate of envy after it,\tsk it}
 \stick{\lqq unlooses the chain of the captive, and}
@@ -928,7 +967,7 @@ a sincere one\tsk quoth my uncle \toby.
 
 \chap{IV}{18pt}{10pt}
 
-\quad\tsh  And lastly\tsk for all the choice\break
+\tsh And lastly\tsk for of all the choice\break
 \stick{anecdotes which history can produce of}
 \stick{this matter, continued my father,\tsk this,}
 \stick{like the gilded dome which covers in the}
@@ -938,14 +977,14 @@ fabrick\tsk crowns all.\tsk
 \stick{which I dare say, brother \toby, you have}
 \stick{read.\tsk I dare say I have not, replied}
 \stick{my uncle.\tsk He died, said my father as}
-\stick{\astfill}
+\stick{\vastfill{1em}}
 \stick{\tsk And if it was with his wife, said my}
 \stick{uncle \toby\tsk there could be no hurt in it.}
 \catch{\tsk That’s}
 \stick{\tsk That’s more than I know\tsk replied my}
 father.\etp
 
-\chap{V}{18pt}{10pt}
+\chap{V}{12pt}{8pt}
 
 \dropcap{M}{y} mother was going very ginger-\break
 ly in the dark along the passage\break
@@ -962,10 +1001,11 @@ ly in the dark along the passage\break
 \stick{her neck\tsk (not towards the door, but}
 \stick{from it, by which means her ear was}
 \stick{brought to the chink)\tsk she listened with}
-\stick{all her powers:\tsh the listening slave,}
+\stick{all her powers:\tsk the listening slave,}
 \stick{with the Goddess of Silence at his back,}
 \stick{could not have given a finer thought for}
-an intaglio.\patch{In}
+an intaglio.
+\natch{In}
 
 In this attitude I am determined to let\break
 \stick{her stand for five minutes: till I bring}
@@ -1039,7 +1079,8 @@ A curious observer of nature, had he\break
 \stick{have given the half of it, to have heard}
 \stick{Corporal \trim and my father, two ora-}
 \stick{tors so contrasted by nature and educa-}
-tion, haranguing over the same bier.\patch{My}
+tion, haranguing over the same bier.
+\natch{My}
 
 My father a man of deep reading\tsk\break
 \stick{prompt memory\tsk with \i{Cato}, and \i{Seneca},}
@@ -1113,7 +1154,8 @@ I, said the foolish scullion.
 \stick{into the kitchen,\tsk master \i{Bobby} is dead}
 \stick{and \i{buried},\tsk the funeral was an interpo-}
 \stick{lation of \i{Susannah}’s,\tsk we shall have all}
-to go into mourning, said \i{Susannah}.\patch{I hope}
+to go into mourning, said \i{Susannah}.
+\natch{I hope}
 
 I hope not, said \trim.\tsk You hope not!\break
 \stick{cried \i{Susannah} earnestly.\tsk The mourning}
@@ -1186,7 +1228,8 @@ I said, “we were not stocks and stones”\break
 \stick{with the soul,\tsk gives a smarter stroke,}
 \stick{and leaves something more inexpressible}
 \stick{upon the fancy, than words can either}
-convey\tsk or sometimes get rid of.\patch{\tsh I’ve}
+convey\tsk or sometimes get rid of.
+\natch{\tsh I’ve}
 
 \tsk I’ve gone a little about\tsk no matter,\break
 \stick{’tis for health\tsk let us only carry it back}
@@ -1236,7 +1279,8 @@ Ye who govern this mighty world and\break
 \stick{its mighty concerns with the \i{engines} of}
 \stick{eloquence,\tsk who heat it, and cool it, and}
 \stick{melt it, and mollify it,\tsh and then har-}
-den it again to \i{your purpose}\tsh\etp\patch{Ye}
+den it again to \i{your purpose}\tsh\etp
+\natch{Ye}
 
 Ye who wind and turn the passions\break
 \stick{with this great windlass,\tsk and, having}
@@ -1358,7 +1402,8 @@ Or\enspace whether  -  -  -  -  -  -  -\break
 \stick{cause, let the curious physiologist, or}
 \stick{the curious any body determine\tsk ’tis}
 \stick{certain, at least, the corporal went on}
-thus with his harangue.\patch{For}
+thus with his harangue.
+\natch{For}
 
 For my own part, I declare it, that out\break
 \stick{of doors, I value not death at all:\tsk not}
@@ -1454,7 +1499,8 @@ I like to hear \trim's stories about the\break
 \stick{his master.\tsh The whole kitchen was}
 \stick{affected.\tsh Do tell us the story of the}
 \stick{poor lieutenant, said \i{Susannah}.\tsh With}
-all my heart, answered the corporal.\patch{\i{Su}-}
+all my heart, answered the corporal.
+\natch{\i{Su}-}
 
 \setlength{\baselineskip}{14.4pt}
 \topstrut
@@ -1477,7 +1523,8 @@ got my mother, as if Nature had\break
 \stick{\tsk and here’s a great piece fallen off here}
 \stick{before,\tsk and what must I do with this}
 \stick{foot?\tsh I shall never reach \i{England}}
-with it.\patch{For}
+with it.
+\natch{For}
 
 \topstrut
 For my own part, I never wonder at\break
@@ -1547,7 +1594,8 @@ From the strange mode of \i{Cornelius}’s\break
 \indent\fnast\enspace This book my father would never consent to\break
 publish; ’tis in manuscript, with some other tracts\break
 of his, in the family, all, or most of which will be\break
-printed in due time.\par\egroup\patch{fear,}
+printed in due time.\par\egroup
+\natch{fear,}
 
 \setlength{\baselineskip}{14pt}
 \noindent
@@ -2123,7 +2171,8 @@ There are incidents in some families\break
 \stick{so pat to the purpose of what is going to}
 \stick{follow,\tsk they are scarce exceeded by the}
 \stick{invention of a dramatic writer;\tsk I mean}
-of ancient days.\tsh\patch{\i{Trim},}
+of ancient days.\tsh
+\natch{\i{Trim},}
 
 \trim, by the help of his forefinger,\break
 \stick{laid flat upon the table, and the edge of}
@@ -2147,7 +2196,8 @@ Corporal \trim, replied my uncle \toby,\break
 \stick{a fault, when the service absolutely re-}
 \stick{quires it should be done,\tsk ’tis I certain-}
 \stick{ly who deserve the blame,\tsk you}
-obeyed your orders.\patch{Had}
+obeyed your orders.
+\natch{Had}
 
 Had count \i{Solmes}, \trim, done the\break
 \stick{same at the battle of \i{Steenkirk}, said \i{Yo}-}
@@ -2239,7 +2289,8 @@ addressing himself to \i{Yorick}, was\break
 \stick{ere I would stand by and see it.\tsk}
 \stick{\trim directed a slight,\tsk but a grate-}
 \stick{ful bow towards his master,\tsk and so}
-the chapter ends.\patch{\lss{CHAP}.}
+the chapter ends.
+\natch{\lss{CHAP}.}
 \setlength{\baselineskip}{12.6667pt}%  304/24 \simeq 12.6667
 
 \chap{XXIII}{21pt}{10pt}
@@ -2262,11 +2313,7 @@ house to \i{Shandy-hall}.
 \stick{thought to have done.\tsk You have cut}
 off spouts enow, replied \i{Yorick}.\tsh
 
-\vskip -\baselineskip
-
-\chap{XXIV}{18pt}{10pt}
-
-\vskip -.5\baselineskip
+\chap{XXIV}{8pt}{0pt}
 
 \dropcap[findent=1pt]{A}{s} many pictures as have been given\break
 of my father, how like him soever\break
@@ -2348,7 +2395,8 @@ Now, though I was old enough to\break
 \stick{account of it, just as it had happened.\tsk}
 \stick{I thought as much, said my father, tuck-}
 \stick{ing up his night-gown;\tsk and so walked}
-up stairs.\patch{One}
+up stairs.
+\natch{One}
 
 One would imagine from this\tsk\break
 \stick{(though for my own part I somewhat}
@@ -2506,7 +2554,10 @@ women?\etp
 \stick{\enspace\ddagger\ Καθαριὸτητος εινεκεν. \hfill \s{Bochart}.\enspace}
 \egroup
 \rightline{the\vrule width 0pt height 14pt}
-\newpage\noindent
+
+\vfill
+\eject
+\noindent
 the advantage, when he sees the \i{Pyra}-\break
 \i{mids}.\tsh
 
@@ -2753,7 +2804,8 @@ The original of society, continued my\break
 bull, and putting the ox in his place.
 
 My father gave \trim a nod, to snuff\break
-the candle, and resumed his discourse.\patch{\tsh I}
+the candle, and resumed his discourse.
+\natch{\tsh I}
 
 \tsh I enter upon this speculation, said\break
 \stick{my father carelessly, and half shutting}
@@ -2849,7 +2901,8 @@ but with the \i{first}\tsk
 
 \s{The first}\tsk cried my uncle \toby, set-\break
 \stick{ting his hand upon his side\tsk \vastfill{1em}}
-\stick{\vastfill{1em}.\qquad}\patch{\s{The}}
+\stick{\vastfill{1em}.\qquad}
+\natch{\s{The}}
 
 \s{The second}\tsk cried my uncle \toby,\break
 \stick{waving his tobacco-pipe, as he would}
@@ -2872,7 +2925,8 @@ find it out.
 \tsk Here is the glass for pedagogues,\break
 \stick{preceptors, tutors, governours, gerund-}
 \stick{grinders, and bear-leaders to view them-}
-selves in, in their true dimensions.\tsk\patch{Oh!}
+selves in, in their true dimensions.\tsk
+\natch{Oh!}
 
 Oh! there is a husk and shell, \i{Yorick},\break
 \stick{which grows up with learning, which}
@@ -2944,7 +2998,8 @@ In saying this, my father shut the\break
 \stick{when he had done it, upon the upper-}
 \stick{side of the cover, as his three fingers sup-}
 \stick{ported the lower-side of it, without the}
-least compressive violence.\tsh\patch{I}
+least compressive violence.\tsh
+\natch{I}
 
 I have demonstrated the truth of that\break
 \stick{point, quoth my father, nodding to \i{Yo}-}
@@ -3137,7 +3192,8 @@ that head.\tsh
 \stick{\vastfill{.9em}.\quad It was at the}
 \stick{siege of \i{Limerick}, an’ please your ho-}
 \stick{nour, replied the corporal, making a}
-bow.\patch{The}
+bow.
+\natch{The}
 
 The poor fellow and I, quoth my un-\break
 \stck{cle \toby, addressing himself to my fa-}
@@ -3307,7 +3363,8 @@ which was begun under his maje-\break
 \stick{rounded, said my uncle \toby, with the}
 \stick{\i{Shannon}, and is, by its situation, one of}
 \stick{the strongest fortified places in \i{Ire}-}
-\i{land}.\tsh\patch{I think}
+\i{land}.\tsh
+\natch{I think}
 
 I think this is a new fashion, quoth\break
 \stick{\drslop, of beginning a medical lecture.}

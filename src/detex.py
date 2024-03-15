@@ -53,6 +53,7 @@ subs = {
     '\\fnast': '*', 
     '\\sic': '♣︎',
     '\\dagger': '†',
+    '\\ddagger': '‡',
     '\\fist': ' ☞ ',
     '\\wastfill': '* * * * * * * * * * * * *',
     '\\astiv': '****',
@@ -81,6 +82,7 @@ subs = {
     '\\slop': 'Slop',
     '\\susannah': 'Susannah',
     '\\drslop': 'Dr. Slop',
+    '\\tbrace': '}',
 
 }
 
@@ -174,10 +176,9 @@ if __name__ == "__main__":
             out.append(f'{m.group(1)}'.center(42))
             continue
 
-        m = graphics.match(t)
+        m = graphics.search(t)
         if m is not None:
-            out.append(f'<<{m.group(2)}>>')
-            continue
+            t = graphics.sub(f'<<{m.group(2)}>>', t)
 
         m = initials.match(t)
         if m is not None:

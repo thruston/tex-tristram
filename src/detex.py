@@ -5,7 +5,7 @@ import fileinput
 import re
 import sys
 
-sticks = re.compile(r'\\([Ss]ti?c?k|hbox|hbox to \S+|centerline|rightline){(.*)}(\\\\(\[\d+pt\])?)?\s*\Z')
+sticks = re.compile(r'\\([Ss]ti?c?k|hbox|hbox to \S+|centerline|rightline){(.*)}(\\\\(\[-?\d+pt\])?)?\s*\Z')
 vskips = re.compile(r'\\(baseline|par|v)skip\s*-?\s*(\d+|\d*\.\d+)(pt|ex)\s*\Z')
 catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 
@@ -83,7 +83,8 @@ subs = {
     '\\susannah': 'Susannah',
     '\\drslop': 'Dr. Slop',
     '\\tbrace': '}',
-
+    '\\snapp': ' ... ',
+    '\\snap': ' .. ',
 }
 
 def get_prefix(option_string):
@@ -101,6 +102,10 @@ if __name__ == "__main__":
     skipping = True
     for line in fileinput.input(files=args.source):
         t = line.strip()
+        if not t:   # blank to start with
+            out.append("")
+            continue
+
         t = t.split('%')[0]  # decomment first
 
         if t == '\\begin{document}':
@@ -204,7 +209,10 @@ if __name__ == "__main__":
         t = t.removesuffix('\\break')
         t = t.removesuffix('\\\\')
 
-        out.append(' '.join(t.split()))
+        t = ' '.join(t.split())
+        if t:    # skip lines that have *become* blank
+            out.append(t)
+
         if end_of_page_mark:
             out.append(make_catch_line(end_of_page_mark))
             end_of_page_mark = ''

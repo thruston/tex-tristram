@@ -17,7 +17,7 @@ itshape frenchspacing
 
 container_tags = '''
 ls lss lsss
-tight tighter rlap llap smash
+tight tighter rlap llap smash struck
 gothic i smallit s ss sss g textnormal textsc 
 fbox hbox'''.split()
 container_tags.append('hbox to \\S+')
@@ -50,43 +50,44 @@ def make_catch_line(mark):
     return rule[:-len(mark)-2] + '[' + mark + ']'
 
 subs = {
-    '\\fnast': '*', 
-    '\\sic': '♣︎',
-    '\\dagger': '†',
-    '\\ddagger': '‡',
-    '\\fist': ' ☞ ',
-    '\\wastfill': '* * * * * * * * * * * * *',
-    '\\astiv': '****',
+    '~': ' ',
     '\\wastiv': '* * * *',
-    '\\lowastiv': '* * * *',
-    '\\astvi': '******',
-    '\\astv': '*****',
-    '\\nastv': '*****',
-    '\\ast': '*', 
-    '\\etc': '&c.',
-    '\\&': '&',
-    '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 39,
-    '\\hrule': rule,
-    '\\stickrule': rule,
+    '\\wastfill': '* * * * * * * * * * * * *',
     '\\tsk': ' -- ',
+    '\\tshh': '---- ',
     '\\tsh': ' --- ',
     '\\tsfill': ' -------- ',
-    '~': ' ',
-    '\\@': '',
-    '\\!': '',
-    '\\/': '',
-    '\\,': ' ',
-    '\\;': ' ',
-    '\\et': '&',
-    '\\&': '&',
-    '\\toby': 'Toby',
     '\\trim': 'Trim',
-    '\\slop': 'Slop',
-    '\\susannah': 'Susannah',
-    '\\drslop': 'Dr. Slop',
+    '\\toby': 'Toby',
     '\\tbrace': '}',
+    '\\susannah': 'Susannah',
+    '\\stickrule': rule,
     '\\snapp': ' ... ',
     '\\snap': ' .. ',
+    '\\slop': 'Slop',
+    '\\sic': '♣︎',
+    '\\nastv': '*****',
+    '\\lowastiv': '* * * *',
+    '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 39,
+    '\\hrule': rule,
+    '\\fnast': '*',
+    '\\fist': ' ☞ ',
+    '\\etc': '&c.',
+    '\\et': '&',
+    '\\drslop': 'Dr. Slop',
+    '\\ddagger': '‡',
+    '\\dagger': '†',
+    '\\astvi': '******',
+    '\\astv': '*****',
+    '\\astiv': '****',
+    '\\ast': '*',
+    '\\@': '',
+    '\\;': ' ',
+    '\\/': '',
+    '\\,': ' ',
+    '\\&': '&',
+    '\\&': '&',
+    '\\!': '',
 }
 
 def get_prefix(option_string):

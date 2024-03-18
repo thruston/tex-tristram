@@ -14,6 +14,7 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
+\def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace}
 %
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
@@ -45,6 +46,7 @@
 % variations...
 \def\Stick#1{\noindent\hbox to \hsize{\indent #1}}
 \def\Stck#1{\noindent\hbox to \hsize{\tight{\indent #1}}}
+\def\short#1{\hbox to \hsize{\indent\enspace #1\hfill}}
 %
 \def\stickrule{\stick{\xleaders\hrule width 1pt height 3pt depth -2.1pt\hfill \vrule width 0pt height 14pt}}
 %
@@ -87,6 +89,10 @@
 % alt is for the interlineal alternatives in the Curses of Ernulphus
 \def\alt#1#2{\hbox{\vbox to 4ex{\vss\openup-4pt\halign{##\cr\hss\scriptsize #2\hss\cr#1\cr}}}}
 \def\c#1{\hbox to 0pt{\hss #1\hss}}
+% 
+% struck through (for BRAVO..)
+\def\struck#1{\setbox0\hbox{\,#1\,}\hbox to \wd0{\rlap{\copy0}\leaders\hrule width 1pt
+height 3.4pt depth -3.0pt\hfill}}
 %
 \usepackage{graphicx}
 \usepackage{xspace}

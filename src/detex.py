@@ -5,7 +5,7 @@ import fileinput
 import re
 import sys
 
-sticks = re.compile(r'\\([Ss]ti?c?k|hbox|hbox to \S+|centerline|rightline){(.*)}(\\\\(\[-?\d+pt\])?)?\s*\Z')
+sticks = re.compile(r'\\([Ss]ti?c?k|hbox|hbox to \S+|centerline|rightline|short){(.*)}(\\\\(\[-?\d+pt\])?)?\s*\Z')
 vskips = re.compile(r'\\(baseline|par|v)skip\s*-?\s*(\d+|\d*\.\d+)(pt|ex)\s*\Z')
 catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 
@@ -116,6 +116,12 @@ if __name__ == "__main__":
             continue
         elif t == '\\end{document}':
             skipping = True
+        elif "begin{mplibcode}" in t:
+            skipping = True
+            out.append("<< drawing >>")
+        elif "end{mplibcode}" in t:
+            skipping = False
+            continue
 
         if skipping:
             continue

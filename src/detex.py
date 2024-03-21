@@ -11,26 +11,26 @@ catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 
 plain_tags = '''
 topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
-smaller small large Large huge Huge footnotesize cr
+smaller small large Large huge Huge footnotesize Big
 itshape frenchspacing
 '''.split()
 
 container_tags = '''
-ls lss lsss
+ls lss lsss vcenter halign
 tight tighter rlap llap smash struck
 gothic i smallit s ss sss g textnormal textsc 
 fbox hbox'''.split()
-container_tags.append('hbox to \\S+')
+container_tags.append('hbox to [^{]+')
 
 dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
 
 dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({'|'.join(plain_tags)})\b\s*')
 arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
-space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|hss|kern\s*{dimen}|phantom{{.}}| )\s*')
+space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
 quote_tags = re.compile(r'\\lqq\s*')
 content_tags = re.compile(rf'\\({'|'.join(container_tags)}){{(.*?)}}')
-chapters = re.compile(r'\\chap{([LXVI]+)}{\d+pt}{\d+pt}')
+chapters = re.compile(r'\\chap{([LXVI♣︎]+)}{\d+pt}{\d+pt}')
 chapterx = re.compile(r'\\chapx{(.*)}{\d+pt}{\d+pt}')
 graphics = re.compile(r'\\includegraphics(\[[^]]+\])?{([^}]+)}')
 dumptwos = re.compile(r'\\(fontsize|setlength|setcounter){[^}]+}{[^}]+}')
@@ -51,15 +51,20 @@ def make_catch_line(mark):
 
 subs = {
     '~': ' ',
+    '$': '',
+    '#': '',
     '\\wastiv': '* * * *',
     '\\wastfill': '* * * * * * * * * * * * *',
+    '\\tskk': ' -- ',
     '\\tsk': ' -- ',
-    '\\tshh': '---- ',
+    '\\tshh': '--- ',
     '\\tsh': ' --- ',
     '\\tsfill': ' -------- ',
+    '\\crfill': ' - - ', 
     '\\trim': 'Trim',
     '\\toby': 'Toby',
     '\\tbrace': '}',
+    '\\tsbrace': '}',
     '\\susannah': 'Susannah',
     '\\stickrule': rule,
     '\\snapp': ' ... ',
@@ -77,6 +82,12 @@ subs = {
     '\\drslop': 'Dr. Slop',
     '\\ddagger': '‡',
     '\\dagger': '†',
+    '\\astWW6': '* * * * * *',
+    '\\astW2': '**',
+    '\\astW3': '***',
+    '\\astW4': '****',
+    '\\astW6': '******',
+    '\\astW7': '*******',
     '\\astvi': '******',
     '\\astv': '*****',
     '\\astiv': '****',
@@ -88,6 +99,8 @@ subs = {
     '\\&': '&',
     '\\&': '&',
     '\\!': '',
+    '\\{': '{',
+    '\\}': '}',
 }
 
 def get_prefix(option_string):

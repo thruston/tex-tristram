@@ -14,7 +14,8 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
-\def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace}
+\def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace\allowbreak}
+\def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em\thinspace\allowbreak}
 %
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
@@ -84,7 +85,7 @@
 \newcount\a
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \fnast\repeat}
 \def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise2pt\hbox to .66em{\hss\ast\hss}\repeat}
-\def\astWW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise1pt\hbox to .81em{\hss\ast\hss}\repeat}
+\def\astWW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise.5ex\hbox to .81em{\hss\ast\hss}\repeat}
 %
 % alt is for the interlineal alternatives in the Curses of Ernulphus
 \def\alt#1#2{\hbox{\vbox to 4ex{\vss\openup-4pt\halign{##\cr\hss\scriptsize #2\hss\cr#1\cr}}}}
@@ -101,6 +102,7 @@ height 3.4pt depth -3.0pt\hfill}}
 \def\sick{\rlap{\quad\club}}
 \def\sic{\marginnote{\club}\xspace}
 \def\tbrace{\smash{\raise 1.414ex\hbox{$\Big\}$}}}
+\def\tsbrace{\smash{\raise 1.414ex\hbox{$\big\}$}}}
 %
 \def\snap{\hbox{\xleaders\hbox to .3em{\hss.\hss}\hskip .66em}}
 \def\snapp{\hbox{\xleaders\hbox to .66em{\hss.\hss}\hskip 2em}}
@@ -139,6 +141,7 @@ height 3.4pt depth -3.0pt\hfill}}
 \newcommand{\starnote}{\setcounter{footnote}{0}\footnote}
 %
 \usepackage{lettrine}
+% \renewcommand{\LettrineTextFont}{\upshape}
 \newcommand\dropcap[3][]{\lettrine[findent=3pt, lraise=0.05, #1]{#2}{\lss{\large #3}}}
 \newcommand\dropcaptight[3][]{\lettrine[findent=2pt, lraise=0.05,
 #1]{#2}{{\addfontfeature{LetterSpace=3.0}\large #3}}}

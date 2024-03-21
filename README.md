@@ -214,6 +214,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.145 line 3      "Avignion" --> "Avignon"
 - p.146 thrice      "Avignion" --> "Avignon"  (and once correctly on the same page)
 - p.147 line 4      "Avignion" --> "Avignon"
+- p.148 line 5      "the lord" --> "the Lord", probably, given the "He" on the next line.
 - p.151 line 16     repeated "of" at end of line 15
 
   The seven uses of "Avignion" outnumber the three uses of "Avignon".

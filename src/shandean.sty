@@ -10,12 +10,17 @@
 \def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
 \def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.4pt\hskip .7em plus .5em minus .3em\thinspace}
-\def\Usk#1{\hbox to #1{\leaders\hrule width 1pt height 14.14pt depth -13.6pt\hskip .5em plus .5em minus .2em}\thinspace}
-\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
-\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
-\def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
-\def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace\allowbreak}
-\def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em\thinspace\allowbreak}
+\def\trule{\hrule width 1pt height .58ex depth -.42ex}
+\def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
+\def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
+\def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\trule\hfill}
+\def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em\thinspace\allowbreak}
+\def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em\thinspace\allowbreak}
+% \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
+% \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
+% \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
+% \def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace\allowbreak}
+% \def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em\thinspace\allowbreak}
 %
 \newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
 \newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
@@ -23,7 +28,6 @@
 %
 \def\lqq{\leavevmode\rlap{“}\kern .6em}
 %
-\def\bnq{\break\null\quad}
 \def\tspace{\kern 2.5pt}
 %
 \def\etp{\enlargethispage\baselineskip}
@@ -92,8 +96,8 @@
 \def\c#1{\hbox to 0pt{\hss #1\hss}}
 % 
 % struck through (for BRAVO..)
-\def\struck#1{\setbox0\hbox{\,#1\,}\hbox to \wd0{\rlap{\copy0}\leaders\hrule width 1pt
-height 3.4pt depth -3.0pt\hfill}}
+\def\struck#1{\setbox0\hbox{\,#1\,}\hbox to \wd0{\rlap{\copy0}\leaders\hrule width 1pt height 3.4pt depth -3.0pt\hfill}}
+\def\bzz#1{\setbox0\hbox{#1}\hbox to \wd0{\leaders\trule\hfill}}
 %
 \usepackage{graphicx}
 \usepackage{xspace}

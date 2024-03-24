@@ -27,7 +27,7 @@ dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
 dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({'|'.join(plain_tags)})\b\s*')
 arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
-space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|,|thinspace|hfill|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
+space_tags = re.compile(rf'\\(enspace|tspace|qquad|quad|indent|thinspace|hfill|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
 quote_tags = re.compile(r'\\lqq\s*')
 content_tags = re.compile(rf'\\({'|'.join(container_tags)}){{(.*?)}}')
 chapters = re.compile(r'\\chap{([LXVI♣︎]+)}{\d+pt}{\d+pt}')
@@ -41,6 +41,7 @@ alterna = re.compile(r'\\alt{([a-z]+)}{([a-z ]+)(\\hss)?}')
 alternb = re.compile(r'\\alt{([a-z]+)}{\\c{([a-z ]+)}}')
 vastfills = re.compile(rf'\\vastfill{{{dimen}}}')
 lsvs = re.compile(r'\\lsv{[0-9.]+}{(.*?)}')
+buzz = re.compile(r'\\bzz{([a-zA-Z]+)}')
 
 vertical_skips = 'bigskip medskip smallskip vfill vss null'.split()
 rule = '-' * 39
@@ -176,6 +177,10 @@ if __name__ == "__main__":
         t = dimen_tags_to_ignore.sub('', t)
         t = space_tags.sub(' ', t)
         t = quote_tags.sub('“ ', t)
+
+        m = buzz.search(t)
+        if m is not None:
+            t = buzz.sub('-' * len(m.group(1)), t)
 
         m = catches.match(t)
         if m is not None:

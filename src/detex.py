@@ -12,19 +12,19 @@ catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 plain_tags = '''
 topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
 smaller small large Large huge Huge footnotesize Big
-itshape frenchspacing
+itshape frenchspacing obeylines
 '''.split()
 
 container_tags = '''
 ls lss lsss vcenter halign
 tight tighter rlap llap smash struck
-gothic i smallit s ss sss g textnormal textsc 
+Gothic gothic i smallit s ss sss g textnormal textsc mini
 fbox hbox'''.split()
 container_tags.append('hbox to [^{]+')
 
 dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
 
-dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut)\s*{dimen}\s*')
+dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut|parindent)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({'|'.join(plain_tags)})\b\s*')
 arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
 space_tags = re.compile(rf'\\(enspace|tspace|qquad|quad|indent|thinspace|hfill|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
@@ -74,7 +74,6 @@ subs = {
     '\\sic': '♣︎',
     '\\nastv': '*****',
     '\\lowastiv': '* * * *',
-    '\\hrule width \\hsize height 0pt depth 294pt': '◼︎' * 39,
     '\\hrule': rule,
     '\\fnast': '*',
     '\\fist': ' ☞ ',
@@ -89,6 +88,10 @@ subs = {
     '\\astW4': '****',
     '\\astW6': '******',
     '\\astW7': '*******',
+    '\\astw3': '***',
+    '\\astw5': '*****',
+    '\\astw6': '******',
+    '\\astw7': '*******',
     '\\astvi': '******',
     '\\astv': '*****',
     '\\astiv': '****',
@@ -152,6 +155,11 @@ if __name__ == "__main__":
         t = vastfills.sub('* * * * * * * * * * * * * *', t)
         t = lsvs.sub(r'\1', t)
         
+        if t == '\\hrule width \\hsize height 0pt depth 280pt':
+            for i in range(20):
+                out.append('◼︎' * 39)
+            continue
+
         for old, new in subs.items():
             t = t.replace(old, new)
 

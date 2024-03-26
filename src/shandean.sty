@@ -9,22 +9,20 @@
 %
 \def\crfill{\xleaders\hbox to .6em{\hss -\hss}\hfill}
 \def\xtsh{\hbox to 2em plus 2pt{\crfill}}
-\def\Tsk{\leaders\hrule width 1pt height 8.14pt depth -7.4pt\hskip .7em plus .5em minus .3em\thinspace}
 \def\trule{\hrule width 1pt height .58ex depth -.42ex}
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\trule\hfill}
 \def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em\thinspace\allowbreak}
 \def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em\thinspace\allowbreak}
-% \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
-% \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
-% \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hfill}
-% \def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 2em\thinspace\allowbreak}
-% \def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\hrule width 1pt height .58ex depth -.42ex\hskip 1em\thinspace\allowbreak}
 %
-\newfontfamily{\maguntia}{UnifrakturMaguntia}\DeclareTextFontCommand{\gothic}{\maguntia}
+\newfontface{\maguntia}{UnifrakturMaguntia}
+\newfontface{\bigmaguntia}{UnifrakturMaguntia}[Scale=1.414]
+\DeclareTextFontCommand{\gothic}{\maguntia}
+\def\Gothic#1{\smash{\lower1.6pt\hbox{\bigmaguntia #1}}}
 \newfontface{\egb}{EB Garamond Italic}%[Scale=0.9]
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
+\newfontface{\porson}{GFS Porson}[Scale=0.82]  
 %
 \def\lqq{\leavevmode\rlap{“}\kern .6em}
 %
@@ -38,9 +36,9 @@
 \def\s#1{{\addfontfeature{LetterSpace=6.0}\textsc{#1}}}
 \def\ss#1{{\addfontfeature{LetterSpace=12.0}\textsc{#1}}}
 \def\sss#1{{\addfontfeature{LetterSpace=32.0}\textsc{#1}}}
-\def\smallit#1{{\fontsize{9.5}{14}\selectfont\textit{#1}}}
 \def\i#1{\textit{#1}}
-\def\g#1{{\small #1}} % for greek...
+\def\mini#1{{\smaller #1}}
+\def\g#1{{\porson #1}} % for greek...
 \def\ls#1{{\addfontfeature{LetterSpace=12.0}#1}}
 \def\lss#1{{\addfontfeature{LetterSpace=16.0}#1}}
 \def\lsss#1{{\addfontfeature{LetterSpace=32.0}#1}}
@@ -59,7 +57,6 @@
 %
 \def\et{{\raise0pt\hbox{\egb\&}}}
 \def\etc{\et{\itshape c}.\@\ }
-\long\def\pb{\bgroup\parfillskip 0pt\par\egroup\newpage\noindent}
 %
 \newcommand{\patch}[2][0pt]{\par\vfill\rightline{#2\vrule width 0pt depth #1}\eject}
 \newcommand{\natch}[2][0pt]{\par\vskip#1\rightline{#2}\par\vfill\eject}
@@ -98,12 +95,12 @@
 % struck through (for BRAVO..)
 \def\struck#1{\setbox0\hbox{\,#1\,}\hbox to \wd0{\rlap{\copy0}\leaders\hrule width 1pt height 3.4pt depth -3.0pt\hfill}}
 \def\bzz#1{\setbox0\hbox{#1}\hbox to \wd0{\leaders\trule\hfill}}
+
 %
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{marginnote}
 \def\club{\small ♣︎}
-\def\sick{\rlap{\quad\club}}
 \def\sic{\marginnote{\club}\xspace}
 \def\tbrace{\smash{\raise 1.414ex\hbox{$\Big\}$}}}
 \def\tsbrace{\smash{\raise 1.414ex\hbox{$\big\}$}}}
@@ -116,8 +113,7 @@
 \newcommand{\drslop}{Dr.~\textit{Slop}\xspace}
 \newcommand{\slop}{\textit{Slop}\xspace}
 \newcommand{\susannah}{\textit{Susannah}\xspace}
-\newcommand{\fist}{☞\xspace}
-\renewcommand{\fist}{\leavevmode\lower1.414pt\hbox{\includegraphics{manicule.pdf}}\xspace}
+\newcommand{\fist}{\leavevmode\lower1.414pt\hbox{\includegraphics{manicule.pdf}}\xspace}
 %
 \setcounter{secnumdepth}{-1}
 %
@@ -145,8 +141,8 @@
 \newcommand{\starnote}{\setcounter{footnote}{0}\footnote}
 %
 \usepackage{lettrine}
-% \renewcommand{\LettrineTextFont}{\upshape}
-\newcommand\dropcap[3][]{\lettrine[findent=3pt, lraise=0.05, #1]{#2}{\lss{\large #3}}}
+\renewcommand{\LettrineTextFont}{\uppercase}
+\newcommand\dropcap[3][]{\lettrine[findent=3pt, lraise=0.05, loversize=0.1, #1]{#2}{\lss{#3}}}
 \newcommand\dropcaptight[3][]{\lettrine[findent=2pt, lraise=0.05,
 #1]{#2}{{\addfontfeature{LetterSpace=3.0}\large #3}}}
 \newcommand\initial[3][]{\lettrine[findent=5pt, lraise=0.07, loversize=0.05, #1]{#2}{}#3}

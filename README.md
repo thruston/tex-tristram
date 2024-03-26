@@ -264,11 +264,13 @@ Unfortunately the setter has this as "Its high time I should", as noted above.
 ### Vol. IX - 1767 Becket
 
 - 2nd page of Dedication, line 1  "riori" --> "ori" -- extra "ri" carried over in page break
-- p.9, line 10          "assimulated" --> "assimilated", possibly Sterne's choice of spelling
+- p.9, line 10          "assimulated" --> "assimilated", but possibly Sterne's choice of spelling here
+- p.11, line 18         "Le Fevre's" --> "Le Fever's" -- perhaps? (to match in previous volumes)
 - p.17, after flourish  Missing catch-word "A"
+- p.22, line 3         "Le Fevre's" --> "Le Fever's" -- as above, the only occurrences in Vol. IX
 - p.59, line 3          final "e" in the line has slipped
 - p.90, line 14         "been" --> "had been" (word dropped at line break)
 - p.99, line 14         "Garagantna" --> "Garagantua" (compositor confused u and n)
-- p.100, last line      Missing catch-word ? "The" in Gothic type?
+- p.100, last line      Missing catch-word -- "The", perhaps in Blackletter type?
 - p.140, line 2         opening paren in roman, but closing in italic type
 

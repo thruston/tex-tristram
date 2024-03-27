@@ -142,6 +142,7 @@ the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
 ### Vol. IV - 1761 Dodsley
 
 - p.3, line 8          "entred" --> "entered" (as two lines later...)
+- p.6, catch word      "‘ Me-" --> "Me-" - stray inverted comma before M
 - p.8, line 4          "titigimus" -> "tetigimus" 
 - p.19, catch word     "’Tis" --> "There’s" -- catch matches 2nd para not first on p.21
 - p.20, line 11        "perveneo" -> "pervenio" 

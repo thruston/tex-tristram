@@ -13,6 +13,7 @@
 \def\tsh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em plus 1em minus 1em\thinspace\allowbreak}
 \def\tsk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em plus .5em minus .5em\thinspace\allowbreak}
 \def\tsfill{\leavevmode\kern.04em\null\nobreak\leaders\trule\hfill}
+\def\tush{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 3em\thinspace\allowbreak}
 \def\tshh{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 2em\thinspace\allowbreak}
 \def\tskk{\leavevmode\kern .1em\null\nobreak\leaders\trule\hskip 1em\thinspace\allowbreak}
 %
@@ -81,8 +82,7 @@
 \def\astv{\hbox{\fnast\xleaders\hbox to 0.6em{\hss\fnast}\hskip 2.8em}}
 \def\nastv{\hbox{\fnast\xleaders\hbox to 0.5em{\hss\fnast}\hskip 2em}}
 \def\astiv{\hbox{\fnast\xleaders\hbox to 0.6em{\hss\fnast}\hskip 2.1em}}
-\def\wastiv{\hbox{\fnast\xleaders\hbox to 1em{\hss\fnast}\hskip 3em}}
-\def\lowastiv{\hbox{\ast\xleaders\hbox to 1em{\hss\ast}\hskip 3em}}
+\def\wastiv{\hbox{\ast\xleaders\hbox to 1em{\hss\ast}\hskip 3em}}
 \newcount\a
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \fnast\repeat}
 \def\astW#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \raise2pt\hbox to .66em{\hss\ast\hss}\repeat}
@@ -102,6 +102,7 @@
 \usepackage{marginnote}
 \def\club{\small ♣︎}
 \def\sic{\marginnote{\club}\xspace}
+\def\sicc{\marginnote{\club}}
 \def\tbrace{\smash{\raise 1.414ex\hbox{$\Big\}$}}}
 \def\tsbrace{\smash{\raise 1.414ex\hbox{$\big\}$}}}
 %

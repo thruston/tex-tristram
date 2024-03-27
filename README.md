@@ -13,16 +13,30 @@ open book.  Each page faithfully follows the line and page breaks in the
 originals, and the text includes all the dashes, asterisks, blanks, and
 catch-words.
 
-The spelling and punctuation is all Sterne's (as far as human proof-reading can
-be sure), but the medial long-s characters are replaced with modern ones.  The
-font used is Linux Libertine, with historical swash ligatures for ct and st.
+The spelling and punctuation is all Sterne's (as far as my
+proof-reading can be sure), but the medial long-s characters are
+replaced with modern ones.  The font used is Linux Libertine, with
+historical swash ligatures enabled for "ct" and "st", and with the
+(horrible) "Th" ligature suppressed.  Libertine looks reasonably
+modern, but (apart from the italics) is not too far from the Caslon
+typefaces used by Dodsley and Becket.  It has the advantage also of
+being free for use.
 
-The same font is used for the occasional bits of Greek so the characters are
-slightly more contemporary than Sterne's printers used; I have not attempted to
-correct any of the (appallingly bad) grammar nor the slightly random accents
-and breathing marks, nor the occasional terminal sigma in the middle of a
-word, etc, but I have rendered the archaic letter forms used for "γ", "τ",
-"π","ου" etc into modern equivalents. 
+For the occasional bits of Greek, I have used the Greek Font Society's
+version of "Porson" is used.  This font dates from the early 19th 
+century, so the characters are more contemporary than those Sterne's 
+printers used, and (in my opinion) much much easier to read. 
+I have not corrected any of the bad grammar, nor the more-or-less 
+random use of accents and breathing marks.  But  I have fixed the
+occasional terminal sigma in the middle of a word, and I have rendered 
+the archaic letter forms some times used for  "γ", "τ", "π", into the
+more usual equivalents.  Note also that the 18th century printers used 
+various ligatures (for "ου" etc) that  are not available in GFS Porson.
+Other than these alterations, the Greek follows the scanned first
+editions as closely as possible.  So for example, on the title page
+of Vol. I. the second line of the motto is given correctly as "ἀλλὰ"
+but in Vol II. the same word is missing both breathing mark and
+accent in the scan of the original, so I have it as "αλλα". 
 
 The text is derived from the Project Gutenberg source for Sterne's work,
 extensively corrected by hand using scanned copies of the real first edition
@@ -30,26 +44,39 @@ volumes that are available through Google Books, and listed (as of June 2023)
 at [Laurence Sterne in Cyberspace](https://www1.gifu-u.ac.jp/~masaru/Sterne_on_the_Net.html).
 
 The text is marked up with LaTeX and compiled into PDFs using the
-`lualatex` engine.
+`lualatex` engine.   I have done the proof-reading by viewing these
+PDFs one page at a time, with the scanned originals loaded in
+another tab.  By carefully adjusting the zoom levels, I can flick
+between the two tabs and spot differences more easily.
 
 If you find this project entertaining or useful please consider supporting
 [Shandy Hall](https://www.laurencesternetrust.org.uk/join-in/donations/)
 which is run as a museum and study-center in Coxwold, North Yorkshire, by
 the Laurence Sterne Trust.
 
-## Typographical accidentals
+## Typographical accidentals, &c.
 
-Accidents of type-setting are marked with a marginal Ace of Clubs ♣︎ (like the
-poor squashed nose).  I cannot pretend that my marks are comprehensive or
-complete.  If you look at a different edition, you may spot more of them; or
-you may think I have wrongly called out some of those that I have marked.  The
+Various errors and accidents of type-setting are marked with a
+marginal Ace of Clubs ♣︎ (like the poor squashed nose).  I cannot
+pretend that my marks are comprehensive or complete.  If you look at
+a different edition, you may spot more of them; or you may think I
+have wrongly called out some of those that I have marked.  The
 originals I used are the scanned copies linked above.
 
-I have not attempted to mark variations of spelling -- only those where the
-mis-spelled word is apparently mis-printed.  I've also ignored the more or less
-random variation between -ic and -ick suffixes, and the "grocer's apostrophes"
-that abound -- with the exception of "it's" which occurs once in Vol. V and at
-random throughout Vol. VII and Vol. VIII
+I have not attempted to mark variations of spelling -- only those
+where the mis-spelled word is "obviously" mis-printed.  I've also
+ignored the more or less random variation between -ic and -ick
+suffixes, and the "grocer's apostrophes" that abound -- with the
+exception of "it's" which occurs once in Vol. V and at random
+throughout Vol. VII and Vol. VIII.  
+
+Quite often it is impossible to distinguish mistakes from Sterne's
+wit; what are we to make (for example) of the word "assimulation" on
+page nine of Vol IX?  It might be a mistake, but then it might also
+be a happy accident.  Or more probably learned wit.  My Latin
+dictionary suggests that there was some classical confusion between
+the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
+"electrical assimilation" (spelled thus) on page nineteen of Vol II.
 
 ### Vol. I - 1760 Dodsley (first London edition)
 
@@ -65,19 +92,23 @@ random throughout Vol. VII and Vol. VIII
 
 # Vol. II - 1760 Dodsley (first London edition)
 
+- p.30, catch word   "crutch," --> "crutch" -- stray comma on catch word
 - p.39, line 6       opening paren in roman, but closing in italic type
 - p.50, catch word   "“Not" --> "––“Not" -- following page has leading dash
 - p.64, line 15      opening paren in italic, but closing in roman type
 - p.75, line 2       "aliks" --> "alike", compositor confused s and e
 - p.78, line 5       "fifth" --> "second" - Sterne's revision error?
+- p.103, line 15     "ours." --> "ours," - or perhaps just no stop?
 - p.150, line 15     opening paren in roman, but closing in italic type
+- p.154, line 15     "male-treat" --> "mal-treat" - corrected in later eds
 - p.169, line 8      opening paren in roman, but closing in italic type
-- p.177, line 7      "pref-" --> "pres-", compositor confused f and long-s
+- p.177, line 7      "pref-" --> "pres-", compositor confused f and long-s (but might just be a mark on the scanned copy)
 - p.182, line 7      "Alquise" --> "Alquife", compositor confused long-s and f
 
 ### Vol. III - 1761 Dodsley
 
 - p.5, 2nd last line   "quoth" should not be in italics
+- p.18, line 8         "Avison" --> "Avison's" - i.e. his edition
 - p.19, third para.    "my uncle" --> "my father"
 - p.39, catch word     "the" --> "“ the", leading quotation marks missing from catch
 - p.46, line 1         closing paren should have been a comma
@@ -124,7 +155,7 @@ random throughout Vol. VII and Vol. VIII
 - p.46, line 15        two digits missing before "83" -- apparently 14?
 - p.51, line 12        "cannot" -->  "can", Sterne's error? (sense requires positive) 
 - p.56, line 12        opening paren in roman, but closing in italic type
-- p.56, line 17        "Epistasis" --> "Epitasis" -- Sterne's error? (correct on p.57)
+- p.56, line 17        "Epistasis" --> "Epitasis" -- correct on next page
 - p.56, line 18        first letter of line has slipped down
 - p.67, line 4 of Ode  "move-/-ment" has an extra hyphen
 - p.73, line 3         "facy" --> "fancy"

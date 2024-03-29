@@ -187,7 +187,7 @@ the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
 - p.101, line 17    "Pharoah" --> "Pharaoh" -- Sterne's error?”
 - p.106, line 10    no matching closing paren
 - p.109, line 15    opening paren in roman, but closing in italic type    
-- p.109, line 21    "πρώτισα" --> "πρώτιστα" (possibly Sterne's mistake)
+- p.109, line 21    " πρώτιςα" --> "πρώτιστα" (comp missed the tau, and confused terminal & medial sigma)
 - p.112, line 16    opening paren in roman, but closing in italic type
 - p.117, line 15    "it's" --> "its"
 - p.127, line 1,2   "Jerico" --> "Jericho"

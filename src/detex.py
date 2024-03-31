@@ -12,7 +12,7 @@ catches = re.compile(r'\\[npc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 plain_tags = '''
 topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
 smaller small large Large huge Huge footnotesize Big
-itshape frenchspacing obeylines
+itshape frenchspacing obeylines porson
 '''.split()
 
 container_tags = '''

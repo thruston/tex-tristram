@@ -162,6 +162,10 @@ if __name__ == "__main__":
                 out.append('◼︎' * 39)
             continue
 
+        m = buzz.search(t)
+        if m is not None:
+            t = buzz.sub('-' * len(m.group(1)), t)
+
         for old, new in subs.items():
             t = t.replace(old, new)
 
@@ -187,10 +191,6 @@ if __name__ == "__main__":
         t = dimen_tags_to_ignore.sub('', t)
         t = space_tags.sub(' ', t)
         t = quote_tags.sub('“ ', t)
-
-        m = buzz.search(t)
-        if m is not None:
-            t = buzz.sub('-' * len(m.group(1)), t)
 
         m = catches.match(t)
         if m is not None:

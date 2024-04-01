@@ -219,6 +219,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
                    But that does not really help!  
                    Perhaps change "e’er" (ever) --> "ere" (meaning before)
 
+- p.41  line 13  Greek lenis breathing marks set as apostrophes
 - p.43, line 6   opening paren in italic, but closing in roman type
 - p.71, line 3   This is the second erratum -- "striking" --> "sticking"
 
@@ -235,7 +236,7 @@ The scanned edition used includes a list of Errata at the start, discussed below
 - p.104 line 10     "Cotê roti" --> Côte-Rôtie" (possibly Sterne? perhaps comic?)
 - p.105 line 9      "Andoüillet’s" --> "Andoüillets’s" ??
 - p.110 line 13     "Jesuists" --> "Jesuits"
-- p.116 line 19     quotation marks from line 12 never closed
+- p.116 line 12     quotation marks never closed
 - p.123 line 14     "Andoüillet’s" --> "Andoüillets’s" ??
 - p.125 line 1      Chapter number jumps from XXXII to XXXIV
 - p.127 line 2      "Avignion" --> "Avignon"

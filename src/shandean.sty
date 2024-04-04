@@ -61,12 +61,16 @@
 %
 \def\vol{X}
 \RequirePackage{xcolor}
-\newcommand{\patch}[2][0pt]{\par\vskip#1\rightline{#2}\par\vfill\eject}
-\long\def\catch#1 {\hbox to \hsize{\hfil #1}\par\vfill\eject\noindent}
 \def\lo#1{\textcolor{gray}{#1}}
-\newcommand{\catchv}[2]{\stick{\rlap{\indent\lo{\s{Vol}.\,\vol.}}\hss\lo{#1}\hss\llap{#2}}\par\vfill\eject\noindent}
-\newcommand{\catchs}[2]{\stick{\hss\lo{#1}\hss\llap{#2}}\par\vfill\eject\noindent}
-\newcommand{\patchv}[3][0pt]{\par\vskip#1\stick{\rlap{\indent\lo{\s{Vol}. \vol.}}\hss \lo{#2}\hss\llap{#3}}\par\vfill\eject}
+\def\dovol{\rlap{\indent\lo{\s{Vol}.\,\vol.}}}
+\def\donol{\rlap{\enspace\lo{\s{Vol}.\,\vol.}}}
+\long\def\catch#1 {\stick{\hfil #1}\par\vfill\eject\noindent}
+\long\def\catchs#1#2 {\stick{\hss\lo{#1}\hss\llap{#2}}\par\vfill\eject\noindent}
+\long\def\catchv#1#2 {\stick{\dovol\hss\lo{#1}\hss\llap{#2}}\par\vfill\eject\noindent}
+\long\def\catchn#1#2 {\stick{\donol\hss\lo{#1}\hss\llap{#2}}\par\vfill\eject\noindent}
+%
+\newcommand{\patch}[2][0pt]{\par\vskip#1\rightline{#2}\par\vfill\eject}
+\newcommand{\patchv}[3][0pt]{\par\vskip#1\stick{\dovol\hss \lo{#2}\hss\llap{#3}}\par\vfill\eject}
 \newcommand{\patchs}[3][0pt]{\par\vskip#1\stick{\hss\lo{#2}\hss\llap{#3}}\par\vfill\eject}
 %
 \def\chap#1#2#3{\noindent\centerline{{\addfontfeature{LetterSpace=64.0}CHAP}.\quad

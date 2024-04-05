@@ -93,7 +93,7 @@ throughout Vol. VII and Vol. VIII.
 - p.166, line 9      "ofter" --> "after", compositor confused o and a
 - p.170, line 16     "his own" --> "their own", Sterne's revision error?
 
-# Vol. II - 1760 Dodsley (first London edition)
+### Vol. II - 1760 Dodsley (first London edition)
 
 - p.30, catch word   "crutch," --> "crutch" -- stray comma on catch word
 - p.39, line 6       opening paren in roman, but closing in italic type

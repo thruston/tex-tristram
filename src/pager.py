@@ -16,6 +16,7 @@ if __name__ == "__main__":
     parser.add_argument("source", nargs='+')
     parser.add_argument("--offset", default=0, type=int)
     parser.add_argument("--changes", action='store_true')
+    parser.add_argument("--rewrite", action='store_true')
     args = parser.parse_args()
 
     skipping = True
@@ -24,6 +25,9 @@ if __name__ == "__main__":
     out = []
     sig = 0
     for line in fileinput.input(files=args.source):
+        if args.rewrite:
+            out.append(line.rstrip())
+
         t = line.strip()
         if not t:
             continue
@@ -61,7 +65,7 @@ if __name__ == "__main__":
 
         # only here if making new page
         mark = ''
-        n = (args.offset + folio) % 16
+        sig, n = divmod(args.offset + folio, 16)
         if n == 1:
             mark = alphabet[sig]
         elif n == 3:
@@ -70,14 +74,16 @@ if __name__ == "__main__":
             mark = alphabet[sig] + ' 3'
         elif n == 7:
             mark = alphabet[sig] + ' 4'
-        elif folio > 0 and n == 0:
-            sig += 1
 
         if args.changes:
-            if len(mark) == 1:
-                out.append(re.sub(r'(catch|patch)(\[[^[]+\])?', rf'\1v\2{{{mark}}}',t.strip()))
+            if args.rewrite:
+                _ = out.pop()
+            if len(mark) == 0:
+                out.append(t)
+            elif len(mark) == 1:
+                out.append(re.sub(r'(catch|patch)(\[[^[]+\])?', rf'\1v\2{{{mark}}}',t))
             elif len(mark) == 3:
-                out.append(re.sub(r'(catch|patch)(\[[^[]+\])?', rf'\1s\2{{{mark}}}',t.strip()))
+                out.append(re.sub(r'(catch|patch)(\[[^[]+\])?', rf'\1s\2{{{mark}}}',t))
         else:
             out.append(f'{volume} {folio} {mark:<4} {t.strip()}')
 

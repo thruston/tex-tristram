@@ -71,6 +71,7 @@
 %
 \newcommand{\patch}[2][0pt]{\par\vskip#1\rightline{#2}\par\vfill\eject}
 \newcommand{\patchv}[3][0pt]{\par\vskip#1\stick{\dovol\hss \lo{#2}\hss\llap{#3}}\par\vfill\eject}
+\newcommand{\patchn}[3][0pt]{\par\vskip#1\stick{\donol\hss \lo{#2}\hss\llap{#3}}\par\vfill\eject}
 \newcommand{\patchs}[3][0pt]{\par\vskip#1\stick{\hss\lo{#2}\hss\llap{#3}}\par\vfill\eject}
 %
 \def\chap#1#2#3{\noindent\centerline{{\addfontfeature{LetterSpace=64.0}CHAP}.\quad
@@ -110,7 +111,7 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{marginnote}
-\def\club{\small ♣︎}
+\def\club{\footnotesize ♣︎}
 \def\sic{\marginnote{\club}\xspace}
 \def\sicc{\marginnote{\club}}
 \def\tbrace{\smash{\raise 1.414ex\hbox{$\Big\}$}}}

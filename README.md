@@ -10,33 +10,35 @@ some cases the hyphenation of the lines are all meaningful.
 This project therefore presents the text in nine separate PDF files, designed
 to be read in a PDF viewer that allows you to see two pages at once, like an
 open book.  Each page faithfully follows the line and page breaks in the
-originals, and the text includes all the dashes, asterisks, blanks, and
-catch-words.
+originals, and the text includes all the dashes, asterisks, blanks, fists, 
+catch-words, and signature-marks.
 
-The spelling and punctuation is all Sterne's (as far as my
-proof-reading can be sure), but the medial long-s characters are
-replaced with modern ones.  The font used is Linux Libertine, with
-historical swash ligatures enabled for "ct" and "st", and with the
-(horrible) "Th" ligature suppressed.  Libertine looks reasonably
-modern, but (apart from the italics) is not too far from the Caslon
-typefaces used by Dodsley and Becket.  It has the advantage also of
-being free for use.
+The spelling and punctuation are all Sterne's (as far as my proof-reading can be
+sure), but the medial long-s characters are replaced with modern ones.  The
+font used is Linux Libertine, with historical swash ligatures enabled for "ct"
+and "st", and with the (horrible) "Th" ligature suppressed.  Libertine looks
+reasonably modern, but (apart from the italics) is not too far from the Caslon
+typefaces used by Dodsley's and Becket's printers.  Libertine also has the
+advantage of being free for use.
 
-For the occasional bits of Greek, I have used the Greek Font Society's
-version of "Porson" is used.  This font dates from the early 19th 
-century, so the characters are more contemporary than those Sterne's 
-printers used, and (in my opinion) much much easier to read. 
-I have not corrected any of the bad grammar, nor the more-or-less 
-random use of accents and breathing marks.  But  I have fixed the
-occasional terminal sigma in the middle of a word, and I have rendered 
-the archaic letter forms some times used for  "γ", "τ", "π", into the
-more usual equivalents.  Note also that the 18th century printers used 
-various ligatures (for "ου" etc) that  are not available in GFS Porson.
-Other than these alterations, the Greek follows the scanned first
-editions as closely as possible.  So for example, on the title page
-of Vol. I. the second line of the motto is given correctly as "ἀλλὰ"
-but in Vol II. the same word is missing both breathing mark and
-accent in the scan of the original, so I have it as "αλλα". 
+For the occasional bits of Greek, I have used the Greek Font Society's version
+of "Porson".  This font dates from the early 19th century, so the characters
+are more contemporary than those Sterne's printers used, and (in my opinion)
+very much easier to read.  I have not attempted to correct any of the bad
+grammar, nor the more-or-less random use of accents and breathing marks.  But
+I have fixed the occasional terminal sigma in the middle of a word, and I have
+rendered the archaic letter forms some times used for  "γ", "τ", "π", into the
+more usual equivalents.  Note also that the 18th century printers used various
+ligatures (for "ου" etc) that  are not available in GFS Porson.  Other than
+these alterations, the Greek follows the scanned first editions as closely as
+possible.  So for example, on the title page of Vol. I. the second line of the
+motto is given correctly as "ἀλλὰ" but in Vol II. the same word is missing both
+breathing mark and accent in the scan of the original, so I have it as "αλλα". 
+
+For the Blackletter type used in Volumes I, II, and IX I have had to resort
+to Unifraktur Maguntia -- this is a bit too Germanic to be very authentic
+but it is high quality and free.  If I could find a decent English Blackletter 
+font, I would use it instead. 
 
 The text is derived from the Project Gutenberg source for Sterne's work,
 extensively corrected by hand using scanned copies of the real first edition
@@ -48,6 +50,14 @@ The text is marked up with LaTeX and compiled into PDFs using the
 PDFs one page at a time, with the scanned originals loaded in
 another tab.  By carefully adjusting the zoom levels, I can flick
 between the two tabs and spot differences more easily.
+
+I have also added the catch words and signature marks at the foot of each
+page, carefully following the scans of the first editions.   I have not (yet)
+included the smaller printers' marks visible on the scans.  These are usually
+small numbers, and were added by the printers as part of the administration
+of the printing house.  Typically they were used to show which compositor 
+had one which pages (so they could be paid), but it is not clear exactly 
+how they were used in these books.
 
 If you find this project entertaining or useful please consider supporting
 [Shandy Hall](https://www.laurencesternetrust.org.uk/join-in/donations/)
@@ -70,13 +80,6 @@ suffixes, and the "grocer's apostrophes" that abound -- with the
 exception of "it's" which occurs once in Vol. V and at random
 throughout Vol. VII and Vol. VIII.  
 
-Quite often it is impossible to distinguish mistakes from Sterne's
-wit; what are we to make (for example) of the word "assimulation" on
-page nine of Vol IX?  It might be a mistake, but then it might also
-be a happy accident.  Or more probably learned wit.  My Latin
-dictionary suggests that there was some classical confusion between
-the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
-"electrical assimilation" (spelled thus) on page nineteen of Vol II.
 
 ### Vol. I - 1760 Dodsley (first London edition)
 
@@ -169,6 +172,7 @@ the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
 - p.139, line 1        Footnote asterisk (apparently) missing from text
 - p.143, line 5        first letter of line has slipped down
 - p.175, line 10       "its accord" -> "its own accord"
+- p.186, line 21       opening paren in roman, but closing in italic type
 - p.201, line 1        "said" --> "sad" (maybe?, also the catch word)
 - p.203, line 11       "to'ther" --> "t'other"
 - p.208, line 19       opening paren is in italic font
@@ -298,7 +302,7 @@ Unfortunately the setter has this as "Its high time I should", as noted above.
 ### Vol. IX - 1767 Becket
 
 - 2nd page of Dedication, line 1  "riori" --> "ori" -- extra "ri" carried over in page break
-- p.9, line 10          "assimulated" --> "assimilated", but possibly Sterne's choice of spelling here
+- p.9, line 10          "assimulated" --> "assimilated", but possibly Sterne's choice of spelling, see below
 - p.11, line 18         "Le Fevre's" --> "Le Fever's" -- perhaps? (to match in previous volumes)
 - p.17, after flourish  Missing catch-word -- "A" (possibly deliberate?)
 - p.22, line 3         "Le Fevre's" --> "Le Fever's" -- as above, the only occurrences in Vol. IX
@@ -306,7 +310,17 @@ Unfortunately the setter has this as "Its high time I should", as noted above.
 - p.59, line 3          final "e" in the line has slipped
 - p.87, catch word      "Turn" -> "--Turn", catch is missing a dash
 - p.90, line 14         "been" --> "had been" (word dropped at line break)
-- p.99, line 14         "Garagantna" --> "Garagantua" (compositor confused u and n)
+- p.99, line 14         "Garagantna" --> "Garagantua" (compositor confused u and n, again!)
 - p.100, last line      Missing catch-word -- "The", perhaps in Blackletter type?
 - p.140, line 2         opening paren in roman, but closing in italic type
+
+Quite often it is impossible to distinguish mistakes from Sterne's
+wit; what are we to make (for example) of the word "assimulation" on
+page nine of Vol IX?  It might be a mistake, but then it might also
+be a happy accident.  Or more probably learned wit.  My Latin
+dictionary suggests that there was some classical confusion between
+the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
+"electrical assimilation" (spelled thus) on page nineteen of Vol II, 
+but it is possible in Vol IX that he was unable to resist a word that
+combines "ass" and "mule".
 

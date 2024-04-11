@@ -103,6 +103,7 @@ throughout Vol. VII and Vol. VIII.
 - p.78, line 5       "fifth" --> "second" - Sterne's revision error?
 - p.103, line 15     "ours." --> "ours," - or perhaps just no stop?
 - p.150, line 15     opening paren in roman, but closing in italic type
+- p.153, line 4      "carelesly" -> "carelessly" - comp has used "sl" ligature instead of more awkward "long-s, s, l"
 - p.154, line 15     "male-treat" --> "mal-treat" - corrected in later eds
 - p.169, line 8      opening paren in roman, but closing in italic type
 - p.177, line 7      "pref-" --> "pres-", compositor confused f and long-s (but might just be a mark on the scanned copy)

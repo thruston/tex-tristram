@@ -166,4 +166,9 @@
 \global\catcode`\?=\active \gdef?{\thinspace\char`\? }
 \global\catcode`\!=\active \gdef!{\thinspace\char`\! }
 %
+% SJ macros
+\def\head#1#2{\hbox to \hsize{\vrule width 0pt height #1
+\hss{\addfontfeature{LetterSpace=36.0}#2}.\hss}\smallskip}
+
+
 \overfullrule=2pt

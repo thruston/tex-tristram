@@ -15,7 +15,7 @@ catchex = re.compile(r'\\[pc]atch[vsn](\[[^]]*\])?{([A-Pa234 ]+)}{(.*)}\s*\Z')
 plain_tags = '''
 topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
 smaller small large Large huge Huge footnotesize Big
-itshape frenchspacing obeylines porson tspace
+itshape frenchspacing obeylines porson tspace donol
 '''.split()
 
 container_tags = '''

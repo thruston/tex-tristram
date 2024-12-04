@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 
     cap = '0'
-    vol = '0'
+    vol = 'I'
     counts = collections.defaultdict(int)
     # what counts as a word?
     extra_letters = "ÆàáâæçèéêîòôùúûüŒœ"
@@ -45,27 +45,22 @@ if __name__ == "__main__":
     followers = '-' + leaders + "0-9" + "'—’"
     word = re.compile(rf"[{leaders}][{followers}]+")
     for line in fileinput.input(files=args.plain):
-        m = re.search(r'VOL\. (\S+?)\.', line)
+        m = re.match(r'VOL\. ([XVI]+)', line)
         if m is not None:
-            # vol = convert(m.group(1))
             vol = m.group(1)
             cap = '0'
 
-        m = re.search(r'CHAP\.\s+(\S+)\.', line)
+        m = re.match(r'CHAP\. ([LXVI]+)', line)
         if m is not None:
             cap = convert(m.group(1))
 
-        line = line.replace('T H E', 'The').replace('L I F E', 'Life').replace(' o f ', ' of ')
-        line = line.replace('A N D', 'And').replace('O P I N I O N S', 'Opinions')
-        line = line.replace('S I R', 'Sir').replace('P I T T', 'Pitt')
-
         for w in word.findall(line):
-            counts[(w, vol)] += 1
+            counts[(w, vol, cap)] += 1
 
-    print("Word  Vol   Count")
+    print("Word  Vol  Cap  Count")
     for k in sorted(counts, key=lambda a: a[0].casefold()):
-        w, v = k
-        print(f"{w}  {v}   {counts[k]}")
+        w, v, c = k
+        print(f"{w:<50}  {v:<4}  {int(c):4d}  {counts[k]}")
 
 
 

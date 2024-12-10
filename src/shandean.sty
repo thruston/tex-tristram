@@ -25,7 +25,8 @@
 \newfontface{\zap}{Zapf Dingbats}[Scale=0.6]
 \newfontface{\porson}{GFS Porson}[Scale=0.82]  
 %
-\def\lqq{\leavevmode\rlap{“}\kern .6em}
+\def\lqq{\leavevmode\rlap{\lower0.3ex\hbox{“}}\kern .55em}
+\def\rqq{\lower0.2ex\hbox{”}}
 %
 \def\tspace{\kern 2.5pt}
 %
@@ -93,6 +94,7 @@
 \def\astv{\hbox{\fnast\xleaders\hbox to 0.6em{\hss\fnast}\hskip 2.8em}}
 \def\nastv{\hbox{\fnast\xleaders\hbox to 0.5em{\hss\fnast}\hskip 2em}}
 \def\astiv{\hbox{\fnast\xleaders\hbox to 0.6em{\hss\fnast}\hskip 2.1em}}
+\def\astiii{\hbox{\kern2pt\fnast\xleaders\hbox to 0.6em{\hss\fnast}\hskip 1.5em}}
 \def\wastiv{\hbox{\ast\xleaders\hbox to 1em{\hss\ast}\hskip 3em}}
 \newcount\a
 \def\astw#1{\a=0\loop\ifnum\a<#1 \advance\a by1 \fnast\repeat}

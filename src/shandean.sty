@@ -169,8 +169,13 @@
 \global\catcode`\!=\active \gdef!{\thinspace\char`\! }
 %
 % SJ macros
-\def\head#1#2{\hbox to \hsize{\vrule width 0pt height #1
-\hss{\addfontfeature{LetterSpace=36.0}#2}.\hss}\smallskip}
+\def\head#1#2#3{\hbox to \hsize{\vrule width 0pt height #1
+\hss{\addfontfeature{LetterSpace=#2}#3}.\hss}\smallskip}
+\def\anon{\kern 2pt\astiv}
 
+% for the Road to Versailles in Vol 2.
+\fancypagestyle{minusone}{\fancyhf{}
+\fancyhead[C]{[\quad \the\numexpr \thepage - 1\relax \quad]}
+\renewcommand{\headrulewidth}{0pt}}
 
 \overfullrule=2pt

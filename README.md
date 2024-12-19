@@ -1,17 +1,20 @@
 # tex-tristram
 
 This project is an attempt to produce an accurate and useable unannotated
-text of Laurence Sterne's "Tristram Shandy" for general reading or study.
+facsimile of the first editions of Laurence Sterne's "Tristram Shandy" and "A
+Sentimental Journey" for general reading or study.
 
-Part of the joy of the original work is that each of the nine volumes is a
-work of art in itself, and that the pagination, the decorations, and even in
-some cases the hyphenation of the lines are all meaningful.  
+Part of the joy of the original work is that each of the nine volumes of 
+Tristram Shandyis a work of art in itself, and that the pagination, the
+decorations, and even in some cases the hyphenation of the lines are all 
+meaningful.  A Sentimental Journey is perhaps less eccentric in this regard
+but nonetheless of interest for the student of book production in the 18th C.
 
-This project therefore presents the text in nine separate PDF files, designed
-to be read in a PDF viewer that allows you to see two pages at once, like an
-open book.  Each page faithfully follows the line and page breaks in the
-originals, and the text includes all the dashes, asterisks, blanks, fists, 
-catch-words, and signature-marks.
+This project therefore presents the texts in 11 separate PDF files (nine for
+TS, and two more for SJ), designed to be read in a PDF viewer that allows you
+to see two pages at once, like an open book.  Each page faithfully follows the
+line and page breaks in the originals, and the text includes all the dashes,
+asterisks, blanks, fists, catch-words, and signature-marks.
 
 The spelling and punctuation are all Sterne's (as far as my proof-reading can be
 sure), but the medial long-s characters are replaced with modern ones.  The
@@ -21,9 +24,11 @@ reasonably modern, but (apart from the italics) is not too far from the Caslon
 typefaces used by Dodsley's and Becket's printers.  Libertine also has the
 advantage of being free for use.
 
-For the occasional bits of Greek, I have used the Greek Font Society's version
+Modern editions all tend to correct Sterne's French, but I have tried hard 
+to re-create the French exactly as the first editions have it -- warts and all.
+For the occasional bits of Greek in TS, I have used the Greek Font Society's version
 of "Porson".  This font dates from the early 19th century, so the characters
-are more contemporary than those Sterne's printers used, and (in my opinion)
+are more contemporary than those Sterne's printers used, but (in my opinion)
 very much easier to read.  I have not attempted to correct any of the bad
 grammar, nor the more-or-less random use of accents and breathing marks.  But
 I have fixed the occasional terminal sigma in the middle of a word, and I have
@@ -40,7 +45,7 @@ to Unifraktur Maguntia -- this is a bit too Germanic to be very authentic
 but it is high quality and free.  If I could find a decent English Blackletter 
 font, I would use it instead. 
 
-The text is derived from the Project Gutenberg source for Sterne's work,
+The texts are derived from the Project Gutenberg sources for Sterne's work,
 extensively corrected by hand using scanned copies of the real first edition
 volumes that are available through Google Books, and listed (as of June 2023)
 at [Laurence Sterne in Cyberspace](https://www1.gifu-u.ac.jp/~masaru/Sterne_on_the_Net.html).
@@ -56,7 +61,7 @@ page, carefully following the scans of the first editions.   I have not (yet)
 included the smaller printers' marks visible on the scans.  These are usually
 small numbers, and were added by the printers as part of the administration
 of the printing house.  Typically they were used to show which compositor 
-had one which pages (so they could be paid), but it is not clear exactly 
+had done which pages (so they could be paid), but it is not clear exactly 
 how they were used in these books.
 
 If you find this project entertaining or useful please consider supporting
@@ -76,9 +81,9 @@ originals I used are the scanned copies linked above.
 I have not attempted to mark variations of spelling -- only those
 where the mis-spelled word is "obviously" mis-printed.  I've also
 ignored the more or less random variation between -ic and -ick
-suffixes, and the "grocer's apostrophes" that abound -- with the
+suffixes, and the "grocers apostrophe's" that abound -- with the
 exception of "it's" which occurs once in Vol. V and at random
-throughout Vol. VII and Vol. VIII.  
+throughout Vol. VII and Vol. VIII (and is never correct).  
 
 
 ### Vol. I - 1760 Dodsley (first London edition)

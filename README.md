@@ -69,7 +69,7 @@ If you find this project entertaining or useful please consider supporting
 which is run as a museum and study-center in Coxwold, North Yorkshire, by
 the Laurence Sterne Trust.
 
-## Typographical accidentals, &c.
+## Typographical accidentals, &c. -- Tristram Shandy
 
 Various errors and accidents of type-setting are marked with a
 marginal Ace of Clubs ♣︎ (like the poor squashed nose).  I cannot
@@ -329,4 +329,32 @@ the verbs "assimilare" and "assimulare".  And Sterne uses the phrase
 "electrical assimilation" (spelled thus) on page nineteen of Vol II, 
 but it is possible in Vol IX that he was unable to resist a word that
 combines "ass" and "mule".
+
+
+
+## Typographical accidentals, &c. -- A Sentimental Journey 
+
+In SJ, the various errors and accidents of type-setting are also marked with a
+marginal Ace of Clubs ♣︎, and again I cannot pretend that my marks are
+comprehensive or complete.  If you look at a different edition, you may spot
+more of them; or you may think I have wrongly called out some of those that I
+have marked.  The originals I used are the scanned copies linked above.
+
+I have not attempted to mark variations of spelling -- only those where the
+mis-spelled word is "obviously" mis-printed.  The spelling of French words and
+place-names is particularly idiosyncratic, and I have attempted to follow the
+scanned first editions exactly -- so I have not flagged missing or incorrect
+accent marks, nor have a flagged Sterne's spelling on Montreuil (except for the
+misprint of "Montreal").
+
+The two volumes of SJ follow the practice adopted in Vol. IX of TS of starting
+each chapter at the top of a new page -- so there are many nearly empty pages
+-- but the chapters are not numbered, instead they have one or two headlines,
+usually set in letter-spaced upper case letters as a display.
+
+With two exceptions ("THE" on p.49 and "NAM-" on p.122) these chapters do not
+get catch words in Vol I.  However, in Vol II, they all get catch words with
+the exception of p.11, which is missing a "THE" for the  next chapter.
+
+### Vol. I - 1768 Becket
 

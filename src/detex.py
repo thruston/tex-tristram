@@ -1,21 +1,28 @@
 #! /usr/bin/env python3
 
 import argparse
+import collections
 import fileinput
 import re
 import sys
 import textwrap
 
+unit = r'(pt|em|ex|cm|in|bp)\s*'
+dimen = rf'(-\s*)?\d+(\.\d*)?{unit}'
+stretch = rf'plus {dimen}\s*'
+shrink = rf'minus {dimen}\s*'
+skipdefs = re.compile(rf'\\(baseline|par)skip\s*{dimen}({stretch})?({shrink})?')
+vskips = re.compile(rf'\\vskip\s*({dimen}|-?\\baselineskip)\s*\Z')
+
 sticks = re.compile(r'\\([Ss]ti?c?k|hbox|hbox to \S+|centerline|rightline|short){(.*)}(\\\\(\[-?\d+pt\])?)?\s*\Z')
-vskips = re.compile(r'\\(baseline|par|v)skip\s*-?\s*(\d+|\d*\.\d+)(pt|ex)\s*\Z')
 catches = re.compile(r'\\[pc]atch(\[[^]]*\])?{(.*)}\s*\Z')
 catchex = re.compile(r'\\[pc]atch[vsn](\[[^]]*\])?{([A-Pa234 ]+)}{(.*)}\s*\Z')
 
 
 plain_tags = '''
-topstrut chapstrut boxstrut etp null noindent bgroup egroup footnotesize selectfont par vfill
-smaller small large Large huge Huge footnotesize Big
-itshape frenchspacing obeylines porson tspace donol
+topstrut chapstrut boxstrut etp etpp null noindent bgroup egroup footnotesize selectfont par vfill
+smaller small large Large huge Huge footnotesize Big thinspace raggedbottom scriptsize
+scshape itshape frenchspacing obeylines porson tspace donol
 '''.split()
 
 container_tags = '''
@@ -29,12 +36,13 @@ dimen = r'-?(\d+|\d*\.\d+)(pt|em|ex)'
 
 dimen_tags_to_ignore = re.compile(rf'\\(raise|lower|tstrut|parindent)\s*{dimen}\s*')
 plain_tags_to_ignore = re.compile(rf'\\({"|".join(plain_tags)})\b\s*')
-arg_tags_to_ignore = re.compile(r'\\(pagestyle|thispagestyle){[a-z]+}\s*\Z')
-space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|thinspace|hfill|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
+pagination_tags = re.compile(r'\\(pagestyle|thispagestyle|pagenumbering){([a-z]+)}\s*\Z')
+space_tags = re.compile(rf'\\(enspace|qquad|quad|indent|hfill?|hss|kern\s*{dimen}|cr|phantom{{.}}| )\s*')
 quote_tags = re.compile(r'\\lqq\s*')
 content_tags = re.compile(rf'\\({"|".join(container_tags)}){{(.*?)}}')
 chapters = re.compile(r'\\chap{([LXVI♣︎]+)}{\d+pt}{\d+pt}')
 chapterx = re.compile(r'\\chapx{(.*)}{\d+pt}{\d+pt}')
+headers = re.compile(r'\\head{\d+pt}{\d+}{(.*)}')
 graphics = re.compile(r'\\includegraphics(\[[^]]+\])?{([^}]+)}')
 dumptwos = re.compile(r'\\(fontsize|setlength|setcounter){[^}]+}{[^}]+}')
 initials = re.compile(r'\\initial(\[[^]]+\])?{([^}]+)}{([^}]+)}(.*)\Z')
@@ -107,6 +115,7 @@ subs = {
     '\\sicc': '♣︎',
     '\\nastv': '*****',
     '\\lowastiv': '* * * *',
+    '\\hrulefill': rule,
     '\\hrule': rule,
     '\\fnast': '*',
     '\\fist': ' ☞ ',
@@ -129,6 +138,8 @@ subs = {
     '\\astvi': '******',
     '\\astv': '*****',
     '\\astiv': '****',
+    '\\astiii': '***',
+    '\\anon': '****',
     '\\ast': '*',
     '\\@': '',
     '\\;': ' ',
@@ -139,6 +150,7 @@ subs = {
     '\\!': '',
     '\\{': '{',
     '\\}': '}',
+    '\\rqq': '”',
 }
 
 def get_prefix(option_string):
@@ -218,9 +230,41 @@ def remove_line_splits(p):
 
     return ' '.join(out)
 
+def to_roman(num):
+    roman = collections.OrderedDict()
+    roman[1000] = "m"
+    roman[900] = "cm"
+    roman[500] = "d"
+    roman[400] = "cd"
+    roman[100] = "c"
+    roman[90] = "xc"
+    roman[50] = "l"
+    roman[40] = "xl"
+    roman[10] = "x"
+    roman[9] = "ix"
+    roman[5] = "v"
+    roman[4] = "iv"
+    roman[1] = "i"
 
+    def roman_num(num):
+        for r in roman.keys():
+            x, y = divmod(num, r)
+            yield roman[r] * x
+            num -= (r * x)
+            if num <= 0:
+                break
 
+    return "".join([a for a in roman_num(num)])
 
+def make_page_header(numerals, style, number):
+    if style == "folio":
+        if numerals == "roman":
+            n = to_roman(number)
+        else:
+            n = str(number)
+        return f"[{n}]".center(len(rule), rule[0])
+
+    return ""
 
 
 if __name__ == "__main__":
@@ -237,6 +281,9 @@ if __name__ == "__main__":
 
     out = []
     skipping = True
+    folio = 0
+    numeration = "none"
+    page_style = "empty"
     for line in fileinput.input(files=args.source):
         t = line.strip()
         if not t:   # blank to start with
@@ -270,8 +317,11 @@ if __name__ == "__main__":
         if t.startswith('\\') and t[1:] in vertical_skips:
             continue
 
+        m = skipdefs.match(t)
+        if m is not None:
+            continue
+
         t = plain_tags_to_ignore.sub('', t)
-        t = arg_tags_to_ignore.sub('', t)
         t = dumptwos.sub('', t)
         t = vastfills.sub('* * * * * * * * * * * * * *', t)
         t = lsvs.sub(r'\1', t)
@@ -279,6 +329,16 @@ if __name__ == "__main__":
         if t == '\\hrule width \\hsize height 0pt depth 280pt':
             for i in range(20):
                 out.append('◼︎' * 39)
+            continue
+
+        m = pagination_tags.match(t)
+        if m is not None:
+            tag = m.group(1)
+            if tag == "pagestyle":
+                page_style = m.group(2)
+            elif tag == "pagenumbering":
+                numeration = m.group(2)
+                folio = 1
             continue
 
         m = buzz.search(t)
@@ -297,7 +357,8 @@ if __name__ == "__main__":
         if m is not None:
             t = m.group(2)
             if m.group(4) is not None:
-                add_blank = True
+                if not m.group(4).startswith("[-"):
+                    add_blank = True
 
         while True:
             m = content_tags.search(t)
@@ -312,21 +373,35 @@ if __name__ == "__main__":
         t = space_tags.sub(' ', t)
         t = quote_tags.sub('“ ', t)
 
+        if t == rule:
+            out.append('')
+            out.append(t)
+            out.append('')
+            continue
+
         m = catchex.match(t)
         if m is not None:
             if args.paginate:
                 out.append(make_catch_line(m.group(2), m.group(3)))
+                folio += 1
+                out.append(make_page_header(numeration, page_style, folio))
             continue
 
         m = catches.match(t)
         if m is not None:
             if args.paginate:
                 out.append(make_catch_line('', m.group(2)))
+                folio += 1
+                out.append(make_page_header(numeration, page_style, folio))
             continue
 
-        if t == '\\eject':
+        if t == '\\eject' or t == "\\newpage":
             if args.paginate:
                 out.append(rule)
+                folio += 1
+                out.append(make_page_header(numeration, page_style, folio))
+            else:
+                out.append('')
             continue
 
         m = chapters.match(t)
@@ -339,6 +414,12 @@ if __name__ == "__main__":
         if m is not None:
             out.append('')
             out.append(f'{m.group(1)}'.center(42))
+            continue
+
+        m = headers.match(t)
+        if m is not None:
+            out.append('')
+            out.append(f'{m.group(1)}.'.center(42))
             continue
 
         m = graphics.search(t)

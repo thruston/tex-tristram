@@ -356,5 +356,82 @@ With two exceptions ("THE" on p.49 and "NAM-" on p.122) these chapters do not
 get catch words in Vol I.  However, in Vol II, they all get catch words with
 the exception of p.11, which is missing a "THE" for the  next chapter.
 
+The majority of typographical errors are in Vol. II -- perhaps it was done by a
+different team, or in a rush, or perhaps Sterne was less careful in the proof
+reading.
+
 ### Vol. I - 1768 Becket
+
+- p.85, line 7 -- "desart" --> "desert" (as line 17 of same page)
+
+- p.98, line 2 -- "not ill of" --> "not ill off" (maybe..)
+
+- p.107, line 6 - "prince of God" --> "prince of gods" -- the fragment of
+  Greek, that this is from, has "gods" plural, but either Sterne or the
+  typesetters changed it to "God" singular and capitalized.  You could count
+  "prince of God" as a sort of angel (like thrones and dominations...), but the
+  combination "prince of God and men" makes very little sense.
+
+### Vol. II - 1768 Becket
+
+- p.4, line 5 -- "for if is a good one" --> for if it is a good one"
+  Typesetter confused by sequence of 3 short "i" words
+
+- p.9, lines 1 and 4 -- "R****" set in italics for no clear reason
+
+- p.9, line 13 -- "de Cœur" --> "du Cœur" (as on p.3)
+
+- p.13, line 9 -- "sat" --> "set", typesetter confused "a" and "e"
+
+- p.30, lines 1 and 2 -- typesetter repeated word "of" across line break
+
+- p.33, line 6 -- "himself" --> "myself" -- Sterne's error?
+
+- p.35, lines 12 and 13 -- typesetter repeated word "a" across line break
+
+- p.36, line 2 -- "it’s" --> "its" -- green grocer’s apostrophe
+
+- p.36, line 18 -- "Lord’s C’s" --> "Lord C’s" -- extra apostrophe
+
+- p.42, line 7 -- "gaity" --> gaiety" -- typographic slip?  idiosyncratic spelling?
+
+- p.71, line 6 -- "two Yorick’s" --> "two Yoricks" -- green grocer’s apostrophe
+
+- p.84, line 4 -- "poli.s" --> "polis" -- stray full stop in line?
+
+- p.85, lines 11 and 12 -- typesetter repeated word "the" across line break
+
+- p.93, line 16 -- full stop not needed with long dash for the aposiopesis 
+
+- p.97, lines 9 and 10 -- typesetter repeated word "into" across line break
+
+- p.119, catch line -- "THE" does not match "LE DIMANCHE" on p.120
+
+- p.120, line 6 -- "Montreal" --> "Montriul" -- mis-correction for "Montreuil"
+  Sterne has Montriul (for "Montreuil") everywhere except here.
+
+- p.126, lines 12 and 13 -- "inte-terest" --> "inte-rest" -- typesetter has repeated
+  syllable across line break
+
+- p.136, line 1 -- "boats-man" --> "boat-man" (or possibly boatswain ??)
+
+- p.140, line 18 -- "must me read" --> "must be read" -- typesetter 
+  apparently confused by "me" in line above.
+
+- p.145, line 3 -- "thou canst get" --> "thou canst get it" -- or "them"?
+  Possibly this is deliberate, and La Fleur has interrupted in haste.
+
+- p.153, lines 3 and 4 -- typesetter repeated word "the" across line break (again)
+
+- p.164, catch line -- Missing leading dash to match next page
+
+- p.177, line 4 -- "steep’d to much" --> "steep’d too much"
+
+- p.179, line 5 -- "farewel" --> "farewell"
+
+- p.181, line 7 -- "sufferings has" --> "suffering has" (or "sufferings have")
+
+- p.198, line 2 -- "give alook" --> "give a look"
+
+- p.207, line 16 -- "by way asseveration" --> "by way of asseveration"
 

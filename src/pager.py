@@ -1,15 +1,43 @@
 #! /usr/bin/env python3
 
 import argparse
+import collections
 import fileinput
 import re
 import sys
 
+def to_roman(num):
+    roman = collections.OrderedDict()
+    roman[1000] = "m"
+    roman[900] = "cm"
+    roman[500] = "d"
+    roman[400] = "cd"
+    roman[100] = "c"
+    roman[90] = "xc"
+    roman[50] = "l"
+    roman[40] = "xl"
+    roman[10] = "x"
+    roman[9] = "ix"
+    roman[5] = "v"
+    roman[4] = "iv"
+    roman[1] = "i"
+
+    def roman_num(num):
+        for r in roman.keys():
+            x, y = divmod(num, r)
+            yield roman[r] * x
+            num -= (r * x)
+            if num <= 0:
+                break
+
+    return "".join([a for a in roman_num(num)])
+
+
 catches = re.compile(r'\\[pc]atch[sv]?(\[[^]]*\])?{(.*)}\s*\Z')
-counter = re.compile(r'\\setcounter{page}{(\d)}')
+change_folio = re.compile(r'\\setcounter{page}{(\d)}')
+start_folio  = re.compile(r'\\pagenumbering{(roman|arabic)}')
 defvol = re.compile(r'\\def\\vol{([XVI]+)}')
 alphabet = 'ABCDEFGHIKLMNOPQRST'   # no J for sigs... 
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -21,9 +49,11 @@ if __name__ == "__main__":
 
     skipping = True
     folio = 0
+    numerals = 'arabic'
     volume = 'X'
     out = []
     sig = 0
+    lines_on_page = 0
     for line in fileinput.input(files=args.source):
         if args.rewrite:
             out.append(line.rstrip())
@@ -54,13 +84,19 @@ if __name__ == "__main__":
             volume = m.group(1)
             continue
 
-        m = counter.search(t)
+        if m := start_folio.search(t):
+            folio = 1
+            numerals = m.group(1)
+            continue
+
+        m = change_folio.search(t)
         if m is not None:
             folio = int(m.group(1))
             continue
 
         m = catches.search(t)
-        if m is None and t != '\\eject':
+        if m is None and not (t in '\\eject \\newpage'.split()):
+            lines_on_page += 1
             continue
 
         # only here if making new page
@@ -85,7 +121,13 @@ if __name__ == "__main__":
             elif len(mark) == 3:
                 out.append(re.sub(r'(catch|patch)(\[[^[]+\])?', rf'\1s\2{{{mark}}}',t))
         else:
-            out.append(f'{volume} {folio} {mark:<4} {t.strip()}')
+            if numerals == 'roman':
+                n = f'{to_roman(folio):<4}'
+            else:
+                n = f'{str(folio):>4}'
+
+            out.append(f'{volume} {n} {mark:<4} {lines_on_page} {t.strip()}')
+            lines_on_page = 0
 
         if folio > 0:
             folio += 1

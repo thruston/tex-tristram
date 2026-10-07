@@ -397,7 +397,7 @@ if __name__ == "__main__":
 
         if t == '\\eject' or t == "\\newpage":
             if args.paginate:
-                out.append(rule)
+                out.append(make_catch_line('', ''))
                 folio += 1
                 out.append(make_page_header(numeration, page_style, folio))
             else:
